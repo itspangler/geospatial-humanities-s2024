@@ -75,21 +75,21 @@ By the end of this course students will have achieved the following learning obj
 
 Students will develop GIS skills through a series of exercises and assignments during the semester. Each student will then complete a [final project](#final-project) of their choice. Students will be expected to attend every class and to complete all graded assignments as well as ungraded tutorials and in-class exercises. Completion of [Exercises](#exercises) and [Assignments](#assignments) will require additional computer/lab time outside of class.
 
-You are expected to complete all Exercises, but only 5 of them will be graded. It is up to you to decide which 5 you submit for a grade. If you choose to submit more than 5, the lowest graded Exercises will be dropped. You may submit up to 8 Exercises.
+You are expected to complete all 6 Exercises, but only 5 of them will be graded. It is up to you to decide which 5 you submit for a grade. If you choose to submit 6, the lowest graded Exercise will be dropped.
 
 You must complete ***all*** Assignments.
 
 Grading will be based on a **1000-point scale**. Graded assignments and exercises may be turned up to one week late. All late assignments will receive a -10 point deduction and all late graded exercises will receive a -5 point deduction. Details regarding the assignments and requirements for the final project can be found on the Canvas Course Schedule.
 
--   Several exercises (5 graded) worth a total of 150 points (30 each)
--   5 skill-building assignments worth a total of 500 points (100 each)
+-   Several exercises (5 graded) worth a total of 250 points (50 each)
+-   4 skill-building assignments worth a total of 400 points (100 each)
 -   Class participation worth 100 points
 -   The Final Project poster or StoryMap worth 250 points
 
 | Type          | Quantity | Points per activity |
 | ------------- | -------- | ------------------- |
-| Exercises     | 5        | 30                  |
-| Assignments   | 5        | 100                 |
+| Exercises     | 5        | 50                  |
+| Assignments   | 4        | 100                 |
 | Participation | n/a      | 100                 |
 | Final Project | n/a      | 250                 |
 
