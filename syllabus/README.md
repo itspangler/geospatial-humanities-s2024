@@ -40,7 +40,7 @@ Students will learn to use GIS to answer spatial questions. For instance:
 
 ### Schedule
 
-<button>[Schedule](./cls125-schedule.md)</button>
+<button>[Schedule](/schedule/README.md)</button>
 
 ### Major goals and course objectives
 
