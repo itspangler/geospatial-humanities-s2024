@@ -8,4 +8,7 @@
 
 ### Welcome to Introduction to Geospatial Humanities (CLS125)!
 
-This page serves as 
+* **[Syllabus](./syllabus/README.md)**. Course description, learning objectives, information about exercises and assignments.
+* **[Schedule](./schedule/README.md)**. Schedule, including due dates for exercises and assignments.
+* **[Exercises](./exercises/)** Directory of GIS work.
+* **[Assignments](./planning/assignments/README.md)** Directory of Non-GIS work.
