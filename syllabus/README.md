@@ -10,6 +10,8 @@
 >   * TA: 5-6pm on Tuesdays in Tisch Library
 >* **Prerequisites:** None. Students will be expected to have competence in computer use and some familiarity with Microsoft Windows environment and file management. 
 
+![Georeferencing an historic map using Allmaps Editor](./allmaps-editor.png)
+
 ### Table of contents <!-- omit in toc -->
 - [Course Description](#course-description)
 - [Schedule](#schedule)
