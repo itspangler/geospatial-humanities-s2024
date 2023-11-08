@@ -34,7 +34,7 @@
 
 ### Schedule
 
-<button>[Schedule](/schedule)</button>
+<button>[Schedule](../schedule/README.md)</button>
 
 ### Course Description
 
