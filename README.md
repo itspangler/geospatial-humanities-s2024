@@ -6,9 +6,9 @@
 
 ### Welcome to Introduction to Geospatial Humanities (CLS125)!
 
-|![Georeferencing an historic map using Allmaps Editor](./syllabus/allmaps-editor.png)
+<!-- |![Georeferencing an historic map using Allmaps Editor](./syllabus/allmaps-editor.png)
 |:-:|
-|*Georeferencing an historic map using Allmaps Editor*
+|*Georeferencing an historic map using Allmaps Editor* -->
 
 * **[Syllabus](./syllabus/README.md)**. Course description, learning objectives, information about exercises and assignments.
 * **[Schedule](./schedule/README.md)**. Schedule, including due dates for exercises and assignments.
