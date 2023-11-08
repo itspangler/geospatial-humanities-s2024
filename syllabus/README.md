@@ -15,38 +15,40 @@
 |*Georeferencing an historic map using Allmaps Editor* -->
 
 ### Table of contents <!-- omit in toc -->
-- [Course Description](#course-description)
 - [Schedule](#schedule)
-- [Major goals and course objectives](#major-goals-and-course-objectives)
+- [Course Description](#course-description)
+- [What you will learn](#what-you-will-learn)
   - [Major goals](#major-goals)
   - [Learning objectives](#learning-objectives)
 - [Course Requirements and Grading](#course-requirements-and-grading)
-- [Exercises](#exercises)
 - [Assignments](#assignments)
+  - [In-class assignments](#in-class-assignments)
+  - [Labs](#labs)
+  - [Exercises](#exercises)
 - [Final Project](#final-project)
 - [Required Readings](#required-readings)
-- [Style Guidelines](#style-guidelines)
+- [Style Guidelines \& Citation](#style-guidelines--citation)
 - [Accommodations for Students with Disabilities](#accommodations-for-students-with-disabilities)
 
 ---
 
+### Schedule
+
+<button>[Schedule](/schedule)</button>
+
 ### Course Description
 
-The course introduces **Geographic Information Systems (GIS)** theory, methods, and technology for applications in the humanities in past and present settings.
+The humanities are becoming spatial. Perhaps they always have been. Indeed, geography informs not only how texts, maps, and other objects are produced, but how we encounter them as readers and users. In this course, we will prod at the spatial dimensions of the humanities, or what the [geographer Yi-Fu Tuan](https://link.springer.com/chapter/10.1007/978-94-009-9394-5_19) called "the space that is conditioned by the fact of my being in it, the space of which I am the centre, the space that answers my moods and intentions." We'll examine these experiential,  Our primary goal, however, will be the careful study of the humanities' *geospatial* dimensions—those aspects from which we can derive geographic data, map, visualize, and experience in new ways.
 
-GIS consists of a combination of software, data, methods, and hardware with capabilities for manipulating, analyzing, and displaying spatially referenced data. The course gives primary emphasis to GIS data structures, data creation, geodesy, spatial analysis, and cartographic visualization. It includes extensive exercises to apply concepts presented in the lectures using ArcGIS Pro and ArcGIS Story Maps software. Assignments concentrate on applying concepts covered in lectures and exercises and include a final project that applies GIS to each student's field of interest.
+This course introduces geospatial theory, methods, and technology for applications in the humanities in past and present settings. We'll often use the catch-all term "GIS"—short for **geographic information systems**—to describe these geospatial tools. GIS consists of a combination of software, data, methods, and hardware with capabilities for manipulating, analyzing, and displaying spatially referenced data. The course gives primary emphasis to GIS data structures, data creation, geodesy, spatial analysis, and cartographic visualization. We will discuss not only how to use these tools effectively, but how to use them intentionally. Detailed labs and exercises apply concepts presented in the lectures using two geospatial softwares: ArcGIS Pro and ArcGIS StoryMaps software. Assignments concentrate on applying concepts covered in lectures and exercises and include a final project that applies GIS to each student's field of interest.
 
-Students will learn to use GIS to answer spatial questions. For instance:
+### What you will learn
+
+Students will learn to use GIS to answer humanistically-informed spatial questions. For instance:
 
 * A student interested in **urban history** seeks to determine those buildings built on filled-land within the City of Boston. The student acquires or creates an [historical shoreline of the City of Boston](https://data.leventhalmap.org/#/catalog/dkircu2ol) and uses overlay operations to determine those buildings constructed outside of the original Boston shoreline. The student then further qualifies their spatial questions by construction date to identify buildings older than 1900 or by construction materials (brick, wood, concrete, etc.) or by use (residential, commercial, etc.).
 * A student interested in **environmental history** wants to assess the impact of the straightening of the Mystic River in Massachusetts. Using historical maps and historical aerial photography, the student creates a GIS dataset of the historical Mystic River. Through incorporating additional historical GIS data and spatial operations, the student calculates the historical and present landcover and populations impacted by the straightening of the river.
 * A student of **classical literature** is interested in approaches to distant readings of *The Odyssey*. The student extracts locations of places mentioned within the text and calculates the number of mentions of each place and by place type (settlement, water body, temple, etc.). This facilitates visualization techniques to identify significant places mentioned within the text. The student also incorporates additional data and various spatial measures to determine clustering and other possible patterns present in the text. The student also uses the data to visualize the journey of Odysseus.
-
-### Schedule
-
-<button>[Schedule](/schedule/README.md)</button>
-
-### Major goals and course objectives
 
 #### Major goals
 
@@ -85,8 +87,8 @@ You must complete ***all*** Assignments.
 
 Grading will be based on a **1000-point scale**. Graded assignments and exercises may be turned up to one week late. All late assignments will receive a -10 point deduction and all late graded exercises will receive a -5 point deduction. Details regarding the assignments and requirements for the final project can be found on the Canvas Course Schedule.
 
--   Several exercises (5 graded) worth a total of 250 points (50 each)
--   4 skill-building assignments worth a total of 400 points (100 each)
+-   Several Labs (5 graded) worth a total of 250 points (50 each)
+-   4 skill-building Exercises worth a total of 400 points (100 each)
 -   Class participation worth 100 points
 -   The Final Project poster or StoryMap worth 250 points
 
@@ -97,9 +99,17 @@ Grading will be based on a **1000-point scale**. Graded assignments and exercise
 | Participation | n/a      | 100                 |
 | Final Project | n/a      | 250                 |
 
-### Exercises
+### Assignments
 
-The course uses weekly **Exercises** tailored for students to learn the topic(s) of each week. Four of the exercises must be submitted for a grade.
+There are three kinds of assignments in this class: **In-class assignments**, **Labs**, and **Exercises**.
+
+#### In-class assignments
+
+In-class assignments 
+
+#### Labs
+
+The course uses weekly **Labs** tailored for students to learn the topic(s) of each week. Four of the exercises must be submitted for a grade.
 
 Each Exercise weaves together several components:
 
@@ -111,9 +121,9 @@ Each Exercise weaves together several components:
 
 Exercises are situated in different regions of the world and they vary across different geographic scales: neighborhood, city, state, country, region, continent, global.
 
-### Assignments
+#### Exercises
 
-**Assignments** concentrate on applying concepts covered in lectures and exercises to each student's field of interest and build toward a final project that applies GIS to each student's field of interest.
+**Exercises** concentrate on applying concepts covered in lectures and exercises to each student's field of interest and build toward a final project that applies GIS to each student's field of interest.
 
 ### Final Project
 
@@ -131,13 +141,13 @@ Readings for the course will be primarily from the [ArcGIS Online Resources](htt
 
 Additional readings are available through online journal databases open to Tufts students and through public web sites.
 
-### Style Guidelines
+### Style Guidelines & Citation
 
-All **cartographic work** should adhere to key principles of map design covered in week 3 of the course.
+All **cartographic work** should adhere, when appropriate, to key principles of map design covered in week 3 of the course.
 
-All **written work** must be consistent with the style guidelines of one of the two major style guides - the Chicago Manual of Style (MLA) or the Publication Manual of the American Psychological Association (APA). Both provide clear guidelines for referencing and citing other works. You may buy either of these - they will be a useful long-term reference.
+All **written work** should be consistent with the style guidelines of one of the two major style guides—the Chicago Manual of Style (MLA) or the Publication Manual of the American Psychological Association (APA). Both provide clear guidelines for referencing and citing other works.
 
-The [Purdue Online Writing Lab](https://owl.purdue.edu/) also has extremely good guidance to both styles.
+The [Purdue Online Writing Lab](https://owl.purdue.edu/) has extremely good guidance to both styles. I also recommend downloading [Zotero](https://zotero.org) to manage citations. Tufts provides a [guide](https://researchguides.library.tufts.edu/zotero) for getting started. It will make your life easier far beyond this class.
 
 ### Accommodations for Students with Disabilities
 
