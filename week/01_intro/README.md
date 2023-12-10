@@ -1,6 +1,18 @@
-# Humanistic GIS
+### Table of contents <!-- omit in toc -->
+- [Before class](#before-class)
+- [During class](#during-class)
+  - [Lecture](#lecture)
+  - [Slides](#slides)
+  - [Housekeeping](#housekeeping)
+- [After class](#after-class)
+  - [Readings](#readings)
+  - [Lab work](#lab-work)
+---
+<div align=center>
 
->*What makes geospatial "humanistic?" What makes the humanities "geospatial?"*
+# Humanistic GIS <!-- omit in toc -->
+
+</div>
 
 How should we approach our subject matter this semester, an ethereal thing called "geospatial humanities?"
 
@@ -27,6 +39,10 @@ Nothing! It's the first day of the semester. Just show up.
    2. Raster
    3. Tabular
 
+### Slides
+
+link to slides
+
 ### Housekeeping
 
 1. Course overview & expectations
@@ -40,8 +56,8 @@ Nothing! It's the first day of the semester. Just show up.
 
 [![read]][link]
 
-* ![link][req] Section II, "Early Rumblings: the first wave," pp. 572-579 from [Schuurman, Nadine. 2000. “Trouble in the Heartland: GIS and Its Critics in the 1990s.” *Progress in Human Geography* 24 (4): 569–90](https://doi.org/10.1191/030913200100189111).
-* ![link][opt] [Tobler, Waldo R. 1959. “Automation and Cartography.” *Geographical Review* 49 (4): 526–34](https://doi.org/10.2307/212211).
+* [![req]][link] Section II, "Early Rumblings: the first wave," pp. 572-579 from Schuurman, Nadine. 2000. [“Trouble in the Heartland: GIS and Its Critics in the 1990s.” *Progress in Human Geography* 24 (4): 569–90](https://doi.org/10.1191/030913200100189111).
+* [![opt]][link] pp. 526-533 from Tobler, Waldo R. 1959. [“Automation and Cartography.” *Geographical Review* 49 (4): 526–34](https://doi.org/10.2307/212211).
 
 ### Lab work
 
