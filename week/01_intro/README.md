@@ -39,3 +39,7 @@ Nothing! It's the first day of the semester. Just show up.
   * <button onclick='https://doi.org/10.2307/212211'>*OPTIONAL*</button> [Tobler, Waldo R. 1959. “Automation and Cartography.” *Geographical Review* 49 (4): 526–34](https://doi.org/10.2307/212211).
 * Complete (estimated `2-3 hours`):
   * [Exercise 1: Creating a map with ArcGIS Pro](./exercises/ArcGISPro_Basics_India_V3.1.3.pdf)
+
+[!https://img.shields.io/badge/Title-37a779?style=for-the-badge][https://doi.org/10.1191/030913200100189111]
+
+[![https://img.shields.io/badge/Title-37a779?style=for-the-badge]][https://doi.org/10.1191/030913200100189111]
