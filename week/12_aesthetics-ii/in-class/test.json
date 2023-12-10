@@ -1,0 +1,69 @@
+{
+    "id": "commonwealth:fx71d269k",
+    "system_create_dtsi": "2020-04-14T23:53:32Z",
+    "system_modified_dtsi": "2021-10-09T09:45:28Z",
+    "curator_model_ssi": "Curator::DigitalObject",
+    "curator_model_suffix_ssi": "DigitalObject",
+    "title_info_primary_tsi": "1 Centre Street, Yarmouth Port, Mass.",
+    "genre_basic_ssim": [
+        "Cards",
+        "Photographs"
+    ],
+    "genre_specific_ssim": [
+        "Photographic postcards"
+    ],
+    "date_tsim": [
+        "[ca. 1850–2001]"
+    ],
+    "date_type_ssm": [
+        "dateCreated"
+    ],
+    "date_edtf_ssm": [
+        "1850~/2001~"
+    ],
+    "date_start_dtsi": "1850-01-01T00:00:00Z",
+    "date_end_dtsi": "2001-12-31T23:59:59.999Z",
+    "related_item_host_ssim": [
+        "Historical Society of Old Yarmouth Image Collection"
+    ],
+    "related_item_series_ssi": "Jim Carr Postcard Collection",
+    "subject_topic_tsim": [
+        "Houses"
+    ],
+    "subject_facet_ssim": [
+        "Houses"
+    ],
+    "subject_geo_other_ssm": [
+        "1 Center St., Yarmouth Port, MA"
+    ],
+    "subject_coordinates_geospatial": [
+        "41.7,-70.25",
+        "41.706066,-70.2313745"
+    ],
+    "subject_point_geospatial": [
+        "41.7,-70.25",
+        "41.706066,-70.2313745"
+    ],
+    "subject_geojson_facet_ssim": [
+        "{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.25,41.7]},"properties":{"placename":"Yarmouth Port, MA"}}",
+        "{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.2313745,41.706066]},"properties":{"placename":"1 Center St., Yarmouth Port, MA"}}"
+    ],
+    "subject_hiergeo_geojson_ssm": [
+        "{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.25,41.7]},"properties":{"continent":"North and Central America","country":"United States","state":"Massachusetts","county":"Barnstable","city":"Yarmouth","city_section":"Yarmouth Port"}}"
+    ],
+    "physical_location_ssim": [
+        "Historical Society of Old Yarmouth"
+    ],
+    "identifier_uri_ss": "https://ark.digitalcommonwealth.org/ark:/50959/fx71d269k",
+    "identifier_local_accession_tsim": [
+        "2005.104.46"
+    ],
+    "note_acquisition_tsim": [
+        "Donated by Jim Carr"
+    ],
+    "note_date_tsim": [
+        "Date supplied by cataloger."
+    ],
+    "note_tsim": [
+        "Title from item or accompanying material.",
+        "Caption front: Congregational parsonage, Yarmouth Mass. Caption back: A little of the corner of Edwin Thacher"s house"], "rights_ss": "Rights status not evaluated for all images. If you wish to publish this image please contact the Historical Society of Old Yarmouth at info@hsoy.org for information regarding use.", "license_ss": "This work is licensed for use under a Creative Commons Attribution Non-Commercial No Derivatives License (CC BY-NC-ND).", "reuse_allowed_ssi": "creative commons", "license_uri_ss": "https: //creativecommons.org/licenses/by-nc-nd/4.0/", "digital_origin_ssi": "reformatted_digital", "extent_tsi": "1 photograph : print ; sheet 3.375 x 5.5 in. (postcard format)", "type_of_resource_ssim": ["Still image"], "publishing_state_ssi": "published", "processing_state_ssi": "complete", "destination_site_ssim": ["commonwealth"], "hosting_status_ssi": "hosted", "harvesting_status_bsi": True, "exemplary_image_ssi": "commonwealth:fx71d270b", "exemplary_image_key_base_ss": "images/commonwealth:fx71d270b", "admin_set_name_ssi": "Historical Society of Old Yarmouth Archives and Local History Collection", "admin_set_ark_id_ssi": "commonwealth:xg94j5668", "institution_name_ssi": "Historical Society of Old Yarmouth", "institution_ark_id_ssi": "commonwealth:xg94j5650", "collection_name_ssim": ["Historical Society of Old Yarmouth Archives and Local History Collection"], "collection_ark_id_ssim": ["commonwealth:xg94j5668"], "filenames_ssim": ["2005_104_46a", "2005_104_46b", "commonwealth:fx71d269k_metadata"], "mods_xml_ss": "eJzVWFuT2jYUfs+v0PilyUywYVlgocFpwrbNdvaSCZuZpi8dIQtbWSE5krys/32PZAtsWDabbGbavhiQzl3H3/nEq9d3K45uqdJMimnQC7sBooLIhIl0Gny8/q1zEryOn71ayURP7AOBvNCTO87EzTTIjMknUbRer8N1P5QqjXrj8Thyu4EX1ew+waNutxf9eXE+Jxld4Q4T2mBBqNeyvlpqXJIwlbeR3Yhu+8E26H44Ai3NJtqZOpcEG7dxWBvds2X9J1jBfi3kPjv9zii800kQP0OoKoNhhtMzsZSo0Dil0yBXbIVVGaCE6Zzj8hwvKN8s/12vOgstG3EPzagwiqI5PKh5iT5htZKFydB7qeDnBdY6fBU1NGwQUTuKRmBlTq+WH6iWhSI0nhvGOYIYUup12gIbxZQKCAKDY6mYKadBukpzEmxXPn4425STJZuS3UKpFwWHJKNU4Txj5AIbqhjmGs4H84J+u2Jk0hW0xvBkuFtPiJIqzIN4Zk+pTsmF/l/OZDQ66h3M5H0mjXR6/6N8eqPdfHROCVsy0kyIEZRLbcjhs4L4UyZ8C/vVBNzNFIVn0kCidZ8kZhmgG1qewtY0KCkkkksmDLg3WJkAfSkwhyiomgY4z5W8g9Y3NIh7J4NuHUHD+BN9UpEc9mix7X6P9Wo79SqIPCs1I5ifUk0Uyy2EtWIEDYP5ldOMFV1KBc5sxPWOd9iSaxigdwbABjAn35wRmiAAKWHQz0hnAECoH/ZHA3SHBuEAMRGi5/4IUeXuRe2kttWwDlaoEtRc0ITha8CZ2AFP9Dmnaa20L/IIfcOWy6fof86PHlKv9w7UvjItpKHIQiecMvlSMM3sfhCfSuE6ZlGiP9gKASqp2pzVuFc/ce1huwnpIs85q9RhYGEuU6rCgwbia4v3aKnkCjFDV0gqhAmRqxyLEtoVrerX9AETM+wys0aEmaCZFKmiqRuWmKMcKw1fUtoYQ24AIa+3wORmgt4gzoyNRS6RySgiEqqq7K9fkzUT6DrDMIfVTxplstD03nB0sfhMiWkCGycAL/8msA164157RsuckfidTcIjWLW07Zs6jwcTM6k4kJYLKUypMWVIkyJykns53CMF5GnQ6w76rXAzwCGsSGb7+HfqQbiS8DJEFsKU8VusLN1acH869fq+rCrjj4LZLp8bKJduyqs9BWGYsLhwCewlQ0CnKn4DzfVmBaUmeKPuJVsGtHUR256DDoKqG+P9VTttb1DM2Deqt8v2koCVORyIfaFb5Kqh4ferWkZfLWZtGWaOX9e7hZAKRoitV3zcC0cvO6NueDTYJL/dbbrcM/iVHmsGk25DrDglvJBzE+4TyjebUfzEnLrD7nBYJdbv9UfHPyw7RblF1TOLcRVoZjCD9snzlje0OfU7po20vcbRXBJGTWmh6Yon21qc2ckA8Md5dfK7DPsAx45243soaA39DnTh0WH7CQIHVU/cHxkfS6AnHFOpwysUC2ILMBoQBqubsKYNMFBWUqwp5iZz1zTYm0SD7ngwjpZ3o15yNBzf+IG6MfqAI4BfzDswqajWbmoCNxqEve5xeDx8wA6vL3HN+vkh7S94jzjqnfF+3rBabzUdHXZdKL532atymgayQnyYfBbWgBk9ubDgbde5d5Yresvo+vtdRCYrVguBGT/szM7qacAYW3ZWWLAl1U/IKfIm2v4Olr/KFLhJ4mgWcv8lTDIgvNVEtDEQS6jZLa0C0M43Z4QKmNTRouwI0hFJdBx2o8D3u6ZuHikKND0p3Gu1e4upLQTxdcY0Wkt1g+CzXnUMGFkzhUiguzGa1UHAi+qiQG+MUWxRuKgvpejYdaoIMAz4iU4BEG6dgkbnlU30fDZDbz91Lmedy9MXnrjtFOBwZR6fGdwFMgNg9MF9IjtNC22PGVFLNxyLtelh/38BkL6zJSplgdZMZ8hIlBcL7r7a2jgZlHOKNXVdj+EFsFzwEeCL7auylL9kWpb24Jxju2LvFzYtS0ntCElttb9aFAVNoJLdS2S1OrPvozDz6t+OtwCsYP69TYTAESxgwJcb0NyX3zfnDlwKR9/3rokAbEe9Tq/b6Y6vu+PJ8WBydPJX23xD/x7rGRYp/W7bG+19y/VVEN57LOC+R4Ho06SlvX9Z5GCugEO+Ws6quwmE0x5bXuKaKj/zIGoaNKkv03LYH3eOFt/E673Wo/m8V4ioSIMYHh5cGiG25ubh7Oq79vYaOK//FWymBfhPGiJB7Iacv3/v67am87Zd6yX7iJ/9A8ubetc=", "_version_": 1744097385404956672, "timestamp": "2022-09-16T04:01:21.650Z", "subject_geographic_sim": ["1 Center St., Yarmouth Port, MA", "Barnstable (county)", "Massachusetts", "North and Central America", "United States", "Yarmouth", "Yarmouth Port"], "date_facet_yearly_itim": [1850, 1851, 1852, 1853, 1854, 1855, 1856, 1857, 1858, 1859, 1860, 1861, 1862, 1863, 1864, 1865, 1866, 1867, 1868, 1869, 1870, 1871, 1872, 1873, 1874, 1875, 1876, 1877, 1878, 1879, 1880, 1881, 1882, 1883, 1884, 1885, 1886, 1887, 1888, 1889, 1890, 1891, 1892, 1893, 1894, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001]}
