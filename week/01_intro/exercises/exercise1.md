@@ -16,6 +16,7 @@
   - [Starting ArcGIS Pro and Creating a Project File](#starting-arcgis-pro-and-creating-a-project-file)
   - [Opening Catalog, and adding data layers](#opening-catalog-and-adding-data-layers)
   - [Getting Around the Map Menu](#getting-around-the-map-menu)
+  - [Setting a Coordinate System for the Map Frame](#setting-a-coordinate-system-for-the-map-frame)
 ---
 
 ## Introduction
@@ -71,9 +72,11 @@ You will now learn the basics of using GIS data to explore an area and create a 
 
 5\. You just created a project file: `.aprx`. A project file is a file that contains ***pointers*** to your data sets (it does not actually save the datasets) and remembers what you had displayed in your session. If you quit ArcGIS Pro at this point, you can reopen this project (by double clicking it) and everything will be as you left it; the same data layers will be there and it will have the same view of the data. Thus, project files are easy ways to save work.
 
-<span style="color:red">But **beware** -- **project files do not actually contain data**!</span> They only have **pointers** to where the data is saved. If you copied your *ArcGISPro_IndiaBasics.aprx* file and tried to open it on a different computer without also saving the data layers, the ArcGIS Pro session would start and list the data in the Contents (also sometimes referred to as Table of Contents in previous versions of ArcGIS), but nothing would appear because it would not be able to find the where the data is stored. A little red exclamation point would appear in the Contents, informing you that it has lost the connection to the data.
+<span style="color:red">But **beware** -- **project files do not actually contain data**!</span> They only have **pointers** to where the data is saved. If you copied your `ArcGISPro_IndiaBasics.aprx` file and tried to open it on a different computer without also saving the data layers, the ArcGIS Pro session would start and list the data in the Contents (also sometimes referred to as Table of Contents in previous versions of ArcGIS), but nothing would appear because it would not be able to find the where the data is stored. A little red exclamation point would appear in the Contents, informing you that it has lost the connection to the data.
 
-6\. [![req]][link] Save your project file ***frequently*** and always save at the end of a session. ArcGIS Pro likes to crash!
+> [![req]][link]
+>  
+> Save your project file ***frequently*** and always save at the end of a session. ArcGIS Pro likes to crash!
 
 ### Opening Catalog, and adding data layers
 
@@ -93,7 +96,7 @@ You will now learn the basics of using GIS data to explore an area and create a 
 
 4\. Click to expand **Folders.** You should already have your folder for your project file in here. If not, right-click **Folders** and then select *Add Folder Connection*. This will allow you to access the files for your data.
 
-5\. Click on **Computer** and navigate to the folder where you saved the data for this exercise (extracted from the zip file IndiaBaseMap)**.** For example, you could have saved it to a folder in Box as shown in the screenshots or you could add a connection the data in your H: drive or in the `S:` drive.
+5\. Click on **Computer** and navigate to the folder where you saved the data for this exercise (extracted from the zip file `IndiaBaseMap`)**.** For example, you could have saved it to a folder in Box as shown in the screenshots or you could add a connection the data in your H: drive or in the `S:` drive.
 
 |![Catalog pane](images/Image008.png)
 |![Catalog pane](images/Image009.png)
@@ -112,77 +115,88 @@ You will now learn the basics of using GIS data to explore an area and create a 
 
 ### Getting Around the Map Menu
 
-Make sure the Map menu is active ![](media/image110.png)
+> *Make sure the Map menu is active*
+> 
+> ![Menu](image/../images/Image010.png)
 
-1\. Zoom into a part of Africa using the *Zoom In* tool ![](media/image80.png)or the scroll wheel on your
+1\. Zoom into a part of Africa using the *Zoom In* tool ![Zoom in](image/../images/Image011.png) or the scroll wheel on your mouse.
 
-mouse.
+2\. Use the Navigation tools to move around the map.
 
-2. Use the Navigation tools to move around the map.
+|![Navigation](image/../images/Image012.png)
+|:---:|
+|*Navigation pane*
 
-![](media/image104.png)
-
-i. Use **Explore** to pan
-
-ii. Use **Bookmarks** to save where you are on the map to come back to
-
-iii. You can return to a previous extent you were at on the map using these arrows: ![](media/image102.png)) to go back to the full view which encompasses all the data.
+* Use **Explore** to pan
+* Use **Bookmarks** to save where you are on the map to come back to
+* You can return to a previous extent you were at on the map using these arrows: ![Arrows](image/../images/Image013.png)
+* Use the *Zoom to Full Extent* to go back to the full view which encompasses all the data. ![Zoom to full](image/../images/Image014.png)
 
 **Note**: In ArcGIS, you can place the cursor over each tool in the menu without clicking to see a description of what it does.
 
-9. Select the ![](media/image85.png)**Explore** tool and try clicking on countries, rivers, or cities (in the map). This highlights the polygon, line, or point depending on the data and brings up information from the "attribute table" for each feature you click on.
+3\. Select the **Explore** ![Explore](image/../images/Image015.png) tool and try clicking on countries, rivers, or cities (in the map). This highlights the polygon, line, or point depending on the data and brings up information from the "attribute table" for each feature you click on.
 
-10. Can you find *Gulu, Uganda*?
+4\.  Can you find *Gulu, Uganda*?
 
-**Hint**: Choose the *Locate* ( ![](media/image35.png)) tool. You can type in Gulu Uganda in the search bar---there will be several options that come up. Right-click on the first option and select **Zoom To** so that you're brought to Gulu.
+> **Hint**: Choose the ***Locate*** ![Locate](image/../images/Image016.png) tool. You can type in Gulu Uganda in the search bar---there will be several options that come up. Right-click on the first option and select **Zoom To** so that you're brought to Gulu.
 
-4
-
-Tufts Data Lab
-
-![](media/image36.png)
+|![Gulu 1](image/../images/Image018.png)
+|:---:|
+|*View of Gulu*
 
 Technically all these Gulus are correct---even though its shown as a point on our map, Gulu as a city has an area, and thus is technically a polygon when properly zoomed using Google Maps:
 
-![](media/image33.png)
+|![Gulu 2](image/../images/Image019.png)
+|:---:|
+|*Gulu on Google Maps*
 
-You can see our point for Gulu from the **cities** layer is located near these
+You can see our point for Gulu from the **cities** layer is located near these points. Click on the point to check that it is indeed Gulu.
 
-points. Click on the point to check that it is indeed Gulu.
+|![Popup](image/../images/Image022.png)
+|:---:|
+|*Pop-up from clicking on Gulu point*
 
-11. Right-click on the **rivers** layer in the *Contents* (be sure you right-click
+5\.  Right-click on the **rivers** layer in the *Contents* (be sure you right-click on the actual name and not the symbol) and then click on *Label* -- this will label the rivers.
 
-on the actual name and not the symbol) and then click on *Label* -- this
+6\. When you are done looking around, click on the full extent icon in the **Navigation** menu.
 
-will label the rivers.
+|![Navigation](image/../images/Image020.png)
+|:---:|
+|*Navigation pane*
 
-12. When you are done looking around, click on the full extent icon in the **Navigation** menu. ![](media/image43.png)
+7\. Now choose **Project** → **Save Project or Save Project As** on the top menu.
 
-13. Now choose **Project** → **Save Project or Save Project As** on the top menu.
+8\. Drag in other layers from the `IndiaBaseMap` folder ![](media/image38.png)
 
-14. Drag in other layers from the IndiaBaseMap folder ![](media/image38.png)
-
-5
-
-Tufts Data Lab
+|![Other layers](image/../images/Image021.png)
+|:---:|
+|*Other layers from* `IndiaBaseMap` *folder*
 
 Note that these layers are only for India. Also note that the map will be messy.
 
-15. Zoom into India so that it fills the map. ![](media/image40.png)
+9\.  Zoom into India so that it fills the map. ![Zoom controls](image/../images/Image023.png)
 
-16. You can **group** the India data layers all together. If they are no longer all highlighted, hold the CTRL key and click on each one in turn to highlight them. When they are all highlighted, right-click on one of them and choose *Group* as shown below:
+10\.  You can **group** the India data layers all together. If they are no longer all highlighted, hold the CTRL key and click on each one in turn to highlight them. When they are all highlighted, right-click on one of them and choose *Group* as shown below:
 
-![](media/image49.png)
+|![Group layers](image/../images/Image024.png)
+|:---:|
+|*Group the new layers*
 
-17. Rename the "New Group Layer" to India by clicking slow-clicking twice on the label and typing in **India**. ![](media/image51.png)
+11\. Rename the "New Group Layer" to India by clicking slow-clicking twice on the label and typing in **India**.
 
-18. Perform the same grouping on the *World* data layers so that it is in its own group. If you click on the first and last datasets, while holding shift, all layers will get highlighted and you can group them faster.
+|![Rename layers](image/../images/Image025.png)
+|:---:|
+|*Rename the grouped layers*
 
-19. Turn off the *World* data group.
+12\. Perform the same grouping on the *World* data layers so that it is in its own group. If you click on the first and last datasets, while holding `shift`, all layers will get highlighted and you can group them faster.
 
-***REMINDER: Save your map project file frequently and always save it at the end of a session!***
+13\. Turn off the *World* data group.
 
-**Setting a Coordinate System for the Map Frame**
+> [![req]][link]
+> 
+> ***REMINDER: Save your map project file frequently and always save it at the end of a session!***
+
+### Setting a Coordinate System for the Map Frame
 
 The rest of this tutorial focuses on India, so we are going to set a coordinate system that better maps India. This will also ensure that any spatial queries you do will perform correctly. We will talk a lot more about projections soon in the course.
 
