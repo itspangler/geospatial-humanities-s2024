@@ -1,3 +1,9 @@
+<div align=center>
+
+# Humanistic GIS <!-- omit in toc -->
+
+</div>
+
 ### Table of contents <!-- omit in toc -->
 - [Before class](#before-class)
 - [During class](#during-class)
@@ -8,15 +14,10 @@
   - [Readings](#readings)
   - [Lab work](#lab-work)
 ---
-<div align=center>
-
-# Humanistic GIS <!-- omit in toc -->
-
-</div>
 
 How should we approach our subject matter this semester, an ethereal thing called "geospatial humanities?"
 
-In this first meeting, we'll take stock of the landscape of 
+In this first meeting, we'll assess the landscape of the digital and geospatial humanities. You'll learn how to think spatially from a research and storytelling perspective. 
 
 ## Before class
 
@@ -56,14 +57,14 @@ link to slides
 
 [![read]][link]
 
-* [![req]][link] Section II, "Early Rumblings: the first wave," pp. 572-579 from Schuurman, Nadine. 2000. [“Trouble in the Heartland: GIS and Its Critics in the 1990s.” *Progress in Human Geography* 24 (4): 569–90](https://doi.org/10.1191/030913200100189111).
-* [![opt]][link] pp. 526-533 from Tobler, Waldo R. 1959. [“Automation and Cartography.” *Geographical Review* 49 (4): 526–34](https://doi.org/10.2307/212211).
+[![req]][link] Section II, "Early Rumblings: the first wave," pp. 572-579 from Schuurman, Nadine. 2000. [“Trouble in the Heartland: GIS and Its Critics in the 1990s.” *Progress in Human Geography* 24 (4): 569–90](https://doi.org/10.1191/030913200100189111).
+[![opt]][link] pp. 526-533 from Tobler, Waldo R. 1959. [“Automation and Cartography.” *Geographical Review* 49 (4): 526–34](https://doi.org/10.2307/212211).
 
 ### Lab work
 
 [![lab]][link]
 
-* [Exercise 1: Creating a map with ArcGIS Pro](./exercises/ArcGISPro_Basics_India_V3.1.3.pdf)
+[Exercise 1: Creating a map with ArcGIS Pro](./exercises/ArcGISPro_Basics_India_V3.1.3.pdf)
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->
