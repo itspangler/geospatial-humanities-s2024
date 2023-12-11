@@ -7,8 +7,8 @@
 
 </div>
 
-> *Written by Barbara Parmenter, updated by Annie Nguyen on September 9, 2019 for ArcGIS Pro 2.3, updated for ArcGIS Pro 3.1.3 Sumeeta Srinivasan Sep 2023*
-> 
+> *Written by Barbara Parmenter, updated by Annie Nguyen on September 9, 2019 for ArcGIS Pro 2.3, updated for ArcGIS Pro 3.1.3 Sumeeta Srinivasan Sep 2023, updated by Ian Spangler Dec 2023*
+
 ---
 ### Table of Contents <!-- omit in toc -->
 - [Introduction](#introduction)
@@ -21,6 +21,8 @@
     - [Assigning Proper Layer Names](#assigning-proper-layer-names)
     - [Assigning Proper Colors](#assigning-proper-colors)
     - [Drawing a Layer Based on an Attribute Value](#drawing-a-layer-based-on-an-attribute-value)
+  - [Selecting and Mapping the Largest Cities in India (optional)](#selecting-and-mapping-the-largest-cities-in-india-optional)
+  - [Selecting Towns by their location relative to Railroads (optional)](#selecting-towns-by-their-location-relative-to-railroads-optional)
 ---
 
 ## Introduction
@@ -121,44 +123,44 @@ You will now learn the basics of using GIS data to explore an area and create a 
 
 > *Make sure the Map menu is active*
 > 
-> ![Menu](image/../images/Image010.png)
+> ![Menu](images/Image010.png)
 
-1\. Zoom into a part of Africa using the *Zoom In* tool ![Zoom in](image/../images/Image011.png) or the scroll wheel on your mouse.
+1\. Zoom into a part of Africa using the *Zoom In* tool ![Zoom in](images/Image011.png) or the scroll wheel on your mouse.
 
 2\. Use the Navigation tools to move around the map.
 
-|![Navigation](image/../images/Image012.png)
+|![Navigation](images/Image012.png)
 |:---:|
 |*Navigation pane*
 
 * Use **Explore** to pan
 * Use **Bookmarks** to save where you are on the map to come back to
-* You can return to a previous extent you were at on the map using these arrows: ![Arrows](image/../images/Image013.png)
-* Use the *Zoom to Full Extent* to go back to the full view which encompasses all the data. ![Zoom to full](image/../images/Image014.png)
+* You can return to a previous extent you were at on the map using these arrows: ![Arrows](images/Image013.png)
+* Use the *Zoom to Full Extent* to go back to the full view which encompasses all the data. ![Zoom to full](images/Image014.png)
 
 **Note**: In ArcGIS, you can place the cursor over each tool in the menu without clicking to see a description of what it does.
 
-3\. Select the **Explore** ![Explore](image/../images/Image015.png) tool and try clicking on countries, rivers, or cities (in the map). This highlights the polygon, line, or point depending on the data and brings up information from the "attribute table" for each feature you click on.
+3\. Select the **Explore** ![Explore](images/Image015.png) tool and try clicking on countries, rivers, or cities (in the map). This highlights the polygon, line, or point depending on the data and brings up information from the "attribute table" for each feature you click on.
 
 > **NOTE**: Knowing how to use the *Attribute table* is a very important part of building your skills in geospatial research. It behaves similarly to a spreadsheet, 
 
 4\.  Can you find *Gulu, Uganda*?
 
-> **Hint**: Choose the ***Locate*** ![Locate](image/../images/Image016.png) tool. You can type in Gulu Uganda in the search bar---there will be several options that come up. Right-click on the first option and select **Zoom To** so that you're brought to Gulu.
+> **Hint**: Choose the ***Locate*** ![Locate](images/Image016.png) tool. You can type in Gulu Uganda in the search bar---there will be several options that come up. Right-click on the first option and select **Zoom To** so that you're brought to Gulu.
 
-|![Gulu 1](image/../images/Image018.png)
+|![Gulu 1](images/Image018.png)
 |:---:|
 |*View of Gulu*
 
 Technically all these Gulus are correct---even though its shown as a point on our map, Gulu as a city has an area, and thus is technically a polygon when properly zoomed using Google Maps:
 
-|![Gulu 2](image/../images/Image019.png)
+|![Gulu 2](images/Image019.png)
 |:---:|
 |*Gulu on Google Maps*
 
 You can see our point for Gulu from the **cities** layer is located near these points. Click on the point to check that it is indeed Gulu.
 
-|![Popup](image/../images/Image022.png)
+|![Popup](images/Image022.png)
 |:---:|
 |*Pop-up from clicking on Gulu point*
 
@@ -166,7 +168,7 @@ You can see our point for Gulu from the **cities** layer is located near these p
 
 6\. When you are done looking around, click on the full extent icon in the **Navigation** menu.
 
-|![Navigation](image/../images/Image020.png)
+|![Navigation](images/Image020.png)
 |:---:|
 |*Navigation pane*
 
@@ -174,23 +176,23 @@ You can see our point for Gulu from the **cities** layer is located near these p
 
 8\. Drag in other layers from the `IndiaBaseMap` folder ![](media/image38.png)
 
-|![Other layers](image/../images/Image021.png)
+|![Other layers](images/Image021.png)
 |:---:|
 |*Other layers from* `IndiaBaseMap` *folder*
 
 Note that these layers are only for India. Also note that the map will be messy.
 
-9\.  Zoom into India so that it fills the map. ![Zoom controls](image/../images/Image023.png)
+9\.  Zoom into India so that it fills the map. ![Zoom controls](images/Image023.png)
 
 10\.  You can **group** the India data layers all together. If they are no longer all highlighted, hold the CTRL key and click on each one in turn to highlight them. When they are all highlighted, right-click on one of them and choose *Group* as shown below:
 
-|![Group layers](image/../images/Image024.png)
+|![Group layers](images/Image024.png)
 |:---:|
 |*Group the new layers*
 
 11\. Rename the "New Group Layer" to India by clicking slow-clicking twice on the label and typing in **India**.
 
-|![Rename layers](image/../images/Image025.png)
+|![Rename layers](images/Image025.png)
 |:---:|
 |*Rename the grouped layers*
 
@@ -208,7 +210,7 @@ The rest of this tutorial focuses on India, so we are going to set a coordinate 
 
 1\. Right-click on Click on **Map** in **Drawing Order** and choose **Properties.**
 
-|![Properties](image/../images/Image026.png)
+|![Properties](images/Image026.png)
 |:---:|
 |*Select properties*
 
@@ -216,7 +218,7 @@ The rest of this tutorial focuses on India, so we are going to set a coordinate 
 
 3\. In the coordinate system dialog box, you will see information in the bottom panel for the current coordinate system (GCS_WGS_1984).
 
-|![Coordinate systems](image/../images/Image028.png)
+|![Coordinate systems](images/Image028.png)
 |:---:|
 |*Coordinate systems*
 
@@ -224,7 +226,7 @@ We want to change this.
 
 4\. Scroll down and click on **Projected Coordinate Systems**, then **UTM** then on **WGS 1984**, then **Northern Hemisphere**, and finally on **WGS 1984 UTM Zone 44N** as shown below and then **OK**.
 
-5\. Turn on the world data and zoom to the full extent ![Rename layers](image/../images/Image027.png). You will see that this severely distorts the rest of the world. But it's a great way to map India!
+5\. Turn on the world data and zoom to the full extent ![Rename layers](images/Image027.png). You will see that this severely distorts the rest of the world. But it's a great way to map India!
 
 6\. Zoom back to India when you're ready and again turn off the world data by unchecking it.
 
@@ -232,7 +234,7 @@ We want to change this.
 
 ### Defining the General and Symbology Properties for a Layer
 
-> In this section of the tutorial, you will learn how to organize your data layers\' properties to start bringing some coherence to the map. You will also learn how to color the data layers to start making a more interesting and readable map.
+In this section of the tutorial, you will learn how to organize your data layers\' properties to start bringing some coherence to the map. You will also learn how to color the data layers to start making a more interesting and readable map.
 
 #### Assigning Proper Layer Names
 
@@ -258,19 +260,19 @@ Your map would be a lot better if the district layer were not blocking the state
 
 2. To change the color of the layer, click on the colored box next to Symbol - this should bring up *Symbol Gallery box*.
 
-    |![Symbology](image/../images/Image029.png)
+    |![Symbology](images/Image029.png)
     |:---:
     |*Fiddling with symbology*
 
 3. Click on the **Properties** tab. Select **No Color** and make the outline width `2 pt`. Give the outline a dark gray color.
 
-    |![Symbology](image/../images/Image032.png)
+    |![Symbology](images/Image032.png)
     |:---:
     |*Fiddling with symbology*
 
     > **Note:** You can also access this by clicking on the symbol underneath the layer name in **Drawing Order**.
     > 
-    > ![Symbology](image/../images/Image030.png)
+    > ![Symbology](images/Image030.png)
 
 4. Press **Apply** when you are finished.
 
@@ -278,7 +280,7 @@ Your map would be a lot better if the district layer were not blocking the state
 
 6. Color the *District* layer beige and give it a `1 pt` gray outline width as shown. Using what you have learned, give appropriate colors to your other layers.
 
-    |![Symbology](image/../images/Image031.png)
+    |![Symbology](images/Image031.png)
     |:---:
     |*Applying symbology to* District *layer*
 
@@ -294,191 +296,174 @@ Your map would be a lot better if the district layer were not blocking the state
 
 3. Before we proceed, you need to know what the items in the attribute tables for the *STATE*, *DISTRICT*, and *TOWN* attribute tables mean. The attribute table contains relevant information about the states, but the field headings (aka column headings) are sometimes hard to understand.
 
-![](media/image2.png)
+    |![Attribute table](images/Image033.png)
+    |:---:
+    |*The attribute table*
+    
+    **Metadata** is documentation explaining what is in your attribute table and gives a definition for each of the field headings. To know what attribute fields are appropriate for use in symbolizing your data, you must be familiar with the attribute table structure, its fields, and the possible values of each significant field.
 
-**Metadata** is documentation explaining what is in your attribute table and gives a definition for each of the field headings. To know what attribute fields are appropriate for use in symbolizing your data, you must be familiar with the attribute table structure, its fields, and the possible values of each significant field.
+4. Using **Windows File Explorer** – *not* the folder connection in ArcGIS Pro – navigate to the `IndiaBaseMap` folder. There is a subfolder called `DESCRIPTION`. Open this folder using your Windows File Explorer. Read through `State.pdf` to see what the abbreviations in the attribute table columns mean.
 
-4. In the IndiaBaseMap **WINDOWS folder (the regular folder that you get to through "computer" not in ArcGIS)**, there is a subfolder called DESCRIPTION. Open this folder using your Windows File Manager (**not Catalog**). Look at the STATE.PDF to see what the abbreviations in the attribute table columns mean.
+    |![File explorer](images/Image035.png)
+    |:---:
+    |*Contents of* `DESCRIPTION` *subfolder*
 
-9
+5. Let's say we wanted to visualize the population of cultivators. We see that the field name for this data item is *TOT_CULT* and that the number of Total Workers is in the field, *TOT_W*.
+   1. Right click on the *State* layer and click **Symbology**.
 
-Tufts Data Lab
+   2. Under *Primary Symbology,* select **Graduated Colors**.
 
-![](media/image7.png)
+   |![Graduated colors 1](images/Image036.png)
+   |:---:
+   |*Graduated colors in primary symbology*
 
-Let's say we wanted to visualize the population of cultivators. We see that the field name for this data item is *TOT_CULT* and that the number of Total Workers is in the field, *TOT_W*.
+   3. Change the drop down next to the Field to be *TOT_CULT,* as you see below:
 
-1. Right click on the State layer and click *Symbology*.
+   |![Graduated colors 2](images/Image037.png)
+   |:---:
+   |*Changing the drop down field*
+   
+   4. Notice that the options in the Value dropdown are the field headings you saw in the attribute table. 4. If you can't see the data, make sure your "World" group of data is turned off.
 
-2. Under *Primary Symbology,* select *Graduated Colors*.
+   5. Now, we see the states with larger numbers of cultivators. What states have the largest numbers? **Hint**: Click on the states to get their information. Make sure you are in the Explore mode
 
-![](media/image8.png)
+      ![Explore](images/Image038.png)
 
-10
+6. But now we want to map the states by showing the ***percentage* of cultivators** out of the ***total number of workers***. To do this, we need to **normalize** the data by the *Total Workers* field.
 
-Tufts Data Lab
+   1. Go back to ***Symbology***. In the box for *Normalization*, choose the field, **TOT_W** -- when you use this *Normalize* function, it simply divides the top value by the normalization value to give you a fraction, so in this case *Total Cultivators/Total Workers* = % of Total Cultivators out of the working population.
 
-3. Change the drop down next to the Field to be *TOT_CULT,* as you see below:
+   |![Normalization](images/Image039.png)
+   |:---:
+   |*Setting Normalization field to TOT_W*
 
-![](media/image5.png)
+   2. The resulting map shows the number of cultivators in each state as a fraction of the total workers (e.g., 0.541023 means 54% of workers are cultivators).
+   3. Try making the same map (percent of workers who are cultivators) using the **District** layer instead of **State** layer. Compare the two layers. You may have to drag one on top of the other to see them.
 
-Notice that the options in the Value dropdown are the field headings you saw in the attribute table. 4. If you can't see the data, make sure your "World" group of data is turned off.
+> How would you create a population density map for the **District** layer (total population divided by area)?
+>
+> **Note**: The *Tot_Area* column is the *square kilometers* of the district. The State and Sub_district layers do not have a *Tot_Area* column!
 
-5. Now, we see the states with larger numbers of cultivators. What states have the largest numbers? **Hint**: Click on the states to get their information. Make sure you ![](media/image6.png)
+7. Try creating other maps based on the attribute table values by State, District, or Sub-District – the field (column) names in the attribute table are the same for all of these. Save your project file when finished.
 
-are in the ![](media/image9.png)mode
+|![Cultivation](images/Image040.png)
+|:---:
+|*Male cultivation across India*
 
-But now we want to map the states by showing the ***percentage* of**
+> **Tip:** If you want to keep a layer symbolized one way (e.g., percent cultivators for each state) and also have another map by state (e.g., percent illiterate), you can add the **State** layer again from ArcCatalog and start fresh on the new layer.
 
-**cultivators** out of the ***total number of workers***. To do this, we need to
+8. Assign a proper title to the layers you symbolize. Change the **heading name** (eg. TOT_CULT/TOT_W) to *Percent of Cultivators.* Leave the **layer name** as District. You can change the heading name by clicking twice *slowly* on the heading or by pressing `F2` when it is highlighted.
 
-**normalize** the data by the *Total Workers* field.
+|![Changing title](images/Image041.png)
+|:---:
+|*Changing title of layers*
 
-6. Go back to ***Symbology***. In the box for *Normalization*, choose the
-
-field, **TOT_W** -- when you use this *Normalize* function, it simply
-
-divides the top value by the normalization value to give you a
-
-fraction, so in this case *Total Cultivators/Total Workers* = % of
-
-Total Cultivators out of the working population.
-
-7. The resulting map shows the number of cultivators in each state
-
-as a fraction of the total workers (e.g., 0.541023 means 54% of
-
-workers are cultivators).
-
-8. Try making the same map (percent of workers who are
-
-cultivators) using the **District** layer instead of **State** layer.
-
-Compare the two layers. You may have to drag one on top of the
-
-other to see them.
-
-How would you create a population density map for the **District** layer (total population divided by area)?
-
-**Note**: The *Tot_Area* column is the *square kilometers* of the district. The State and Sub_district layers do not have a *Tot_Area* column!
-
-11
-
-Tufts Data Lab
-
-9. Try creating other maps based on the attribute table values by State, District, or Sub-District -- the field (column) names in the attribute table are the same for all of these. Save your project file when finished.
-
-![](media/image10.png)**Note:** If you want to keep a layer symbolized one way (e.g., percent cultivators for each state) and also have another map by state (e.g., percent illiterate), you can add the **State** layer again from ArcCatalog and start fresh on the new layer.
-
-10. Assign a proper title to the layers you symbolize. Change the **heading name** (eg. TOT_CULT/TOT_W) to *Percent of Cultivators.* Leave the **layer name** as District. You can change the heading name by clicking twice *slowly* on the heading or by pressing F2 when it is highlighted.
-
-![](media/image11.png)
-
-**Selecting and Mapping the Largest Cities in India (optional)**
+### Selecting and Mapping the Largest Cities in India (optional)
 
 In this section, we'll use the **Town** layer which includes all of India's towns to select and map only the towns that have a population **greater than 1 million people**.
 
-1. Turn on (checkmark) the **Town** layer. Drag **Town** to the top of the group in the *Contents*. 2. Right-click on the **Town** layer and choose *Open Attribute Table*
+1\. Turn on (checkmark) the **Town** layer. Drag **Town** to the top of the group in the *Contents*.
 
-12
+2\. Right-click on the **Town** layer and choose *Open Attribute Table*
 
-Tufts Data Lab
+|![Attribute table](images/Image042.png)
+|:---:
 
-![](media/image14.png).
+3\. Scroll to the right in the table until you see the TOT_POP field:
 
-3. Scroll to the right in the table until you see the TOT_POP field:
+|![Changing title](images/Image043.png)
+|:---:
 
-![](media/image15.png)4. We're going to use this field to select all the towns in India with 1 million or greater total population. 5. Go to the top menu, click on the **Map** tab and click on **Select by Attributes.**
+4\. We're going to use this field to select all the towns in India with 1 million or greater total population.
 
-![](media/image12.png)
+5\. Go to the top menu, click on the **Map** tab and click on **Select by Attributes.**
 
-6. In the query box, make sure *Input Rows* is **Town** and *Selection Type* is **New Selection.** In the query box, use the drop down box to select **TOT_POP** is **Greater than or equal to** and then type in 1000000. Click **OK when done.**
+|![Select by attributes](images/Image044.png)
+|:---:
+|*Select by attributes tool*
 
-![](media/image13.png)13
+5\. In the query box, make sure *Input Rows* is **Town** and *Selection Type* is **New Selection.** In the query box, use the drop down box to select **TOT_POP** is **Greater than or equal to** and then type in 1000000. Click **OK when done.**
 
-Tufts Data Lab
+|![Changing title](images/Image045.png)
+|:---:
+|*Interface for Select by attributes*
 
-7. You should have 31 towns selected. It should say "31 out of 5161 Selected" at the bottom of the table after highlighting the rows:
+6\. You should have 31 towns selected. It should say "31 out of 5161 Selected" at the bottom of the table after highlighting the rows:
 
-![](media/image18.png)
+|![Selected](images/Image046.png)
+|:---:
 
-8. Close the table. You should see the *over 1 million* towns highlighted in blue on your map.
+7\. Close the table. You should see the *over 1 million* towns highlighted in blue on your map.
 
-**Note:** Another way to select these towns is to manually select the total town populations. You can right-click on the **TOT_POP** to select **Sort Descending** and highlight the towns less than 1000 million.
+> **Tip:** Another way to select these towns is to manually select the total town populations. You can right-click on the **TOT_POP** to select **Sort Descending** and highlight the towns less than 1000 million.
+> 
+> |![Changing title](images/Image047.png)
 
-![](media/image19.png)
+9\. To create a layer with just these large towns, right-click on **Town** and the choose *Data* → *Export Features*:
 
-9. To create a layer with just these large towns, right-click on **Town** and the choose *Data* → *Export Features* (as shown in the screenshot)![](media/image16.png)
+|![Changing title](images/Image048.png)
+|:---:
+|*Interface for Select by attributes*
 
-10. You'll get a new dialogue box like so. Click on the folder next to **Output feature Class** to choose where you will save this layer. Navigate to your folder for this exercise → ArcGISPro_IndiaBasics and within the gdb (geodatabase) that should automatically be created when you open a new project and name the new layer **Large_cities.** Then click **OK.**
+10\.  You'll get a new dialogue box like so. Click on the folder next to **Output feature Class** to choose where you will save this layer. Navigate to your folder for this exercise → `ArcGISPro_IndiaBasics` and within the GDB or *geodatabase* – a database structure that should automatically be created when you save a new project – name the new layer **Large_cities.** Then click **OK.** Alternatively, you can also save it in the folder as a shapefile as `Large_cities.shp`.
 
-Note that you can also save it in the folder as a shapefile Large_cities.shp
+|![Changing title](images/Image049.png)
+|:---:
+|*Exporting as feature class to GDB*
 
-14
+|![Changing title](images/Image050.png)
+|:---:
+|*Exporting as shapefile to folder*
 
-Tufts Data Lab
+11\. Once added, change the name from Large_Cities to Large Cities (remove the underscore).
 
-![](media/image17.png)
+12\. Drag the **Large Cities** layer into the India group so that they are at the top of that group. Turn off the Town layer, so you only see the Large Cities.
 
-11. Once added, change the name from Large_Cities to Large Cities (remove the underscore). ![](media/image77.png)
+13\. Click on the *Clear* icon to turn off your original selected towns. This is located in the **Selection** group under the **Map** tab on the top menu bar (it is only grayed out if nothing is currently selected).
 
-12. Drag the **Large Cities** layer into the India group so that they are at the top of that group. Turn off the Town layer, so you only see the Large Cities.
+|![Clear](images/Image051.png)
+|:---:
 
-13. Click on the *Clear* icon to turn off your original selected towns. This is located in the **Selection** group under the **Map** tab on the top menu bar.
+14\. To display the large cities with symbols graduated by population size, right click on the layer and select **Symbology**.
 
-![](media/image78.png)
+15\. Fill out the symbology properties as you see below. You want a map showing ***Quantities*** using ***Graduated Symbols***, using the **TOT_POP field** as your value:
 
-14. To display the large cities with symbols graduated by population size, right click on the layer and select **Symbology.**
+|![Changing title](images/Image052.png)
+|:---:
+|*Setting graduated symbols*
 
-15. Fill out the symbology properties as you see below. You want a map showing ***Quantities*** using ***Graduated Symbols***, using the **TOT_POP field** as your value:
+16\. Now, turn the full **Town** layer back on. Using the complete **Town** layer, create a graduated symbol map of total population using the steps outlined above for **Large Cities**. You'll see it's quite messy when looking at all of India but provides better visual information when you zoom into one state. Zoom into a state to see what we mean. You might need to turn off the other layers to see the **State** Layer.
 
-16. Turn the full **Town** layer back on.
+To return to your last "*extent*" or view, press the back button.
 
-15
+|![Changing title](images/Image053.png)
+|:---:
 
-Tufts Data Lab
+If you want to change the colors of the symbols, in the *Symbology* properties box, above the symbol window, right-click on the layer to go to **Symbology.** Click on the symbol in **Template** then go to the properties tab.
 
-17. Using the complete **Town** layer, create a graduated symbol map of total ![](media/image82.png)
+|![Changing colors 1](images/Image054.png)
+|![Changing colors 2](images/Image055.png)
+|:---:
+|*Changing the colors of symbols*
 
-population using the steps outlined above for **Large Cities**.
+> **Tip**: You can also change the number of "*classes*" or break values, by changing the box that says **Classes.**
 
-You'll see it's quite messy when looking at all of India but provides better
+Click on the back button to return to **primary symbology.**
 
-visual information when you zoom into one state. Zoom into a state to see
+|![Changing title](images/Image057.png)
+|:---:
 
-what we mean. You might need to turn off the **other l**ayers to see the **State**
+You can also change the starting/ending size of the symbols in the boxes immediately above the symbol window, as shown in the screenshot.
 
-Layer.
+|![Changing title](images/Image049.png)
+|:---:
+|*Exporting as feature class to GDB*
 
-To return to your last "*extent*" or view, press the back button. ![](media/image83.png)
+> [![req]][link]
+>  
+> **Save your project file!**
 
-**Note**: If you want to change the colors of the symbols, in the *Symbology*
-
-properties box, above the symbol window, right-click on the layer to go to
-
-**Symbology.** Click on the symbol in **Template** then go to the properties tab.
-
-![](media/image79.png)
-
-![](media/image81.png)
-
-**Note**: You can also change the number of "*classes*" or break values, by changing the box that says **Classes.**
-
-16
-
-Tufts Data Lab
-
-Click on the back button to return to **primary symbology.** ![](media/image87.png)
-
-![](media/image88.png)
-
-You can also change the starting/ending size of the symbols in the boxes
-
-immediately above the symbol window, as shown in the screenshot.
-
-**Save your project file!**
-
-**Selecting Towns by their location relative to Railroads (optional)**
+### Selecting Towns by their location relative to Railroads (optional)
 
 Let's say we wanted to see which towns in India have sufficient access to railroads and which towns do not, and we want to estimate the population in each group. You can use the *Select by Location* function to select features based on their spatial relationship to other layers.
 

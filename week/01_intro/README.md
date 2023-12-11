@@ -4,13 +4,13 @@
 
 |![Maury whale chart](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:x633f9536/full/1200,/0/default.jpg)
 |:-:
-|*Whale chart* by Matthew Fontaine Maury (1851). Maury . From [Leventhal Map & Education Center Digital Collections](https://collections.leventhalmap.org/search/commonwealth:x633f952x)
+|*Whale chart* by Matthew Fontaine Maury (1851). From [Leventhal Map & Education Center Digital Collections](https://collections.leventhalmap.org/search/commonwealth:x633f952x).
+
+</div>
 
 How should we approach our subject matter this semester, an ethereal thing called "geospatial humanities?"
 
 In this first meeting, we'll assess the landscape of the digital and geospatial humanities. You'll learn how to think spatially from a research and storytelling perspective. 
-
-</div>
 
 ---
 **Table of contents**
