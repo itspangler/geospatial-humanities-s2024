@@ -1,6 +1,6 @@
 <div align=center>
 
-# Humanistic GIS <!-- omit in toc -->
+# Week 01: Humanistic GIS <!-- omit in toc -->
 
 </div>
 

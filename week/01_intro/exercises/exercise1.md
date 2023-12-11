@@ -8,12 +8,14 @@
 </div>
 
 > *Written by Barbara Parmenter, updated by Annie Nguyen on September 9, 2019 for ArcGIS Pro 2.3, updated for ArcGIS Pro 3.1.3 Sumeeta Srinivasan Sep 2023*
-
+> 
+---
 ### Table of Contents <!-- omit in toc -->
 - [Introduction](#introduction)
 - [Creating a Map with ArcGIS Pro](#creating-a-map-with-arcgis-pro)
   - [Starting ArcGIS Pro and Creating a Project File](#starting-arcgis-pro-and-creating-a-project-file)
-
+  - [Opening Catalog, and adding data layers](#opening-catalog-and-adding-data-layers)
+  - [Getting Around the Map Menu](#getting-around-the-map-menu)
 ---
 
 ## Introduction
@@ -28,12 +30,18 @@ This tutorial is written to be done in the Tisch DataLab or another Tufts campus
 >
 >If you are in the DataLab, the GIS data server that we need, "M", "H" and "S" are already mapped. To use the DataLab drives from Mugar Lab (or elsewhere), you must first map the network drive in Windows.
 >
->1. Assuming you are using Windows 10, open a file explorer window, on the left side of the screen right click on "This PC" and then select "Map Network Drive."
+>1\. Assuming you are using Windows 10, open a file explorer window, on the left side of the screen right click on "This PC" and then select "Map Network Drive."
 >
->2. In the drop-down menu labeled *Drive:* choose the "M" as the drive letter. If the letter "M" is not available, select an available drive letter and remember what you chose.
+>2\. In the drop-down menu labeled *Drive:* choose the "M" as the drive letter. If the letter "M" is not available, select an available drive letter and remember what you chose.
 >
->3. In the Folder: drop down menu manually enter (or copy and paste): `rstore1.uit.tufts.edu\\tts_rsch_gis_dataset02\$`. Press Finish.
->4. Mapping other network drives: https://sites.tufts.edu/datalab/accounts-network-drives/
+>3\. In the Folder: drop down menu manually enter (or copy and paste):
+>
+>`rstore1.uit.tufts.edu\\tts_rsch_gis_dataset02\$`
+>
+> 
+> Press Finish.
+>
+>4\. Mapping other network drives: https://sites.tufts.edu/datalab/accounts-network-drives/
 
 ## Creating a Map with ArcGIS Pro
 
@@ -53,79 +61,58 @@ You will now learn the basics of using GIS data to explore an area and create a 
 
 4\. Name your project file. Save the project file to your own folder for this (your H: drive or Box). Leave the box checked to create a new folder for this project and press OK.
 
-![H: drive](images/Image004.png)
-*Saving to H: drive*
+|![H: drive](images/Image004.png)
+|:---:
+|*Saving to H: drive*
 
-![Box](images/Image005.png)
-*Saving to Box*
+|![Box](images/Image005.png)
+|:---:
+|*Saving to Box*
 
 5\. You just created a project file: `.aprx`. A project file is a file that contains ***pointers*** to your data sets (it does not actually save the datasets) and remembers what you had displayed in your session. If you quit ArcGIS Pro at this point, you can reopen this project (by double clicking it) and everything will be as you left it; the same data layers will be there and it will have the same view of the data. Thus, project files are easy ways to save work. But **beware** -- **project files do not actually contain data**, they only have **pointers** to where the data is saved. If you copied your *ArcGISPro_IndiaBasics.aprx* file and tried to open it on a different computer without also saving the data layers, the ArcGIS Pro session would start and list the data in the Contents (also sometimes referred to as Table of Contents in previous versions of ArcGIS), but nothing would appear because it would not be able to find the where the data is stored. A little red exclamation point would appear in the Contents, informing you that it has lost the connection to the data.
 
-**6. Save your project file *frequently* and always save at the end of a session. ArcGIS Pro likes to crash!**
+6\. [![req]][link] Save your project file ***frequently*** and always save at the end of a session. ArcGIS Pro likes to crash!
 
-**Opening Catalog, and adding data layers**
+### Opening Catalog, and adding data layers
 
-1. Once your project opens, you should be able to see a topographic map on ArcGIS Pro. If not, go to the top menu then, **Insert** → **New Map.**
+1\. Once your project opens, you should be able to see a topographic map on ArcGIS Pro. If not, go to the top menu then, **Insert** → **New Map.**
 
-2
+2\. On the right side, there should be a *Catalog* window. This is like a file manager for GIS data. If this doesn't show up, you can go to the top menu and then click **View** → **Catalog Pane.**
 
-Tufts Data Lab
+|![Catalog pane](images/Image006.png)
+|:---:|
+|*The Catalog pane*
 
-2. On the right side, there should a *Catalog* window. This is like a file manager for GIS data. If this doesn't show up, you can go to the top menu and then click **View** → **Catalog Pane.**
+3\. You can click on the *Auto-Hide* icon (thumbtack) to hide this window (this is helpful when you need to see more of your map). Click on the icon again to keep the window in place.
 
-![](media/image109.png)
+|![Catalog pane](images/Image007.png)
+|:---:|
+|*Hide and reveal the Catalog pane by clicking the thumbtack icon*
 
-3. You can click on the *Auto-Hide* icon (thumb-tack) to hide this window (this is helpful when you need to see more of your map). Click on the icon again to keep the window in place.
+4\. Click to expand **Folders.** You should already have your folder for your project file in here. If not, right-click **Folders** and then select *Add Folder Connection*. This will allow you to access the files for your data.
 
-![](media/image103.png)
+5\. Click on **Computer** and navigate to the folder where you saved the data for this exercise (extracted from the zip file IndiaBaseMap)**.** For example, you could have saved it to a folder in Box as shown in the screenshots or you could add a connection the data in your H: drive or in the `S:` drive.
 
-4. Click to expand **Folders.** You should already have your
+|![Catalog pane](images/Image008.png)
+|![Catalog pane](images/Image009.png)
+|:---:|
+|*Adding a folder connection*
 
-folder for your project file in here. If not, right-click
+6\. In the Catalog if you **expand** the folder for this exercise, you should see a connection to the data.
 
-**Folders** and then select *Add Folder Connection*. This will
+|![Catalog pane](images/Image017.png)
+|:---:|
+|*The expanded catalog window*
 
-allow you to access the files for your data.
+7\. Click once on each shapefile to highlight it and drag the data layers into the main ArcGIS Pro window. You can also hold **Shift** and click on the first and last file to highlight all drag it into your map. Drag in all the layers with name beginning with `world_` (cities, countries, and rivers)
 
-5. Click on **Computer** and navigate to the folder where you
+8\. Uncheck **layers** in the ***Contents*** if you don't want to see them. You can do so by clicking once on the box, located to the left of the file name.
 
-saved the data for this exercise (extracted from the zip
-
-file IndiaBaseMap)**.** For example, you could have saved it
-
-to a folder in Box as shown in the screenshots or you
-
-could add a connection the data in your H: drive or in the
-
-S: drive.
-
-![](media/image105.png)
-
-3
-
-Tufts Data Lab
-
-6. In the Catalog if you **expand** the folder for this exercise, you should see a ![](media/image63.png)
-
-connection to the data
-
-7. Click once on each shapefile to highlight it and drag the data layers into the
-
-main ArcGIS Pro window. You can also hold **Shift** and click on the first and last
-
-file to highlight all drag it into your map. Drag in all the layers with name
-
-beginning with world\_ (cities, countries, and rivers)
-
-8. Uncheck **layers** in the ***Contents*** if you don't want to see them*.* You can do so by
-
-clicking once on the box, located to the left of the file name.
-
-**Getting Around the Map Menu**
+### Getting Around the Map Menu
 
 Make sure the Map menu is active ![](media/image110.png)
 
-1. Zoom into a part of Africa using the *Zoom In* tool ![](media/image80.png)or the scroll wheel on your
+1\. Zoom into a part of Africa using the *Zoom In* tool ![](media/image80.png)or the scroll wheel on your
 
 mouse.
 
@@ -956,3 +943,13 @@ That\'s the basics. Now practice what you have learned by creating several maps 
 Tufts Data Lab
 
 ![](media/image39.png)32
+
+
+<!-------------------------------------[ Links ]
+---------------------------------------->
+
+[link]: #
+
+<!---------------------------------[ Buttons ]--------------------------------->
+
+[req]: https://img.shields.io/badge/IMPORTANT!-red?style=plastic
