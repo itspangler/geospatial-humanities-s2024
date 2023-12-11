@@ -17,6 +17,10 @@
   - [Opening Catalog, and adding data layers](#opening-catalog-and-adding-data-layers)
   - [Getting Around the Map Menu](#getting-around-the-map-menu)
   - [Setting a Coordinate System for the Map Frame](#setting-a-coordinate-system-for-the-map-frame)
+  - [Defining the General and Symbology Properties for a Layer](#defining-the-general-and-symbology-properties-for-a-layer)
+    - [Assigning Proper Layer Names](#assigning-proper-layer-names)
+    - [Assigning Proper Colors](#assigning-proper-colors)
+    - [Drawing a Layer Based on an Attribute Value](#drawing-a-layer-based-on-an-attribute-value)
 ---
 
 ## Introduction
@@ -136,6 +140,8 @@ You will now learn the basics of using GIS data to explore an area and create a 
 
 3\. Select the **Explore** ![Explore](image/../images/Image015.png) tool and try clicking on countries, rivers, or cities (in the map). This highlights the polygon, line, or point depending on the data and brings up information from the "attribute table" for each feature you click on.
 
+> **NOTE**: Knowing how to use the *Attribute table* is a very important part of building your skills in geospatial research. It behaves similarly to a spreadsheet, 
+
 4\.  Can you find *Gulu, Uganda*?
 
 > **Hint**: Choose the ***Locate*** ![Locate](image/../images/Image016.png) tool. You can type in Gulu Uganda in the search bar---there will be several options that come up. Right-click on the first option and select **Zoom To** so that you're brought to Gulu.
@@ -200,57 +206,35 @@ Note that these layers are only for India. Also note that the map will be messy.
 
 The rest of this tutorial focuses on India, so we are going to set a coordinate system that better maps India. This will also ensure that any spatial queries you do will perform correctly. We will talk a lot more about projections soon in the course.
 
-1. Right-click on Click on **Map** in **Drawing Order** and choose **Properties.**
+1\. Right-click on Click on **Map** in **Drawing Order** and choose **Properties.**
 
-6
+|![Properties](image/../images/Image026.png)
+|:---:|
+|*Select properties*
 
-Tufts Data Lab
+2\. Click on the **Coordinate System** tab.
 
-![](media/image45.png)
+3\. In the coordinate system dialog box, you will see information in the bottom panel for the current coordinate system (GCS_WGS_1984).
 
-2. Click on the **Coordinate System** tab.
-
-3. In the coordinate system dialog box, you will see information in the bottom panel for the current coordinate system (GCS_WGS_1984). ![](media/image47.png)
+|![Coordinate systems](image/../images/Image028.png)
+|:---:|
+|*Coordinate systems*
 
 We want to change this.
 
-4. Scroll down and click on
+4\. Scroll down and click on **Projected Coordinate Systems**, then **UTM** then on **WGS 1984**, then **Northern Hemisphere**, and finally on **WGS 1984 UTM Zone 44N** as shown below and then **OK**.
 
-**Projected Coordinate**
+5\. Turn on the world data and zoom to the full extent ![Rename layers](image/../images/Image027.png). You will see that this severely distorts the rest of the world. But it's a great way to map India!
 
-**Systems**, then **UTM** then on
+6\. Zoom back to India when you're ready and again turn off the world data by unchecking it.
 
-**WGS 1984**, then **Northern**
+7\. To clean up the map, uncheck all the layers except for ***the railway, district, and state*** layers within the **India Group**.
 
-**Hemisphere**, and finally on
+### Defining the General and Symbology Properties for a Layer
 
-**WGS 1984 UTM Zone 44N**
+> In this section of the tutorial, you will learn how to organize your data layers\' properties to start bringing some coherence to the map. You will also learn how to color the data layers to start making a more interesting and readable map.
 
-as shown below and then
-
-**OK**
-
-5. Turn on the world data and
-
-zoom to the full extent ( ![](media/image53.png)).
-
-You will see that this
-
-severely distorts the rest of the world. But it's a great way to map India!
-
-6. Zoom back to India when you're ready and again turn off the world data by unchecking it.
-
-7. To clean up the map, uncheck all the layers except for **the *railway, district,* and *state ***layers within the **[India]{.ul} [Group]{.ul}**.
-
-7
-
-Tufts Data Lab
-
-**Defining the General and Symbology Properties for a Layer**
-
-In this section of the tutorial, you will learn how to organize your data layers\' properties to start bringing some coherence to the map. You will also learn how to color the data layers to start making a more interesting and readable map.
-
-**Assigning Proper Layer Names**
+#### Assigning Proper Layer Names
 
 First, you need to give the layers better names than what they have (e.g., *SUB_DISTRICT* → \"Sub-district\").
 
@@ -258,11 +242,15 @@ First, you need to give the layers better names than what they have (e.g., *SUB_
 
 2. When you see the **Properties** dialog box, click on the **General** tab and for layer name, type in *Sub-district* instead of *SUB_DISTRICT*. Press OK when finished.
 
-**Note**: this does not change the name of the original data set - it only changes the name as it appears in this *Project Session (.aprx)* of ArcGIS Pro and as it will appear on your final map.
+    > **Note**: this does not change the name of the original data set - it only changes the name as it appears in this *Project Session (.aprx)* of ArcGIS Pro and as it will appear on your final map.
 
-3. Rename all the layers so they are not in all caps. [In the future, points will be deducted on assignments for]{.ul} [having non-standard "data speak" names like \"cntry08\" appearing in your map.]{.ul}
+3. Rename all the layers so they are not in all caps. 
+ 
+    > [![req]][link]
+    >  
+    > In the future, points will be deducted on assignments for having non-standard "data speak" names like `cntry08` appearing in your map. Renaming layers with human-readable titles as you go is an important way to avoid this mistake.
 
-**Assigning Proper Colors**
+#### Assigning Proper Colors
 
 Your map would be a lot better if the district layer were not blocking the state layer, etc. We want the State boundaries to show up on top of the District boundaries.
 
@@ -270,47 +258,41 @@ Your map would be a lot better if the district layer were not blocking the state
 
 2. To change the color of the layer, click on the colored box next to Symbol - this should bring up *Symbol Gallery box*.
 
-![](media/image54.png)
+    |![Symbology](image/../images/Image029.png)
+    |:---:
+    |*Fiddling with symbology*
 
-3. Click on the **Properties** tab. Select **No Color** and make the outline width
+3. Click on the **Properties** tab. Select **No Color** and make the outline width `2 pt`. Give the outline a dark gray color.
 
-2.00. Give the outline a dark gray color. **Note:** You can also access this ![](media/image3.png)
+    |![Symbology](image/../images/Image032.png)
+    |:---:
+    |*Fiddling with symbology*
 
-by clicking on the symbol underneath the layer name in **Drawing**
+    > **Note:** You can also access this by clicking on the symbol underneath the layer name in **Drawing Order**.
+    > 
+    > ![Symbology](image/../images/Image030.png)
 
-**Order.** ![](media/image4.png)
+4. Press **Apply** when you are finished.
 
-4. Press Apply when you are finished.
+5. Drag the *State* layer to the top of the India group in **Contents**. Now that it is hollow you can see the layers underneath.
 
-8
+6. Color the *District* layer beige and give it a `1 pt` gray outline width as shown. Using what you have learned, give appropriate colors to your other layers.
 
-Tufts Data Lab
+    |![Symbology](image/../images/Image031.png)
+    |:---:
+    |*Applying symbology to* District *layer*
 
-5. Drag the *State* layer to the top of the India group in **Contents**. Now that ![](media/image1.png)
+7. When finished, choose **File** → **Save** again. Now your project file will remember all the colors and names you assigned. It's starting to look better...
 
-it is hollow you can see the layers underneath.
+#### Drawing a Layer Based on an Attribute Value
 
-6. Color the *District* layer beige and give it a 1 pt gray outline width as
+> Some of your layers would look better if you could distinguish between types of features within the same layer. The *State* layer, for example, shows India's state boundaries but doesn't give us more information when drawn with a single color. You can use an **attribute field** to symbolize your data to reflect the **field** values.
 
-shown. Using what you have learned, give appropriate colors to your
-
-other layers.
-
-7. When finished, choose **File** → **Save** again. Now your project file will
-
-remember all the colors and names you assigned. It's starting to look
-
-better...
-
-**Drawing a Layer Based on an Attribute Value**
-
-Some of your layers would look better if you could distinguish between types of features within the same layer. The *State* layer, for example, shows India's state boundaries but doesn't give us more information when drawn with a single color. You can use an **attribute field** to symbolize your data to reflect the **field** values.
-
-1. If it's not already on, turn on the **State** layer (check against it).
+1. If it's not already on, turn on the **State** layer (a layer is "on" when its box is checked).
 
 2. *Right-click* on the **State** layer and choose *Open Attribute Table*.
 
-3. Before we proceed, you need to know what the items in the attribute tables for the STATE, DISTRICT, and TOWN attribute tables mean. The attribute table contains relevant information about the states, but the field headings (aka column headings) are sometimes hard to understand.
+3. Before we proceed, you need to know what the items in the attribute tables for the *STATE*, *DISTRICT*, and *TOWN* attribute tables mean. The attribute table contains relevant information about the states, but the field headings (aka column headings) are sometimes hard to understand.
 
 ![](media/image2.png)
 
