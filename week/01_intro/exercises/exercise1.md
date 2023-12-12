@@ -23,6 +23,26 @@
     - [Drawing a Layer Based on an Attribute Value](#drawing-a-layer-based-on-an-attribute-value)
   - [Selecting and Mapping the Largest Cities in India (optional)](#selecting-and-mapping-the-largest-cities-in-india-optional)
   - [Selecting Towns by their location relative to Railroads (optional)](#selecting-towns-by-their-location-relative-to-railroads-optional)
+  - [Labeling a Layer Based on an Attribute Field](#labeling-a-layer-based-on-an-attribute-field)
+  - [Changing the Formatting of Labels](#changing-the-formatting-of-labels)
+  - [Using Data from ArcGIS Online (optional)](#using-data-from-arcgis-online-optional)
+  - [Measuring Distance and Area and Drawing a Map to Scale](#measuring-distance-and-area-and-drawing-a-map-to-scale)
+    - [Measuring distances and areas](#measuring-distances-and-areas)
+    - [Drawing a map at a set scale](#drawing-a-map-at-a-set-scale)
+- [Creating a Layout for Printing or Graphic Export](#creating-a-layout-for-printing-or-graphic-export)
+  - [Setting up a Map Layout](#setting-up-a-map-layout)
+  - [Moving Around in the Page and Map Frame](#moving-around-in-the-page-and-map-frame)
+  - [Resizing and Moving the Map Frame](#resizing-and-moving-the-map-frame)
+  - [Inserting a Title, North Arrow, Scale Bar and Legend](#inserting-a-title-north-arrow-scale-bar-and-legend)
+  - [Selecting Elements](#selecting-elements)
+    - [Modifying an element after insertion](#modifying-an-element-after-insertion)
+    - [Inserting text](#inserting-text)
+    - [Inserting a Picture](#inserting-a-picture)
+    - [Deleting and Trying Again](#deleting-and-trying-again)
+  - [Adding a Second Map Frame to Show an Inset Map](#adding-a-second-map-frame-to-show-an-inset-map)
+    - [Adding a Second Map Frame for a Locator Map](#adding-a-second-map-frame-for-a-locator-map)
+    - [Setting up Locator Map Boundary Box (optional)](#setting-up-locator-map-boundary-box-optional)
+  - [Printing or Exporting your Map](#printing-or-exporting-your-map)
 ---
 
 ## Introduction
@@ -450,14 +470,15 @@ If you want to change the colors of the symbols, in the *Symbology* properties b
 
 Click on the back button to return to **primary symbology.**
 
-|![Changing title](images/Image057.png)
+|![Back](images/Image057.png)
 |:---:
+|
 
 You can also change the starting/ending size of the symbols in the boxes immediately above the symbol window, as shown in the screenshot.
 
-|![Changing title](images/Image049.png)
+|![Change starting and ending sizes](images/Image060.png)
 |:---:
-|*Exporting as feature class to GDB*
+|*Change start and end sizes*
 
 > [![req]][link]
 >  
@@ -467,433 +488,380 @@ You can also change the starting/ending size of the symbols in the boxes immedia
 
 Let's say we wanted to see which towns in India have sufficient access to railroads and which towns do not, and we want to estimate the population in each group. You can use the *Select by Location* function to select features based on their spatial relationship to other layers.
 
-1. Turn on the ***Town*** layer and the **Railway** layer. Pull **Railway** to the top of the India Group in the *Contents.* 2. Click on **Selection** → **Select by Location** on the top menu.
+1\. Turn on the ***Town*** layer and the **Railway** layer. Pull **Railway** to the top of the India Group in the *Contents.*
 
-![](media/image84.png)
+2\. Click on **Selection** → **Select by Location** on the top menu.
 
-3. Fill out the dialog box as you see below and press OK when finished:
+|![location](images/Image058.png)
+|:---:
+|*Select by location*
 
-![](media/image86.png)
+3\. Fill out the dialog box as you see below and press OK when finished:
 
-4. You'll see that most towns are within 5 miles of a railroad. How many people live within these selected towns? Let's find out.
+|![location 2](images/Image059.png)
+|:---:
+|*Select by location*
 
-17
+4\. You'll see that most towns are within 5 miles of a railroad. How many people live within these selected towns? Let's find out.
 
-Tufts Data Lab
+5\. Right-click on the **Towns** layer and choose *Open Attribute Table.*
 
-5. Right-click on the **Towns** layer and choose *Open Attribute Table.*
+6\. You will see several records are selected. Scroll to the *Tot_Pop* field and right click on its field name and choose **Statistics** as shown below:
 
-6. You will see several records are selected. Scroll to the *Tot_Pop* field and right click on its field name and choose **Statistics** as shown below:
+|![statistics 1](images/Image061.png)
+|![statistics 2](images/Image062.png)
+|:---:
+|*Statistics tool*
 
-![](media/image91.png)
+7\. When the chart properties pop up you will see descriptive statistics for the selected features, including a "sum" value of about 245 million people on the side panel. That's our answer! But how many people don't live in a town within 5 miles of a railroad?
 
-7. When the chart properties pop up you will see descriptive statistics for the selected features, including a "sum" value of about 245 million people on the side panel. That's our answer! But how many people don't live in a town within 5 miles of a railroad?
+8\. Close the *Statistics* box. Click on the Switch Selection Icon at the top of the attribute table:
 
-8. Close the *Statistics* box. Click on the Switch Selection Icon at the top of the [attribute table]{.ul}, as shown below: ![](media/image90.png)
+![filter](images/Image063.png)
 
-9. All the towns that were not selected before are now selected --
+9\. All the towns that were not selected before are now selected – these are towns that are **greater than** 5 miles from a railroad. Right-click on the *Tot_Pop* column to get the *statistics* for this group – you should see the sum is around 40 million people.
 
-these are towns that are **greater than** 5 miles from a railroad. Right
+You see that the Statistics function gives you descriptive statistics for the **selected features**. If no features are selected, it gives you descriptive statistics for the **entire set of features**. You can click on the **selection** again in **Filter** to deselect –
 
-click on the *Tot_Pop* column to get the *statistics* for this group --
+![filter](images/Image064.png)
 
-you should see the sum is around 40 million people.
+– or you go back to the table or the table tab, and you can *clear the selection* of **Town**. ![clear](images/Image065.png).
 
-You see that the Statistics function gives you descriptive statistics for the
+10\.  Close the statistics, clear your selection ![clear](images/Image066.png), and close the attribute table.
 
-**selected features**. If no features are selected, it gives you descriptive
-
-statistics for the **entire set of features**. You can click on the **selection** again
-
-in **Filter** to deselect ![](media/image95.png). Or you go back to the table or
-
-the table tab, and you can *clear the selection* of **Town** ( ![](media/image92.png)).
-
-10. Close the statistics, clear your selection ![](media/image93.png), and close the
-
-attribute table.
-
-18
-
-Tufts Data Lab
-
-**Labeling a Layer Based on an Attribute Field**
+### Labeling a Layer Based on an Attribute Field
 
 You can label features based on attribute values. Let's label the States.
 
-1. Right-click on the **State** Layer and choose *Label*. It should automatically ![](media/image97.png)
+1\. Right-click on the **State** Layer and choose *Label*. It should automatically populate with the appropriate state names. If it doesn't, right-click again on **State** and select **Labelling Properties.** If the *Expression* box doesn't say **\$feature.NAME,** erase whatever's in the box. Find *Name* in **Field** and double-click it to populate the *Expression* box. Click Apply.
 
-populate with the appropriate state names. If it doesn't, right-click again on
+|![label by field](images/Image070.png)
+|:---:
+|*Label by field*
 
-**State** and select **Labelling Properties.** If the *Expression* box doesn't say
+2\. Note that the names for some states are repeated – that's because the state may have islands or other non-contiguous sections that are represented twice in the database, and so get double names. To get rid of the double names, right-click on the **State** layer and click on *labelling properties*.
 
-**\$feature.NAME,** erase whatever's in the box. Find *Name* in **Field** and
+3\. Click on *Position* then then select **Remove all duplicate** from the drop down for Duplicate labels.
 
-double-click it to populate the *Expression* box. Click Apply.
+|![position](images/Image068.png)
+|:---:
+|*Changing position of labels*
 
-2. Note that the names for some states are repeated -- that's because the
-
-state may have islands or other non-contiguous sections that are
-
-represented twice in the database, and so get double names. To get rid of
-
-the double names, right-click on the **State** layer and click on *labelling*
-
-*properties*.
-
-3. Click on *Position* then then select **Remove all duplicate** from the drop
-
-down for Duplicate labels
-
-![](media/image99.png)
-
-**Changing the Formatting of Labels**
+### Changing the Formatting of Labels
 
 Let's say you want to have the **State** names stand out more on the map. We can do this by changing the label's format.
 
-*1.* If you aren't already in **Labelling Properties** right-click on state and select the option. Go to **Symbol** tab and then to *Appearance.*
+1\. If you aren't already in **Labelling Properties** right-click on state and select the option. Go to **Symbol** tab and then to *Appearance.*
 
-![](media/image96.png)
+|![appearance](images/Image069.png)
+|:---:
+|*Change symbol appearance*
+ 
+2\. You can choose the font, size and color of your labels here. Pick weight (e.g., **bold**) font (e.g., Calibri), and size (e.g., `10pt`) settings that feel right to you, and click on Apply.
 
-19
+3\. If you don't like the results, adjust the label format again as you wish. Check out some of the predefined label styles.
 
-Tufts Data Lab
+### Using Data from ArcGIS Online (optional)
 
-2. You can choose the font, size and color of your labels here -- try making them *bold, Calibri, and 10pt f*ont (for example) and click on Apply
+ESRI and other agencies are hosting online GIS data servers that you can access from ArcGIS Pro. We're going to use one of these streaming layers now. Make sure you are signed in and don't see the "Not signed in" message:
 
-3. If you don't like the results, adjust the label format again as you wish. Check out some of the predefined label styles.
+![sign in](images/Image071.png)
 
-**Using Data from ArcGIS Online (optional)**
+If you do, you might need to sign in using the browser (the ArcGIS organization name is `tuftsgis`):
 
-ESRI and other agencies are hosting online GIS data servers that you can access from ArcGIS Pro. We're going to use one of these streaming layers now. Make sure you are signed in and don't see the not signed in ![](media/image57.png). The ArcGIS organization name is tuftsgis.
+![browser](images/Image072.png)
 
-1. We're going to change our base map. In the **Catalog** panel, Go to **Portal** and then click on **Living Atlas** ![](media/image55.png)
+1\. We're going to change our base map. In the **Catalog** panel, Go to **Portal** and then click on **Living Atlas** ![appearance](images/Image073.png).
 
-2. Move the **World Imagery** layer to the bottom of your *Contents*.
+|![atlas](images/Image074.png)
+|:---:
+|*Esri's Living Atlas*
 
-3. Remove your original Basemap at the bottom of the *Contents*. To remove a data set you don't want, right click on the data layer main name (e.g., *Basemap*) and choose *Remove*.
+2\. Move the **World Imagery** layer to the bottom of your *Contents*.
 
-4. If you don't remove it, turn off the layer for now. It makes drawing very slow. You can choose this base map or keep the original World Topographic Map, it depends on you.
+3\. Remove your original Basemap at the bottom of the *Contents*. To remove a data set you don't want, right click on the data layer main name (e.g., *Basemap*) and choose **Remove**.
 
-**Measuring Distance and Area and Drawing a Map to Scale**
+4\. If you don't remove it, turn off the layer for now. It makes drawing very slow. You can choose this base map or keep the original World Topographic Map, it depends on you.
 
-**Measuring distances and areas** ![](media/image61.png)
+### Measuring Distance and Area and Drawing a Map to Scale
 
-1. Click on the **Measure** tool in the Main toolbar under **Map**.
+#### Measuring distances and areas
 
-2. Click somewhere on the map to start a measuring line. Drag the line ![](media/image62.png)
+1\. Click on the **Measure** tool in the Main toolbar under **Map**.
 
-somewhere else and click again. You will see two measurements
+![appearance](images/Image075.png)
 
-reported in the Measurement window. The first, *segment*, gives the
+2\. Click somewhere on the map to start a measuring line. Drag the line somewhere else and click again. You will see two measurements reported in the Measurement window.
 
-distance of the line you just drew. The second, *Path*, gives the total
+|![measure](images/Image076.png)
+|:-:
+|*Measure distance*
 
-distance. Click on a third point in the map and make another line
+The first, *segment*, gives the distance of the line you just drew. The second, *Path*, gives the total distance. Click on a third point in the map and make another line segment. Every new line you create, the tool sections off *segment* and *path* for each of your different lines. *Sum* gives the total distance of all your different lines. Double-click on the map to stop measuring. 
 
-segment. Every new line you create, the tool sections off *segment* and
+> **Note**: If you want to measure in a different unit, select a new distance unit.
 
-*path* for each of your different lines. *Sum* gives the total distance of all
-
-your different lines. Double-click on the map to stop measuring.
-
-**Note**: If you want to measure in a different unit, select a new distance unit
-
-20
-
-Tufts Data Lab
-
-**Drawing a map at a set scale**
+#### Drawing a map at a set scale
 
 Many professional map users expect printed maps to be at a standardized scale. USGS topographic maps are printed at 1:100,000 scale (1 inch on the map equals 100,000 inches in the real world or about 1.58 miles) and at 1:24,000 scale for example (1 inch on the map equals 24,000 inches in the real world, or 2000 feet or about 0.38 miles). In ArcGIS you can scale your map to any scale, but you are also offered standard scales from which to choose.
 
-1. Set the scale of your map to 1:10,000. The scale is located on the bottom left of the map next to the Catalog. ![](media/image59.png)
+1\. Set the scale of your map to 1:10,000. The scale is located on the bottom left of the map next to the Catalog.
 
-This is very "large scale" map (lots of detail, small area displayed) so it would work well for a map of a city but not for a map of a state or the entire country.
+|![scale](images/Image077.png)
+|:-:
+|*Set scale of map*
 
-2. Experiment with some of the other map scales. Which scale would be good for a map for the entire country or one state? You can also type in a scale yourself (you only have to type the denominator, e.g, 24,000, with or without commas).
+This is very "large-scale" map (lots of detail, small area displayed) so it would work well for a map of a city but not for a map of a state or the entire country.
 
-These are unitless scales. 1:24,000 means that one unit on the map (or your computer screen) equals 24,000 of those same units in the real world. The scales provided are standard paper map scales in the United States. 1:24,000 is the map scale of the USGS topographic quadrangle maps (sometimes known as 7.5 minute maps because they cover 7.5 minutes of latitude and longitude).
+> **Note**: It can be easy to confuse "large" and "small" scale. Remember, large scale means you see ***less*** detail, while small scale means you see ***more*** detail.
 
-3. Try typing in 150,000 in the scale box -- this creates a map at 1:150,000 scale (1 inch on the map equals 150,000 inches in the real world).
+2\. Experiment with some of the other map scales. Which scale would be good for a map for the entire country or one state? You can also type in a scale yourself (you only have to type the denominator, e.g, 24,000, with or without commas).
 
-21
+These are **unitless scales**. 1:24,000 means that one unit on the map (or your computer screen) equals 24,000 of those same units in the real world. The scales provided are standard paper map scales in the United States. 1:24,000 is the map scale of the USGS topographic quadrangle maps (sometimes known as 7.5 minute maps because they cover 7.5 minutes of latitude and longitude).
 
-Tufts Data Lab
+3\. Try typing in 150,000 in the scale box -- this creates a map at 1:150,000 scale (1 inch on the map equals 150,000 inches in the real world).
 
-**Creating a Layout for Printing or Graphic Export**
+## Creating a Layout for Printing or Graphic Export
 
 To create a printable map, you will use the layout view. It is a paper view of your data, much like viewing the page layout when you are working in a word processing software. You should use the **layout view** when you are ready to create a map -- do all the preliminary work and analysis in the **data view** (where you have been up to now in this tutorial).
 
-In this tutorial, you can create a map of all or any part of **India** you like
+In this tutorial, you can create a map of all or any part of **India** you like.
 
 When you create a map, you could include:
 
-• **The map itself**
-
-• **A descriptive title**
-
-• **A legend**
-
-• **A scale bar (in kilometers for international data)**
-
-• **A north arrow**
-
-• **Name of the cartographer (you)**
-
-• **The Date & Class**
-
-• **Acknowledgements of data sources**.
+* **The map itself**
+* **A descriptive title**
+* **A legend**
+* **A scale bar** (in kilometers for international data)
+* **A north arrow**
+* **Name of the cartographer** (e.g., you)
+* **The Date & Class**
+* **Acknowledgements of data sources**
 
 It is important not to include too much information in a map layout. You would not want a map that includes all the data layers you have in your ArcGIS Pro session from this tutorial. It would be much better to do several separate layout maps.
 
-You may also include other elements on your map -- for example, more explanatory text, labels, charts, tables, photos, or other images.
+You may also include other elements on your map – for example, more explanatory text, labels, charts, tables, photos, or other images.
 
-Note that you can also have more than one map frame on a layout -- for example, you can have a small locational reference map or an inset map to show an area in more detail or situate your detailed map in a larger context. See the next section (*Adding a map frame to show two or more maps on a layout*) for instructions about how to do this.
+Note that you can also have more than one map frame on a layout – for example, you can have a small locational reference map, or an inset map to show an area in more detail or situate your detailed map in a larger context.
 
-For detailed information about layouts, go to online to ArcGIS Pro Layout: ![](media/image60.png)
+For detailed information about layouts, go to online to ArcGIS Pro Layout: https://pro.arcgis.com/en/pro-app/help/layouts/layouts-in-arcgis-pro.htm
 
-[https://pro.arcgis.com/en/pro-app/help/layouts/layouts-in-arcgis-pro.htm]{.ul}
+### Setting up a Map Layout
 
-**Setting up a Map Layout**
+1\. Before you start a map layout, it is important to think through what you want to do and how you want your map to look. What do you want to show? How large do you want your final map to be? Portrait or landscape orientation? Do you need space for additional text or graphics? This tutorial example will assume a printer paper size (`8x11 inches`) map but often you are making map for publications where they must be smaller, or for Powerpoint where they need to be a certain size (e.g., `7.5x10 inches`), or for posters where they may be much larger than `8x11 inches`.
 
-1. Before you start a map layout, it is important to think through what you want to
+|![new layout](images/Image078.png)
+|:-:
+|*Make a new layout*
+   
+2\. In the Main Menu Bar, choose **Insert** → **New Layout** and choose Letter 8"x11.5" either *Landscape* or *Portrait* (which would be better for the map you want to create? The example map is in *Portrait* orientation).
 
-do and how you want your map to look. What do you want to show? How large
+3\. The view changes to show your map frame on a page layout and a new toolbar appears -- the *Layout* toolbar.
 
-do you want your final map to be? Portrait or landscape orientation? Do you need
+4\. Go to the main menu bar **Insert** → **Map Frame** and select the symbolized map
 
-space for additional text or graphics? This tutorial example will assume a printer
+|![new layout](images/Image079.png)
+|:-:
+|*Make a new layout*
 
-paper size (8x11 inch) map but often you are making map for publications where
+5\. **Then draw a box onto** the layout, and fit as much as possible onto the layout. The map you selected will draw within the extent that you drew in the layout
 
-they must be smaller, or for Powerpoint where they need to be a certain size
+### Moving Around in the Page and Map Frame
 
-(e.g., 7.5x10 inches), or for posters where they may be much larger than 8x11.
+6\. It is very important to understand the difference between the **Layout** –
 
-2. In the Main Menu Bar, choose **Insert** → **New Layout** and choose Letter 8"x11.5"
+![new layout](images/Image080.png)
 
-either *Landscape* or *Portrait* (which would be better for the map you want to
+– and the **Map**. To be able to move around in your *Map* (not *Layout*), click on your map ![](media/image70.png)**.
 
-create? The example map is in *Portrait* orientation).
+![new layout](images/Image081.png)
 
-22
+**This will change the menu** so you can zoom in and out of your map using the scrolling wheel or **Explore** tool in Map and click to pan around. 
 
-Tufts Data Lab
-
-3. The view changes to show your map frame on a page layout and a new toolbar appears -- the *Layout* toolbar. 4. Go to the main menu bar **Insert** → **Map Frame** and select the symbolized map
-
-![](media/image64.png)
-
-5. **Then draw a box onto** the layout, and fit as much as possible onto the
-
-layout. The map you selected will draw within the extent that you drew in
-
-the layout
-
-**Moving Around in the Page and Map Frame**
-
-1. It is very important to understand the difference between the **Layout**
-
-![](media/image67.png)and the **Map**. To be able to move around in your *Map (not*
-
-*Layout)***,** click on your map ![](media/image70.png)**. This will change the**
-
-**menu** so you can zoom in and out of your map using the scrolling wheel or
-
-**Explore** tool in Map and click to pan around.
-
-**Resizing and Moving the Map Frame**
+### Resizing and Moving the Map Frame
 
 You will always need to re-size things in your map, especially the map frame itself which contains the map image. In this case we are moving and resizing our map frame so that it fills the 4/5ths of our page (as shown below). We'll then put a title, legend, and other map requirements in the blank space along the bottom of the page:
 
 Moving and re-sizing in ArcGIS Pro works similarly to most other programs where you use graphics. The key is selecting the element first. The steps for this are on the next page.
 
-1. To resize and move the map frame, use the **Select** pointer under the **Layout** view to select the frame. ![](media/image71.png)
+1\. To resize and move the map frame, use the **Select** pointer under the **Layout** view to select the frame.
 
-2. Use the small grab points on the corners and sides to resize.
+|![pointer](images/Image082.png)
+|:-:
+|*Select pointer*
 
-3. Click and drag with the cursor anywhere over the map frame to move it.
+2\. Use the small grab points on the corners and sides to resize.
 
-23
+3\. Click and drag with the cursor anywhere over the map frame to move it.
 
-Tufts Data Lab
+|![map frame](images/Image084.png)
+|:-:
+|The **Map Frame** is the black frame that directly borders the geographic information on the map itself. The **Paper Outline** is the `8/5x11` sheet behind it.
 
-![](media/image68.png)**Inserting a Title, North Arrow, Scale Bar and Legend**
+### Inserting a Title, North Arrow, Scale Bar and Legend
 
-This is the Map Frame.
+A title, north arrow, scale bar, and legend are all important elements of a map. You access them by going to the **Insert** item on the *Main menu* bar.
 
-This is the Paper Outline
+You can read more about these at https://pro.arcgis.com/en/pro-app/help/layouts/layouts-in-arcgis-pro.htm and then scrolling down to **Related Topics** about adding elements to your map.
 
-These are all required elements on all maps. You access them by going to the **Insert** item on the *main menu* bar.
+|![new layout](images/Image085.png)
+|:-:
+|*Options to add north arrow, scale bar, and legend*
 
-You can read more about these by going to [https://pro.arcgis.com/en/pro-app/help/layouts/layouts-in-arcgis-pro.htm]{.ul} and then scrolling down to **Related Topics** about adding elements to your map.
+1\. Use the ***Insert*** menu function to insert a **North Arrow**. Draw a space for it in the layout. Place it in the bottom, empty part of your map layout initially.
 
-![](media/image69.png)
+2\. Insert a **scale bar** of your choice. You may wish to change the units of the scale bar you select. If you want a different unit, double-click on the scale bar. A new window shows up. In the *Map Units* section, select a different *Division Unit*. You can size the scale bar using the corner nodes. Make sure it ends on an even and easy to read number (eg. `4 Km` instead of `4.5 Km`).
 
-24
+|![scale bar](images/Image087.png)
+|:-:
+|*Select scale bar units*
 
-Tufts Data Lab
-
-1. Use the ***Insert*** menu function to insert **a North Arrow**. Draw a space for it in the layout. Place it in the bottom, empty part of your map layout initially. ![](media/image74.png)
-
-**Insert Scale Bar**
-
-2. Insert a scale bar of your choice. You may wish to change the units of the scale bar you select. If you want a different unit, double-click on the scale bar. A new window shows
-
-up**.** In the *Map Units* section, select a different *Division Unit (Kilometers for International*
-
-*Data!)*. You can size the scale bar using the corner nodes. Make sure it ends on an even
-
-and easy to read number (eg. 4 Km instead of 4.5 Km).
+ > [![req]][link]
+ > 
+ > Only three countries in the world use the imperial system (e.g., `inches`, `feet`, `miles`) to measure distance. Be sure to use `Kilometers` for international data!
 
 ![](media/image75.png)
 
-**Insert Legend**
+3\. There are lots of ways to improve your **Legend**. For starters, let's say we're creating a map of Larger Cities in India. We want the legend and map to focus on large cities. To control what goes on the legend:
 
-There are lots of ways to improve your legend. For starters, let's say we're creating a map of Larger Cities in India. We want the legend and map to focus on large cities. To control what goes on the legend:
+  1. Choose **Insert** → **Legend** from the main menu and click and draw on the layout to create small box for the legend.
 
-1. Choose **Insert** → **Legend** from the main menu and click and draw on the layout to create small box for the legend.
+  2. Adjust what is in the legend so that only **Large Cities** is there by following the graphic below. Click on the legend so that the **Format Legend** panel shows up on the right.
 
-2. Adjust what is in the legend so that only **Large Cities** is there by following the graphic below. Click on the legend so that the **Format Legend** panel shows up on the right.
+  3. In the **Contents/Drawing Order** for your map layers, unselect every layer except **Large Cities.**
 
-3. In the **Contents/ Drawing Order** for your map layers, unselect every layer except **Large Cities.**
+      > **Note**: make sure **Large Cities** is checked in the *Contents* in your **Map**, or else the legend will be blank.
+      > 
+      > |![scale bar](images/Image089.png)
+        |:-:
+        |*Select scale bar units*
 
-25
+  4. Go back to your **Layout view**, click on your legend again to access its properties. For **Title,** type in **Cities Population.**
 
-Tufts Data Lab
+  5. You can change its properties (font, size, etc) by clicking on **Text Symbol** → **Appearance**:
 
-**Note**: make sure **Large Cities** is checked in the *Contents* in your **Map**, or else the ![](media/image73.png)
+     |![legend font](images/Image091.png)
+     |:-:
+     |*Changing font appearance of legend*
 
-legend will be blank.
+  6. There are lots of things you can edit in the **Show Properties**. Explore the different tabs to see all the options.
 
-![](media/image76.png)
+     | ![scale bar](images/Image092.png) |
+     | :-------------------------------: |
+     |     *Select scale bar units*      |
 
-*4.* Go back to your **Layout view**, click on your legend again to access its properties. For **Title,** type in **Cities Population.**
-
-5. You can change its properties (font, size, etc) by clicking on **Text Symbol** → **Font in (Appearance)** ![](media/image22.png)
-
-6. There are lots of things you can edit in the **Show Properties**. Explore the different tabs to see all the options. ![](media/image27.png)
-
-26
-
-Tufts Data Lab
-
-**Selecting Elements**
+### Selecting Elements
 
 You can select more than one element by holding down the Shift key as you click on each element.
 
-**Modifying an element after insertion**
+#### Modifying an element after insertion
 
 You can usually modify an element after you have inserted it by selecting it and then double-clicking on it. The relevant dialog box will appear for that element (e.g. legend, scale bar).
 
-**Inserting text**
+#### Inserting text
 
-7. To include the title, your name as the cartographer, and any other information, use the **Insert** tab on the Main menu and select the style of text for a title. Remember also to include text for date. You should also have a data source - note that the data comes from the Tufts GIS M Drive (For later tutorials, it will need to be more specific). ![](media/image28.png)
+1\. To include the title, your name as the cartographer, and any other information, use the **Insert** tab on the Main menu and select the style of text for a title. Remember also to include text for date. You should also have a data source. Note that the data comes from the Tufts GIS `M Drive` (For later tutorials, it will need to be more specific). 
 
-8. Add more text for any more descriptions or explanation of your map. ![](media/image25.png)
+|![graphics](images/Image094.png)
+|:-:
+|*Select the* `A` *in the top-left corner*
 
-9. You can change font properties on selected text by right-clicking on
+2\. Add more text for any more descriptions or explanation of your map. ![](media/image25.png)
 
-the selected text and choosing **Properties and** then changing the **font**
+3\. You can change font properties on selected text by right-clicking on the selected text and choosing **Properties and** then changing the **font name** in **Text Symbol**.
 
-**name** in **Text Symbol**
+|![text appearance](images/Image095.png)
+|:-:
+|*Add more text and change appearance*
 
-**Inserting a Picture**
+#### Inserting a Picture
 
-Note that you can also insert images into the map frame using the **Insert** tab
+Note that you can also insert images into the map frame using the **Insert** tab and then going to the Graphics group.
 
-and then going to the Graphics group.
+|![graphics](images/Image094.png)
+|:-:
+|*Select the image icon in the second row*
 
-![](media/image26.png)
+#### Deleting and Trying Again
 
-**Deleting and Trying Again**
+If modifying an existing element doesn't work, remember that you can always select an item and delete it if you don't like it. You can right-click on it and press *delete*. Especially useful if your legend gets messed up – just delete and insert a new legend again to start fresh.
 
-If modifying an existing element doesn\'t work, remember that you can always select an item and delete it if you don\'t like it. You can right-click on it and press *delete*. Especially useful if your legend gets messed up - just delete and insert a new legend again to start fresh.
-
-**Adding a Second Map Frame to Show an Inset Map**
+### Adding a Second Map Frame to Show an Inset Map
 
 You can add a second (or more) map frame to your ArcGIS Pro session. This can be handy for putting in a small \"locator\" map.
 
-**Adding a Second Map Frame for a Locator Map**
+#### Adding a Second Map Frame for a Locator Map
 
 In this example, we'll use a new map frame to insert a locator map.
 
-27
+1\. In *Layout View*, choose **Insert** → **New Map** from the top main menu. A new map will appear on the top tab. Click on this new tab and rename the map frame to **Inset Map** by clicking on the Frame in **Drawing Order** twice slowly**.**
 
-Tufts Data Lab
+|![locator](images/Image096.png)
+|:-:
+|*Preparing your project for a locator map*
 
-1. In *Layout View*, choose **Insert** → **New Map** from the top main menu. A new map will appear on the top tab. Click on this new tab and rename the map frame to **Inset Map** by clicking on the Frame in **Drawing Order** twice slowly**.**
+2\. Go back to your layout view and click on **Insert.** Insert another map frame in your lay out---click on the current extent for your new inset map.
 
-![](media/image31.png)2. Go back to your layout view and click on **Insert.** Insert another map frame in your lay out---click on the current extent for your new inset map.
+|![frame](images/Image097.png)
+|:-:
+|*Add a map frame*
 
-![](media/image32.png)
+3\. Move and resize the *new map frame* box so it is in the location you want it -- here we are taking it to the bottom right corner of our layout.
 
-3. Move and resize the *new map frame* box so it is
+|![locate](images/Image098.png)
+|:-:
+|*Moving the new frame*
 
-in the location you want it -- here we are taking
+4\. You can add data to this map just as you did to the first one. In the *Contents*, you can drag a layer from the Catalog. You can also copy from another Map frame: right click on the *Countries* layer from the original frame (**Map Frame)** and select *copy.* Right-click on the second map frame (**Inset Map**) and click paste. Make sure to turn on the new layer so it is visible.
+   
+5\. Also drag the **State** layer (in your India group layer) in the Inset map frame.
 
-it to the bottom right corner of our layout.
+6\. Zoom closer to India in the map frame.
 
-4. You can add data to this map just as you did to
+7\. Make sure to drag the state boundaries above the Countries. Countries should be white with a gray outline.
 
-the first one. In the *Contents*, you can drag a
+8\. Set the **State** fill color of your choice but with no outline so you will highlight India boundaries and not the state boundaries.
 
-layer from the Catalog. You can also copy from
+|![state](images/Image104.png)
+|:-:
+|*Change state color*
 
-another Map frame: right click on the *Countries*
+9\. Get rid of the distracting service layer text by clicking on **Insert** on the main menu then **Dynamic Text**.
 
-layer from the original frame (**Map Frame)** and
+|![state](images/Image099.png)
+|:-:
+|*Dynamic text*
 
-select *copy.* Right-click on the second map
+Scroll down to the **Layout** section and select **Service Layer Credits.** Draw a box anywhere on the layout so that the service layer credits become its own text box. Drag the text box over to the edge of the layout.
 
-frame (**Inset Map**) and click paste. Make sure to
+|![state](images/Image101.png)
+|:-:
+|*Dynamic text*
 
-turn on the new layer so it is visible.
+When you export your layout, the service layer credits will not show up in your final exported map.
 
-28
-
-Tufts Data Lab
-
-5. Also drag the **State** layer (in your India group layer) in the Inset map frame.
-
-6. Zoom closer to India in the map frame. ![](media/image30.png)
-
-7. Make sure to drag the state boundaries above the Countries. Countries
-
-should be white with a gray outline.
-
-8. Set the **State** fill color of your choice but with no outline so you will
-
-highlight India boundaries and not the state boundaries.
-
-9. Get rid of the distracting service layer text by clicking on **Insert** on the
-
-main menu then **Dynamic Text** ![](media/image21.png)**.** Scroll down to the **Layout**
-
-section and select **Service Layer Credits.** Draw a box anywhere on the
-
-layout so that the service layer credits become its own text box. Drag the text box over to the edge of the layout. ![](media/image23.png)
-
-![](media/image48.png)When you export your layout, the service layer credits will not show up in your final exported map. **Setting up Locator Map Boundary Box (optional)**
+#### Setting up Locator Map Boundary Box (optional)
 
 Finally, we're going to show a boundary box on our *Locator or Inset Map*.
 
-1. Select your inset map using the select tool ( ![](media/image50.png)
+1\. Select your inset map using the select tool.
 
-29
+![Select](images/Image102.png)
 
-Tufts Data Lab
+2\. Go to the **Insert** tab and select **Extent Indicator** in *Map Frames* group.
 
-3. If you want to change the size and color of your extent indicator, in the *Contents/Drawing Order,* right-click on the **extent indicator** layer underneath **Map Frame 2** and select **Properties.**
+![Select](images/Image103.png)
 
-![](media/image46.png)
+3\. If you want to change the size and color of your extent indicator, in the *Contents/Drawing Order,* right-click on the **extent indicator** layer underneath **Map Frame 2** and select **Properties.**
 
-4. In the new panel, make sure the source is set to the original Map Frame (just known as "Map Frame" here)**.** Click on the boxed symbol, and go to **Properties** to change the size and color.
+![Extent](images/Image105.png)
 
-![](media/image41.png)
+4\. In the new panel, make sure the source is set to the original Map Frame (just known as "Map Frame" here)**.** Click on the boxed symbol, and go to **Properties** to change the size and color.
 
-**Printing or Exporting your Map**
+![Select](images/Image106.png)
+![Select](images/Image107.png)
+
+### Printing or Exporting your Map
 
 You can print directly from ArcGIS Pro or you can export to a digital graphic format like .pdf. Printing works just like any other Windows program, so we won't cover that here, but feel free to print your map.
 
@@ -905,27 +873,19 @@ The ability to **export** to a digital format is very useful. If exporting to an
 
 3. For *Save as Type*, choose a format - we recommend **.gif or .png or .pdf** because they come out well and are readable across a variety of platforms. The only problem with PDF formats is that they do not import well into Microsoft publisher and they do not recognize all text fonts.
 
-30
-
-Tufts Data Lab
-
-4. **Before you export,** adjust the **Resolution (DPI)** to at least 300. Digital images meant to be seen on a computer screen do not need high resolution. 96 or 150 should be fine depending on image size, 300 should be the maximum.
+4. <span style="color:red">**Before you export,**</span> adjust the **Resolution (DPI)** to at least 300. Digital images meant to be seen on a computer screen do not need high resolution. 96 or 150 should be fine depending on image size, 300 should be the maximum.
 
 5. Press **Export** when you are ready to go - the process will take a minute.
 
-![](media/image37.png)
+    ![Select](images/Image108.png)
 
-**Note:** You must be in layout view to export your layout. If you're in map view, you'll just export your map instead.
+> **Note:** You must be in layout view to export your layout. If you're in map view, you'll just export your map instead.
 
-6. Check your results by navigating to the folder outside of ArcGIS and opening the graphic - if you're not pleased, experiment with different resolutions and compare file sizes.
+1. Check your results by navigating to the folder outside of ArcGIS and opening the graphic - if you're not pleased, experiment with different resolutions and compare file sizes.
 
-That\'s the basics. Now practice what you have learned by creating several maps of India, a region within India or a State
+That's the basics. Now practice what you have learned by creating several maps of India, a region within India or a State.
 
-31
-
-Tufts Data Lab
-
-![](media/image39.png)32
+![Select](images/Image109.png)
 
 
 <!-------------------------------------[ Links ]
