@@ -1,4 +1,4 @@
-# CLS 125 Introduction to Geospatial Humanities <!-- omit in toc -->
+# CLS0125 Introduction to Geospatial Humanities <!-- omit in toc -->
 
 >*Cross-listed with History 179, Art History (FAH) 0092-04, Archaeology (ARCH) 175*
 >* **Spring 2024**
@@ -6,8 +6,8 @@
 >* **Location:** Data Lab, Tisch Library
 >* **Course Instructor:** Ian Spangler
 >* **Office hours:**
->   * Ian: By appointment on Zoom
->   * TA: 5-6pm on Tuesdays in Tisch Library
+>   * Ian: Tuesdays 5:30-6:30pm or by appointment on Zoom
+>   * Max: TBD, 2x/week
 >* **Prerequisites:** None. Students will be expected to have competence in computer use and some familiarity with Microsoft Windows environment and file management. 
 
 <!-- |![Georeferencing an historic map using Allmaps Editor](./allmaps-editor.png)
@@ -38,7 +38,7 @@
 
 ### Course Description
 
-The humanities are becoming spatial. Perhaps they always have been. Indeed, geography informs not only how texts, maps, and other objects are produced, but how we encounter them as readers and users. In this course, we will prod at the spatial dimensions of the humanities, or what the [geographer Yi-Fu Tuan](https://link.springer.com/chapter/10.1007/978-94-009-9394-5_19) called "the space that is conditioned by the fact of my being in it, the space of which I am the centre, the space that answers my moods and intentions." We'll examine these experiential,  Our primary goal, however, will be the careful study of the humanities' *geospatial* dimensions—those aspects from which we can derive geographic data, map, visualize, and experience in new ways.
+The humanities are becoming spatial. Perhaps they always have been. Geography informs not only how texts, maps, and other objects are produced, but how we encounter them as readers and users. In this course, we will prod at the spatial dimensions of the humanities, or what the [geographer Yi-Fu Tuan](https://link.springer.com/chapter/10.1007/978-94-009-9394-5_19) called "the space that is conditioned by the fact of my being in it, the space of which I am the centre, the space that answers my moods and intentions." We'll examine these experiential, . Our primary goal, however, will be the careful study of the humanities' *geospatial* dimensions—those aspects from which we can derive geographic data, map, visualize, and experience in new ways.
 
 This course introduces geospatial theory, methods, and technology for applications in the humanities in past and present settings. We'll often use the catch-all term "GIS"—short for **geographic information systems**—to describe these geospatial tools. GIS consists of a combination of software, data, methods, and hardware with capabilities for manipulating, analyzing, and displaying spatially referenced data. The course gives primary emphasis to GIS data structures, data creation, geodesy, spatial analysis, and cartographic visualization. We will discuss not only how to use these tools effectively, but how to use them intentionally. Detailed labs and exercises apply concepts presented in the lectures using two geospatial softwares: ArcGIS Pro and ArcGIS StoryMaps software. Assignments concentrate on applying concepts covered in lectures and exercises and include a final project that applies GIS to each student's field of interest.
 

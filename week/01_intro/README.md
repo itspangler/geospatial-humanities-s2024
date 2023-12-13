@@ -8,8 +8,6 @@
 
 </div>
 
-How should we approach our subject matter this semester, an ethereal thing called "geospatial humanities?"
-
 In this first meeting, we'll assess the landscape of the digital and geospatial humanities. You'll learn how to think spatially from a research and storytelling perspective. 
 
 ---
@@ -26,7 +24,7 @@ In this first meeting, we'll assess the landscape of the digital and geospatial 
 
 ## Before class
 
-Nothing! It's the first day of the semester. Just show up.
+Nothing is required! It's the first day of the semester. Just show up.
 
 ## During class
 
@@ -40,10 +38,6 @@ Nothing! It's the first day of the semester. Just show up.
    1. Understanding paths and files
    2. Compression and common file types
    3. Folder organization and file nomenclature
-4. **Spatial data models... and you!** (*or, "Seeing like a machine"*)
-   1. Vector
-   2. Raster
-   3. Tabular
 
 ### Slides
 
@@ -58,11 +52,9 @@ link to slides
 
 ### Readings
 
-<!-- *`est. 30-45 mins`* -->
-
 [![read]][link]
 
-* [![req]][link] Section II, "Early Rumblings: the first wave," pp. 572-579 from Schuurman, Nadine. 2000. [“Trouble in the Heartland: GIS and Its Critics in the 1990s.” *Progress in Human Geography* 24 (4): 569–90](https://doi.org/10.1191/030913200100189111).
+* [![opt]][link] Section II, "Early Rumblings: the first wave," pp. 572-579 from Schuurman, Nadine. 2000. [“Trouble in the Heartland: GIS and Its Critics in the 1990s.” *Progress in Human Geography* 24 (4): 569–90](https://doi.org/10.1191/030913200100189111).
 
 * [![opt]][link] pp. 526-533 from Tobler, Waldo R. 1959. [“Automation and Cartography.” *Geographical Review* 49 (4): 526–34](https://doi.org/10.2307/212211).
 
@@ -70,7 +62,7 @@ link to slides
 
 [![lab]][link]
 
-* [Exercise 1: Creating a map with ArcGIS Pro](./exercises/exercise1.md)
+* [![req]][link] Complete [Exercise 1: Creating a map with ArcGIS Pro](./exercises/exercise1.md). Pay attention to the [Deliverables](./exercises/exercise1_basics-india.md#deliverables)
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->
@@ -82,4 +74,4 @@ link to slides
 [req]: https://img.shields.io/badge/REQUIRED-37a779?style=for-the-badge
 [opt]: https://img.shields.io/badge/OPTIONAL-yellow?style=for-the-badge
 [read]: https://img.shields.io/badge/est._time-30_mins-blue
-[lab]: https://img.shields.io/badge/est._time-2.5_hrs-blue
+[lab]: https://img.shields.io/badge/est._time-up_to_4_hrs-blue
