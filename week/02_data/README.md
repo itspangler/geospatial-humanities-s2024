@@ -1,4 +1,4 @@
-<center>
+<div align=center>
 
 # Week 02: Data <!-- omit in toc -->
 
@@ -8,7 +8,7 @@
 |:-:
 |*Boston personal income ; Boston personal income \[and\] residential population density* by Joseph Passonneau (1966). From [Leventhal Map & Education Center Digital Collections](https://collections.leventhalmap.org/search/commonwealth:x633f952x).
 
-</center>
+</div>
 
 Detailed description of topic
 

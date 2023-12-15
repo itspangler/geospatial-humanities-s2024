@@ -1,10 +1,10 @@
-<center>
+<div align=center>
 
 # Mystery data
 
 ![Mystery]()
 
-</center>
+</div>
 
 # The premise
 
@@ -16,13 +16,13 @@ In this activity, you'll
 
 # The data
 
-<center>
+<div align=center>
 
 | [![dataA]][a] [![dataB]][b] |
 | :-------------------------- |
 | [![dataC]][c] [![dataD]][d] |
 
-</center>
+</div>
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->

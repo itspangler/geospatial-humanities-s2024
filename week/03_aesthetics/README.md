@@ -1,4 +1,4 @@
-<center>
+<div align=center>
 
 # Week 03: Aesthetics & Design, Part I
 
@@ -8,7 +8,7 @@
 |:-:
 |*Land Grab Universities* by Robert Lee, Tristan Ahtone, Margaret Pearce, Kalen Goodluck, Geoff McGhee, Cody Leff, Katherine Lanpher and Taryn Salinas (2020). From [landgrabu.org](https://www.landgrabu.org/).
 
-</center>
+</div>
 
 ## It moves
 
