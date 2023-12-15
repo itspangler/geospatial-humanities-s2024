@@ -2,7 +2,7 @@
 
 # Week 02: Data <!-- omit in toc -->
 
->*Working with spatial data models*
+>*Working with spatial data models can be complicated; understanding their social context, even more so*
 
 |![Boston personal income ; Boston personal income \[and\] residential population density](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:fn107c409/866,116,10489,5244/1200,/0/default.jpg)
 |:-:
@@ -17,13 +17,18 @@ Detailed description of topic
 - [Before class](#before-class)
 - [During class](#during-class)
   - [Lecture](#lecture)
+  - [In-class activity](#in-class-activity)
   - [Housekeeping](#housekeeping)
 - [After class](#after-class)
+  - [Read](#read)
+  - [Interact](#interact)
+  - [Complete](#complete)
 ---
 
 ## Before class
 
-Complete [Exercise 1](/week/01_intro/exercises/exercise1_basics-india.md).
+* Complete [Exercise 1](/week/01_intro/exercises/exercise1_basics-india.md).
+* Read ___.
 
 ## During class
 
@@ -37,15 +42,24 @@ Complete [Exercise 1](/week/01_intro/exercises/exercise1_basics-india.md).
 3. **Logical operators**
 4. **Geospatial data sources** (visit from Dr. Kaylen Dwyer)
 
+### In-class activity
+
+* Mystery datasets
+
 ### Housekeeping
 
 Outline of housekeeping stuff (may not actually discuss during class)
 
 ## After class
 
-1. Read:
-   1. dummy
-2. Interact:
-   1. dummy
-3. Complete:
-   1. [Exercise 2: Slave Voyages](/week/02_data/exercises/)
+### Read
+
+* test
+
+
+### Interact
+
+* test
+
+### Complete
+* [Exercise 2: Slave Voyages](/week/02_data/exercises/)

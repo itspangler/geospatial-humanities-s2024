@@ -22,7 +22,7 @@ By "moves," Chimero does not mean that it needs to move literally. The thing ca
 
 In other words, Chimero is talking about physical movement – a mouse click, a brush stroke, a knitting needle – that is transformed, through design, to emotional movement.
 
-Of course, some good design does indeed move literally, as in the map above that depicts expropriated indigenous land in what's now known as the United States that was granted to universities through the Morrill Act in 1862. In this digital map, . What makes maps different from other kinds of visual communication is their representation of place. Imperfect though they may be for capturing the lived experiences of people in places, they are some of the best tools we have for the job.
+Of course, some good design does indeed move literally, as in the map above that depicts expropriated indigenous land in what's now known as the United States that was granted to universities through the Morrill Act in 1862. In this digital map, we see a . What makes maps different from other kinds of visual communication is their representation of place. Imperfect though they may be for capturing the lived experiences of people in places, they are some of the best tools we have for the job.
 
 This week, we focus on design. Good design is an important part of making maps with strong good arguments. And while the idea that something can be designed "well" or "good" – that is to say, aesthetically pleasing – is itself deeply subjective, but of course, there are general principles of cartographic design that you should know. This includes theoretical principles, such as
 
@@ -48,7 +48,11 @@ What should people have done by class start
 
 ## Lecture
 
-Outline of lecture
+1. 
+
+## In-class activity
+
+* 
 
 ## Housekeeping
 
@@ -59,4 +63,5 @@ Outline of housekeeping stuff (may not actually discuss during class)
 1. Read
 2. Interact
 3. Complete
-   1. Finish the [in-class activity](/week/03_aesthetics/in-class/activity1/activity1_qual-quant-cart.md) if you did not complete it during class
+   1. The [in-class activity](/week/03_aesthetics/in-class/activity1/activity1_qual-quant-cart.md) if you did not complete it during class
+   2. The [assignment](/week/03_aesthetics/assignments/assignment1_cartography.md) on style, design, and cartography.

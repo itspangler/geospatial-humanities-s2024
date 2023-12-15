@@ -72,6 +72,6 @@ link to slides
 <!---------------------------------[ Buttons ]--------------------------------->
 
 [req]: https://img.shields.io/badge/REQUIRED-37a779?style=for-the-badge
-[opt]: https://img.shields.io/badge/OPTIONAL-yellow?style=for-the-badge
+[opt]: https://img.shields.io/badge/OPTIONAL-blue?style=for-the-badge
 [read]: https://img.shields.io/badge/est._time-30_mins-blue
 [lab]: https://img.shields.io/badge/est._time-up_to_4_hrs-blue
