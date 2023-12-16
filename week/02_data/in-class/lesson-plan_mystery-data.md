@@ -1,40 +1,63 @@
 <div align=center>
 
-# Mystery data
+# Mystery Data
 
-![Mystery]()
+![Mystery](https://i.stack.imgur.com/ttsmm.png)
 
 </div>
 
-# The premise
+# Premise
 
-When working with data, you'll commonly have to sift through stuff that you just don't understand. There will be columns that don't make any sense, rows that lack context, missing values... the list goes on. What will you do when you encounter this kind of data? What strategies will you use to make sense of it?
+When working with data, you'll commonly have to sift through stuff that you just don't understand. There will be columns that don't make any sense, rows that lack context, missing values... the list goes on.
 
-# The activity
+The image above is lifted directly from a 2016 [StackOverflow](https://en.wikipedia.org/wiki/Stack_Overflow) post, titled [*Proprietary software produces ugly excel tables...can I get them into R?*](https://stackoverflow.com/questions/39213554/proprietary-software-produces-ugly-excel-tables-can-i-get-them-into-r), facing exactly this issue.
 
-In this activity, you'll 
+Gesticulating wildly towards their bad data, the author asks:
 
-# The data
+> "How do I take dozens of files from excel, that look like this, and get the import to add the rows, so that every set of four rows spaced by 2 rows (i.e. rows 3-6, 9-12, 15-18, etc--it's the same spacing for every project) are imported until empty space is reached (it'll be a different number of repetitions for each project)? I also want to `endCol` at empty space for each four-row segment..."
+
+Notice that not only does the author need this data to look better *on principle*, but also that the solution needs to by *dynamic*; that is, it will need to fit the parameters of their specific project on a case-by-case basis.
+
+When you encounter this kind of data – and it's not a question of *if*, but *when* – what will you do? What strategies will you use to make sense of it, tidy it, and eventually, map it?
+
+# Activity (20 minutes)
+
+Below, you'll find three mystery datasets.
+
+Some of the datasets are clean, but in familiar formats; some are in familiar formats, but have been seriously gunked up. Some of the data might appear in a format you don't recognize at all.
+
+To begin, download each dataset with `Right-click` ➡️ `Save as...`, and open it in the appropriate application. Using the "GIS friendly" principles that we discussed during lecture, partner with students sitting around you – groups of 2-4 are fine – and answer each of the following questions. You don't need to submit this, but you'll probably need to write stuff down in a Word or Google Doc.
+
+> **HINT:** if you aren't sure how to view one of the files, try opening the file in [Visual Studio Code](https://code.visualstudio.com/). It's a [text editor](https://en.wikipedia.org/wiki/Text_editor) that should be installed on all the Data Lab computers. And if you can't figure it out from *that*, try searching online for any applications that will let you view 
+
+1. **Open all the files and determine whether the data is GIS friendly.** If not, make a list of problems that you notice. Then fix each one.
+
+   I recommend using Microsoft Excel, and promise that the data can be wrangled using just two functions: `Find and replace` and `Text to columns`. Work together (and with the internet) to figure out how to locate and use these functions.
+
+2. **What is the data trying to tell you?** Examine the field names and the information they depict. 
+3. **What kinds of fields are common across all the datasets?** Write down an example from each dataset. Why are these fields important? Note that the field might not have the same name in each dataset.
+4. **Does the data contain information about where it came from?** As discussed in class, this "data about data" is simply called *metadata*. What metadata columns, if any, can you find?
+5. **Does the data contain geographic information?** Again, if so, which fields contain it? Do you think this geographic information can be mapped, and why or why not?
 
 <div align=center>
 
-| [![dataA]][a] [![dataB]][b] |
-| :-------------------------- |
-| [![dataC]][c] [![dataD]][d] |
+[![dataA]][a]
+
+[![dataB]][b]
+
+[![dataC]][c]
 
 </div>
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->
 
-[a]: /week/02_data/in-class/data/a.csv
+[a]: /week/02_data/in-class/data/a.xls
 [b]: /week/02_data/in-class/data/b.csv
-[c]: /week/02_data/in-class/data/c.csv
-[d]: /week/02_data/in-class/data/d.json
+[c]: /week/02_data/in-class/data/c.json.zip
 
 <!---------------------------------[ Buttons ]--------------------------------->
 
 [dataa]: https://img.shields.io/badge/get_Data_A-red?style=for-the-badge
 [datab]: https://img.shields.io/badge/get_Data_B-blue?style=for-the-badge
 [datac]: https://img.shields.io/badge/get_Data_C-yellow?style=for-the-badge
-[datad]: https://img.shields.io/badge/get_Data_D-green?style=for-the-badge
