@@ -52,10 +52,12 @@ To begin, download each dataset with `Right-click` ➡️ `Save as...`, and open
 
 Once you feel you have satisfactory answers to these questions for each dataset – or you have at least made an honest attepmt at discovering them – see if you can figure out what the data is. Can you snoop out each one!
 
+<!-- https://github.com/itspangler/geospatial-humanities-s2024/raw/main/week/02_data/in-class/data/a.xls -->
+
 <!-------------------------------------[ Links ]
 ---------------------------------------->
 
-[a]: /week/02_data/in-class/data/a.xls
+[a]: ../../../../geospatial-humanities-s2024/raw/main/week/02_data/in-class/data/a.xls
 [b]: /week/02_data/in-class/data/b.csv
 [c]: /week/02_data/in-class/data/c.json.zip
 
