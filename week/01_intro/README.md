@@ -8,7 +8,9 @@
 
 </div>
 
-In this first meeting, we'll assess the landscape of the digital and geospatial humanities. You'll learn how to think spatially from a research and storytelling perspective. 
+In this first meeting, we'll assess the landscape of the digital and geospatial humanities, discussing and defining what those things are and speculating as to what their limitations might be. This will require us to proceed from thinking spatially and geographically towards asking spatial research questions, and ultimately, weaving together spatial narratives through maps. Geographic information systems – ***GIS***, for short – will be the main technology that we use to engage with those questions over the next 15 weeks. We will spend some time defining that as well.
+
+You're also going to learn how to interact with a computer, which you might already know how to do, but I humbly (if a bit ominously) submit that lots of you only *think* you know how to do, which, if that is indeed the case, makes this a critical practical part of the class.
 
 ---
 **Table of contents**
@@ -18,26 +20,30 @@ In this first meeting, we'll assess the landscape of the digital and geospatial 
   - [Slides](#slides)
   - [Housekeeping](#housekeeping)
 - [After class](#after-class)
-  - [Readings](#readings)
-  - [Lab work](#lab-work)
+  - [Read](#read)
+  - [Complete](#complete)
 ---
 
 ## Before class
 
-Nothing is required! It's the first day of the semester. Just show up.
+Nothing is required! It's the first day of the semester. Just show up, please.
 
 ## During class
 
 ### Lecture
 
 1. **Thinking spatially**
+   1. What is a map, anyhow?
+   2. Spatial research questions
 2. **The birth of GIS**
-   1. Technology, strong objectivity, and situated knowledge
-   2. Positivism and post-positivism
+   1. Social history of computing
+   2. Technology, strong objectivity, and situated knowledge
+   3. Positivism and post-positivism
 3. **Best practices for computer-ing**
    1. Understanding paths and files
    2. Compression and common file types
    3. Folder organization and file nomenclature
+4. **Getting started with ArGIS Pro**
 
 ### Slides
 
@@ -50,19 +56,20 @@ link to slides
 
 ## After class
 
-### Readings
+### Read
 
 [![read]][link]
 
-* [![opt]][link] Section II, "Early Rumblings: the first wave," pp. 572-579 from Schuurman, Nadine. 2000. [“Trouble in the Heartland: GIS and Its Critics in the 1990s.” *Progress in Human Geography* 24 (4): 569–90](https://doi.org/10.1191/030913200100189111).
+* [![opt]][link] Section II, "Early Rumblings: the first wave," pp. 572-579 from Schuurman, Nadine. 2000. [“Trouble in the Heartland: GIS and Its Critics in the 1990s.”](https://doi.org/10.1191/030913200100189111) *Progress in Human Geography* 24 (4): 569–90.
 
-* [![opt]][link] pp. 526-533 from Tobler, Waldo R. 1959. [“Automation and Cartography.” *Geographical Review* 49 (4): 526–34](https://doi.org/10.2307/212211).
+* [![opt]][link] pp. 526-533 from Tobler, Waldo R. 1959. ["Automation and Cartography."](https://doi.org/10.2307/212211) *Geographical Review* 49 (4): 526–34.
 
-### Lab work
+
+### Complete
 
 [![lab]][link]
 
-* [![req]][link] Complete [Exercise 1: Creating a map with ArcGIS Pro](./exercises/exercise1.md). Pay attention to the [Deliverables](./exercises/exercise1_basics-india.md#deliverables)
+* [![req]][link] [Exercise 1: Creating a map with ArcGIS Pro](./exercises/exercise1.md). Pay attention to the [Deliverables](./exercises/exercise1_basics-india.md#deliverables)
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->

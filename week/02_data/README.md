@@ -10,7 +10,7 @@
 
 </div>
 
-Detailed description of topic
+Fluenecy in GIS requires a strong understanding of spatial data structures. However, because our subject is humanistic as well as geospatial, we also need to play close attention to the 
 
 ---
 ### Table of contents <!-- omit in toc -->
@@ -54,7 +54,20 @@ Outline of housekeeping stuff (may not actually discuss during class)
 
 ### Read
 
-* test
+<details>
+<summary><b>Reading considerations</b></summary>
+<br>
+This week's required reading reflects on an important question: when we encounter datasets that bear witness to unspeakable tragecy, how should we engage with it? In Jamelle Bouie's words, "How do we wield these powerful tools for quantitative analysis without abstracting the human reality away from the story? And what does it mean to study something as wicked and monstrous as the slave trade using some of the tools of the trade itself?"
+
+<br>
+
+Rather than demand an answer, we should respond to this question by adjusting our orientation towards storytelling, history, and data. If we are going to learn with and from this data – as exercises next week require that we do – we bear the critical responsibility of approaching it with the respect, care, and attention that it demands of us.
+</details>
+<br>
+
+* [![req]][link] Bouie, Jamelle. 2022. "[We Still Can’t See American Slavery for What It Was.](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html.)" *The New York Times*, January 28, 2022, sec. Opinion.
+
+* [![opt]][link] McKittrick, Katherine. 2014. "[Mathematics Black Life.](https://www.jstor.org/stable/10.5816/blackscholar.44.2.0016)" The Black Scholar 44 (2): 16–28.
 
 
 ### Interact
@@ -63,3 +76,16 @@ Outline of housekeeping stuff (may not actually discuss during class)
 
 ### Complete
 * [Exercise 2: Slave Voyages](/week/02_data/exercises/)
+
+
+<!-------------------------------------[ Links ]
+---------------------------------------->
+
+[link]: #
+
+<!---------------------------------[ Buttons ]--------------------------------->
+
+[req]: https://img.shields.io/badge/REQUIRED-37a779?style=for-the-badge
+[opt]: https://img.shields.io/badge/OPTIONAL-blue?style=for-the-badge
+[read]: https://img.shields.io/badge/est._time-30_mins-blue
+[lab]: https://img.shields.io/badge/est._time-up_to_4_hrs-blue
