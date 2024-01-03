@@ -6,11 +6,17 @@
 
 |![Boston personal income ; Boston personal income \[and\] residential population density](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:fn107c409/866,116,10489,5244/1200,/0/default.jpg)
 |:-:
-|*Boston personal income ; Boston personal income \[and\] residential population density* by Joseph Passonneau (1966). From [Leventhal Map & Education Center Digital Collections](https://collections.leventhalmap.org/search/commonwealth:x633f952x).
+|*Boston personal income ; Boston personal income \[and\] residential population density* by Joseph Passonneau (1966). From [Leventhal Map & Education Center Digital Collections](https://collections.leventhalmap.org/search/commonwealth:fn107c39j).
+
+|![Maury whale chart](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:x633f9536/full/1200,/0/default.jpg)
+|:-:
+|*Whale chart* by Matthew Fontaine Maury (1851). From [Leventhal Map & Education Center Digital Collections](https://collections.leventhalmap.org/search/commonwealth:x633f952x).
 
 </div>
 
-Fluenecy in GIS requires a strong understanding of spatial data structures. However, because our subject is humanistic as well as geospatial, we also need to play close attention to the 
+Fluenecy in GIS requires a strong understanding of spatial data structures. This includes not just what those structures are, but how they are arranged and why they look the way they do. 
+
+The map above shows two views of a 
 
 ---
 ### Table of contents <!-- omit in toc -->
@@ -28,7 +34,6 @@ Fluenecy in GIS requires a strong understanding of spatial data structures. Howe
 ## Before class
 
 * Complete [Exercise 1](/week/01_intro/exercises/exercise1_basics-india.md).
-* Read ___.
 
 ## During class
 
@@ -40,7 +45,8 @@ Fluenecy in GIS requires a strong understanding of spatial data structures. Howe
    3. Tabular
 2. **Querying spatial data**
 3. **Logical operators**
-4. **Geospatial data sources** (visit from Dr. Kaylen Dwyer)
+4. **The modifiable areal unit problem**
+5. **Geospatial data sources**
 
 ### In-class activity
 

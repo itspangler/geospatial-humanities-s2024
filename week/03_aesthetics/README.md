@@ -16,21 +16,17 @@ Good design catches our attention, but it also tells a story. In Frank Chimero's
 
 > What is the marker of good design? It moves.
 
-By "moves," Chimero does not mean that it needs to move literally. The thing can also be perfectly still, so long as it moves *you*. He goes on to describe movement in greater detail:
+By "moves," Chimero does not mean that it needs to move literally. The thing can also be perfectly still, so long as it moves *you*. Of course, some good design does indeed move literally, as in the map above. This collaborative project, published by *High Country News*, investigates expropriated indigenous land in what's now known as the United States that was granted to universities through the Morrill Act in 1862. 
 
-> The story of a successful piece of design begins with the movement of its maker while it is being made, and amplifies by its publishing, moving the work out and around. It then continues in the feeling the work stirs in the audience when they see, use, or contribute to the work, and intensifies as the audience passes it on to others. Design gains value as it moves from hand to hand; context to context; need to need. If all of this movement harmonizes, the work gains a life of its own, and turns into a shared experience that enhances life and inches the world closer to its full potential.
+What makes maps different from other kinds of visual communication is their representation of place. When we see a map, we tend to place ourselves in it or on it or somewhere in relation to it. Imperfect though they may be for capturing the fine-grained, lived experiences of people in places, maps remain some of the best tools we have for the job.
 
-In other words, Chimero is talking about physical movement – a mouse click, a brush stroke, a knitting needle – that is transformed, through design, to emotional movement.
-
-Of course, some good design does indeed move literally, as in the map above that depicts expropriated indigenous land in what's now known as the United States that was granted to universities through the Morrill Act in 1862. In this digital map, we see a . What makes maps different from other kinds of visual communication is their representation of place. Imperfect though they may be for capturing the lived experiences of people in places, they are some of the best tools we have for the job.
-
-This week, we focus on design. Good design is an important part of making maps with strong good arguments. And while the idea that something can be designed "well" or "good" – that is to say, aesthetically pleasing – is itself deeply subjective, but of course, there are general principles of cartographic design that you should know. This includes theoretical principles, such as
+This week, we focus on design. Good design is an important part of making good maps with strong arguments. And while the idea that something can be designed "well" or "good" – that is to say, aesthetically pleasing – is itself deeply subjective, there are, of course, general principles of cartographic design that you should know. This includes theoretical principles, such as...
 
 * basic color theory
 * figure-ground relationships
 * data classification schemes
   
-As well as technical skills and practical knowledge including
+As well as technical skills and practical knowledge including...
 
 * when & how to generalize data
 * when to use a serif vs. sans-serif font
@@ -42,7 +38,7 @@ More often than not, you will want to follow these principles when representing 
 
 # Before class
 
-What should people have done by class start
+* Complete 
 
 # During class
 

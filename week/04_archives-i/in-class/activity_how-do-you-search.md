@@ -2,7 +2,7 @@
 
 # Archives, Old and New
 
-![Mystery](images/mystery.png)
+![Scanning](https://hangingtogether.org/wp-content/uploads/2009/06/bpl3.jpg)
 
 </div>
 

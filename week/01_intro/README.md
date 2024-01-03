@@ -2,10 +2,6 @@
 
 # Week 01: Humanistic GIS <!-- omit in toc -->
 
-|![Maury whale chart](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:x633f9536/full/1200,/0/default.jpg)
-|:-:
-|*Whale chart* by Matthew Fontaine Maury (1851). From [Leventhal Map & Education Center Digital Collections](https://collections.leventhalmap.org/search/commonwealth:x633f952x).
-
 </div>
 
 In this first meeting, we'll assess the landscape of the digital and geospatial humanities, discussing and defining what those things are and speculating as to what their limitations might be. This will require us to proceed from thinking spatially and geographically towards asking spatial research questions, and ultimately, weaving together spatial narratives through maps. Geographic information systems – ***GIS***, for short – will be the main technology that we use to engage with those questions over the next 15 weeks. We will spend some time defining that as well.
