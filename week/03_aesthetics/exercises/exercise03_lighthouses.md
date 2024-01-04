@@ -538,7 +538,9 @@ Press the **Edit** button under the **Edit** tab, and we'll fix both of these is
    5. Set the expression dialog to
 
           !date_sunk![0:4]
-   
+
+      In Python, this is called a [substring](https://stackoverflow.com/questions/663171/how-do-i-get-a-substring-of-a-string-in-python). The first number specifies how many characters to remove from the left/front of the specified string, and the second number specifies how many characters to remove from the right/end. Since our dates are consistently formatted, we can use a simple substring to strip `mmdd` from the right, retaining only `yyyy` at the left.
+
    6. Again leave Code Block and Enforce Domains untouched.
 
 Click **Apply** and check the attribute table to see if your calculation succeeded.
