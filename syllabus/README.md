@@ -149,6 +149,8 @@ Both the schedule and its weekly themes are subject to change.
 
 **Week 7, February 27 • Archives II • Breathing new life into old maps**
 
+> *???*
+
 * **Guiding questions**.
 * **Theoretical positions**.
 * **Technical skills**. Deriving data from historic maps; Georeferencing; feature extraction.

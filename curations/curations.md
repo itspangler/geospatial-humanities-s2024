@@ -25,7 +25,7 @@
     1. [Context](https://globalvoices.org/2017/06/15/one-woman-is-behind-the-most-up-to-date-interactive-map-of-femicides-in-mexico/)
     2. [More context](https://www.opendemocracy.net/en/5050/how-one-woman-is-mapping-femicides-in-mexico/)
     3. [Last one](http://www.kanarinka.com/project/counting-feminicide-data-feminism-in-action/)
- 20. [Library of Congress story mapshttps://www.loc.gov/collections/geospatial-applications/?fa=partof:story+maps](https://www.loc.gov/collections/geospatial-applications/?fa=partof:story+maps)
+ 20. [Library of Congress story maps](https://www.loc.gov/collections/geospatial-applications/?fa=partof:story+maps)
  21. [Open History Archive](https://www.openhistoryarchive.com/)
      1. [Quipu Project](https://www.openhistoryarchive.com/quipu-project)
      2. [Hiroshima Archive](https://www.openhistoryarchive.com/hiroshima-archive)
