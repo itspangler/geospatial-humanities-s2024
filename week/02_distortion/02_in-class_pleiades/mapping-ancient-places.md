@@ -12,7 +12,7 @@
 
 # Table of contents <!-- omit in toc -->
 
-- [**Introduction \& context**](#introduction--context)
+- [**Introduction**](#introduction)
 - [**Setting up your workspace**](#setting-up-your-workspace)
 - [**The data**](#the-data)
   - [**Download it**](#download-it)
@@ -25,32 +25,21 @@
     - [**Projected coordinate systems**](#projected-coordinate-systems)
     - [**Managing coordinate systems in ArcGIS Pro**](#managing-coordinate-systems-in-arcgis-pro)
   - [**Loading tabular data as points in ArcGIS Pro**](#loading-tabular-data-as-points-in-arcgis-pro)
-  - [**Querying Pleiades data to find simple patterns**](#querying-pleiades-data-to-find-simple-patterns)
-    - [**Doing that**](#doing-that)
-    - [**Doing more of that**](#doing-more-of-that)
+- [**Querying Pleiades data to find simple patterns**](#querying-pleiades-data-to-find-simple-patterns)
+  - [**Doing that**](#doing-that)
+  - [**Doing more of that**](#doing-more-of-that)
+- [**Troubleshooting the grid with Pleiades data**](#troubleshooting-the-grid-with-pleiades-data)
+  - [**Troubleshooting missing or incorrect spatial reference**](#troubleshooting-missing-or-incorrect-spatial-reference)
 
-# **Introduction & context**
+# **Introduction**
 
-<!-- ## **The traveler**
-
-Ibn Battuta was a traveler. He began his travels as part of a [Hajj](https://en.wikipedia.org/wiki/Hajj), but over a period of nearly thirty years between 1325 and 1354, Battuta covered about 75,000 miles. He visited the equivalent of 44 modern countries which were then mostly under the governments of Muslim leaders of the World of Islam, or "Dar al-Islam" (n.d., Berkeley ORIAS' [*The Travels of Ibn Battuta*](https://orias.berkeley.edu/resources-teachers/travels-ibn-battuta)).
-
-According to Marlène Barsoum (2006:195), Ibn Battuta "travelled by horse, mule, camel, ox-wagon, raft and on foot, spanning about three times the distance Marco Polo, the other illustrious medieval traveller, claimed to have crossed." At the conclusion of his travels, he dictated the details of his *Rihla*, which translates both to "journey" and "journal," to Ibn Juzayy. This dictation, in a number of languages, survives today.
-
-In modern terms, he traveled to through North Africa, Palestine, Syria, Baghdad, Iran, Yemen, East Africa, Oman, the Persian Gulf, Asia Minor, the Caucasus, southern Russia, India, the Maldive Islands, China, Andalusia, and the Sahara. However, you can imagine that scholars of this period of Islamic Middle Eastern history may want to plot these places on a map. If we can do that using era-appropriate place names, even better.
-
-Let's take a crack at it. -->
-
-<!-- ## **Deadlines & logistics** -->
-
-Using the [Pleiades dataset](https://pleiades.stoa.org) – a [gazetteer](https://en.wikipedia.org/wiki/Gazetteer) of ancient place names – you'll plot the first chapter of his *Rihla* on a map.
+This activity will walk you through plotting XY data and troubleshooting coordinate systems using the [Pleiades dataset](https://pleiades.stoa.org), a [gazetteer](https://en.wikipedia.org/wiki/Gazetteer) of ancient place names.
 
 This activity will primarily focus on:
 * formatting tabular data for GIS in Microsoft Excel
 * displaying XY data
 * basic attribute table queries
 * troubleshooting geographic and projected coordinate systems
-* basic table joins
 
 By class time on January 30, you should have submitted a couple of screenshots from this activity to Canvas in `.docx` format (this counts towards participation).
 
@@ -113,7 +102,7 @@ Open the `places.csv` file in Microsoft Excel by `double-clicking` the file. The
 
 Thankfully, the dataset is really tidy, so we don't need to fuss with it a lot. However, it's best practice, when possible, to keep your field names to 10 characters or less. This specification is important because the **shapefile** format has a field name maximum character limit of 10, and shapefiles are encountered really commonly in GIS and geospatial humanities workflows.
 
-Rename each field name so that it contains 10 characters or less. (The destination format of this file is an [ArcGIS feature class](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/feature-class-basics.htm), so it's not *super* important in this case, but again: this is best practice.) The result should resemble:
+Rename each field name so that it contains 10 characters or less. (The destination format of this file is an [ArcGIS feature class](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/feature-class-basics.htm) which has much longer field name limits, so it's not *super* important in this case, but this is best practice notwithstanding.) The result should resemble:
 
 ![renamed](images/image005.png)
 
@@ -123,7 +112,11 @@ Let's turn that `csv` file – an example of *tabular* data – into real-life,
 
 ## **🌎 Geodesy in 5 minutes**
 
-... but first, we should take a moment to wrap our heads around the round globe.
+... but first, we should take a moment to wrap our round heads around the round globe.
+
+| ![projhead](https://www.leventhalmap.org/digital-exhibitions/bending-lines/img/figures/hathi--headprojection.jpg) |
+| :---------------------------------------------------------------------------------------------------------------- |
+| From Charles H. Deetz, *Elements of Map Projection With Applications to Map and Chart Construction* (Washington: Government Printing Office, 1921): 51. [HathiTrust/Cornell](https://babel.hathitrust.org/cgi/pt?id=coo.31924003898271&seq=59) |
 
 [Geodesy](https://support.esri.com/en-us/gis-dictionary/geodesy) is the study of the shape and size of the earth, including its gravitational and magnetic field. It's a pretty complicated science – made all the more so by the fact that the Earth is not *truly* a sphere, but in fact a [lumpy oblate spher*oid*](https://www.esa.int/ESA_Multimedia/Images/2010/04/Earth_Explorers_The_Earth_s_true_shape) – so here's a quick and dirty highlight reel of geodesy for geospatial humanists like yourself.
 
@@ -139,14 +132,13 @@ We're speaking in terms of coordinates because when flattened out, the world ess
 
 On the X-axis, lines of **latitude** (also known as *parallels*) wrap horizontally around the earth. The **equator** is the largest parallel at `0°`, but they become smaller as they approach +/- `90°` at either of the poles. 
 
-On the Y-axis, lines of **longitude** (also known as *meridians*) wrap vertically around the earth, intersecting one another at the north and south poles. The **Greenwich Meridian** that passes through the Royal Observatory in Greenwich, England is arbitrarily designated at `0°`, a decision that Giordano Nanni has described as "[the colonization of time](https://colonialfamilies.wordpress.com/2014/03/30/review-the-colonisation-of-time-by-giordano-nanni/)."
+On the Y-axis, lines of **longitude** (also known as *meridians*) wrap vertically around the earth, intersecting one another at the north and south poles. As a consequence of an [1884 political conference](https://en.wikipedia.org/wiki/International_Meridian_Conference), the **Greenwich Meridian** that passes through the Royal Observatory in Greenwich, England is arbitrarily designated at `0°` – a decision that Giordano Nanni has described as "[the colonization of time](https://colonialfamilies.wordpress.com/2014/03/30/review-the-colonisation-of-time-by-giordano-nanni/)."
 
-> **NOTE:** I will be the first to admit that I still need to use a dumb little thing to remember the difference between latitude and longitude. **Remember: *lat*-itude is *flat*-itude.** Dumb little things are good; dumb little things are okay.
+> **NOTE:** I will be the first to admit that I still need to use a dumb little thing to remember the difference between latitude and longitude. **Remember: *lat*-itude is *flat*-itude.** Dumb little things are okay.
 
 |                                                     ![latlong](images/image009.png) ![graticularnetwork](images/image010.png)                                                     |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| *Lines of latitude (left) and longitude (right), which form a graticular network (bottom), courtesy of [GISGeography](https://gisgeography.com/latitude-longitude-coordinates/).* |
-|                                                                                                                                                                                   |
+| *Lines of latitude (left) and longitude (right), which form a graticular network (bottom), from [GISGeography](https://gisgeography.com/latitude-longitude-coordinates/).* |
 
 The X and Y axes meet at the grid's **origin**, and all other locations on the grid are specified relative to that origin. This is an example of a **Cartesian coordinate system**, or a grid formed by [juxtaposing two horizontal and vertical measurement scales](https://www.e-education.psu.edu/natureofgeoinfo/c2_p10.html).
 
@@ -157,7 +149,6 @@ You'll most commonly encounter two kinds of coordinate systems when working with
 |                                  ![gcs](images/image006.png)                                  |
 | :-------------------------------------------------------------------------------------------: |
 | [*Geographic coordinate system*](https://www.e-education.psu.edu/natureofgeoinfo/c2_p10.html) |
-|                                                                                               |
 
 A **geographic coordinate systems (GCS)** defines positions on the surface of the earth. It uses concrete, measured values to define global parameters, in the literal sense of the word "global." An example is `WGS84`. Its global parameters are [defined as follows](https://www.unoosa.org/pdf/icg/2012/template/WGS_84.pdf):
 
@@ -167,14 +158,12 @@ A **geographic coordinate systems (GCS)** defines positions on the surface of th
 | Flattening factor of the Earth                                          | 1/f          | 298.257223563                                                      |
 | Nominal Mean Angular Velocity of the Earth                              | ω            | 7292115 x 10<sup>-11</sup> radians/second                          |
 | Geocentric gravitational constant (Mass of Earth's atmosphere included) | GM           | 3.986004418 x 10<sup>14</sup> meter<sup>3</sup>/second<sup>2</sup> |
-|                                                                         |              |                                                                    |
 
 ### **Projected coordinate systems**
 
 | ![pcs](images/image007.png)                                                                |
 | :----------------------------------------------------------------------------------------- |
 | [*Projected coordinate system*](https://www.e-education.psu.edu/natureofgeoinfo/c2_p10.html) |
-|                                                                                            |
 
 A **projected coordinate system (PCS)** defines how to display that lumpy, oblate, spheroid surface as a flat map. It uses abstract, mathematical formulas to effect cartographic transformations that show certain areas on the globe with less distortion, and other areas with more. An example PCS is `Mercator`. Its [formula](https://www.marksmath.org/classes/common/MapProjection.pdf) is:
 
@@ -188,9 +177,8 @@ I'm only throwing this fancy math at you to highlight the distinctions between t
 | ------------------------------ | --------------------------- | ---------------------------- | ---------------- |
 | *Geographic coordinate system* | Globe (e.g., the territory) | Degree units (e.g., 40° W)   | `WGS84`, `NAD27`     |
 | *Projected coordinate system*  | Places (e.g., the map)      | Linear units  (e.g., meters) | Mercator, Peters |
-|                                |                             |                              |                  |
 
-To view spatial data in ArcGIS Pro, you don't need to use a PCS, but you *must* use a GCS. When a geographic coordinate system is selected without a PCS, your map will be projected using the [pseudo-plate carrée projection](https://support.esri.com/en-us/gis-dictionary/display-projection).
+To view spatial data in ArcGIS Pro, you don't need to use a PCS, but you *must* use a GCS. By default, a new ArcGIS Pro project will take on the coordinate system of the first data later you add, including a base map. Often this will be `WGS 1984 Web Mercator`. When a geographic coordinate system is selected without a PCS, your map will be projected using the [pseudo-plate carrée projection](https://support.esri.com/en-us/gis-dictionary/display-projection).
 
 You can view project-wide information about GCS and PCS by `right-clicking` the "Map" layer in your **Contents** pane ➡️ `Properties` ➡️ `Coordinate Systems`.
 
@@ -217,7 +205,7 @@ Nice!
 
 Now we've got a full-fledged feature class containing 40,000 points of ancient places, plotted from a humble `csv`. That said, it's kind of difficult to make sense of all this...
 
-## **Querying Pleiades data to find simple patterns**
+# **Querying Pleiades data to find simple patterns**
 
 ... so let's see if we can break this data down and find any interesting patterns.
 
@@ -230,9 +218,9 @@ While the `title` field has the most obviously *mappable* information, the descr
 
 What if we were able to search through the entire contents of this feature class for interesting words like "mound" and "grave" and "necropolis," selecting only those features which include such terms?
 
-Wait a minute! We *can* do that!!!
+Wait a minute: we *can* do that!!!
 
-### **Doing that**
+## **Doing that**
 
 1. At the top of the attribute table, click the **Select by Attributes** button. It will open a little dialog box.
 2. You can leave the Input Rows and Selection Type parameters as they are.
@@ -248,44 +236,48 @@ Wait a minute! We *can* do that!!!
 
     Now the attribute table should show you only those records you selected.
 
-7. `Right-click` on the "pleiades_places" layer in your **Contents** pane and choose "Zoom to layer." This is a really handy shortcut for snapping the data to full screen in your map view.
+7. `Right-click` on the "pleiades_places" layer in your **Contents** pane and choose "Zoom to layer." This is a really handy shortcut for snapping a data layer to full screen in your map view.
 8. Just eyeballing it, do you notice any patterns in how the blue points are distributed?
 
-### **Doing more of that**
+## **Doing more of that**
 
-Take a moment to do more of that. Test out a couple of other keywords in your query. Replace "mound" if you want. Once you've found a few that you like, combine them with the "Add Clause" button in the **Select by Attributes** interface. **You should choose at least 3 queries in total**. Be conscious of how you're using [boolean operators](https://researchguides.library.tufts.edu/hsl-advanced-searching).
+Take a moment to do more of that. Test out a couple of other keywords in your query. Replace "mound" if you want. Once you've found a few that you like, combine them with the "Add Clause" button in the **Select by Attributes** interface. **You should choose at least 3 queries in total**. Be conscious of how you're using [boolean operators](https://researchguides.library.tufts.edu/hsl-advanced-searching); for example, if you string together multiple queries using `AND`, you'll likely end up with few or zero results.
 
 While you're at it, toggle the SQL button ![sqlbutton](images/image015.png) on and off to see how your queries are actually being composed behind the scenes. Eventually, you'll probably find it just as easy – if not easier – to type these kinds of queries out manually than to select them using an interface.
 
 Note that if your attribute table is set to only "Show Selected Records," you won't see the Select by Attributes tool.
 
-> [![q]][l] [Take a screenshot](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) of the ArcGIS Pro screen showing the three queries that you decided to run and paste it in a Word document to be submitted at the end of the activity (it should include the total number of features).
+> [![q]][l] 
+> 1. Paste your full SQL query, as it appears in the dialog when you toggle the SQL button on.
+> 2. Describe in 2-3 sentences the geographical distribution of the selected points (e.g., where they are clustered).
+
+<!-- ## **Pleiades data in action**
+
+Add section on table join with [Bishoprics data](https://www.dropbox.com/scl/fo/39pmdhf2oey41x9nkxq8j/h/Bishoprics%20Lists.xlsx?rlkey=r7q6fikdcgfan4uwru1pgebpq&dl=0)
+
+Have students export joined records as standalone feature class -->
+
+# **Troubleshooting the grid with Pleiades data**
+
+If we wanted to make more specific maps of regions within this Pleiades dataset – something like the Ancient World Mapping Center's [map of Catholic and Donatist Bishoprics in 5th century North Africa](https://awmc.unc.edu/2023/11/02/maps-for-texts-catholic-and-donatist-bishoprics-in-north-africa-c-411-ce/) – it's important to choose a better projection than our current, default projection of `WGS 1984 Web Mercator`.
+
+Using the table below, choose four locations that fall within the full range of the Pleiades dataset, and set the correction projection through the **Map** properties for each. As you do, take a screenshot of the ArcGIS Pro with the projection set (and zoomed into the area of interest) and write down the projection information (PCS name, Projection type, the Linear Unit).
+
+
+|    Large     |       Medium        |     Small      |
+| :----------: | :-----------------: | :------------: |
+| Vatican City |       Greece        |  North Africa  |
+|    Cairo     |   Southern India    | Eastern Europe |
+|  Jerusalem   |  Northern Baghdad   | Western Europe |
+|   Baghdad    |       Algeria       |     India      |
+|  Siem Reap   | Strait of Gibraltar |  Middle East   |
+|   Baghdad    |        Egypt        |     Russia     |
+
+> [![q]][l] 
 > 
-> Below it, describe in 2-3 sentences the geographical distribution of the selected points (e.g., where they are clustered).
+> 3. Following the instructions above, [paste your screenshots](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) into a Word document. Each screenshot should be accompanied by the appropriate projection information.
 
-<!-- # **Using Pleiades data to map Ibn Battuta's travels**
-
-Now that you've got a handle on the data itself, let's turn our attention back to the traveler Ibn Battuta.
-
-His *Travels* are available to read online for free in a [variety](https://www.defence.lk/upload/ebooks/The%20Travels%20of%20Ibn%20Battuta.pdf) of [locations](https://upload.wikimedia.org/wikipedia/commons/b/bd/The_Travels_of_Ibn_Bat%C5%ABta.pdf), but the one from [Carnegie Mellon University](https://web2.qatar.cmu.edu/~breilly2/odyssey/Ibn%20Batuta.pdf) is the easiest.
-
-These instructions will show you how to filter ancient places that appear in the first Chapter of Ibn Battuta's journey, using ArcGIS Pro and Microsoft Excel.
-
-1. Read through the first Chapter of the *Travels* (it's only a few paragraphs long) and mark all the place names you can find in an Excel spreadsheet, even – *especially* – the ones you don't recognize. 
-
-    Format your spreadsheet with 2 columns: `name` and `uri`.
-
-    As you read, enter the place name in the `name` column, as it appears in the text. In the `uri` column, enter the place's Pleiades universal resource identifier (URI). You can find that by searching the place name in Battuta's text within the [Pleiades database](https://pleiades.stoa.org/). This will **not** always be a straightforward process.
-
-    For example, the first place name that appears in Chapter I is "Tanjiers." A search for both "Tanjiers" and "Tangier" return no results...
-
-    ![tangiers](images/image016.png)
-
-    ... so your next stop is to just search Google. I searched "tanjiers pleiades" and the first hit was "[Tingi: A Pleiades place](https://pleiades.stoa.org/places/275736)." After quickly confirming that this is probably the right place (it's located in modern-day Tangier, Battuta's home city), I'm going to copy the **Canonical URI for this page** – `https://pleiades.stoa.org/places/275736` – and paste it into the `uri` column of my spreadsheet.
-
-2. Repeat this as you read until you have 5 records in your spreadsheet with values for both `name` and `uri`.
-3. Once you have your 5, save your spreadsheet as a `.csv` to your `data` folder, name it `battuta_places.csv`, and close Excel.
-4. Return to ArcGIS Pro and from the **Map** tab, select "Add Data" ➡️ "Data" ➡️ select `battuta_places.csv`.  -->
+## **Troubleshooting missing or incorrect spatial reference**
 
 
 

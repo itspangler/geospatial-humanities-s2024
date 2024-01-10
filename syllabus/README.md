@@ -25,7 +25,7 @@
 - [Detailed schedule](#detailed-schedule)
   - [Part I: Fundamentals](#part-i-fundamentals)
   - [Part II: Approaches](#part-ii-approaches)
-  - [PART III: BEYOND GIS](#part-iii-beyond-gis)
+  - [Part III:](#part-iii)
 - [Course Requirements and Grading](#course-requirements-and-grading)
 - [Assignments](#assignments)
   - [In-class assignments](#in-class-assignments)
@@ -87,7 +87,7 @@ By the end of this course students will have achieved the following learning obj
 
 ### Detailed schedule
 
-Our semester breaks down into three "Parts." During **Part I** (weeks 1-4), we'll pick up the fundamentals of geospatial humanities. During **Part II** (weeks 5-10), we'll put those fundamentals to use through various technical and analytical approaches to "doing" the geospatial humanities. Lastly, in **Part III** (weeks 11-15), we'll go "beyond" GIS, examining other tools, archives, etc.
+Our semester breaks down into three "Parts." During **Part I** (weeks 1-4), we'll pick up the fundamentals of geospatial humanities. During **Part II** (weeks 5-10), the rubber meets the road as we experiment with various technical and analytical approaches to "doing" the geospatial humanities. Lastly, in **Part III** (weeks 11-15), we'll go "beyond" GIS, examining other tools, archives, etc.
 
 Both the schedule and its weekly themes are subject to change.
 
@@ -117,7 +117,7 @@ Both the schedule and its weekly themes are subject to change.
 * Due before class:
   * Activity 01: Mapping ancient places
   * Bouie, Jamelle. 2022. "[We Still Can’t See American Slavery for What It Was.](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html.)" *The New York Times*, January 28, 2022, sec. Opinion.
-  * OPTIONAL: McKittrick, Katherine. 2014. "[Mathematics Black Life.](https://www.jstor.org/stable/10.5816/blackscholar.44.2.0016)" The Black Scholar 44 (2): 16–28.
+  * OPTIONAL: McKittrick, Katherine. 2014. "[Mathematics Black Life.](https://www.jstor.org/stable/10.5816/blackscholar.44.2.0016)" *The Black Scholar* 44 (2): 16–28.
 
 **Week 4, February 6 • Design • Aesthetics and politics in mapping**
 
@@ -126,27 +126,34 @@ Both the schedule and its weekly themes are subject to change.
 * What are the best practices for representing spatial data and making maps? To what extent are those practices contingent on flexible cultural and social norms? When should you bend or break these rules in order to make a more effective argument? Is cartography an "art" or a "science?"
 * Due before class:
   * Exercise 02: Mapping the Transatlantic Slave Trade Database: 1676-1805
-  * 
+  * Krygier, J B. 1995. "[Cartography as an Art and a Science](https://www.researchgate.net/publication/233697179_Cartography_as_an_art_and_a_science)?" *The Cartographic Journal* 32: 9.
 
 #### Part II: Approaches
 
 **Week 5, February 13 • Archives I • Contingencies of counting people**
 
-> **
+> *Census data; table joins; *
 
 * Why do we count people? Where does the device of a "census" come from? Who gets counted and who doesn't? How can we map those presences and absences?
+* Due before class:
+  * Assignment 01: Cartography assignment
+  * Jacobs, Alexandra. 2022. "[Counting the Population Has Always Been Political](https://www.nytimes.com/2022/08/28/books/democracys-data-dan-bouk.html)," *The New York Times*, 2022.
+  * Loftus, Eve and Joan Brunetta. 2024. "Mapping Black Cambridge," *Leventhal Map & Education Center*.
 
-**Week 7 • Archives II • Breathing new life into old maps**
+
+**Week 6, February 20 • Analysis I • Vector analysis**
+
+> *Spatial joins;*
+
+* 
+
+**Week 7, February 27 • Archives II • Breathing new life into old maps**
 
 * **Guiding questions**.
 * **Theoretical positions**.
 * **Technical skills**. Deriving data from historic maps; Georeferencing; feature extraction.
 
-**Week 6 • Analysis I • Proximity analysis**
-
-> *Spatial joins; *
-
-**Week 8 • Analysis II • Overlay analysis**
+**Week 8,  • Analysis II • Raster analysis**
 
 * **Guiding questions**.
 * **Theoretical positions**.
@@ -156,7 +163,7 @@ Both the schedule and its weekly themes are subject to change.
 
 *No class*
 
-#### PART III: BEYOND GIS
+#### Part III: 
 
 **Week 10 • xxx • xxx**
 
