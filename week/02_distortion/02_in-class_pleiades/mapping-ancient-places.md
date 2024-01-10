@@ -3,14 +3,14 @@
 # **Mapping ancient places** <!-- omit in toc -->
 *Use a gazetteer of the ancient world to make sense of XY data and coordinate systems*
 
-| ![travels](images/image001.png) |
+| ![travels](images/image019.png) |
 | :-: |
-| *The Empire of Dehli in the year of Ibn Battuta's arrival, from* [The Rehla of Ibn Battuta (India, Maldive Islands, and Ceylon)](https://ia902205.us.archive.org/33/items/TheRehlaOfIbnBattuta/231448482-The-Rehla-of-Ibn-Battuta_text.pdf) *(1976)*. |
+| *A map of ancient places, created with help from [Pleiades](https://pleiades.stoa.org/)*. |
 | |
 
 </div>
 
-# Table of contents <!-- omit in toc -->
+# **Table of contents** <!-- omit in toc -->
 
 - [**Introduction**](#introduction)
 - [**Setting up your workspace**](#setting-up-your-workspace)
@@ -28,8 +28,10 @@
 - [**Querying Pleiades data to find simple patterns**](#querying-pleiades-data-to-find-simple-patterns)
   - [**Doing that**](#doing-that)
   - [**Doing more of that**](#doing-more-of-that)
-- [**Troubleshooting the grid with Pleiades data**](#troubleshooting-the-grid-with-pleiades-data)
-  - [**Troubleshooting missing or incorrect spatial reference**](#troubleshooting-missing-or-incorrect-spatial-reference)
+- [**Troubleshooting the grid**](#troubleshooting-the-grid)
+  - [**Tissot's indicatrix**](#tissots-indicatrix)
+  - [**Setting locally appropriate projections**](#setting-locally-appropriate-projections)
+- [**Submit**](#submit)
 
 # **Introduction**
 
@@ -39,7 +41,7 @@ This activity will primarily focus on:
 * formatting tabular data for GIS in Microsoft Excel
 * displaying XY data
 * basic attribute table queries
-* troubleshooting geographic and projected coordinate systems
+* geographic and projected coordinate systems
 
 By class time on January 30, you should have submitted a couple of screenshots from this activity to Canvas in `.docx` format (this counts towards participation).
 
@@ -257,29 +259,81 @@ Add section on table join with [Bishoprics data](https://www.dropbox.com/scl/fo/
 
 Have students export joined records as standalone feature class -->
 
-# **Troubleshooting the grid with Pleiades data**
+# **Troubleshooting the grid**
 
-If we wanted to make more specific maps of regions within this Pleiades dataset – something like the Ancient World Mapping Center's [map of Catholic and Donatist Bishoprics in 5th century North Africa](https://awmc.unc.edu/2023/11/02/maps-for-texts-catholic-and-donatist-bishoprics-in-north-africa-c-411-ce/) – it's important to choose a better projection than our current, default projection of `WGS 1984 Web Mercator`.
+## **Tissot's indicatrix**
 
-Using the table below, choose four locations that fall within the full range of the Pleiades dataset, and set the correction projection through the **Map** properties for each. As you do, take a screenshot of the ArcGIS Pro with the projection set (and zoomed into the area of interest) and write down the projection information (PCS name, Projection type, the Linear Unit).
+![tissot](images/image017.gif)
 
+[Tissot's indicatrix](https://en.wikipedia.org/wiki/Tissot%27s_indicatrix) is a grid of *equidistantly placed* and *congruently sized* lines and circles. Overlaying it on maps helps visualize local distortion of different projections, as the [gif above of Jason Davies' tool](https://www.jasondavies.com/maps/tissot/) demonstrates. Take a moment to open his tool and drag your cursor around in it.
 
-|    Large     |       Medium        |     Small      |
-| :----------: | :-----------------: | :------------: |
-| Vatican City |       Greece        |  North Africa  |
-|    Cairo     |   Southern India    | Eastern Europe |
-|  Jerusalem   |  Northern Baghdad   | Western Europe |
-|   Baghdad    |       Algeria       |     India      |
-|  Siem Reap   | Strait of Gibraltar |  Middle East   |
-|   Baghdad    |        Egypt        |     Russia     |
+There are four properties of cartographic distortion: **area**, **distance**, **shape**, and **direction (or azimuth)**. Different projection types account for these distortions, always minimizing some at the expense of maximizing others. See below:
+
+| Projection type | What it preserves | Example       |
+| --------------- | ----------------- | ------------- |
+| Conformal       | Shape             | Mercator      |
+| Equal area      | Area              | Peters        |
+| Equidistant     | Distance          | Plate Carrée  |
+| Azimuthal       | Direction         | Stereographic |
+| Compromise      | Nothing!          | Robinson      |
+
+Penn State has some materials that do a great job of [distinguishing between these different kinds of distortion](https://www.e-education.psu.edu/natureofgeoinfo/c2_p29.html), if you want to learn more.
+
+Let's load Tissot's indicatrix into our project so we can ascertain how and where different projections distort maps.
+
+1. Download the data from Canvas, the `S: drive`, or GitHub
+2. Un-🤐 both files
+3. Move the necessary folders and files into the `data` folder in your directory
+4. Load the data into your ArcGIS Pro project
+5. `Right-click` on the `graticulet` or `caps` layer and click "Zoom to Layer"
+
+When you're done you should see something like this (ensure that the Pleiades data is on top):
+
+![tissotarc](images/image018.png)
+
+What's happening here?
+
+As [Aileen Buckley](https://www.esri.com/arcgis-blog/products/product/mapping/tissots-indicatrix-helps-illustrate-map-projection-distortion/?rmedium=redirect&rsource=blogs.esri.com/esri/arcgis/2011/03/24/tissot-s-indicatrix-helps-illustrate-map-projection-distortion) has summarized in this Esri blog post, web mercator is an **conformal projection.** That means is preserves shape, but significantly distorts area. As a result, our Tissot circles all stay circular, but some are much bigger looking than others (hence the [Mercator projection's famous inflation of Greenland to appear as large as Africa](https://www.youtube.com/watch?v=OH1bZ0F3zVU)). 
+
+If you wanted to measure the circumference of any of these circles – or if you ran [Calculate Geometry](https://support.esri.com/en-us/knowledge-base/how-to-calculate-geometry-in-arcgis-pro-000016157) on the "caps" layer – you'd see that the size of each cap is indeed the same, despite the differences in their appearances. Give it a try with the measure tool, if you want (but be sure to set the measurement type to "Geodesic").
+
+> [![ec]][l]
+>
+> **For 5 points extra credit**: in a few sentences, explain why the "Geodesic" measurement is so different from the "Planar" measurement (for full credit, you should define each of those things).
+
+Feel free to reset the projection by `Right-clicking` the "Map" ➡️ "Coordinate Systems" ➡️ choose a different one. What's being distorted? What's being preserved?
+
+## **Setting locally appropriate projections**
+
+Back to Pleiades...
+
+If we wanted to make more specific maps of regions within this Pleiades dataset – for example, see the Ancient World Mapping Center's [map of Catholic and Donatist Bishoprics in 5th century North Africa](https://awmc.unc.edu/2023/11/02/maps-for-texts-catholic-and-donatist-bishoprics-in-north-africa-c-411-ce/) – we'd want to choose a better projection than our current, default projection of `WGS 1984 Web Mercator`.
+
+In order to determine the "right" projection – and there is often more than one "right" answer! – try using [epsg.io](https://epsg.io/). This is a handy tool (operated by [MapTiler](https://www.maptiler.com/)) for determining ideal areas of coverage for different projections. It allows you to search by country and choose a suitable projection for each part of the world you want to depict.
+
+When you make these changes at the **Map** level, you're not actually manipulating the underlying spatial data: ArcGIS Pro is just reprojecting it "[on the fly](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/projection-on-the-fly-and-geographic-transformations/)." If you wanted to reproject the data itself, you'd have to use the **[Project](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/project.htm)** tool.
 
 > [![q]][l] 
 > 
-> 3. Following the instructions above, [paste your screenshots](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) into a Word document. Each screenshot should be accompanied by the appropriate projection information.
+> 3. Choose four places from the table below and imagine you're making a map in each of them. Using the **Map** properties tab, choose a suitable projection for each map. As you do, [take a screenshot](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) of ArcGIS Pro with the proper projection set and zoomed into the area of interest. Then, write down the following information:
+>     * Projection name
+>     * Linear unit
+>     * In 1-2 sentences, describe the parts of the world (e.g., the poles, specific countries) that this projection appears to distort the most.
+> 
+>     | Large scale  |    Medium scale     |  Small scale   |
+>     | :----------: | :-----------------: | :------------: |
+>     | Vatican City |       Greece        |  North Africa  |
+>     |    Cairo     |   Southern India    | Eastern Europe |
+>     |  Jerusalem   |  Northern Baghdad   | Western Europe |
+>     |   Baghdad    |       Algeria       |     India      |
+>     |  Siem Reap   | Strait of Gibraltar |  Middle East   |
+>     |   Baghdad    |        Egypt        |     Russia     |
 
-## **Troubleshooting missing or incorrect spatial reference**
+# **Submit**
 
+When you're finished, go ahead and submit your Word document – which should just include some screenshots and brief descriptions of your SQL queries and projection choices – to Canvas.
 
+This activity is due before class on January 30.
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->
@@ -290,3 +344,4 @@ Using the table below, choose four locations that fall within the full range of 
 
 [imp]: https://img.shields.io/badge/IMPORTANT!-red?style=plastic
 [q]: https://img.shields.io/badge/Question-blue?style=plastic
+[ec]: https://img.shields.io/badge/Extra_Credit!-green?style=plastic
