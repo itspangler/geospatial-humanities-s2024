@@ -1,6 +1,9 @@
-# CLS0125 Introduction to Geospatial Humanities <!-- omit in toc -->
+# CLS-0125 Introduction to Geospatial Humanities <!-- omit in toc -->
 
-*Cross-listed with History 179, Art History (FAH) 0092-04, Archaeology (ARCH) 175*
+
+
+## Spring 2024 • Tufts University <!-- omit in toc -->
+*Cross-listed with HIST-0179, FAH-0092, ARCH-0175, UEP-0103*
 
 **Spring 2024**
 
@@ -17,40 +20,32 @@
 
 **Prerequisites:** None. Students will be expected to have competence in computer use and some familiarity with Microsoft Windows environment and file management. 
 
-### Table of contents <!-- omit in toc -->
+# Table of contents <!-- omit in toc -->
 - [Course Description](#course-description)
 - [What you will learn](#what-you-will-learn)
   - [Major goals](#major-goals)
   - [Learning objectives](#learning-objectives)
-- [Detailed schedule](#detailed-schedule)
+- [Schedule](#schedule)
   - [Part I: Fundamentals](#part-i-fundamentals)
   - [Part II: Approaches](#part-ii-approaches)
-  - [Part III:](#part-iii)
-- [Course Requirements and Grading](#course-requirements-and-grading)
-- [Assignments](#assignments)
-  - [In-class assignments](#in-class-assignments)
-  - [Labs](#labs)
+  - [Part III: Applications](#part-iii-applications)
+- [Course Details](#course-details)
+  - [Grading](#grading)
+  - [Activities](#activities)
   - [Exercises](#exercises)
-- [Final Project](#final-project)
-- [Required Readings](#required-readings)
-- [Style Guidelines \& Citation](#style-guidelines--citation)
-- [Accommodations for Students with Disabilities](#accommodations-for-students-with-disabilities)
+  - [Assignments](#assignments)
+  - [Final Project](#final-project)
+  - [Required Readings](#required-readings)
+    - [Style Guidelines \& Citation](#style-guidelines--citation)
+    - [Accommodations for Students with Disabilities](#accommodations-for-students-with-disabilities)
 
----
+# Course Description
 
-<!-- ### Schedule -->
+The humanities are becoming spatial. In a very real sense, they always have been: geography informs not only how texts, maps, and other objects are produced, but how we encounter them as readers and users. However, in recent years, improvements in computing technology has harmonized with interest among researchers to create an exciting area of study around deriving structured geographic data from .
 
-<!-- <button>[Schedule](../schedule/README.md)</button> -->
+This course introduces geospatial theory, methods, and technology for applications in the humanities in past and present settings. We'll often use the catch-all term "GIS" – short for **geographic information systems** – to describe these geospatial tools. GIS consists of a combination of software, data, methods, and hardware with capabilities for manipulating, analyzing, and displaying spatially referenced data. We'll explore GIS data structures, data creation, basic geodesy, spatial analysis, cartographic visualization, and more, learning not only how to use these tools effectively, but how to use them intentionally. Detailed exercises apply concepts presented in the lectures using a variety of geospatial software in the ArcGIS ecosystem (as well as basic data wrangling literacy in tools like Microsoft Excel). Assignments concentrate on creative applications of concepts covered in lectures and exercises, including a final project in which students  field of interest.
 
-### Course Description
-
-The humanities are becoming spatial.  informs not only how texts, maps, and other objects are produced, but how we encounter them as readers and users. In this course, we will prod at the geospatial dimensions of the humanities, or those aspects from which we can derive structured geographic data.
-
-This course introduces geospatial theory, methods, and technology for applications in the humanities in past and present settings. We'll often use the catch-all term "GIS" – short for **geographic information systems** – to describe these geospatial tools. GIS consists of a combination of software, data, methods, and hardware with capabilities for manipulating, analyzing, and displaying spatially referenced data.
-
-The course gives primary emphasis to GIS data structures, data creation, geodesy, spatial analysis, and cartographic visualization. We will discuss not only how to use these tools effectively, but how to use them intentionally. Detailed labs and exercises apply concepts presented in the lectures using two geospatial softwares: ArcGIS Pro and ArcGIS StoryMaps software. Assignments concentrate on applying concepts covered in lectures and exercises and include a final project that applies GIS to each student's field of interest.
-
-### What you will learn
+# What you will learn
 
 Students will learn to use GIS to answer humanistically-informed spatial questions. For instance:
 
@@ -58,7 +53,7 @@ Students will learn to use GIS to answer humanistically-informed spatial questio
 * A student interested in **environmental history** wants to assess the impact of the straightening of the Mystic River in Massachusetts. Using historical maps and historical aerial photography, the student creates a GIS dataset of the historical Mystic River. Through incorporating additional historical GIS data and spatial operations, the student calculates the historical and present landcover and populations impacted by the straightening of the river.
 * A student of **classical literature** is interested in approaches to distant readings of *The Odyssey*. The student extracts locations of places mentioned within the text and calculates the number of mentions of each place and by place type (settlement, water body, temple, etc.). This facilitates visualization techniques to identify significant places mentioned within the text. The student also incorporates additional data and various spatial measures to determine clustering and other possible patterns present in the text. The student also uses the data to visualize the journey of Odysseus.
 
-#### Major goals
+## Major goals
 
 The major goals of this course are for the student to learn:
 
@@ -68,7 +63,7 @@ The major goals of this course are for the student to learn:
 -   Basic concepts in spatial databases and queries
 -   Principles of cartographic design
 
-#### Learning objectives
+## Learning objectives
 
 By the end of this course students will have achieved the following learning objectives:
 
@@ -85,130 +80,140 @@ By the end of this course students will have achieved the following learning obj
 -   Use appropriate map projection and coordinate system
 -   Use ArcGIS Pro software with strong proficiency
 
-### Detailed schedule
+# Schedule
 
-Our semester breaks down into three "Parts." During **Part I** (weeks 1-4), we'll pick up the fundamentals of geospatial humanities. During **Part II** (weeks 5-10), the rubber meets the road as we experiment with various technical and analytical approaches to "doing" the geospatial humanities. Lastly, in **Part III** (weeks 11-15), we'll go "beyond" GIS, examining other tools, archives, etc.
+Our semester breaks down into three "Parts." During **[Part I](#part-i-fundamentals)** (weeks 1-4), we'll pick up the fundamentals of geospatial humanities. During **[Part II](#part-ii-approaches)** (weeks 5-9), the rubber meets the road as we experiment with various technical and analytical approaches to "doing" the geospatial humanities. During **[Part III](#part-iii-application)** (weeks 10-15), we continue exploring those approaches, but you'll also dive more deeply into how they apply to *your* interests.
 
-Both the schedule and its weekly themes are subject to change.
+Both the schedule and its weekly themes are subject to change (in part, responding to *your* interests).
 
-#### Part I: Fundamentals
+## Part I: Fundamentals
 
-**Week 1, January 23 • Introductions • What is our subject?**
+**January 23 • Introductions • What is our subject?**
 
-> *Defining "geospatial humanities"; critical cartography; kinds of maps; "x" GIS; mapping with purpose; asking spatial research questions.*
+> *Week 1: Defining "geospatial humanities"; critical cartography; kinds of maps; "x" GIS; mapping with purpose; asking spatial research questions.*
 
 * What are the "geospatial humanities?" What are its constitutive objects, and why are *you* interested in them? What defines a "humanistic" approach to geographic information systems and spatial data? How ought we approach these questions from a technical perspective?
 * First day of class! Nothing due...
 
-**Week 2, January 30 • Distortion • Squashing globes and bending lines**
+**January 30 • Distortion • Squashing globes and bending lines**
 
-> *Geographic and projected coordinate systems; scale; projecting XY data; basic web mapping; tile pyramids.*
+> *Week 2: Geographic and projected coordinate systems; scale; projecting XY data; basic web mapping; tile pyramids.*
 
 * How do we go about displaying round earth as a flat map? What are the basic mathematical and geodetic rules associated with this process? What sacrifices do we have to make in order to "flatten" the globe, and how have those sacrifices been used strategically?
 * Due before class:
   * Exercise 01: Learning ArcGIS Pro Basics
   * "[Squashing the globe](https://www.leventhalmap.org/digital-exhibitions/bending-lines/how-to-bend/projections/)," *Bending Lines: Maps and Data from Distortion to Deception*. 2020.
 
-**Week 3, January 30 • Data • Making and mapping observations**
+**February 6 • Data • Cartographic ethics**
 
-> *Evaluating data & sources; data classification; understanding vector & raster models; situated knowledge & strong objectivity; querying; logical operators.*
+> *Week 3: Evaluating data & sources; data classification; understanding vector & raster models; situated knowledge & strong objectivity; querying; logical operators.*
 
-* What is spatial data and what are spatial data models? Where does spatial data come from? How should you understand data in their social context? How can we ethically represent different data cartographically?
+* What is spatial data and what are spatial data models? Where does spatial data come from? How should you understand data in their social context? What ethical considerations should guide how we represent data cartographically?
 * Due before class:
   * Activity 01: Mapping ancient places
   * Bouie, Jamelle. 2022. "[We Still Can’t See American Slavery for What It Was.](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html.)" *The New York Times*, January 28, 2022, sec. Opinion.
   * OPTIONAL: McKittrick, Katherine. 2014. "[Mathematics Black Life.](https://www.jstor.org/stable/10.5816/blackscholar.44.2.0016)" *The Black Scholar* 44 (2): 16–28.
 
-**Week 4, February 6 • Design • Aesthetics and politics in mapping**
+**February 13 • Design I • Aesthetics & politics in mapping**
 
-> *Basic color theory; choropleth mapping; the modifiable areal unit problem; layer blending; icons and iconography; text on maps; basemaps.*
+> *Week 4: Basic color theory; choropleth mapping; the modifiable areal unit problem; layer blending; icons and iconography; text on maps; basemaps.*
 
 * What are the best practices for representing spatial data and making maps? To what extent are those practices contingent on flexible cultural and social norms? When should you bend or break these rules in order to make a more effective argument? Is cartography an "art" or a "science?"
 * Due before class:
   * Exercise 02: Mapping the Transatlantic Slave Trade Database: 1676-1805
   * Krygier, J B. 1995. "[Cartography as an Art and a Science](https://www.researchgate.net/publication/233697179_Cartography_as_an_art_and_a_science)?" *The Cartographic Journal* 32: 9.
 
-#### Part II: Approaches
+## Part II: Approaches
 
-**Week 5, February 13 • Archives I • Contingencies of counting people**
+**February 20 • Archives I • Contingencies of counting people**
 
-> *Census data; table joins; *
+> *Week 5: Census data; table joins; *
 
 * Why do we count people? Where does the device of a "census" come from? Who gets counted and who doesn't? How can we map those presences and absences?
 * Due before class:
-  * Assignment 01: Cartography assignment
+    * Assignment 01: Cartography assignment
   * Jacobs, Alexandra. 2022. "[Counting the Population Has Always Been Political](https://www.nytimes.com/2022/08/28/books/democracys-data-dan-bouk.html)," *The New York Times*, 2022.
-  * Loftus, Eve and Joan Brunetta. 2024. "Mapping Black Cambridge," *Leventhal Map & Education Center*.
+  * Loftus, Eve and Joan Brunetta. 2024. "[Mapping Black Cambridge](https://leventhalmap.org/articles/mapping-black-cambridge/)," *Leventhal Map & Education Center*.
 
 
-**Week 6, February 20 • Analysis I • Vector analysis**
+**February 27 • Analysis I • Vector analysis**
 
-> *Spatial joins;*
+> *Week 6: Spatial joins;*
 
 * 
 
-**Week 7, February 27 • Archives II • Breathing new life into old maps**
+**March 5 • Archives II • Breathing new life into old maps**
 
-> *???*
+> *Week 7: Digitization; georeferencing; feature extraction; *
 
-* **Guiding questions**.
-* **Theoretical positions**.
-* **Technical skills**. Deriving data from historic maps; Georeferencing; feature extraction.
+* 
 
-**Week 8,  • Analysis II • Raster analysis**
+**March 12 • Analysis II • Raster analysis**
 
-* **Guiding questions**.
-* **Theoretical positions**.
-* **Technical skills**. 
+> *Week 8*
 
-**Week 9 • Mandatory relaxation • Spring break**
+* 
 
-*No class*
+**March 19 • Mandatory relaxation • Spring break**
 
-#### Part III: 
+> *Week 9: No class*
 
-**Week 10 • xxx • xxx**
+## Part III: Applications
 
-.
+**March 26 • xxx • xxx**
 
-**Week 11 • Archives III • Maps from text**
+> *Week 10:*
+
+* 
+
+**April 2 • Archives III • Maps from text**
+
+> *Week 11:*
 
 What are the concepts and theories behind natural language processing (NLP) as method in the geospatial humanities?
 
-**Week 12 • Analysis III • What is our subject?**
+**April 9 • Analysis III • What is our subject?**
 
+> *Week 12:*
 
+* 
 
-**Week 13 • Introductions • What is our subject?**
+**April 16 • Design II • What is our subject?**
 
-.
+> *Week 13:*
 
-**Week 14 • Introductions • What is our subject?**
+* 
 
-.
+**April 23 • Introductions • What is our subject?**
 
-**Week 15 • Introductions • What is our subject?**
+> *Week 14:*
 
-.
+* 
 
-**Week 16 • Introductions • What is our subject?**
+**April 30 • Presentations • Final projects**
 
-.
+> *Week 15: Final project presentations*
 
-### Course Requirements and Grading
+* 
 
-Students will develop GIS skills through a series of exercises and assignments during the semester. Each student will then complete a [final project](#final-project) of their choice. Students will be expected to attend every class and to complete all graded assignments as well as ungraded tutorials and in-class exercises. Completion of [Exercises](#exercises) and [Assignments](#assignments) will require additional computer/lab time outside of class.
+**May 7 • Introductions • What is our subject?**
 
-You are expected to complete all 6 Exercises, but only 5 of them will be graded. It is up to you to decide which 5 you submit for a grade. If you choose to submit 6, the lowest graded Exercise will be dropped.
+> *Week 16:*
 
-You must complete ***all*** Assignments.
+* 
+
+# Course Details
+
+Beyond just showing up to class and paying attention during the lectures, students will develop a geospatial humanities skill set by completing various [activities](#activities), [exercises](#exercises), and [assignments](#assignments). This skill set culminates in a [final project](#final-project) of their choice. Students will be expected to attend every class and to complete all graded assignments as well as ungraded tutorials and in-class exercises.
+
+## Grading
 
 Grading will be based on a **1000-point scale**. Graded assignments and exercises may be turned up to one week late. All late assignments will receive a -10 point deduction and all late graded exercises will receive a -5 point deduction. Details regarding the assignments and requirements for the final project can be found on the Canvas Course Schedule.
 
--   Several Labs (5 graded) worth a total of 250 points (50 each)
--   4 skill-building Exercises worth a total of 400 points (100 each)
--   Class participation worth 100 points
--   The Final Project poster or StoryMap worth 250 points
+-  Several Labs (5 graded) worth a total of 250 points (50 each)
+-  4 skill-building Exercises worth a total of 400 points (100 each)
+-  Class participation worth 100 points, including in-class activities
+-  The Final Project poster or StoryMap worth 250 points
 
 | Type          | Quantity | Points per activity |
 | ------------- | -------- | ------------------- |
@@ -217,33 +222,23 @@ Grading will be based on a **1000-point scale**. Graded assignments and exercise
 | Participation | n/a      | 100                 |
 | Final Project | n/a      | 250                 |
 
-### Assignments
+Read on for more details on the coursework.
 
-There are three kinds of assignments in this class: **In-class assignments**, **Labs**, and **Exercises**.
+## Activities
 
-#### In-class assignments
+Nearly every week, we will spend time during class on some kind of **Activity**. These are meant to be smaller applications 
 
-In-class assignments 
+## Exercises
 
-#### Labs
+Throughout the semester, students will be assigned six **Exercises** which explore theories, concepts, and approaches in greater depth. I will drop your lowest Exercise grade at the end of the semester.
 
-The course uses weekly **Labs** tailored for students to learn the topic(s) of each week. Four of the exercises must be submitted for a grade.
+Each Exercise weaves together several components, including methods and concepts; employing those methods and concepts in ArcGIS Pro; and application to a particular area of the humanities.
 
-Each Exercise weaves together several components:
+## Assignments
 
--   A specific method/concept
--   The utilization of geospatial software to execute that method/concept (most often, ArcGIS Pro)
--   The application of that method/concept to a specific area of the humanities (urban history, environmental history, literature, archaeology, art history, etc.)
--   The relevant types of data and data sources for that application
--   The relevant data, map projections, and visualization methods for specific geographic locations
+**Assignments** concentrate on applying concepts covered in lectures and exercises to each student's field of interest and build toward a final project that applies GIS to each student's field of interest.
 
-Exercises are situated in different regions of the world and they vary across different geographic scales: neighborhood, city, state, country, region, continent, global.
-
-#### Exercises
-
-**Exercises** concentrate on applying concepts covered in lectures and exercises to each student's field of interest and build toward a final project that applies GIS to each student's field of interest.
-
-### Final Project
+## Final Project
 
 The purpose of the final project is to provide additional experience in collecting, processing, analyzing, and visualizing spatial data. In addition, the students must conduct a literature review as part of their project proposal.
 
@@ -251,7 +246,7 @@ The project must use ArcGIS Pro to examine the spatial implications of a researc
 
 Students who create a large-format infographic may choose to exhibit their work at Tufts' GIS Expo day for 25 points (5%) of extra credit.
 
-### Required Readings
+## Required Readings
 
 **There is no textbook for this class.**
 
