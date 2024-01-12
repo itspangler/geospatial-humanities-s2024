@@ -1,7 +1,5 @@
 # CLS-0125 Introduction to Geospatial Humanities <!-- omit in toc -->
 
-
-
 ## Spring 2024 • Tufts University <!-- omit in toc -->
 *Cross-listed with HIST-0179, FAH-0092, ARCH-0175, UEP-0103*
 
@@ -34,6 +32,7 @@
   - [Activities](#activities)
   - [Exercises](#exercises)
   - [Assignments](#assignments)
+  - [Curation](#curation)
   - [Final Project](#final-project)
   - [Required Readings](#required-readings)
     - [Style Guidelines \& Citation](#style-guidelines--citation)
@@ -110,49 +109,53 @@ Both the schedule and its weekly themes are subject to change (in part, respondi
 
 * What is spatial data and what are spatial data models? Where does spatial data come from? How should you understand data in their social context? What ethical considerations should guide how we represent data cartographically?
 * Due before class:
-  * Activity 01: Mapping ancient places
+  * Activity 01: Mapping Ancient Places
   * Bouie, Jamelle. 2022. "[We Still Can’t See American Slavery for What It Was.](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html.)" *The New York Times*, January 28, 2022, sec. Opinion.
-  * OPTIONAL: McKittrick, Katherine. 2014. "[Mathematics Black Life.](https://www.jstor.org/stable/10.5816/blackscholar.44.2.0016)" *The Black Scholar* 44 (2): 16–28.
+  * RECOMMENDED: Skim through McKittrick, Katherine. 2014. "[Mathematics Black Life.](https://www.jstor.org/stable/10.5816/blackscholar.44.2.0016)" *The Black Scholar* 44 (2): 16–28.
 
 **February 13 • Design I • Aesthetics & politics in mapping**
 
-> *Week 4: Basic color theory; choropleth mapping; the modifiable areal unit problem; layer blending; icons and iconography; text on maps; basemaps.*
+> *Week 4: Basic color theory; choropleth mapping; layer blending; icons and iconography; text on maps; basemaps; reprojection.*
 
-* What are the best practices for representing spatial data and making maps? To what extent are those practices contingent on flexible cultural and social norms? When should you bend or break these rules in order to make a more effective argument? Is cartography an "art" or a "science?"
+* What are the best practices for representing spatial data and making maps? To what extent are those practices contingent on flexible cultural and social norms? When should you bend or break these rules in order to make a more effective argument? Is cartography an "art," a "science," something in between, or neither? Is cartography anything at all?
 * Due before class:
-  * Exercise 02: Mapping the Transatlantic Slave Trade Database: 1676-1805
-  * Krygier, J B. 1995. "[Cartography as an Art and a Science](https://www.researchgate.net/publication/233697179_Cartography_as_an_art_and_a_science)?" *The Cartographic Journal* 32: 9.
+  * Exercise 02: The Transatlantic Slave Trade Database
 
 ## Part II: Approaches
 
 **February 20 • Archives I • Contingencies of counting people**
 
-> *Week 5: Census data; table joins; *
+> *Week 5: Census data; table joins; limitations of the census; the modifiable areal unit problem.*
 
 * Why do we count people? Where does the device of a "census" come from? Who gets counted and who doesn't? How can we map those presences and absences?
 * Due before class:
-    * Assignment 01: Cartography assignment
+  * Assignment 01: WITCHCRAFT
+  * Activity 02: Population Change in Africa, 1850-1950
   * Jacobs, Alexandra. 2022. "[Counting the Population Has Always Been Political](https://www.nytimes.com/2022/08/28/books/democracys-data-dan-bouk.html)," *The New York Times*, 2022.
   * Loftus, Eve and Joan Brunetta. 2024. "[Mapping Black Cambridge](https://leventhalmap.org/articles/mapping-black-cambridge/)," *Leventhal Map & Education Center*.
 
+**February 27 • Analysis I • Spatial research questions**
 
-**February 27 • Analysis I • Vector analysis**
+> *Week 6: Spatial joins; vector proximity analysis; layer blending; ArcGIS online; field calculation; boolean logic.*
 
-> *Week 6: Spatial joins;*
-
-* 
+* How do we proceed from representation to analysis? What kinds of spatial research questions can we ask and answer using GIS? How do different spatial data structurs permit and constrain different forms of spatial analysis?
+* Due before class:
+  * Activity 03: Historical census
+  * OPTIONAL: Watch [*The Lighthouse* (2019)](https://en.wikipedia.org/wiki/The_Lighthouse_(2019_film)) to get yourself in the mood for this week's exercise
 
 **March 5 • Archives II • Breathing new life into old maps**
 
-> *Week 7: Digitization; georeferencing; feature extraction; *
+> *Week 7: Digitization; georeferencing; feature extraction; reprojection.*
 
-* 
+* How 
+* Due before class:
+  * Exercise 03: Lighthouses, shipwrecks, and the architecture of maritime empire
 
-**March 12 • Analysis II • Raster analysis**
+**March 12 • Analysis II • Pixelated places**
 
-> *Week 8*
+> *Week 8: Raster analysis*
 
-* 
+* How does raster analysis 
 
 **March 19 • Mandatory relaxation • Spring break**
 
@@ -204,39 +207,41 @@ What are the concepts and theories behind natural language processing (NLP) as m
 
 # Course Details
 
-Beyond just showing up to class and paying attention during the lectures, students will develop a geospatial humanities skill set by completing various [activities](#activities), [exercises](#exercises), and [assignments](#assignments). This skill set culminates in a [final project](#final-project) of their choice. Students will be expected to attend every class and to complete all graded assignments as well as ungraded tutorials and in-class exercises.
+Beyond just showing up to class and paying attention during the lectures, students will develop a geospatial humanities skill set by completing various [activities](#activities), [exercises](#exercises), and [assignments](#assignments), including a [curation](#curation). This skill set culminates in a [final project](#final-project) of their choice. Students will be expected to attend every class and to complete all graded assignments as well as ungraded tutorials and in-class exercises.
 
 ## Grading
 
-Grading will be based on a **1000-point scale**. Graded assignments and exercises may be turned up to one week late. All late assignments will receive a -10 point deduction and all late graded exercises will receive a -5 point deduction. Details regarding the assignments and requirements for the final project can be found on the Canvas Course Schedule.
+Grading will be based on a **1000-point scale**. You can submit graded assignments and exercises up to one week late. By default, all late assignments will receive a -10 point deduction (1% of your overall grade) and all late graded exercises will receive a -5 point deduction (0.5% of your overall grade). Details regarding the assignments and requirements for the final project can be found on the Canvas Course Schedule.
 
 -  Several Labs (5 graded) worth a total of 250 points (50 each)
 -  4 skill-building Exercises worth a total of 400 points (100 each)
 -  Class participation worth 100 points, including in-class activities
 -  The Final Project poster or StoryMap worth 250 points
+-  A "Curation," 
 
-| Type          | Quantity | Points per activity |
-| ------------- | -------- | ------------------- |
-| Exercises     | 5        | 50                  |
-| Assignments   | 4        | 100                 |
-| Participation | n/a      | 100                 |
-| Final Project | n/a      | 250                 |
+| Type          | Quantity | Points per activity | Percentage of overall grade per activity |
+| ------------- | -------- | ------------------- | ---------------------------------------- |
+| Exercises     | 5        | 50                  | 5%                                       |
+| Assignments   | 4        | 75                  | 7.5%                                     |
+| Participation | n/a      | 100                 | 10%                                      |
+| Final Project | n/a      | 250                 | 25%                                      |
+| Curation      | 1        | 100                 | 10%                                      |
 
 Read on for more details on the coursework.
 
 ## Activities
 
-Nearly every week, we will spend time during class on some kind of **Activity**. These are meant to be smaller applications 
+Nearly every week, we will spend time during class on some kind of **Activity**. Some are bigger and some are smaller. Some are submitted and some are not. Overall, they count towards your participation grade.
 
 ## Exercises
 
-Throughout the semester, students will be assigned six **Exercises** which explore theories, concepts, and approaches in greater depth. I will drop your lowest Exercise grade at the end of the semester.
-
-Each Exercise weaves together several components, including methods and concepts; employing those methods and concepts in ArcGIS Pro; and application to a particular area of the humanities.
+Throughout the semester, students will be assigned six **Exercises** which explore theories, concepts, and approaches in greater depth. I will drop your lowest Exercise grade at the end of the semester. Each Exercise weaves together methods and concepts, using them in a software application (usually ArcGIS Pro), and application to a particular area of the humanities.
 
 ## Assignments
 
-**Assignments** concentrate on applying concepts covered in lectures and exercises to each student's field of interest and build toward a final project that applies GIS to each student's field of interest.
+**Assignments** concentrate on applying concepts covered in lectures and exercises. Eventually, you will use assignments to focus on how geospatial humanities intersect with your own fields of interest, building toward a final project that applies geospatial humanities methods to a topic of your choosing.
+
+## Curation
 
 ## Final Project
 

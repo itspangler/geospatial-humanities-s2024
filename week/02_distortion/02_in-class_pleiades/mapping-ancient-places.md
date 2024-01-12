@@ -3,10 +3,9 @@
 # **Mapping ancient places** <!-- omit in toc -->
 *Use a gazetteer of the ancient world to make sense of XY data and coordinate systems*
 
-| ![travels](images/image019.png) |
-| :-: |
+|                              ![travels](images/image019.png)                              |
+| :---------------------------------------------------------------------------------------: |
 | *A map of ancient places, created with help from [Pleiades](https://pleiades.stoa.org/)*. |
-| |
 
 </div>
 
@@ -173,7 +172,9 @@ $$ T(ϕ, θ) = (θ, ln(|sec(ϕ) + tan(ϕ)|)) $$
 
 ### **Managing coordinate systems in ArcGIS Pro**
 
-I'm only throwing this fancy math at you to highlight the distinctions between the two kinds of coordinate systems – *not* because you need to know it in order to do geospatial humanistic work. Here's a table highlighting differences:
+I'm only throwing this fancy math at you to highlight the distinctions between the two kinds of coordinate systems – *not* because you need to know the fancy math in order to do geospatial humanistic work.
+
+Here's a table highlighting differences:
 
 |                                | **It represents...**                | **It uses...**                  | **Examples include...**     |
 | ------------------------------ | --------------------------- | ---------------------------- | ---------------- |
@@ -252,12 +253,6 @@ Note that if your attribute table is set to only "Show Selected Records," you wo
 > [![q]][l] 
 > 1. Paste your full SQL query, as it appears in the dialog when you toggle the SQL button on.
 > 2. Describe in 2-3 sentences the geographical distribution of the selected points (e.g., where they are clustered).
-
-<!-- ## **Pleiades data in action**
-
-Add section on table join with [Bishoprics data](https://www.dropbox.com/scl/fo/39pmdhf2oey41x9nkxq8j/h/Bishoprics%20Lists.xlsx?rlkey=r7q6fikdcgfan4uwru1pgebpq&dl=0)
-
-Have students export joined records as standalone feature class -->
 
 # **Troubleshooting the grid**
 
