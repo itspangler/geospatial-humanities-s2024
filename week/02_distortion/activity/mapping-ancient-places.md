@@ -1,4 +1,4 @@
-# **Mapping ancient places** <!-- omit in toc -->
+# **Activity 01: Mapping ancient places** <!-- omit in toc -->
 *Use a gazetteer of the ancient world to make sense of XY data and coordinate systems*
 
 |                              ![travels](images/image019.png)                              |
@@ -13,7 +13,7 @@
   - [**Download it**](#download-it)
   - [**Check things out in Microsoft Excel**](#check-things-out-in-microsoft-excel)
 - [**Loading XY data to ArcGIS Pro**](#loading-xy-data-to-arcgis-pro)
-  - [**🌎 Geodesy in 5 minutes**](#-geodesy-in-5-minutes)
+  - [**Geodesy in 5 minutes**](#geodesy-in-5-minutes)
   - [**Coordinates**](#coordinates)
   - [**Coordinate systems**](#coordinate-systems)
     - [**Geographic coordinate systems**](#geographic-coordinate-systems)
@@ -107,7 +107,7 @@ Rename each field name so that it contains 10 characters or less. (The destinati
 
 Let's turn that `csv` file – an example of *tabular* data – into real-life, bona fide *spatial* data. When we're done, we'll have a feature class of vector points that displays over 40,000 ancient place names. The best part: it's super easy...
 
-## **🌎 Geodesy in 5 minutes**
+## **Geodesy in 5 minutes**
 
 ... but first, we should take a moment to wrap our round heads around the round globe.
 

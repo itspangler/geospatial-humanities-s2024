@@ -1,11 +1,11 @@
-<div align=center>
+<!-- <div align=center> -->
 
 # Exercise 01: Learning ArcGIS Basics <!-- omit in toc -->
 *Creating a map with ArcGIS Pro with data from India*
 
 ![India](images/Image001.png)
 
-</div>
+<!-- </div> -->
 
 > *Written by Barbara Parmenter, updated by Annie Nguyen on September 9, 2019 for ArcGIS Pro 2.3, updated for ArcGIS Pro 3.1.3 Sumeeta Srinivasan Sep 2023, updated by Ian Spangler Dec 2023*
 

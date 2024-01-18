@@ -1,4 +1,4 @@
-<div align=center>
+<!-- <div align=center> -->
 
 # **Exercise 03: Lighthouses, shipwrecks, and the architecture of maritime empire** <!-- omit in toc -->
 
@@ -6,7 +6,7 @@
 | :------------------------------------------------------------------------------------------------------------: |
 | *Map of the world showing the extent of the British Empire in 1886, from [Leventhal Map & Education Center collections](https://collections.leventhalmap.org/search/commonwealth:x633f896s).* |
 
-</div>
+<!-- </div> -->
 
 # **Table of contents** <!-- omit in toc -->
 
