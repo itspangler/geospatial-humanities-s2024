@@ -282,7 +282,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * What techniques exist for humanistic engagement with geospatial data outside the boundary of "GIS"?
 * Due before class:
   * Curation group 8
-  * Assignment 04: [Final project draft map](../week/13_storytelling/assignments/fp-draft.md)
+  * Assignment 04: [Final project draft map](../week/13_flex/assignments/fp-draft.md)
   * Crampton, Jeremy. 2015. “[Zombie GIS](https://opengeography.wordpress.com/2015/01/26/zombie-gis/).” *Open Geography* (blog).
   * Knowles, Anne Kelly, Levi Westerveld, and Laura Strom. 2015. “[Inductive Visualization: A Humanistic Alternative to GIS.](https://doi.org/10.1080/2373566X.2015.1108831)” *GeoHumanities* 1 (2): 233–65.
 
@@ -291,8 +291,6 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 > *Week 15: Last in-person meeting; final project lightning talks; reflection.*
 
 * Presentations on final project topics in 5 minutes or less. Share works in progress, provisional maps, harebrained ideas. Slide deck optional.
-* Due before class:
-  * Activity 07: [Reflection](../week/14_reflection/)
 
 **May 7 • Final project due**
 
