@@ -1,9 +1,11 @@
-# Introduction to Geospatial Humanities (CLS125)
->* **Instructor**: Ian Spangler
->* **Teaching Assistant**: Max O'Reilly
->* **Location**: Data Lab, Tisch Library
->* **Time/Term:** 6:30-9pm, Spring 2024
->* *Cross-listed with HIST-0179, FAH-0092, ARCH-0175, UEP-0103*
+|                        |                         |
+| :--------------------: | :---------------------: |
+|        **Term**        |       Spring 2024       |
+|     **Day/Time:**      |   Tuesdays, 6:30-9pm    |
+|     **Location:**      | Data Lab, Tisch Library |
+| **Course Instructor:** |      Ian Spangler       |
+| **Teaching assistant** |      Max O'Reilly       |
+|   **Office hours:**    | Thursdays, 1-3pm or by appointment on Zoom (Ian); Mondays, 12-1pm and Wednesdays, 1-2pm (Max) |
 
 ### Welcome to Introduction to Geospatial Humanities (CLS125)!
 
