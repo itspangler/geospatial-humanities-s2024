@@ -1,10 +1,4 @@
-# Course schedule: Introduction to Geospatial Humanities
-
-#### *A note on Exercises and Assignments*
-
-*You are expected to complete all 6 Exercises, but only 5 of them will be graded. ***It is up to you to decide which 5 you submit for a grade***. If you choose to submit 6, the lowest graded Exercise will be dropped.*
-
-*You must complete ***all*** Assignments.*
+# Course schedule
 
 | **Dates**         | **Topic**            | **Activities due**                                                      | **Labs due**                                                  | **Assignments due**                                                         | **Curation groups due** |
 | ----------------- | -------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------- |

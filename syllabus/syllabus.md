@@ -14,7 +14,7 @@
 
 # Table of contents <!-- omit in toc -->
 - [Course summary](#course-summary)
-- [Learning objectives \& practical skills](#learning-objectives--practical-skills)
+- [Learning objectives and practical skills](#learning-objectives-and-practical-skills)
   - [Learning objectives](#learning-objectives)
   - [Practical skills](#practical-skills)
 - [Grading](#grading)
@@ -25,7 +25,7 @@
   - [Curation](#curation)
   - [Final Project](#final-project)
 - [Required Readings](#required-readings)
-- [Style Guidelines \& Citation](#style-guidelines--citation)
+- [Style Guidelines and Citation](#style-guidelines-and-citation)
 - [Accommodations for Students with Disabilities](#accommodations-for-students-with-disabilities)
 - [Schedule](#schedule)
   - [Part I: Fundamentals](#part-i-fundamentals)
@@ -36,7 +36,7 @@
 
 The humanities are becoming spatial, or maybe we are finally realizing that they always have been. Geography – the stuff of "where," which encompasses material as concrete as the dirt on the earth to concepts as ephemeral as "space" and "belonging" – informs not only how texts, maps, and other objects are produced, but how we encounter them as readers and users. In recent years, improvements in computing technology and advancements in publicly-accessibly digital archives have harmonized with interest among researchers to conjure a nascent field of study focused on the derivation and analysis of structured geographic data from books, letters, paintings, and much more. This semester, we will explore this field of *geospatial humanities*, learning its techniques, studying its objects, and testing its limits. The course introduces geospatial theory, methods, and technology for applications in the humanities in past and present settings. We'll sometimes use the term "GIS" (short for **geographic information systems**) to describe these geospatial tools. Typically, GIS is defined as a combination of software, data, methods, and hardware with capabilities for manipulating, analyzing, and displaying spatial data. We'll explore spatial data structures, data creation, basic geodesy, spatial analysis, cartographic visualization, and more. Using the software ArcGIS Pro, you will learn how to use these tools effectively. Just as importantly, by incorporating insights from critical archival studies, indigenous and decolonial mapping, feminist geography, and more into your mapping practice, you will learn how to use them *intentionally*.
 
-# Learning objectives & practical skills
+# Learning objectives and practical skills
 
 ## Learning objectives
 
@@ -122,7 +122,7 @@ Students may choose to exhibit their work at Tufts' GIS Expo day on May 8 for 25
 
 You'll have something to read just about every week: this is, after all, a "humanities" course just as well as a "geospatial" one. All readings are  listed in the [schedule](#schedule), and they are available through online journal databases open to Tufts students, public web sites, or Canvas.
 
-# Style Guidelines & Citation
+# Style Guidelines and Citation
 
 All **cartographic work** should adhere, when appropriate, to key principles of map design.
 
