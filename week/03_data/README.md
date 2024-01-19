@@ -1,6 +1,6 @@
 <div align=center>
 
-# Week 02: Data <!-- omit in toc -->
+# Week 03: Data <!-- omit in toc -->
 
 >*Working with spatial data models can be complicated; understanding their social context, even more so*
 
@@ -14,13 +14,11 @@
 
 </div>
 
-Fluenecy in GIS requires a strong understanding of spatial data structures. This includes not just what those structures are, but how they are arranged and why they look the way they do. 
-
-The map above shows two views of a 
+What is spatial data and what are spatial data models? Where does spatial data come from? How should you understand data in their social context? What ethical considerations should guide how we represent data cartographically?
 
 ## Before class
 
-* Complete [Lab 1](/week/01_intro/lab/basics-india.md).
+* Complete [Activity 01](/week/01_intro/lab/basics-india.md).
 
 ## During class
 
@@ -33,41 +31,30 @@ The map above shows two views of a
 2. Querying spatial data
 3. Logical operators
 4. Geospatial data sources
-
-### In-class activity
-
-* Mystery datasets
+5. Mystery datasets
 
 ### Housekeeping
 
-Outline of housekeeping stuff (may not actually discuss during class)
+No major housekeeping items.
 
 ## After class
 
-### Read
+### Listen
+
+* [![req]][link] Listen to Bose, Tulika. 2023. “[The Surprising Backstory behind Witch Hunts and Reproductive Labor](https://www.scientificamerican.com/podcast/episode/the-surprising-backstory-behind-witch-hunts-and-reproductive-labor/).” *Scientific American*.
+
+### Complete
 
 <details>
-<summary><b>Reading considerations</b></summary>
-<br>
+<summary><b>Lab considerations</b></summary>
 This week's required reading reflects on an important question: when we encounter datasets that bear witness to unspeakable tragecy, how should we engage with it? In Jamelle Bouie's words, "How do we wield these powerful tools for quantitative analysis without abstracting the human reality away from the story? And what does it mean to study something as wicked and monstrous as the slave trade using some of the tools of the trade itself?"
 
 <br>
 
 Rather than demand an answer, we should respond to this question by adjusting our orientation towards storytelling, history, and data. If we are going to learn with and from this data – as exercises next week require that we do – we bear the critical responsibility of approaching it with the respect, care, and attention that it demands of us.
 </details>
-<br>
 
-* [![req]][link] Bouie, Jamelle. 2022. "[We Still Can’t See American Slavery for What It Was.](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html.)" *The New York Times*, January 28, 2022, sec. Opinion.
-
-* [![opt]][link] McKittrick, Katherine. 2014. "[Mathematics Black Life.](https://www.jstor.org/stable/10.5816/blackscholar.44.2.0016)" The Black Scholar 44 (2): 16–28.
-
-
-### Interact
-
-* test
-
-### Complete
-* [Exercise 2: Slave Voyages](/week/02_data/exercises/)
+* [Lab 02: Transatlantic Slave Trade]()
 
 
 <!-------------------------------------[ Links ]

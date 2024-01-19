@@ -10,7 +10,7 @@
 
 </div>
 
-## It moves
+<!-- ## It moves
 
 Good design catches our attention, but it also tells a story. In Frank Chimero's *[The Shape of Design](https://shapeofdesignbook.com/)*, he writes:
 
@@ -34,7 +34,7 @@ As well as technical skills and practical knowledge including...
 * strategies for titles and supporting text
 * map layout
 
-More often than not, you will want to follow these principles when representing spatial data – but just as importantly, you should be familiar with them so that you know when to bend them, break them, and replace them.
+More often than not, you will want to follow these principles when representing spatial data – but just as importantly, you should be familiar with them so that you know when to bend them, break them, and replace them. -->
 
 # Before class
 

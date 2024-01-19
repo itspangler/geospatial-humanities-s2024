@@ -4,9 +4,7 @@
 
 </div>
 
-In this first meeting, we'll assess the landscape of the digital and geospatial humanities, discussing and defining what those things are and speculating as to what their limitations might be. This will require us to proceed from thinking spatially and geographically towards asking spatial research questions, and ultimately, weaving together spatial narratives through maps. Geographic information systems – ***GIS***, for short – will be the main technology that we use to engage with those questions over the next 15 weeks. We will spend some time defining that as well.
-
-You're also going to learn how to interact with a computer, which you might already know how to do, but I humbly (if a bit ominously) submit that lots of you only *think* you know how to do, which, if that is indeed the case, makes this a critical practical part of the class.
+What are the "geospatial humanities?" What are its constitutive objects, and why are *you* interested in them? What defines a "humanistic" approach to geographic information systems and spatial data? How ought we approach these questions from a technical perspective?
 
 ## Before class
 

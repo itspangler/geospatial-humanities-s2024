@@ -178,8 +178,8 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * What is spatial data and what are spatial data models? Where does spatial data come from? How should you understand data in their social context? What ethical considerations should guide how we represent data cartographically?
 * Due before class:
   * Activity 01: [Mapping ancient places](../week/02_distortion/activity/mapping-ancient-places.md)
-  * Bouie, Jamelle. 2022. "[We Still Can’t See American Slavery for What It Was.](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html.)" *The New York Times*, January 28, 2022, sec. Opinion.
-  * RECOMMENDED: Skim through McKittrick, Katherine. 2014. "[Mathematics Black Life.](https://www.jstor.org/stable/10.5816/blackscholar.44.2.0016)" *The Black Scholar* 44 (2): 16–28.
+  * Bouie, Jamelle. 2022. "[We Still Can’t See American Slavery for What It Was.](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html)" *The New York Times*, January 28, 2022, sec. Opinion.
+  * (Recommended) Skim through McKittrick, Katherine. 2014. "[Mathematics Black Life.](https://www.jstor.org/stable/10.5816/blackscholar.44.2.0016)" *The Black Scholar* 44 (2): 16–28.
 
 **February 13 • Design I • Aesthetics & politics in mapping**
 
