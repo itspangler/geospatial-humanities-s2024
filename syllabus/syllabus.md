@@ -1,3 +1,5 @@
+<div align=center>
+
 # CLS-0125 Introduction to Geospatial Humanities <!-- omit in toc -->
 
 ## Spring 2024 • Tufts University <!-- omit in toc -->
@@ -11,6 +13,8 @@
 | **Course Instructor:** |      Ian Spangler       |
 | **Teaching assistant** |      Max O'Reilly       |
 |   **Office hours:**    | Thursdays, 1-3pm or by appointment on Zoom (Ian); Mondays, 12-1pm and Wednesdays, 1-2pm (Max) |
+
+</div>
 
 # Table of contents <!-- omit in toc -->
 - [Course summary](#course-summary)
