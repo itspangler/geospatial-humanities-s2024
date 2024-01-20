@@ -1,6 +1,6 @@
-# Assignment directory
-
 [**⮐ Home**](../)
+
+# Assignment directory
 
 ## Activities
 
