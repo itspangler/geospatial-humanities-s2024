@@ -1,5 +1,7 @@
 # Syllabus <!-- omit in toc -->
 
+[**⮐ Home**](../)
+
 > *Spring 2024 • Tufts University* <!-- omit in toc -->
 > *Cross-listed with HIST-0179, FAH-0092, ARCH-0175, UEP-0103*
 
