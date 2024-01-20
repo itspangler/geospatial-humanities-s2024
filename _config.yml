@@ -1,4 +1,4 @@
-remote-theme: minima
+remote-theme: daattali/beautiful-jekyll
 title: CLS0125 Introduction to Geospatial Humanities
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
