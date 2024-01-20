@@ -1,5 +1,7 @@
 <div align=center>
 
+[**⮐ Home**](../)
+
 # CLS-0125 Introduction to Geospatial Humanities <!-- omit in toc -->
 
 ## Spring 2024 • Tufts University <!-- omit in toc -->

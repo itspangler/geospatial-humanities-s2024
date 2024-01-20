@@ -1,5 +1,7 @@
 # Assignment directory
 
+[**⮐ Home**](../)
+
 ## Activities
 
 Activity 01: [Mapping ancient places](../week/02_distortion/activity/mapping-ancient-places.md)
