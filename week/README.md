@@ -1,8 +1,6 @@
----
-title: Assignment directory
-subtitle: |
-    [**⮐ Home**](../)
----
+# Assignment directory
+
+[**⮐ Home**](../)
 
 ## Activities
 
@@ -18,7 +16,7 @@ subtitle: |
 
 #### Lab 01: [Basics](../week/01_intro/lab/basics-india.md)
 #### Lab 02: [The Transatlantic Slave Trade](../week/03_data/labs/slave-trade.md)
-#### Lab 03: [Lighthouses](../week/06_analysis-i/lab/exercise03_lighthouses.md)
+#### Lab 03: [Lighthouses](../week/06_analysis-i/lab/lighthouses.md)
 #### Lab 04: [Pixelated places](../week/08_analysis-ii/lab/...)
 #### Lab 05: [Archaeology](../week/11_analysis-iii/lab/archaeology.md)
 
