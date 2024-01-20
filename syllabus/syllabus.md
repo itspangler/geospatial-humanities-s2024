@@ -188,7 +188,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * What are the best practices for representing spatial data and making maps? To what extent are those practices contingent on flexible cultural and social norms? When should you bend or break these rules in order to make a more effective argument? Is cartography an "art," a "science," something in between, or neither? Is cartography anything at all?
 * Due before class:
   * Curation Group 1
-  * Lab 02: [The Transatlantic Slave Trade Database](../week/03_data/labs/...)
+  * Lab 02: [The Transatlantic Slave Trade Database](../week/03_data/labs/slave-trade.md)
   * Listen to Bose, Tulika. 2023. “[The Surprising Backstory behind Witch Hunts and Reproductive Labor](https://www.scientificamerican.com/podcast/episode/the-surprising-backstory-behind-witch-hunts-and-reproductive-labor/).” *Scientific American*.
 
 

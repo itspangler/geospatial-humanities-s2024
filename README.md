@@ -9,5 +9,5 @@
 ### Welcome to Introduction to Geospatial Humanities (CLS125)
 
 * **[Syllabus](/syllabus/README.md)**.
-* **[Detailed course description](/syllabus/schedule.md)**.
-* **[Weekly assignment directory]()**
+* **[Schedule at a glance](/syllabus/schedule.md)**.
+* **[Assignment directory](/week/)**
