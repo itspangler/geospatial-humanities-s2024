@@ -222,7 +222,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * How do you turn scanned maps into spatial data? Once you have, what should you *do* with that spatial data?
 * Due before class:
-  * Lab 03: [Lighthouses, shipwrecks, and the architecture of maritime empire](../week/06_analysis-i/lab/exercise03_lighthouses.md)
+  * Lab 03: [Lighthouses, shipwrecks, and the architecture of maritime empire](../week/06_analysis-i/lab/lighthouses.md)
     * OPTIONAL PAIRING: Watch [*The Lighthouse* (2019)](https://en.wikipedia.org/wiki/The_Lighthouse_(2019_film))
   * Lumiere Brothers, dir. 1895. (MediaFilmProfessor, 2011.) [1895, Lumiere, Workers Leaving the Lumiere Factory](https://www.youtube.com/watch?v=DEQeIRLxaM4).
   * Wilson, Andrew Norman, dir. 2011. [Workers Leaving the Googleplex](http://www.andrewnormanwilson.com/WorkersGoogleplex.html.).
