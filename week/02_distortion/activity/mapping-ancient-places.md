@@ -272,11 +272,11 @@ Penn State has some materials that do a great job of [distinguishing between the
 
 Let's load Tissot's indicatrix into our project so we can ascertain how and where different projections distort maps.
 
-1. Download the data from Canvas, the `S: drive`, or GitHub
+1. Download the data from Canvas or the `S: drive`
 2. Un-🤐 both files
 3. Move the necessary folders and files into the `data` folder in your directory
 4. Load the data into your ArcGIS Pro project
-5. `Right-click` on the `graticulet` or `caps` layer and click "Zoom to Layer"
+5. `Right-click` on the `graticules` or `caps` layer and click "Zoom to Layer"
 
 When you're done you should see something like this (ensure that the Pleiades data is on top):
 

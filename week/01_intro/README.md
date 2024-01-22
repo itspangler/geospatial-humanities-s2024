@@ -1,14 +1,10 @@
-<div align=center>
-
 # Week 01: Humanistic GIS
-
-</div>
 
 What are the "geospatial humanities?" What are its constitutive objects, and why are *you* interested in them? What defines a "humanistic" approach to geographic information systems and spatial data? How ought we approach these questions from a technical perspective?
 
 ## Before class
 
-Nothing is required! It's the first day of the semester. Just show up, please.
+Nothing is required! It's the first day of the semester. Just show up, please!
 
 ## During class
 
@@ -42,6 +38,8 @@ link to slides
 
 [![read]][link]
 
+* [![req]][link] "[Squashing the globe](https://www.leventhalmap.org/digital-exhibitions/bending-lines/how-to-bend/projections/)," *Bending Lines: Maps and Data from Distortion to Deception*. 2020.
+
 * [![opt]][link] Section II, "Early Rumblings: the first wave," pp. 572-579 from Schuurman, Nadine. 2000. [“Trouble in the Heartland: GIS and Its Critics in the 1990s.”](https://doi.org/10.1191/030913200100189111) *Progress in Human Geography* 24 (4): 569–90.
 
 * [![opt]][link] pp. 526-533 from Tobler, Waldo R. 1959. ["Automation and Cartography."](https://doi.org/10.2307/212211) *Geographical Review* 49 (4): 526–34.
@@ -51,7 +49,7 @@ link to slides
 
 [![lab]][link]
 
-* [![req]][link] [Exercise 1: Creating a map with ArcGIS Pro](./exercises/exercise1.md). Pay attention to the [Deliverables](./exercises/exercise1_basics-india.md#deliverables)
+* [![req]][link] [Exercise 1: Creating a map with ArcGIS Pro](./exercises/exercise1.md).
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->

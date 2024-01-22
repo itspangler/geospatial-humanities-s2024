@@ -19,7 +19,7 @@ I've got bad news: you are a 17th century New England yeoman peasant and settler
 
 Between 1692 and 1693, over 200 people were accused of witchcraft during a [social panic](https://en.wikipedia.org/wiki/Social_panic) across Massachusetts. They were known as the Salem Witch Trials.
 
-You, a 17th century New Englander, have been meticulously tracking data on where witches have been accused accross the region. Your incredible foresight compelled you to encode the data in a `csv` format, making it easy to map, even including latitudes and longitudes. You're saving the data here.
+You, a 17th century New Englander, have been meticulously tracking data on where witches have been accused accross the region. Your incredible foresight compelled you to encode the data in a `csv` format, even including latitudes and longitudes, making it easy to map. You're saving the data here.
 
 In this assignment, you'll take what you learned about cartographic best practices – as well as all the other stuff we've discussed throughout the last 3 weeks – and apply it to create a pair of maps that will use the same data to tell different stories about the Salem Witch Trials.
 

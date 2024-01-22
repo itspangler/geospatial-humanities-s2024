@@ -10,7 +10,7 @@
 #### Activity 04: [Final project topic proposal](../week/08_analysis-ii/activity/...)
 #### Activity 05: [Final project environmental scan & wireframe](../week/11_analysis-iii/in-class/fp-env-scan.md)
 #### Activity 06: [Flowing letters](../week/12_aesthetics-ii/activity/flowing-letters.md)
-#### Activity 07: Reflection
+#### Activity 07: [Reflection](../week/14_beyond/activity/reflection.md)
 
 ## Labs
 
