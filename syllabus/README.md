@@ -117,7 +117,7 @@ Before the end of the semester, you and 2-3 peers will work together on a **cura
 
 ## Final Project
 
-Beginning in Week 8, you will begin work towards a final project. The final project is an opportunity to collect, process, analyze, and visualize spatial data of your own choosing. Using ArcGIS Pro, you'll choose a topic and elaborate it in three registers: its *conceptual register*, its *technical register*, and its *graphical register*. The final product will result in a **large-format infographic (poster) or an online interactive StoryMap** that describes the research question, data, and methods as well as the analysis and the results. Examples of similar student projects can be found at [Tufts GIS Expo Explorer](https:•expoexplorer.it.tufts.edu/).
+Beginning in Week 8, you will begin work towards a final project. The final project is an opportunity to collect, process, analyze, and visualize spatial data of your own choosing. Using ArcGIS Pro, you'll choose a topic and elaborate it in three registers: its *conceptual register*, its *technical register*, and its *graphical register*. The final product will result in a **large-format infographic (poster) or an online interactive StoryMap** that describes the research question, data, and methods as well as the analysis and the results. Examples of similar student projects can be found at [Tufts GIS Expo Explorer](https://expoexplorer.it.tufts.edu/).
 
 Students may choose to exhibit their work at Tufts' GIS Expo day on May 8 for 25 points (2.5% of overall grade) of extra credit.
 
@@ -219,7 +219,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * How do you turn scanned maps into spatial data? Once you have, what should you *do* with that spatial data?
 * Due before class:
-  * Lab 03: [Lighthouses, shipwrecks, and the architecture of maritime empire](../week/06_analysis-i/lab/exercise03_lighthouses.md)
+  * Lab 03: [Lighthouses, shipwrecks, and the architecture of maritime empire](../week/06_analysis-i/lab/lighthouses.md)
     * OPTIONAL PAIRING: Watch [*The Lighthouse* (2019)](https://en.wikipedia.org/wiki/The_Lighthouse_(2019_film))
   * Lumiere Brothers, dir. 1895. (MediaFilmProfessor, 2011.) [1895, Lumiere, Workers Leaving the Lumiere Factory](https://www.youtube.com/watch?v=DEQeIRLxaM4).
   * Wilson, Andrew Norman, dir. 2011. [Workers Leaving the Googleplex](http://www.andrewnormanwilson.com/WorkersGoogleplex.html.).
@@ -233,7 +233,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * What analytical opportunities does representing spatial information as raster data instead of vector data create? What are the basic mathematical and statistical foundations of raster analysis? What are its structures, functions, and limits?
 * Due before class:
   * Curation Group 3
-  * Assignment 02: [Old maps, new stories](../week/07_archives-ii/assignment/...)
+  * Assignment 02: [Old maps, new stories](../week/07_archives-ii/assignments/old-maps-new-stories.md)
 
 **March 19 • Mandatory relaxation • Spring break**
 
