@@ -114,7 +114,9 @@ Throughout the semester, students will be assigned five **labs** which explore t
 
 ## Curation
 
-Before the end of the semester, you and 2-3 peers will work together on a **curation** – a deep dive into a geospatial humanities project, process, or product – presenting your findings to the class in roughly 10 minutes. Instructions forthcoming.
+Before the end of the semester, you and 2-3 peers will work together on a **curation** – a deep dive into a geospatial humanities project, process, or product – presenting your findings to the class in roughly 10 minutes.
+
+You should have your group and your curation topic selected by class time on Week 3. [Detailed instructions are available on the course site](../curations/README.md).
 
 ## Final Project
 

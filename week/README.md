@@ -1,6 +1,6 @@
 [**⮐ Home**](../)
 
-# Assignment directory
+# Coursework directory
 
 ## Activities
 
@@ -26,3 +26,11 @@
 #### Assignment 02: [Old maps, new stories](../week/07_archives-ii/assignment/...)
 #### Assignment 03: [NLP for GIS](../week/10_archives-iii/assignments/nlp-for-gis.md)
 #### Assignment 04: [Final project draft map](../week/13_storytelling/assignments/fp-draft.md)
+
+## Curation
+
+#### [Group curation details](../curations/README.md)
+
+## Final project
+
+#### [Final project details](../final-projects/README.md)
