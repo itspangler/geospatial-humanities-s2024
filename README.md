@@ -8,6 +8,8 @@
 
 # Welcome to Introduction to Geospatial Humanities!
 
+This site is a repository for the spring 2024 term of **Introduction to Geospatial Humanities**.
+
 ### Course pages
 
 * **[Syllabus](/syllabus/README.md)**.

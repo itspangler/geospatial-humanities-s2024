@@ -82,8 +82,8 @@ More concretely, by the end of this course, students will be able to do the foll
 Grading will be based on a **1000-point scale**. You can submit graded activities, labs, assignments up to one week late. By default, all late work will receive a 10% deduction. Details regarding all course assignments, including requirements for the final project and instructions for curations, will be made available on Canvas.
 
 -  Several **labs** (4 graded) worth a total of 200 points (50 each)
--  4 skill-building **assignments** worth a total of 400 points (100 each)
--  Class participation worth 100 points, including in-class and take-home **activities**
+-  4 skill-building **assignments** worth a total of 300 points (75 each)
+-  Class participation worth 150 points, including in-class and take-home **activities**
 -  The **final project** poster or StoryMap worth 250 points
 -  A **curatorial introduction** on a digital geohumanities project, process, or product, worth 100 points and presented in small groups
 
