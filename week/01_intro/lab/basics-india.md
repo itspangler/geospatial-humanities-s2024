@@ -77,7 +77,7 @@ You will now learn the basics of using GIS data to explore an area and create a 
 
 ## Starting ArcGIS Pro and Creating a Project File
 
-1\. ***Download*** the **data** zip file from Canvas or copy the folder from the S: Drive to *your own folder for this exercise*. Extract it in your own folder for this assignment.
+1\. Copy the data folder – `IndiaBaseMap.zip` – from the S: Drive to *your own folder for this exercise*. Extract it in your own workspace for this assignment.
 
 2\. To start ArcGIS Pro, type in the Start search bar **ArcGIS Pro** or you can go to Start and then **ArcGIS** → **ArcGIS Pro.**
 
