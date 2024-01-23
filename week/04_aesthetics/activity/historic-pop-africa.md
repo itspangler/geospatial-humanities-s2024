@@ -1,16 +1,4 @@
-<div align=center>
+# **Historic population in Africa, 1850-1950** <!-- omit in toc -->
+*Understanding quantitative cartography and interpolated sources with historic population data*
 
-# **Cartography as art and science** <!-- omit in toc -->
-*Understanding basic principles of cartographic design*
-
-| ![travels](images/image019.png) |
-| :-: |
-| *A map of ancient places, created with help from [Pleiades](https://pleiades.stoa.org/)*. |
-
-</div>
-
-# **Table of Contents** <!-- omit in toc -->
-
-- [**Introduction \& context**](#introduction--context)
-
-# **Introduction & context**
+This assignment will be published by Tuesday, 2/13.
