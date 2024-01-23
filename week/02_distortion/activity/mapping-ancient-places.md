@@ -1,3 +1,4 @@
+---
 # **Activity 01: Mapping ancient places** <!-- omit in toc -->
 *Use a gazetteer of the ancient world to make sense of XY data and coordinate systems*
 
@@ -27,6 +28,7 @@
   - [**Tissot's indicatrix**](#tissots-indicatrix)
   - [**Setting locally appropriate projections**](#setting-locally-appropriate-projections)
 - [**Submit**](#submit)
+  - [ec: https://img.shields.io/badge/Extra\_Credit!-green?style=plastic](#ec-httpsimgshieldsiobadgeextra_credit-greenstyleplastic)
 
 # **Introduction**
 
@@ -336,3 +338,6 @@ This activity is due before class on January 30.
 [imp]: https://img.shields.io/badge/IMPORTANT!-red?style=plastic
 [q]: https://img.shields.io/badge/Question-blue?style=plastic
 [ec]: https://img.shields.io/badge/Extra_Credit!-green?style=plastic
+---
+
+# **Activity 01: Mapping ancient places** <!-- omit in toc -->

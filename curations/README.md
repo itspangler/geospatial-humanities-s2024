@@ -4,7 +4,7 @@
 
 | ![bates](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:8623mm05h/149,1072,5548,2277/1200,/0/default.jpg) |
 | :----------------------------------------------------------------------------------------------------------------: |
-| *[Bates Hall, Boston Public Library (1996)](https://www.digitalcommonwealth.org/search/commonwealth:w6636v74b)* |
+| *[The Map Maker in a Changing World, ca. 1938](https://www.digitalcommonwealth.org/search/commonwealth:k069cj31n)* |
 
 The act of **curation** – which we might define as the assembly of co-related materials to tell a story, make an argument, or build a collection – forms an important pillar of the geospatial humanities. All mapping is necessarily a form of curating: as historians, geographers, and mapmakers, we selectively choose what kinds of information to display within our final products.
 
