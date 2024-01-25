@@ -43,7 +43,7 @@ This semester, we explore the *geospatial humanities*, learning its techniques, 
 
 ## Learning objectives
 
-Students will learn to use GIS to answer humanistically-informed spatial questions. Detailed labs apply concepts presented in the lectures using a variety of geospatial software in the ArcGIS ecosystem (as well as basic data wrangling literacy in tools like Microsoft Excel). Assignments concentrate on creative applications of concepts covered in lectures and exercises, including a final project in which students independently explore a topic from their own field of interest.
+Students will learn to use GIS to answer humanistically-informed spatial questions. Detailed labs apply concepts presented in the lectures using a variety of geospatial software in the ArcGIS ecosystem (as well as basic data wrangling literacy in tools like Microsoft Excel). Assignments concentrate on creative applications of concepts covered in lectures and labs, including a final project in which students independently explore a topic from their own field of interest.
 
 Major learning objectives include:
 
@@ -97,7 +97,7 @@ Grading will be based on a **1000-point scale**. You can submit graded activitie
 
 # Course Details
 
-Beyond just showing up to class and paying attention during the lectures, students will develop a geospatial humanities skill set by completing various [activities](#activities), [exercises](#exercises), and [labs](#labs), including a [group curation](#curation). This skill set culminates in a [final project](#final-project) on a topic of their choosing.
+Beyond just showing up to class and paying attention during the lectures, students will develop a geospatial humanities skill set by completing various [activities](#activities), [labs](#labs), and [assignments](#assignments) as well as a [group curation](#curation). This skill set culminates in a [final project](#final-project) on a topic of their choosing.
 
 ## Activities
 
@@ -105,11 +105,11 @@ Nearly every week, we will spend time during class on some kind of **activity**.
 
 ## Labs
 
-Throughout the semester, students will be assigned five **labs** which explore theories, concepts, and approaches in greater depth. I will drop your lowest Exercise grade at the end of the semester. Each lab weaves together methods and concepts, using them in a software application (usually ArcGIS Pro), and application to a particular area of the humanities.
+Throughout the semester, students will be assigned five **labs** which explore theories, concepts, and approaches in greater depth. I will drop your lowest lab grade at the end of the semester. Each lab weaves together methods and concepts, using them in a software application (usually ArcGIS Pro), and application to a particular area of the humanities.
 
 ## Assignments
 
-**Assignments** concentrate on self-directed application of concepts explored in lectures and exercises. Eventually, you will use labs to focus on how geospatial humanities intersect with your own interests, building toward a final project that applies geospatial humanities methods to a topic of your choosing.
+**Assignments** concentrate on self-directed application of concepts explored in lectures and labs. Eventually, you will use labs to focus on how geospatial humanities intersect with your own interests, building toward a final project that applies geospatial humanities methods to a topic of your choosing.
 
 ## Curation
 
