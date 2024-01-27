@@ -896,7 +896,7 @@ The ability to **export** to a digital format is very useful. If exporting to an
 
 # Deliverables
 
-Submit a copy of your completed map via Canvas in `.png` format by **Monday 1/29 at 11:59pm**.
+Submit a copy of your completed map via Canvas in `.png` format by **Tuesday 1/30 at 6:30pm**.
 
 
 <!-------------------------------------[ Links ]
