@@ -10,22 +10,15 @@ Nothing is required! It's the first day of the semester. Just show up, please!
 
 ### Lecture
 
-1. **Thinking spatially**
-   1. What is a map, anyhow?
-   2. Spatial research questions
-2. **The birth of GIS**
-   1. Social history of computing
-   2. Technology, strong objectivity, and situated knowledge
-   3. Positivism and post-positivism
-3. **Best practices for computer-ing**
-   1. Understanding paths and files
-   2. Compression and common file types
-   3. Folder organization and file nomenclature
-4. **Getting started with ArGIS Pro**
+1. What is a map?
+2. What are the geospatial humanities?
+3. The rise of GIS
+4. Syllabus & course logistics
+5. Intro to Lab 01
 
 ### Slides
 
-link to slides
+[Week 01: Geospatial Humanities](https://docs.google.com/presentation/d/1fb9rm2aeRXrt8y5d93drBb3NGhiCdbFAgI7p3s-Fshs/edit#slide=id.p)
 
 ### Housekeeping
 

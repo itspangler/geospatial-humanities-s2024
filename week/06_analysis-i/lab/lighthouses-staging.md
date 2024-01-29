@@ -1,6 +1,7 @@
 <!-- <div align=center> -->
 
-# **Exercise 03: Lighthouses, shipwrecks, and the architecture of maritime empire** <!-- omit in toc -->
+# **Lab 03: Lighthouses, shipwrecks, and the architecture of maritime empire** <!-- omit in toc -->
+*Tutorial written by Ian Spangler on January 3, 2024 for ArcGIS Pro 3.1.4.*
 
 | ![British empire](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:x633f8972/full/1200,/0/default.jpg) |
 | :------------------------------------------------------------------------------------------------------------: |
@@ -63,11 +64,11 @@ From [Virginia Woolf](http://www.woolfonline.com/) to [Robert Eggers](https://op
 
 Perhaps they do. In a very real sense, however, these beacons of watchfulness also constituted the architecture of the Britain's maritime empire. By signaling areas for ships to avoid, they ensured that the British fleet could safely traverse a maritime landscape full of dangerous shoals and reefs and arrive home unscathed.
 
-Drawing on a [dataset of historical lighthouses and light aids](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7369582/) along the English and Welsh coasts between 1514 and 1911 – as well as another dataset on [global shipwrecks](https://datahub.admiralty.co.uk/portal/apps/sites/#/marine-data-portal/items/3a234f90e54349f1b77c4b3e303f8dd4) – this exercise asks you to visualize the imprint of these guardians of the guardians of British empire.
+Drawing on a [dataset of historical lighthouses and light aids](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7369582/) along the English and Welsh coasts between 1514 and 1911 – as well as another dataset on [global shipwrecks](https://datahub.admiralty.co.uk/portal/apps/sites/#/marine-data-portal/items/3a234f90e54349f1b77c4b3e303f8dd4) – this lab asks you to visualize the imprint of these guardians of the guardians of British empire.
 
 ## **Deadlines and logistical stuff**
 
-During this exercise, you'll review and learn about:
+During this lab, you'll review and learn about:
 
 * Data management best practices
 * Layer blending modes
@@ -76,30 +77,30 @@ During this exercise, you'll review and learn about:
 * Some principles of cartographic design
 * Migrating an ArcGIS Pro project to ArcGIS Online
 
-At the end of this exercise, you will submit two things:
+At the end of this lab, you will submit two things:
 
 * First, a Word document containing answers to the questions posed throughout the lab. This document marks questions that you should answer with a [![q]][l] tag.
 * Second, a map.
 
 Respectively, those files should be named:
 
-* `yourLastName_answersExercise03.docx`
-* `yourLastName_mapExercise03.png`
+* `yourLastName_answersLab03.docx`
+* `yourLastName_mapLab03.png`
   
 Be sure to export your map in `PNG` format, and **submit all materials to Canvas by 11:59pm on Monday, February 5.**
 
 # **Setting up your workspace**
 
-Just like last week, set up a workspace for this exercise by using Windows File Explorer ![Windows file explorer](images/image001.png) to create a directory structure where you'll keep all your files.
+Just like last week, set up a workspace for this lab by using Windows File Explorer ![Windows file explorer](images/image001.png) to create a directory structure where you'll keep all your files.
 
 Again, there are three places where you can save your work: your **H: Drive**, your **Box account**, or a **personal thumb drive**. It doesn't matter which one you choose, but whichever you select, your directory structure should resemble the following:
 
-    exercise03_lighthouses/
+    lab03_lighthouses/
     ├─ data/
     ├─ workspace/
     ├─ map/
 
-The `data` folder will contain all the data you need to download for this exercise. The `workspace` folder is where you'll store your ArcGIS Pro project file, as well as the [geodatabase](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/what-is-a-geodatabase-.htm) associated with it. Finally, the `map` folder is just for exporting drafts of the final project.
+The `data` folder will contain all the data you need to download for this lab. The `workspace` folder is where you'll store your ArcGIS Pro project file, as well as the [geodatabase](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/what-is-a-geodatabase-.htm) associated with it. Finally, the `map` folder is just for exporting drafts of the final project.
 
 # **Preparing the data**
 
@@ -145,7 +146,7 @@ You should be following the "[hierarchical method](https://library.ucmerced.edu/
 
 Your directory should now resemble:
 
-    exercise03_lighthouses/
+    lab03_lighthouses/
     ├─ data/
         ├─ historicalLighthouses/
             ├─ shp/..
@@ -156,7 +157,7 @@ Your directory should now resemble:
 
 ## **Loading data into your project**
 
-Go ahead and create a new ArcGIS Pro project file – name it something like `exercise03.aprx` and save it in the `workspace` folder.
+Go ahead and create a new ArcGIS Pro project file – name it something like `lab03.aprx` and save it in the `workspace` folder.
 
 In ArcGIS Pro, navigate to the **Catalog** pane on the right-hand side of the screen. Refer to [this guide](https://pro.arcgis.com/en/pro-app/latest/get-started/user-interface.htm) if you need a refresher on the Pro interface. If you don't see the **Catalog** pane, click on the `View` tab on the banner, then click `Catalog Pane`. 
 
@@ -326,7 +327,7 @@ You might notice that the toolbox offers both a **Buffer** *and* a **Pairwise Bu
 1. Input features = `HistoricalLighthouses`
 2. Output feature class = click the folder ![folder](images/image006.png) and save the output feature class as `lighthouseBuffer_10miles`. If you click in the text box itself, you should see a full file path resembling:
 
-       ..\exercise03_lighthouses\workspace\exercise03.gdb\lighthouseBuffer_10miles
+       ..\lab03_lighthouses\workspace\lab03.gdb\lighthouseBuffer_10miles
 
 3. Distance = `10`, with `Linear Unit` set to `Statute Miles`
 4. You can leave Method, Dissolve Type, and Maximum Offset Deviation at their default settings.
@@ -562,7 +563,7 @@ First, let's make use of that new `year_sunk` column.
 
 We want to avoid joining shipwrecks to a lighthouse that didn't exist when the wreck occurred – for example, it wouldn't make much sense to join a shipwreck that perished in 1850 with a lighthouse that didn't exist until 1911. So, we're going to join only those records that match the breaks in our data.
 
-For the sake of this exercise, here are the breaks we'll use:
+For the sake of this lab, here are the breaks we'll use:
 
 * All `shipwrecks_clipped` records where `year_sunk` is greater than 1799 and less than 1851 will be joined to `lighthouseBuffer_1831`
 * All `shipwrecks_clipped` records where `year_sunk` is greater than 1850 and less than 1911 will be joined to `lighthouseBuffer_1851`
@@ -570,7 +571,7 @@ For the sake of this exercise, here are the breaks we'll use:
 
 My logic to terminate the break by 1914 is that the battles of World War I would skew our data significantly (e.g., ships aren't wrecking as much as they are being wrecked by others).
 
-My logic to initiate the break at 1800 is I wanted to include a few more points on the older end, and this is just a learning exercise, so I'm not super concerned that we might be attaching a few wrecks to lighthouses that don't yet exist.
+My logic to initiate the break at 1800 is I wanted to include a few more points on the older end, and this is just a learning lab, so I'm not super concerned that we might be attaching a few wrecks to lighthouses that don't yet exist.
 
 ### **Select by Attributes**
 
@@ -672,7 +673,7 @@ And anyhow, I think this looks alright...
 
 ... but it could look better!
 
-We have one final set of steps for you to complete, and then you can go to bed or take a shower or watch *The Bachelor*, or whatever it is that you've been putting off because of this exercise.
+We have one final set of steps for you to complete, and then you can go to bed or take a shower or watch *The Bachelor*, or whatever it is that you've been putting off because of this lab.
 
 ArcGIS Online has a pair of functions – **Bloom** and **Blur** – that are critical to putting finishing touches on this map. They'll smooth out those hard edges on the circles, . And thankfully, it's a pretty quick and easy process.
 
@@ -736,7 +737,7 @@ Before you submit, feel free to play around a bit with the **Bloom** effect to s
 
 When you're ready to submit the map, click **Print** at the bottom of the sidebar on the left-hand side of the screen. Give it a decent title, set Page Setup to `A3 Portrait` and File format to `PNG32`, and click **Export.**
 
-The exported file will appear in a new tab. Save a copy of it, name the file appropriately, and submit via Canvas, along with a Word document with answers to the questions throughout this exercise.
+The exported file will appear in a new tab. Save a copy of it, name the file appropriately, and submit via Canvas, along with a Word document with answers to the questions throughout this lab.
 
 # **Bibliography**
 
