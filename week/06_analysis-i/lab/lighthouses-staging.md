@@ -91,7 +91,7 @@ Be sure to export your map in `PNG` format, and **submit all materials to Canvas
 
 # **Setting up your workspace**
 
-Just like last week, set up a workspace for this lab by using Windows File Explorer ![Windows file explorer](images/image001.png) to create a directory structure where you'll keep all your files.
+Just like last lab, set up a workspace for this lab by using Windows File Explorer ![Windows file explorer](images/image001.png) to create a directory structure where you'll keep all your files.
 
 Again, there are three places where you can save your work: your **H: Drive**, your **Box account**, or a **personal thumb drive**. It doesn't matter which one you choose, but whichever you select, your directory structure should resemble the following:
 

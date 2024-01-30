@@ -19,20 +19,14 @@ In self-assigned groups of 3-4, choose a **project, process, or product** with a
 * A still (e.g., static) map or series of still maps
 * A methodology or workflow
 
-**By Week 3 of class (February 6)**, curatorial groups must email Ian and Max with the following information:
-
-* All group members names, cc'ing them on the email
-* The group's top three desired dates for a curation, in order of preference
-* The group's top three desired curatorial topics, in order of preference
-
-On their assigned date, groups will present their curation to the class, adhering to the requirements below. There will be about 5-10 minutes for questions.
+**By Week 3 of class (February 6)**, curatorial groups must select their curation groups by [completing this Google form](https://forms.gle/NoXaqab6mZrR31ig6).
 
 # Requirements
 
 The curatorial introduction should be about 12 minutes in length, and at 15 minutes, groups will be unceremoniously cut off. They should respond to the following prompts:
 
 1. How is this project, process, or product engaged with the geospatial humanities? What is it **arguing** and what are its **themes**?
-2. What are the **key spatial datasets** associated with this project, process, or product? Be as specific as possible. (If the product you're examining *is* a dataset, )
+2. What are the **key spatial datasets** associated with this project, process, or product? Be as specific as possible.
 3. What **methodologies** were used to create the data? If the authors don't explain, make an educated guess.
 4. What **areas of growth** can you find in this project, process, or product? More specifically, what kinds of spatial datasets would you add and what kinds of different design choices would you make if you were the lead developer/curator?
 

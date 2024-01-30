@@ -12,7 +12,7 @@
   - [The Middle Passage](#the-middle-passage)
   - [**Understanding the Slave Voyages Database**](#understanding-the-slave-voyages-database)
 - [Starting an ArcGIS Pro Project File \& Folder](#starting-an-arcgis-pro-project-file--folder)
-  - [Downloading the GIS Data](#downloading-the-gis-data)
+  - [Downloading the data](#downloading-the-data)
 - [Exploring the Map](#exploring-the-map)
 - [Understanding the Data and Attribute Table.](#understanding-the-data-and-attribute-table)
 - [Assigning Proper Layer Names](#assigning-proper-layer-names)
@@ -76,83 +76,92 @@ This activity will specifically focus on data from the Trans-Atlantic Slave Trad
 
     | <img src="./images/image002.png" /> |
     | :---------------------------------: |
-    |                                     |
+    |          *Data variables*           |
 
 6.  Go back up to the top drop down and under Trans-Atlantic, select Database. You will now see a database that has over 36,000 records! Notice how on the blue bar you can filter the data by fields such as year range, ship, itinerary, enslaved people, dates and more.
 
-<img src="./images/image003.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    | <img src="./images/image003.png" /> |
+    | :---------------------------------: |
+    |      *Filtering the database*       |
 
-1.  Try **filtering** the data by one or more variables and see how it **changes the results**. You can view the results in many different ways.
+7.  Try **filtering** the data by one or more variables and see how it **changes the results**. You can view the results in many different ways.
+    - The **results** tab shows all individual records of each voyage
+    - The **summary statistics** provides summary information at a high level
+    - The **tables** tab allows you to create your own table using variables and outcomes of your choice
+    - The **data visualization tab** shows the data by 3 different graph types
+    - The **timeline** provides a line graph over time
+    - The **maps** tab allows us to visualize the data in an interacvtive map. Note that as you zoom in, the map becomes more detailed and as you zoom out, it becomes more generalized. This is a popular mapping technique to not overwhelm the viewer with too much detailed info when zoomed out.
+    - The **Timelapse** shows the data as an animated map by date, with additional visualizations embedded in the map.
 
--   The **results** tab shows all individual records of each voyage
 
--   The **summary statistics** provides summary information at a high level
+8.  Click through the different results tab to see the data visualized in different ways.
 
--   The **tables** tab allows you to create your own table using variables and outcomes of your choice
+9.  Notice how on any of the results tabs that are tables, you can download the data at the top right of the table. You can also configure the columns and fields. On the data visualization tab, you can download the graphics or raw data.
 
--   The **data visualization tab** shows the data by 3 different graph types
+    | <img src="./images/image004.png" /> |
+    | :---------------------------------: |
+    |   *Download graphics or raw data*   |
 
--   The **timeline** provides a line graph over time
+For the rest of the tutorial, we will use data that has been previously filtered, configured, and downloaded.
 
--   The **maps** tab allows us to visualize the data in an interacvtive map. Note that as you zoom in, the map becomes more detailed and as you zoom out, it becomes more generalized. This is a popular mapping technique to not overwhelm the viewer with too much detailed info when zoomed out.
-
--   The **Timelapse** shows the data as an animated map by date, with additional visualizations embedded in the map.
-
-1.  Click through the different results tab to see the data visualized in different ways.
-
-2.  Notice how on any of the results tabs that are tables, you can download the data at the top right of the table. You can also configure the columns and fields. On the data visualization tab, you can download the graphics or raw data.
-
-<img src="./images/image004.png" style="" alt="A screenshot of a computer Description automatically generated" />
-
-> **For the rest of the tutorial, we will use data that has been previously filtered, configured, and downloaded. But it is important for you to know how to use online databases and resources like the SlaveVoyage database for your future research and projects.**
+> [![q]][l]
+>
+> 1. 
 
 # Starting an ArcGIS Pro Project File & Folder 
+ 
+When starting a new ArcGIS Project, it is very important to determine <u>where</u> you will be saving all GIS data and project files before you start, since Pro makes you choose a <u>home folder</u> when opening the software.
 
-**Important: When starting a new ArcGIS Project, it is very important to determine <u>where</u> you will be saving all GIS data and project files before you start, since Pro makes you choose a <u>home folder</u> when opening the software.**
+Options for where you can save include:
+* **your `H: Drive` (recommended)**
+* Tufts Box
+* your `Desktop` or `Documents` folders (ONLY if it’s a personal computer – not if you are using the Engineering Lab VDI)
+* an external drive (USB or external hard drive)
 
-You have many options for where you can save including **your H Drive** *(recommended, but for Tufts students only)***,** in **Tufts Box, your Desktop or Documents folders** *(if it’s a personal computer ONLY – not if you are using the VDI)* or an **external drive (***USB or external hard drive).*
+This tutorial will go through the process of saving and storing data in a GIS folder in Tufts `H: Drive`, but you can choose a location that works best for your situation. If you plan to use the `H: drive`, the folder must be mapped and connected under `This PC` in files explorer. Follow the [instructions to map your `H: drive`](https://sites.tufts.edu/datalab/accounts-network-drives-windows10/) on your personal computer (it maps automatically in the Data lab or TTS Engineering VDI).
 
-**This tutorial will go through the process of saving and storing data in a GIS folder in Tufts H Drive, but you can choose a location that works best for your situation. If you plan to use the H drive, the folder must be mapped and connected under “this pc” in files explorer. Follow these [instructions to map your H drive](https://sites.tufts.edu/datalab/accounts-network-drives-windows10/) on your personal computer (it maps automatically in the Data lab or TTS Engineering VDI).**
-
-**Wherever you plan to save, you must stay consistent, remember where it is saved, and give it a useful name from the start!**
+>[![imp]][l]
+> 
+> Where you save your project files, please follow best practices in file nomenclature, directory structure, and organization, as discussed in class. I recommend setting up a directory structure that resembles the following:
+> 
+>     lab03_lighthouses/
+>        ├─ data/
+>        ├─ workspace/
+>        ├─ map/
 
 1.  To start ArcGIS Pro, search for ArcGIS Pro in the windows search bar. Open ArcGIS Pro.
-
-<!-- -->
-
-1.  Make sure you are **signed into ArcGIS Pro using your Tufts credentials**. You can sign in at the top right-hand corner.
-
+2.  Make sure you are **signed into ArcGIS Pro using your Tufts credentials**. You can sign in at the top right-hand corner.
     1.  Click on **Sign in with Your ArcGIS organization’s URL**. <u>Do NOT click sign in with ArcGIS Login</u>
-
     2.  Enter **tuftsgis** as the organization’s URL. If this is your personal computer, you can check remember this URL and it will be faster next time.
-
-    3.  You will then be prompted to log in with TUFTS UNIVERSITY. Press the blue Tufts button.
-
+    3.  You will then be prompted to log in with Tufts University. Press the blue Tufts button.
     4.  Log in with your Tufts UTLN and password. You will also need to go through duo authentication. Press Login. Now you should see your username at the top right of ArcGIS Pro, as shown below.
 
-<img src="./images/image005.png" style="" alt="A close-up of a computer screen Description automatically generated" />
+        | <img src="./images/image005.png" /> |
+        | :---------------------------------: |
+        |                                     |
 
-1.  To start a new project, click on **Map,** as shown above.
+3.  To start a new project, click on **Map,** as shown above.
+4.  A “Create a New Project” box will open with the option to name your project file and choose where to save it. This is important to not rush through. What you name and where you save the project is very important for good data management and organization!! It is much harder to change this name/location down the line if you don’t do it properly from the start!
+    1.  Name your project `TransAtlanticSlaveTrade`.
+    2.  Under ***Location***, click on the **folder** **icon** <img src="./images/image006.png" /> and navigate to where you want to save your project (this tutorial will use the `H: drive`). Click ONCE on your `H: drive`. *<u>Do not double click to go into your `H: drive`.</u>*
 
-2.  A “Create a New Project” box will open with the option to name your project file and choose where to save it. This is important to not rush through. What you name and where you save the project is very important for good data management and organization!! It is much harder to change this name/location down the line if you don’t do it properly from the start!
+    3.  Make sure **Create a new folder for this project** is checked so that it creates a folder within your `H: drive` for this project and data. Press OK.
 
-    1.  Name your project “TransAtlanticSlaveTrade”.
+        | <img src="./images/image007.png" /> |
+        | :---------------------------------: |
+        |      *Creating a project file*      |
 
-    2.  Under ***Location***, click on the **folder** **icon**<img src="./images/image006.png" style="width:0.14583in;height:0.15625in" /> and navigate to where you want to save your project (this tutorial will use the H drive). Click ONCE on your H drive. *<u>Do not double click to go into your H drive.</u>*
+5.  A new blank map will open. On the *left*, you will see your **Contents** pane. That shows all layers currently in the map (nothing other than the 2 basemaps).
 
-    3.  Make sure **Create a new folder for this project** is checked so that it creates a folder within your H drive for this project and data. Press OK.
+6.  On the right, you will see the **Catalog** pane. This is where you can access everything associated with this **project**, including *GIS data, saved maps, toolboxes, layouts, etc.*
 
-<img src="./images/image007.png" style="" alt="A screenshot of a computer Description automatically generated" />
+7.  Under **Catalog**, double click on **Folders** and you will see your connection to the <u>home</u> folder **TransAtlanticSlaveTrade** Folder (notice the little house icon indicating it’s your home folder). If you hover over the folder, it will show you the path (aka the folder location) where the project is saved.
 
-1.  A new blank map will open. On the *left*, you will see your **Contents** pane. That shows all layers currently in the map (nothing other than the 2 basemaps).
+    |      <img src="./images/image008.png"/>       |
+    | :-------------------------------------------: |
+    | *Find your workspace in the ArcGIS Pro Catalog* |
 
-2.  On the right, you will see the **Catalog** pane. This is where you can access everything associated with this **project**, including *GIS data, saved maps, toolboxes, layouts, etc.*
-
-3.  Under **Catalog**, double click on **Folders** and you will see your connection to the <u>home</u> folder **TransAtlanticSlaveTrade** Folder (notice the little house icon indicating it’s your home folder). If you hover over the folder, it will show you the path (aka the folder location) where the project is saved.
-
-<img src="./images/image008.png" style="" alt="A screenshot of a computer" />
-
-## Downloading the GIS Data
+## Downloading the data
 
 1.  Now, you need to download the data that has been previously downloaded and cleaned for you that you will use for this exercise.
 
@@ -168,7 +177,7 @@ You have many options for where you can save including **your H Drive** *(recomm
 
 <img src="./images/image010.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-1.  After pasting the zip drive in your H:\\TransAtlanticSlaveTrade folder, right click on the **AtlanticSlaveTrade\_TutorialData.zip** file Extract All. Confirm the location where it is extracting is correct and press **Extract**.
+1. After pasting the zip drive in your H:\\TransAtlanticSlaveTrade folder, right click on the **AtlanticSlaveTrade\_TutorialData.zip** file Extract All. Confirm the location where it is extracting is correct and press **Extract**.
 
 <img src="./images/image011.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
@@ -248,13 +257,13 @@ These variables in the pop up are called **Attributes** and provide us informati
 
 5.  Now choose **Project Save**. You have already created a project file name for this (*TransAtlanticSlaveTrade.aprx*). A project file is a very small file that contains ***pointers*** to your datasets (it does not actually save the datasets, but we did already save those in this folder as well!).
 
-<img src="./images/image022.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    | <img src="./images/image022.png" /> |
+    | :---------------------------------: |
+    |                                     |
 
-The **aprx** project file remembers what you had displayed in your map session and how you had it styled, along with how far you were zoomed in/out. If you quit ArcGIS Pro at this point, you can reopen this map **.*aprx* file** by double clicking on it wherever you have saved in (in my case my H drive) and ArcGIS Pro will reopen with everything as you left it.
+    The `aprx` project file remembers what you had displayed in your map session and how you had it styled, along with how far you were zoomed in/out. If you quit ArcGIS Pro at this point, you can reopen this map **.*aprx* file** by double clicking on it wherever you have saved in (in my case my `H: drive`) and ArcGIS Pro will reopen with everything as you left it.
 
-But **beware** – since **project files do not actually contain data layers**, and only have **pointers** to where the data is saved, if you copied your **TransAtlanticSlaveTrade project** file and tried to open it on a home computer without also saving the **data**, the ArcGIS Pro session would start and list the data in the table of contents, but nothing would appear because it would not be able to find the where the data is stored. A little red exclamation point would appear in the table of contents, informing you that it has lost the connection to the data.
-
-**Pro Tip:** Save your project file *frequently* and always save at the end of a session. ArcGIS Pro likes to crash! For reals!!
+    But **beware** – since **project files do not actually contain data layers**, and only have **pointers** to where the data is saved, if you copied your **TransAtlanticSlaveTrade project** file and tried to open it on a home computer without also saving the **data**, the ArcGIS Pro session would start and list the data in the table of contents, but nothing would appear because it would not be able to find the where the data is stored. A little red exclamation point would appear in the table of contents, informing you that it has lost the connection to the data.
 
 # Understanding the Data and Attribute Table. 
 
