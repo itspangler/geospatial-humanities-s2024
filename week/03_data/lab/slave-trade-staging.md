@@ -11,18 +11,18 @@
 - [**Introduction and context**](#introduction-and-context)
   - [The Middle Passage](#the-middle-passage)
   - [**Understanding the Slave Voyages Database**](#understanding-the-slave-voyages-database)
-- [Starting an ArcGIS Pro Project File \& Folder](#starting-an-arcgis-pro-project-file--folder)
+- [Start an ArcGIS Pro Project File \& Folder](#start-an-arcgis-pro-project-file--folder)
   - [Downloading the data](#downloading-the-data)
 - [Exploring the Map](#exploring-the-map)
-- [Understanding the Data and Attribute Table.](#understanding-the-data-and-attribute-table)
+- [Understanding the Data and Attribute Table](#understanding-the-data-and-attribute-table)
 - [Assigning Proper Layer Names](#assigning-proper-layer-names)
 - [Attribute Table Tools](#attribute-table-tools)
   - [Sorting, Statistics, Add Field, \& Field calculator](#sorting-statistics-add-field--field-calculator)
-- [](#)
 - [Selection Methods](#selection-methods)
   - [Selecting Manually](#selecting-manually)
-- [](#-1)
   - [**Select by Attributes**](#select-by-attributes)
+  - [Narrative at the intersection qualitative and quantitative](#narrative-at-the-intersection-qualitative-and-quantitative)
+  - [Saving selected data as new layers](#saving-selected-data-as-new-layers)
   - [Select by Location](#select-by-location)
 - [Symbology - Symbolizing a Layer Style](#symbology---symbolizing-a-layer-style)
   - [Assigning Colors with Symbology – Single Symbol (Everything is the same!)](#assigning-colors-with-symbology--single-symbol-everything-is-the-same)
@@ -40,6 +40,11 @@
   - [Insert Cartographer Information](#insert-cartographer-information)
   - [Removing the Base Map Citations](#removing-the-base-map-citations)
   - [Exporting your Paper Map](#exporting-your-paper-map)
+
+> ## **What you should submit** <!-- omit in toc -->
+> Before **6:30pm on Tuesday, 2/13**, submit two things:
+> * A document in `pdf` or `docx` format to Canvas, answering all the questions that are tagged with ![q]
+> * A map in `png` format, exported at 300 DPI, following the instructions from the lab
 
 # **Introduction and context**
 
@@ -78,7 +83,7 @@ This activity will specifically focus on data from the Trans-Atlantic Slave Trad
     | :---------------------------------: |
     |          *Data variables*           |
 
-6.  Go back up to the top drop down and under Trans-Atlantic, select Database. You will now see a database that has over 36,000 records! Notice how on the blue bar you can filter the data by fields such as year range, ship, itinerary, enslaved people, dates and more.
+6.  Go back up to the top drop down and under Trans-Atlantic, select Database. You will now see a database that has over 36,000 records (e.g., voyages). Notice how on the blue bar you can filter the data by fields such as year range, ship, itinerary, enslaved people, dates and more.
 
     | <img src="./images/image003.png" /> |
     | :---------------------------------: |
@@ -102,15 +107,15 @@ This activity will specifically focus on data from the Trans-Atlantic Slave Trad
     | :---------------------------------: |
     |   *Download graphics or raw data*   |
 
-For the rest of the tutorial, we will use data that has been previously filtered, configured, and downloaded.
+In the rest of the tutorial, we will use data that has been previously filtered, configured, and downloaded. Now that you've actually examined the data, a moment to reflect on this data using the McKittrick quote from earlier, as well as the [Jamelle Bouie piece you read before class](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html).
 
 > [![q]][l]
 >
-> 1. 
+> 1. In a few sentences (no more than 5), describe what you think McKittrick is saying in that excerpt you read above. How does her point relate to the argument that Bouie made in his article about the SlaveVoyages database? What impact should their arguments have on the way you approach making a map or doing research with this data?
 
-# Starting an ArcGIS Pro Project File & Folder 
- 
-When starting a new ArcGIS Project, it is very important to determine <u>where</u> you will be saving all GIS data and project files before you start, since Pro makes you choose a <u>home folder</u> when opening the software.
+# Start an ArcGIS Pro Project File & Folder
+
+As always, when starting a new ArcGIS Project, it is very important to determine <u>where</u> you will be saving all GIS data and project files before you start, since Pro makes you choose a <u>home folder</u> when opening the software.
 
 Options for where you can save include:
 * **your `H: Drive` (recommended)**
@@ -124,93 +129,89 @@ This tutorial will go through the process of saving and storing data in a GIS fo
 > 
 > Where you save your project files, please follow best practices in file nomenclature, directory structure, and organization, as discussed in class. I recommend setting up a directory structure that resembles the following:
 > 
->     lab03_lighthouses/
->        ├─ data/
->        ├─ workspace/
->        ├─ map/
+>     ├─ week03/   
+>        ├─ lab02_slave-trade/
+>           ├─ workspace/
+>           ├─ submission/
 
-1.  To start ArcGIS Pro, search for ArcGIS Pro in the windows search bar. Open ArcGIS Pro.
-2.  Make sure you are **signed into ArcGIS Pro using your Tufts credentials**. You can sign in at the top right-hand corner.
-    1.  Click on **Sign in with Your ArcGIS organization’s URL**. <u>Do NOT click sign in with ArcGIS Login</u>
-    2.  Enter **tuftsgis** as the organization’s URL. If this is your personal computer, you can check remember this URL and it will be faster next time.
+1. Search for ArcGIS Pro in the windows search bar and open it.
+2. Sign in using your Tufts credentials. You can sign in at the top right-hand corner.
+    1.  Click on **Sign in with Your ArcGIS organization’s URL**. <u>Do NOT click sign in with ArcGIS login</u>
+    2.  Enter "tuftsgis" as the organization’s URL. If this is your personal computer, you can check remember this URL and it will be faster next time.
     3.  You will then be prompted to log in with Tufts University. Press the blue Tufts button.
-    4.  Log in with your Tufts UTLN and password. You will also need to go through duo authentication. Press Login. Now you should see your username at the top right of ArcGIS Pro, as shown below.
+    4.  Log in with your Tufts UTLN and password. You will also need to go through Duo authentication. Press `Login`. Now you should see your username at the top right of ArcGIS Pro, as shown below.
 
         | <img src="./images/image005.png" /> |
         | :---------------------------------: |
-        |                                     |
 
 3.  To start a new project, click on **Map,** as shown above.
-4.  A “Create a New Project” box will open with the option to name your project file and choose where to save it. This is important to not rush through. What you name and where you save the project is very important for good data management and organization!! It is much harder to change this name/location down the line if you don’t do it properly from the start!
-    1.  Name your project `TransAtlanticSlaveTrade`.
-    2.  Under ***Location***, click on the **folder** **icon** <img src="./images/image006.png" /> and navigate to where you want to save your project (this tutorial will use the `H: drive`). Click ONCE on your `H: drive`. *<u>Do not double click to go into your `H: drive`.</u>*
+4.  A “Create a New Project” box will open with the option to name your project file and choose where to save it. This is important to not rush through. What you name and where you save the project is very important for good data management and organization. It is much harder to change this name/location down the line if you don’t do it properly from the start!
 
-    3.  Make sure **Create a new folder for this project** is checked so that it creates a folder within your `H: drive` for this project and data. Press OK.
-
-        | <img src="./images/image007.png" /> |
-        | :---------------------------------: |
-        |      *Creating a project file*      |
+    1. Name your project `TransAtlanticSlaveTrade`.
+    2. Under ***Location***, click on the **folder** **icon** <img src="./images/image006.png" /> and navigate to where you want to save your project (this tutorial will use the `H: drive`).
+    3. Click on your `H: drive` ➡️ `week03` ➡️ `workspace`. **Don't double-click into `workspace`** – just click it, and select **OK**. 
+    4. Make sure **Create a new folder for this project** is checked so that it creates a folder within your `workspace` directory for this project and data. Press **OK**.
 
 5.  A new blank map will open. On the *left*, you will see your **Contents** pane. That shows all layers currently in the map (nothing other than the 2 basemaps).
 
 6.  On the right, you will see the **Catalog** pane. This is where you can access everything associated with this **project**, including *GIS data, saved maps, toolboxes, layouts, etc.*
 
-7.  Under **Catalog**, double click on **Folders** and you will see your connection to the <u>home</u> folder **TransAtlanticSlaveTrade** Folder (notice the little house icon indicating it’s your home folder). If you hover over the folder, it will show you the path (aka the folder location) where the project is saved.
+7.  Under **Catalog**, double click on **Folders** and you will see your connection to the `home` folder **TransAtlanticSlaveTrade** Folder (notice the little house icon indicating it’s your home folder). If you hover over the folder, it will show you the path (aka the folder location) where the project is saved.
 
-    |      <img src="./images/image008.png"/>       |
-    | :-------------------------------------------: |
+    |       <img src="./images/image008.png"/>        |
+    | :---------------------------------------------: |
     | *Find your workspace in the ArcGIS Pro Catalog* |
+
+> ![imp]
+> 
+> When you unfold the `TransAtlanticSlaveTrade` home folder, you'll see a file called `TransAtlanticSlaveTrade.gdb`. This is a **geodatabase**. The data that you'll use for this lab also comes in geodatabase format. We will discuss the geodatabase object in greater detail later in the term. For now, think of it as a special folder from which ArcGIS Pro projects can interpret spatial data. Any tools that you run will automatically save the new GIS files into the geodatabase. ArcGIS Pro will often encourage you to save other spatial data in it – just note that they'll be saved as **feature classes** instead of **shapefiles**. Esri has written about both [geodatabases](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/fundamentals-of-the-geodatabase.htm) and [features classes](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/feature-class-basics.htm) if you want to learn more right now.
 
 ## Downloading the data
 
-1.  Now, you need to download the data that has been previously downloaded and cleaned for you that you will use for this exercise.
+1. The data for this lab has been pre-processed for you. Download it here: <https://tufts.box.com/v/AtlanticSlaveTrade>
 
-    1.  **The GIS data is saved here: <https://tufts.box.com/v/AtlanticSlaveTrade>**
+2.  Download this entire zip folder called `AtlanticSlaveTrade_TutorialData.zip` by clicking on **Download** at the top right. Depending on the browser you are using, it might ask if you want to save, put it in the downloads bar at the bottom, or save it directly into your Downloads folder.
 
-2.  Download this entire zip folder called **AtlanticSlaveTrade\_TutorialData.zip** by clicking on **Download** at the top right. Depending on the browser you are using, it might ask if you want to save, put it in the downloads bar at the bottom, or save it directly into your Downloads folder.
+    <img src="./images/image009.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-<img src="./images/image009.png" style="" alt="A screenshot of a computer Description automatically generated" />
+3.  In the Windows **File Explorer**, navigate to your **Downloads** folder. **Copy** this zip folder and paste it into your `TransAtlanticSlaveTrade` folder. Make sure to paste it INSIDE your project folder. This will ensure that the data for the tutorial is WITHIN the ArcGIS Project home folder, making it easier to access in Pro and for better project data management.
 
-1.  In the Windows **File Explorer**, navigate to your **Downloads** folder. **Copy** this zip folder and paste it into your **H: Folder TransAtlanticSlaveTrade** **folder.** Make sure to paste it INSIDE your project folder. This will ensure that the data for the tutorial is WITHIN the ArcGIS Project home folder, making it easier to access in Pro and for better project data management!
+    <img src="./images/image010.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-***Note***: There will be several other files in that project folder including the .**aprx**, aka the ArcGIS pro project file, and several other folders that were created when you started this ArcGIS project.
+4. After pasting the zip drive in your `TransAtlanticSlaveTrade` folder, right click on the `AtlanticSlaveTrade_TutorialData.zip` file Extract All. Confirm the location where it is extracting is correct and press **Extract**.
 
-<img src="./images/image010.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image011.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-1. After pasting the zip drive in your H:\\TransAtlanticSlaveTrade folder, right click on the **AtlanticSlaveTrade\_TutorialData.zip** file Extract All. Confirm the location where it is extracting is correct and press **Extract**.
+    This process **unzips or extracts** all the components of this zipped folder. In your folder, you should now see an unzipped file also called `AtlanticSlaveTrade_TutorialData`. *The zipped file will still be there, which is useful to keep as a backup in case the unzipped data somehow becomes corrupted.*
 
-<img src="./images/image011.png" style="" alt="A screenshot of a computer Description automatically generated" />
+5.  Now that you’ve unzipped the data, we can work with it in ArcGIS Pro. You cannot see data inside folders that are zipped up in ArcGIS Pro. You must always unzip it first to be able to work with it.
 
-This process **unzips or extracts** all the components that are contained within this zipped folder so you can use them in ArcGIS Pro. In your folder, you should now be able to see an unzipped file also called “AtlanticSlaveTrade\_TutorialData”. *The zipped file will still be there, which is useful to keep as a backup in case the unzipped data somehow becomes corrupted.*
-
-1.  Now that you’ve unzipped the data, we can work with it in ArcGIS Pro. You cannot see data inside folders that are zipped up in ArcGIS Pro. You must always unzip it first to be able to work with it.
-
-2.  **Go back to your ArcGIS Pro project** and on the right side in **Catalog**, right click on your home folder “TransAtlanticSlaveTrade” and press **Refresh.** This will allow us to see any new files or folders added to this folder.
+6.  **Go back to your ArcGIS Pro project** and on the right side in **Catalog**, right click on your home folder “TransAtlanticSlaveTrade” and press **Refresh.** This will allow us to see any new files or folders added to this folder.
 
     <img src="./images/image012.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-    **Note**: Whenever you add new files to a folder and the project is ALREADY open in ArcGIS Pro, you must **refresh** the folder in order to see what has been added.
+    > ![imp]
+    > 
+    > Whenever you add new files to a folder whose project is *already open in ArcGIS Pro*, you must **refresh** the folder in order to see what has been added.
 
-3.  Double click on your home **TransAtlanticSlaveTrade** folder and then double click on the **AtlanticSlaveTrade\_TutorialData.** You should now see **3 *shapefiles with the extension .shp* that will be used for this activity and one geodatabase *with the extension .gdb (the silver cylinder).*** *  
+7.  Double click on your home **TransAtlanticSlaveTrade** folder and then double click on the **AtlanticSlaveTrade_TutorialData.** You should now see **3 *shapefiles with the extension .shp* that will be used for this activity and one geodatabase *with the extension .gdb (the silver cylinder).***
     *<img src="./images/image013.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-**Note**: You should also see a **geodatabase** (the silver cylinder) that says **TransAtlanticSlaveTrade.gdb**, along with a **TransAtlanticSlaveTrade.tb**x (toolbox) and a backup and **importLog** folder in your larger project folder. These are automatically created when you start a new ArcGIS Pro project. Any tools that we run will automatically save the new GIS files into the ***geodatabase***.
+8.  Double-click on the `SlaveVoyagesDatabase.gdb` to expand it and you will see another file called `AfricanPortsAntiguaEmbarkments_1676_1805`. This is a **feature class.** *Feature classes are very similar to shapefiles, but just live within geodatabases and are a newer file type.*
 
-1.  Double click on the **SlaveVoyagesDatabase.gdb** to expand it and you will see another file called “**AfricanPortsAntiguaEmbarkments\_1676\_1805**”. This is a **feature class.** *Feature classes are very similar to shapefiles, but just live within geodatabases and are a newer file type.*
+9.  Pull this **AfricanPortsAntiguaEmbarkments_1676_1805** feature class into the map by dragging and dropping the file in the map. The map will zoom to the **extent** of the data.
 
-2.  Pull this **AfricanPortsAntiguaEmbarkments\_1676\_1805** feature class into the map by dragging and dropping the file in the map. The map will zoom to the **extent** of the data.
-
-3.  One by one, drag the other three shapefiles onto the basemap. Take note of what each shapefile looks like when you add it to the map. Are they points, lines or polygons? Look at the icons in **Catalog**, that will give you a hint!
+10. One by one, drag the other three shapefiles onto the basemap. Take note of what each shapefile looks like when you add it to the map. Are they points, lines or polygons? Look at the icons in **Catalog**, that will give you a hint!
 
     **You should now have 4 layers in the map, plus 2 basemaps.**
 
-4.  To the left of the screen in the **Contents** pane, underneath “**Drawing Order”,** order the layers by dragging them into place. You want the largest polygon layer, the **continents** layer, on the bottom and the points on top so we can see them.
+11. To the left of the screen in the **Contents** pane, underneath “**Drawing Order”,** order the layers by dragging them into place. You want the largest polygon layer, the **continents** layer, on the bottom and the points on top so we can see them.
 
-    1.  <u>They should be in this order as shown below</u>. **Also, notice your colors are probably different than mine. That is because there is no default color when you first bring data in…it’s totally random until you set the colors with symbology.**
+    They should be in this order as shown below. **Also, notice your colors are probably different than mine. That is because there is no default color when you first bring data in... it’s totally random until you set the colors with symbology.**
 
-        <img src="./images/image014.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image014.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-5.  Turn all the layers off by **unchecking** the box next to the layer name. Then, one at a time, turn each layer on again so you can see what it looks like. When you’re done looking at them, make sure you turn all the layers on.
+12. Turn all the layers off by **unchecking** the box next to the layer name. Then, one at a time, turn each layer on again so you can see what it looks like. When you’re done looking at them, make sure you turn all the layers on.
 
     <img src="./images/image015.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
@@ -218,301 +219,364 @@ This process **unzips or extracts** all the components that are contained within
 
 1.  Switch to the **Map** tab at the top of ArcGIS Pro
 
-<img src="./images/image016.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image016.png" />
 
-1.  Remember, the **Explore** button allows you to move (or **pan**) the map by left clicking on your mouse. You can also zoom in and out using the mouse scroll wheel.
+2. Remember, the **Explore** button allows you to move (or **pan**) the map by left clicking on your mouse. You can also zoom in and out using the mouse scroll wheel.
 
-2.  You can click on any of the data in the map to pull up **their attributes** and to learn more about that particular point or polygon.
+3. You can click on any of the data in the map to pull up **their attributes** and to learn more about that particular point or polygon.
 
-3.  Click on one of the points from the **AfricanPortsAntiguaEmbarkments\_1676\_1805** layer. What information do you see in the pop up? What do we think is being mapped based on the layer name and attribute names?
-
-    <img src="./images/image017.png" style="" alt="A screenshot of a computer Description automatically generated" />
-
-These variables in the pop up are called **Attributes** and provide us information stored in each layers Attribute table (which is essentially the database we downloaded from Slave Voyage).
-
-**In this AfricanPortsAntiguaEmbarkments\_1676\_1805 layer, the points (features) represent the location of the <u>ports that had voyages embark specifically to Antigua during 1676 – 1805</u>. And the <u>attributes</u> in the layer are the *name of the port*, the *“country” that port was located in <u>during that time frame</u>*, and *how many embarked enslaved persons bound for Antigua were aboard within each of the time ranges*.**
-
-1.  Zoom into a part of Africa using mouse scroll wheel and hovering your cursor over the continent. A helpful trick is to hold down **shift** and with your mouse, draw a box around where you want to zoom in. Then it will zoom to that *extent*.
-
-2.  Additionally, you can *Zoom In and Zoom Out* using the **fixed zoom in and fixed zoom out** tools on the map pane*.*
-
-    <img src="./images/image018.png" style="" alt="A screenshot of a computer Description automatically generated" />
-
-3.  Use the *Zoom to Full Extent* tool to go back to the full view of your largest dataset (in this case it zooms to the world, since we have a layer with all continents in our contents).
-
-    <img src="./images/image019.png" style="" alt="C:\Users\anguye22\AppData\Local\Temp\SNAGHTML66ee019.PNG" />
-
-**Pro Tip**: In ArcGIS, you can place the cursor over each tool in the menu without clicking to see a description of what it does. Hover over the **Explore** icon and try out some of the shortcuts.
-
-1.  Right click on **AfricanPortsAntiguaEmbarkments\_1676\_1805** and select *Zoom to Layer*. This is another way of zooming into a specific layer’s extent.
-
-2.  Let’s change the style (aka **symbology**) of the **AfricanPortsAntiguaEmbarkments\_1676\_1805** quickly so it’s easy to distinguish from the other points layer. **Click on the point underneath the layer name in the Contents Pane. This is a quick way to open the symbology and change the style for all points in that layer at once. Click the large black circle 1, for quick and easy distinguishing.**
+4. Just so they're easier to distinguish, update the **symbology** for the `AfricanPortsAntiguaEmbarkments_1676_1805` layer. To do this, click on the point underneath the layer name in the Contents Pane. (This is a quick way to open the symbology pane, but you can also right-click on the layer name and click "Symbology.") Click the large black circle 1, for quick and easy distinguishing.
 
     <img src="./images/image020.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-3.  Turn off the Continents layer.
+5. Now, click on one of the points from the `AfricanPortsAntiguaEmbarkments_1676_1805` layer. What information do you see in the pop up? What do we think is being mapped based on the layer name and attribute names?
 
-4.  One cool thing is ArcGIS Pro makes it really easy to quickly change the streaming basemap. Try out different basemaps to see which you like most. Note some you can turn on and off labels, which is nice! **I am using the Modern Antique Basemap.**  
-    <img src="./images/image021.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image017.png" />
 
-5.  Now choose **Project Save**. You have already created a project file name for this (*TransAtlanticSlaveTrade.aprx*). A project file is a very small file that contains ***pointers*** to your datasets (it does not actually save the datasets, but we did already save those in this folder as well!).
+    These variables in the pop up are called **attributes** and provide us information stored in each layer's **attribute table**. The attribute table shows descriptive information about feature data. 
+
+    In this `AfricanPortsAntiguaEmbarkments_1676_1805` layer, the points (features) represent the location of the **ports that had voyages embark specifically to Antigua during 1676 – 1805**.
+
+    > ![q]
+    > 
+    > 2. What are three attributes, along with their values, associated with the feature you clicked?
+
+6.  Zoom into a part of Africa using mouse scroll wheel and hovering your cursor over the continent. A helpful trick is to hold down **shift** and with your mouse, draw a box around where you want to zoom in. Then it will zoom to that *extent*.
+
+7.  Additionally, you can *Zoom In* and *Zoom Out* using the **fixed zoom in and fixed zoom out** tools on the map pane.
+
+    <img src="./images/image018.png" />
+
+8.  Use the *Zoom to Full Extent* tool to go back to the full view of your largest dataset (in this case it zooms to the world, since we have a layer with all continents in our contents).
+
+    <img src="./images/image019.png" />
+
+    **Pro Tip**: In ArcGIS, you can place the cursor over each tool in the menu without clicking to see a description of what it does. Hover over the **Explore** icon and try out some of the shortcuts.
+
+9. Right click on `AfricanPortsAntiguaEmbarkments_1676_1805` and select *Zoom to Layer*. This is another way of zooming into a specific layer’s extent.
+
+10. Turn off the Continents layer.
+
+11. One cool thing is ArcGIS Pro makes it really easy to quickly change the streaming basemap. Try out different basemaps to see which you like most. Note some you can turn on and off labels, which is nice! **I am using the Modern Antique Basemap.**
+
+    | <img src="./images/image021.png" /> |
+    | :---------------------------------: |
+    | *Base map menu* |
+
+12. Now choose **Project Save**. You have already created a project file name for this (`TransAtlanticSlaveTrade.aprx`). A project file is a very small file that contains ***pointers*** to your datasets (it does not actually save the datasets, but we did already save those in this folder as well!).
 
     | <img src="./images/image022.png" /> |
     | :---------------------------------: |
-    |                                     |
 
-    The `aprx` project file remembers what you had displayed in your map session and how you had it styled, along with how far you were zoomed in/out. If you quit ArcGIS Pro at this point, you can reopen this map **.*aprx* file** by double clicking on it wherever you have saved in (in my case my `H: drive`) and ArcGIS Pro will reopen with everything as you left it.
+    The `aprx` project file remembers what you had displayed in your map session and how you had it styled, along with how far you were zoomed in/out. If you quit ArcGIS Pro at this point, you can reopen this map by re-opening the `aprx` file.
 
-    But **beware** – since **project files do not actually contain data layers**, and only have **pointers** to where the data is saved, if you copied your **TransAtlanticSlaveTrade project** file and tried to open it on a home computer without also saving the **data**, the ArcGIS Pro session would start and list the data in the table of contents, but nothing would appear because it would not be able to find the where the data is stored. A little red exclamation point would appear in the table of contents, informing you that it has lost the connection to the data.
+    > ![imp] 
+    > 
+    > **Beware** – since **project files do not actually contain data layers**, and only have **pointers** to where the data is saved, if you copied your `TransAtlanticSlaveTrade` project file and tried to open it on a home computer without also saving the **data**, the ArcGIS Pro session would start and list the data in the table of contents, but nothing would appear because it would not be able to find the where the data is stored. A little red exclamation point would appear in the table of contents, informing you that it has lost the connection to the data.
 
-# Understanding the Data and Attribute Table. 
+# Understanding the Data and Attribute Table
 
 Before we get started, we need to understand what each of these layers represent and look at the data contained in the database (aka attribute table). It is important to examine and understand the data in the **attribute table**, as that is where the bulk of the data is stored.
 
-Vector data (points, lines, and polygons) have a **database** attached to these geographic features that is called **the <u>Attribute Table</u>**. Each row represents a *feature* (i.e point for example), and each column contains additional information about the feature (aka attributes!). These attributes can be qualitative data (aka categorical data) or quantitative data (aka numerical data). The data in the attribute table can be mapped (aka **symbolized**) so it shows more than just the location of the port itself.
+*Vector data* (points, lines, and polygons) have a database attached to their geographic features: the **attribute table**.
 
-1.  There are 4 layers that we brought into this map. Right click on the ***AfricanPortsAntiguaEmbarkments\_1676\_1805** layer and click **Attribute Table. ***
+Each row represents a *feature*, like a point, and each column contains additional information – or "attribute" – about the feature. These attributes can be qualitative data (e.g., categorical data) or quantitative data (e.g., numerical data). The data in the attribute table can be mapped (e.g., **symbolized**) so it shows more than just the location of the port itself.
 
-> <img src="./images/image023.png" style="" alt="A screenshot of a computer Description automatically generated" />
+1.  There are 4 layers that we brought into this map. Right click on the `AfricanPortsAntiguaEmbarkments_1676_1805` layer and click "Attribute Table".
 
-The ***AfricanPortsAntiguaEmbarkments\_1676\_1805** are* points (features) that represent **the PORTs that had voyages embark specifically to Antigua during 1676 – 1805**.
+    <img src="./images/image023.png" />
 
-**Additionally, in the attribute table, there is even more information about the ports including the <u>total number of embarked slaves</u> PER PORT heading to Antigua between 1676 -1805 in 25 year time increments.**
+    The `AfricanPortsAntiguaEmbarkments_1676_1805` are points (features) that represent the ports that had voyages embark specifically to Antigua between 1676 and 1805.
 
-Each port is represented by a row in the table which is connected to a point in the map, and each column is a variable (aka **attribute**) about the ports showing the **name** of the port, the **country** each port is located in at the time, and **the total number of embarked enslaved people between different 25 year time frames**.
+    The attribute table contains additional information about the ports, including the total number of enslaved people who embarked, per port, for Antigua, in 25 year increments between 1676 and 1805.
 
-1.  Look at the bottom of the table and you will see that there is a total of 33 different points (ports) included in this layer. **This is summarized** **data** where <u>each port is only listed one time</u> and has data on THE TOTAL or SUM of embarked persons at that port during each time frame<u>. It does NOT show individual voyages from these ports.</u>
+    Each port is represented by a row in the table which is connected to a point in the map, and each column is a variable (aka **attribute**) about the ports showing the **name** of the port, the **country** each port is located in at the time, and **the total number of embarked enslaved people between different 25 year time frames**.
 
-    <img src="./images/image024.png" style="" alt="A screenshot of a computer Description automatically generated" />
+2. Look at the bottom of the table and you will see that there is a total of 33 different points (ports) included in this layer. This is **summarized data**, where each port is only listed one time and has data on the total or *sum* of embarked people at that port during each time frame. It doesn't show individual voyages from these ports.
 
-2.  Now, right click and open **the Attribute Table** for the ***EmbarkmentPorts.***
+    |          <img src="./images/image024.png" />          |
+    | :---------------------------------------------------: |
+    | The attribute table for the Antigua embarkments layer |
 
-    These points represent the **departure port of <u>every transatlantic slave trade VOYAGE</u> made between 1619 and 1808**. This data is VERY different than the Ports data we just looked at, as it is NOT a summary of the embarked slaves leaving each port. **But it actually shows a lot of details about EACH individual voyage.**
+3. Now, right click and open the attribute table for the `EmbarkmentPorts`.
 
-3.  Look at the different attribute fields and all the data that is contained in this attribute table! There is a lot, such as information on the Vessel name, the first and 2<sup>nd</sup> leg of the voyage, year of arrival, number of enslaved people that arrived, captain’s name, date, and Latitude and Longitude data.
+    These points represent the departure port of every transatlantic slave trade voyage made between 1619 and 1808. **This data is very different than the `Antigua` layer we just looked at**: it is not a summary of the embarked slaves leaving each port, and it actually shows a lot of details about each individual voyage.
 
-    <img src="./images/image025.png" style="" alt="A screenshot of a computer Description automatically generated" />
+4.  Look at the different attribute fields and all the data that is contained in this attribute table: vessel name, the first and second leg of the voyage, year of arrival, number of enslaved people that arrived, captain’s name, date, and latitude and longitude.
 
-4.  This is a very large dataset! You might notice it’s a bit slow. That’s because unlike the port data with 33 points, this voyage layer has over 20,000 points! **However, if you look at the map, it doesn’t LOOK like 20,000 points! What the heck?! That’s because many of these voyages departed from the same port and there are actually many many different points on top of each other at the departure ports, so its hard to SEE how many there are (right now at least!)**
+    |         <img src="./images/image025.png" />         |
+    | :-------------------------------------------------: |
+    | *The attribute data for the embarkment ports layer* |
 
-5.  Now, open the Attribute Table for the **AfricaSourceRegions**. This POLYGON data represents the <u>approximate</u> administrative regions on the west coast of Africa around the ***18<sup>th</sup> century based on today’s country borders.*** We can see that there are a total of 7 polygons, along with 3 main attributes about the polygon regions:
+5.  This is a very large dataset. You might notice it’s a bit slow. That’s because unlike the port data with 33 points, this voyage layer has over 20,000 points. However, look at the map: it certainly doesn't *look* like 20,000 voyages. What's happening?
+
+    Since many of these voyages departed from the same port, there are actually many many different points on top of each other at the departure ports, so its hard to visualize the depth and breadth of the Middle Passage using this data in its current form.
+
+    That's something you'll change as you work through the lab.
+
+6.  Now, open the Attribute Table for the `AfricaSourceRegions`. This polygon data represents the *approximate* administrative regions on the west coast of Africa around the 18th century, based on today’s country borders. We can see that there are a total of 7 polygons, along with 3 main attributes about the polygon regions:
 
     1.  **Name** shows the contemporary name of the country today
 
     2.  **Region** is categorical data that provides **the historical name of the region around the late18<sup>th</sup> century**
 
-    3.  **ANT\_Embark** is quantitative data that has the total number of embarked slaves between 1676 – 1805 that left from each of these regions.
+    3.  **ANT_Embark** is quantitative data that has the total number of enslaved people embarked between 1676 and 1805 departing from each of these regions.
 
-6.  Lastly, the **Continents** layer is a layer showing the global continents. This was included for background data but still has very basic data such as the area of each continent and the name.
+7.  Lastly, the **Continents** layer is a layer showing the global continents. This was included for background data but still has very basic data such as the area of each continent and the name.
 
-> **Pro Tip – Notice how when you have multiple attribute tables open, they actually all stay open, and it is easy to flip back and forth between them by clicking on the tabs!**
+> **Pro Tip**: Notice how when you have multiple attribute tables open, they actually all stay open, and it is easy to flip back and forth between them by clicking on the tabs.
+> 
+> <img src="./images/image026.png" />
 
-<img src="./images/image026.png" style="" alt="A screenshot of a computer Description automatically generated" />
-
-1.  Close the attribute tables for now. We will get back to them soon.
+Close the attribute tables for now. We will get back to them soon.
 
 # Assigning Proper Layer Names
 
-**Now that we understand what each of these layers represent, we should give the data layers better names than what they have now. We’ll remove any “data speak” by taking away underscores and making the layer name more comprehendible.**
+Now that we understand what each of these layers represent, we should give the data layers better names than what they have now. We’ll remove any "data speak" by taking away underscores and making the layer name more comprehendible.
 
-1.  Right click on the *AfricanPortsAntiguaEmbarkments\_1676\_1805* layer and choose **Properties**.
+1.  Right click on the `AfricanPortsAntiguaEmbarkments_1676_1805` layer and choose **Properties**.
 
-    **Pro Tip:** You can also get to the Properties window by double-clicking on the layer name.
+    > **Pro Tip:** You can also get to the Properties window by double-clicking on the layer name.
 
-2.  When you see the Properties dialog box, click on the **General** tab and under **Name**, type in ***Embarkment Ports to Antigua: 1676 - 1805***. Press OK when finished. (Here, spaces and dashes are allowed!)
+2.  When you see the Properties dialog box, click on the **General** tab and under **Name**, type in "Embarkment Ports to Antigua: 1676 - 1805". Press **OK** when finished. (Because this is just a layer name, and not an actual file path, spaces and dashes are allowed – even encouraged!)
 
-3.  *Follow the same steps to rename* all the layers as shown below so they do not have any “Data Speak” and the layer names make sense. In the future, points will be deducted on assignments for having non-standard “data speak” names appearing in your map.
+3. Follow the same steps to rename all the layers as shown below so they do not have any "data speak" and the layer names make sense. In the future, points will be deducted on assignments when these kinds of "data speak" names appear on your final map.
 
-    **Pro Tip***:* For a quick way to change the name, **click the layer once and then press F2**. Now you can change the name without going into the properties. You can also click on the layer name, then wait a few seconds while hovering over the name. It will change into a typing view to let you type. Hit Enter or click off when finished to save the name.
+    > **Pro Tip**: For a quick way to change the name, **click the layer once and then press F2**. Now you can change the name without going into the properties. You can also click on the layer name, then wait a few seconds while hovering over the name. It will change into a typing view to let you type. Hit Enter or click off when finished to save the name.
 
 4.  Change the names of all layers to what is seen below:
 
-    <img src="./images/image027.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image027.png" />
 
-    **Note: Changing the name of the layers in the table of contents does not change the original shapefile or feature class name in Catalog. It is just an alias and is connected to the legend when you are creating a final map layout.**
+    Again, note that changing the name of the layers in the table of contents does not change the original shapefile or feature class name in **Catalog**. It is just an alias and is connected to the legend when you are creating a final map layout.
 
 # Attribute Table Tools
 
 ## Sorting, Statistics, Add Field, & Field calculator
 
-**There are a lot of functions within the attribute table from as simple as sorting each field to adding new fields and creating field calculations.**
+There are a lot of functions within the attribute table, from sorting each field to adding new fields and creating field calculations. This section will give you an overview of using them.
 
-1.  Turn off the **Voyage Points** layer and make sure the **Embarkment Ports to Antigua: 1676 – 1805** is on. Right click on the layer and open **Attribute Table**.
+1.  Turn off the `Voyage Points` layer and make sure the `Embarkment Ports to Antigua: 1676 – 1805` layer is on. Right-click on the layer and open attribute table.
 
-    <img src="./images/image028.png" style="" alt="A screenshot of a computer Description automatically generated" />
-
-> <img src="./images/image029.png" style="" alt="A screenshot of a computer Description automatically generated" />
-
-1.  Double click on the **Name** column header. This **sorts** the names *alphabetically from a-z*.
+2.  Double click on the **Name** column header. This sorts the names *alphabetically from A-Z*.
 
     Alternatively, right click on the Name field. There are a ton of options for organizing the field in addition to **Sort Ascending and Sort Descending.**
 
-    **Pro Tip:** GIS is all about the right click. When it doubt, right click on something you care about and there will be options.
+    > **Pro Tip:** ArcGIS Pro is all about the right-click. When in doubt, right click on something you care about and there will be options.
 
-    <img src="./images/image030.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image030.png" />
 
-2.  Now, right click on the **yr1801\_1825** and press **Statistics**. This is a great way to get statistics about this one attribute field.
+3.  Now, right click on the **yr1801_1825** field header and press **Statistics**. This provides statistical summaries about this one attribute field.
 
-    <img src="./images/image031.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image031.png" />
 
-3.  Look through the information presented in the ***pane*** on the right. We see statistics about those embarked from 1801 – 1825 such as the mean (average) number, Min, Max, Sum, Standard Deviation, and more. A histogram of the data is also provided and if we click on one of the bars in the histogram, it selects the data in the map too.
+4.  Look through the information presented in the pane on the right. We see statistics about those embarked from 1801 – 1825 such as the mean (average) number, Min, Max, Sum, Standard Deviation, and more. A [histogram](https://pro.arcgis.com/en/pro-app/latest/help/analysis/geoprocessing/charts/histogram.htm) of the data is also provided and if we click on one of the bars in the histogram, it selects the data in the map too.
 
-    <img src="./images/image032.png" style="width:6.77083in;height:3.07321in" />
+    <img src="./images/image032.png" />
 
-    If data is selected in the map or attribute table, in the statistics we see 2 columns – the first one shows the statistics for the entire column, while the 2<sup>nd</sup> shows the statistics for only the selected records.
+    If data is selected in the map or attribute table, in the statistics we see 2 columns. The first one shows the statistics for the entire column, while the second shows the statistics for only the selected records.
 
-4.  We can also **create new fields in an Attribute table** and **build formulas** just like we were working in Excel! **For example, right now we have the number of embarked slaves in 25-year time increments between 1676 and 1825, but we DON’T have the TOTAL number of embarked slaves from each port over that entire 150 year time span. But we can easily calculate it!**
+5.  We can also **create new fields in an Attribute table** and **build formulas** (just like if we were working in Excel). For example, right now we have the number of embarked slaves in 25-year time increments between 1676 and 1825. We *don't* have the **total number of embarked slaves** from each port over that entire 150 year time span – but we can easily calculate it.
 
-    In the attribute table, locate the **Add** button and click it.
+6. In the attribute table, locate the **Add** button and click it.
 
-> <img src="./images/image033.png" style="" alt="A screenshot of a computer Description automatically generated" />
+> <img src="./images/image033.png" />
 
-1.  This will bring us to a new table view showing **all the fields in the attribute table**, along with any aliases (this allows you to type out the full variable without data speak) and the data type and number format (optional).
+7.  This will bring us to a new table view showing **all the fields in the attribute table**, along with any aliases (this allows you to type out the full variable without data speak) and the data type and number format (optional).
 
-    **In the last row, there is now a blank row for you to add the new field we want to create**. Unlike excel, there are not just endless cells for us to type into but each time we want to create a new column that’s part of the table, we have to first add the column to the table.
+    **In the last row, there is now a blank row for you to add the new field we want to create**. Unlike Excel, there are not just endless cells for us to type into. Each time we want to create a new column that’s part of the table, we have to first add the column to the table.
 
-    Type in the Field Name as **Total\_1676\_1825**. No spaces or any characters other than underscores (\_) allowed in field names. You can give it an alias though where spaces and dashes are allowed. Set the **Data type** to **double**. Double types allow for decimal places and are a type of number field. Long and short are also number fields, but do not allow decimal places – only integers, so I almost always select double by default. Lastly, the Number format column you can leave blank or set to numeric (which it will default to). There are also options to set it as things such as currency, angle, percentage, etc
+    Type in the Field Name as `Total_1676_1825`. No spaces or any characters other than underscores (`_`) allowed in field names. You can give it an alias though where spaces and dashes are allowed. Set the **Data type** to `double`. `double` types allow for decimal places and are a type of number field. `long` and `short` are also number fields, but do not allow decimal places – only integers – so unless you're certain that your field won't require decimals (e.g., a date field), choose `double` by default. (You can leave the "Number Format" column empty or set it to numeric, which is its default setting. There are also options to set it as things such as currency, angle, percentage, etc.)
 
-    Lastly, you must SAVE any edit you make to the table before they are visible in the attribute table. Click **Save** at the top (not project save, but save under the **Fields** Tab as shown in the picture below).
+    Lastly, you must saves any edit you make to the table before they are visible in the attribute table. Click **Save** at the top (not project save, but save under the **Fields** Tab as shown in the picture below).
 
-<img src="./images/image034.png" style="width:7.11025in;height:3.75in" />
+    <img src="./images/image034.png" />
 
-1.  Switch back to the Embarkment Ports to Antigua attribute table by either clicking on the tab for it by the tables, or right clicking on the layer and attribute table. Now you will see there is a new column added to the end that is full of Nulls but has the name you gave it.
+8.  Switch back to the `Embarkment Ports to Antigua` attribute table by either clicking on the tab for it by the tables, or right-clicking on the layer and attribute table. Now you will see there is a new column added to the end that is full of `Nulls` but has the name you gave it.
 
     <img src="./images/image035.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-2.  Either right click on the new column and click **Calculate** **Field, or click on “Calculate” at the top left of the table.** This will open the Field calculator, which allows us to build a calculation /formula for this column. We want to calculate the total number of embarked slaves, which means we need to add all 6 time frames together with simple addition.
+9.  Either right click on the new column and click **Calculate** **Field, or click on “Calculate” at the top left of the table.** This will open the Field calculator, which allows us to build a formula for this column. We want to calculate the total number of embarked slaves, which means we need to add all 6 time frames together with simple addition.
 
-    **Pro Tip:** This calculator uses python 3 to build the formula, so the syntax is very particular. ALWAYS USE THE FIELDS list and the OPPORATORS to build the expression in the box. Double click on the fields to add them to the calculation and click ONCE on the + sign to add it to the expression. Do not attempt to type in the expression unless you know python.
+    > **Pro Tip:** This calculator uses Python 3 to build the formula, so the syntax is very particular. When you're getting started, always use the fields and operators lists to build queries. Double-click on the fields to add them to the calculation, and then click once on the `+` sign to add it to the expression. Do not attempt to type in the expression unless you know Python.
 
     <img src="./images/image036.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-    The new column should populate with the results showing us the total number of embarked enslaved person to Antigua between 1676 – 1805 PER PORT.
+    The new column should populate with the results showing us the total number of embarkments to Antigua between 1676 and 1805 per port.
 
-    **Note**: You might receive a warning about Null values. This is just bc 2 of the ports have “no data” aka NULLs for their values and it’s just warning us it couldn’t come up with an answer for those 2 ports. No big deal.
+    Note that you might receive a warning about `Null` values. This is just because two of the ports have no data, or `Null` values for their values and it’s just warning us it couldn’t come up with an answer for those two ports. No big deal.
 
-    <img src="./images/image37.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image037.png" />
 
-# 
+> ![q]
+>
+> 3. Which port saw the greatest number of embarkments for Antigua bewteen 1676 and 1825?
 
 # Selection Methods
 
 ## Selecting Manually 
 
-1.  If necessary, click back on the tab for the Embarkment Ports to Antigua attribute table. Now click on the row for **Alampo** by clicking on the 1 as shown below. You might want to resort by the Name field by double clicking on it to quickly sort it. ***Notice how when click the row in the Attribute Table, it also selects the point in the map. And it shows us at the bottom that 1 out of 33 points are selected.* This is called Selecting Manually.**
+1.  If necessary, click back on the tab for the Embarkment Ports to Antigua attribute table. Now click on the row for **Alampo** by clicking on the 1 as shown below. You might want to resort by the Name field by double-clicking on it to quickly sort it. Notice how when you click the row in the Attribute Table, it also selects the point in the map, and it shows us at the bottom that 1 out of 33 points are selected. This is called **manual selection**.
 
-    **You can manually select features in the attribute table AND you can also manually select features by clicking on them in the map with the select tool.**
+    You can manually select features in the **attribute table**, and you can also manually select features by clicking on them in the **data frame** (or the *map view*) with the select tool.
 
-    <img src="./images/image038.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image038.png" />
 
-2.  Select a different row/feature in the Attribute table**. Double click on the row** this time and it will zoom you to the selected feature in the map!
+2.  Select a different row/feature in the attribute table. Double-click on the row this time and it will zoom you to the selected feature in the map.
 
-3.  In addition to selecting a feature by clicking on in it the **Attribute table**, you can also **select a point by clicking on it in the map**. On the **Map** tab, look at the options under **selection**. There are several options for selecting features in layers.
+3.  In addition to selecting a feature by clicking on in it the **attribute table**, you can also **select a point by clicking on it in the map**. On the **Map** tab, look at the options under **selection**. There are several options for selecting features in layers.
 
-> <img src="./images/image039.png" style="" alt="A close-up of a computer screen Description automatically generated" />
+    <img src="./images/image039.png" />
 
-1.  If you click on the drop down next to select, you see many different ways you are able to select points, lines or polygons (aka features). If you just press the button **Select** at the top, it defaults to selecting by click. **Click Select and then click a point in the map.**  
-    <img src="./images/image040.png" style="" alt="A screenshot of a computer Description automatically generated" />
+4.  If you click on the drop down next to select, you see many different ways you are able to select points, lines, or polygons (aka features). If you just press the button **Select** at the top, it defaults to selecting by click. **Click Select and then click a point in the map.**  
+    
+    <img src="./images/image040.png" />
 
-2.  Once you click the point in the map, it will also show it selected in the attribute table. If you hold down shift and continue clicking/selecting points in the map, it will add them to your selection so you can select multiple at once.
+5.  Once you click the point in the map, it will also show it selected in the attribute table. If you hold down shift and continue clicking/selecting points in the map, it will add them to your selection so you can select multiple at once.
 
-3.  Now under **Selection** at the top, click the drop down and select **rectangle**. Draw a square in the map and see how all the ports within the square are selected in the map and attribute table. In fact, any layer that intersects your square was selected including the polygons in the source regions layer.
+6.  Now under **Select** at the top, click the drop down and select **rectangle**. Draw a square in the map and see how all the ports within the square are selected in the map and attribute table. In fact, any layer that intersects your square was selected including the polygons in the source regions layer.
 
-<img src="./images/image041.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image041.png" />
 
-**The takeaway from that is that you can manually select features (aka points, lines, polygons) by finding them in the attribute table and clicking on the row, or by using the Select button to click on them manually in the map.**
+    As usual with ArcGIS Pro, there are lots of ways to do a single thing. In this case, you can select features by interacting with the attribute table, or by interacting with the map itself.
 
-12\. Now, clear your selection by pressing on the **Clear** button on the top **Map** tab.
+7. Now, clear your selection by pressing on the **Clear** button on the top **Map** tab.
 
-> <img src="./images/image042.png" style="" alt="A screenshot of a computer Description automatically generated" />
-
-# 
+    <img src="./images/image042.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
 ## **Select by Attributes**
 
-**Another extremely powerful tool in GIS is the ability to select features in the Attribute table by building a selection query. When you select features using information provided in the attribute tables, you write an expression to query and select features that match your selection criteria. This is extremely helpful when there are large numbers of features and you are unable to manually select or you want to select by multiple criteria!**
+Another extremely powerful tool in GIS is the ability to select features in the Attribute table by building a selection query. When you select features using information provided in the attribute tables, you write an expression to query and select features that match your selection criteria. This is extremely helpful when there are large numbers of features and you are unable to manually select (or you want to select by multiple criteria).
 
-1.  If it is not already, open the attribute table by right clicking on the **Embarkment Ports to Antigua: 1676 – 1805** layer and click **Attribute Table**.
+1.  If it is not already, open the attribute table by right clicking on the `Embarkment Ports to Antigua: 1676 – 1805` layer and click **Attribute Table**.
 
 2.  Make sure that you currently do not have anything selected by looking up at the top **Map** bar under the selections and clicking **Clear**.
 
-    **Pro Tip:** If this is <u>not</u> grayed out, you currently have something selected in some layer.
+    | <img src="./images/image043.png" /> |
+    | :---------------------------------: |
+    | *The **clear** button* |
 
-<img src="./images/image043.png" style="" alt="A screenshot of a computer Description automatically generated" />
+3.  Perhaps now we want to investigate the ports that had 0 embarkments to Antigua between 1676 – 1700. We will do this with a **Select by Attributes** query. In the Attribute table, **click on the Select by Attributes button.**
 
-1.  Perhaps now we want to investigate the ports that had 0 persons embarked to Antigua between 1676 – 1700. We will do this with a **select by Attributes** query. In the Attribute table, **click on the Select by Attributes button.**
+    |  <img src="./images/image044.png" />  |
+    | :-----------------------------------: |
+    | *The **Select by Attributes** button in the attribute table* |
 
-    <img src="./images/image044.png" style="width:6.79245in;height:1.47925in" />
+    Note that you can also get to **Select by Attributes** from the **Map** tab, where you selected manually.
 
-    **Note**: We can also get to **Select by Attributes** from the **Map** tab, where you selected manually.
+    |          <img src="./images/image045.png" />           |
+    | :----------------------------------------------------: |
+    | *The **Select by Attributes** button in the **Map** tab* |
 
-    <img src="./images/image045.png" style="" alt="A map of the country Description automatically generated" />
+4.  When you open **Select by Attributes**, a pop-up box appears. Here, we will build an expression that will show us how many ports had no embarkments between 1676 and 1700:
+    1.  Field = `yr1676_1700`
+    2.  Operator = "is equal to"
+    3.  Value = `0`
 
-2.  When you open Select by Attributes, a pop-up box appears. Here, we will build the expression for this selection. Under **Where, set that to the field we are selecting from.** *In this case we want to select the ports that had 0 embarkments between 1676 – 1700*. **Therefore, under Where, we will set it to be the field yr1676\_1700.** The middle box allows you to set the **operator**. Look at the different options. **Leave it on “is equal to”. And lastly, in the last box, type in 0. Press Apply.**
+    <img src="./images/image046.png" />
 
-    <img src="./images/image046.png" style="" alt="A screenshot of a computer program Description automatically generated" />
+    Press **OK**. You should see that 26 of the 33 ports had 0 embarkments to Antigua between 1676 – 1700. (You can see the total number selected out of all the rows at the bottom right of the table.)
 
-    **You should see that 26 of the 33 ports had 0 enslaved persons embarked to Antigua between 1676 – 1700. You can see the total number selected out of all the rows at the bottom right of the table!**
+    <img src="./images/image047.png" />
 
-    <img src="./images/image047.png" style="" alt="A screenshot of a computer Description automatically generated" />
+5.  Clear your selection by pressing **Clear** at the top of the attribute table. Now, change the expression and toggle through all of the different 25-year time frames to answer the questions below.
 
-3.  Clear your selection by pressing **Clear** at the top of the attribute table. Now, change the expression to see how many ports had 0 enslaved persons embarked to Antigua between 1801 – 1825.
+    > ![q]
+    > 
+    > 4. Which 25 year period had the *greatest* number of embarkments equal zero (e.g., had the fewest actual embarkments overall) and what was that value? By comparison, which 25 year period had the *lowest* number of embarkments equal zero (e.g., had the highest actual embarkments overall) and what was that value?
 
-    <img src="./images/image048.png" style="" alt="A screenshot of a computer Description automatically generated" />
+6. We can also make more complicated expressions that include multiple clauses. Perhaps we wanted to see **how many ports during the years 1751 – 1775 had greater than 300 but less than 1,000 embarkments.**
 
-    It appears that 23 of the 33 ports had 0 enslaved persons embarked during 1801 – 1825.
+    > ![q]
+    > 
+    > 5. How many ports during the years 1751-1775 had greater than 300 but less than 1,000 embarkments? 
+    >
+    >    You'll have to change your current expression including the field, operator, and value - as well as make use of the "Add Clause" button - in order to answer this.
 
-4.  We can also make more complicated expressions that include multiple clauses. Perhaps we wanted to see **how many ports during the years 1751 – 1775 had greater than 300 but less than 1000 enslaved persons embarked.**
+7.  Now, let’s move on to more complicated data and expressions. Open the Attribute table for `Voyage Departure Ports: 1619 – 1808`. Remember, these points represent the *departure port of every transatlantic slave trade voyage made between 1619 and 1808* – not just locations to Antigua, but *all destinations*.
 
-    First, we would set the first clause to be Where: yr1751\_1775 is greater than 300. Then we would ADD CLAUSE. Leave AND, and build the 2<sup>nd</sup> part of the expression.
+8.  Let’s start by building a **Select by Attributes** expression to select all voyages that arrived in 1777. Click on **Select by Attributes.** Set the expression as follows:
 
-    You should see that 6 ports were selected in this more complicated expression.
+    <img src="./images/image050.png" />
 
-    <img src="./images/image049.png" style="" alt="A screenshot of a computer Description automatically generated" />
+9.  You should have 157 voyages selected.
 
-5.  Now, let’s move on to more complicated data and expressions**. Open the Attribute table for** **Voyage Departure Ports: 1619 – 1808.** Remember, these points represent the **departure port of <u>every transatlantic slave trade VOYAGE</u> made between 1619 and 1808 (not just locations to Antigua, but all destinations)!**
+    > **Pro Tip**: You might not notice many selected rows until you start to scroll through. If you click on the second icon in the image above, this is a way to see ONLY THE SELECTED points. This is very helpful when the data set is quite large.
 
-6.  Let’s start by building a **Select by Attributes** expression to select all voyages that arrived in 1777. Click on **Select by Attributes.** Set the expression as follows:
+10.  Now, let’s look at some statistics about the data selected vs the entire dataset. Perhaps we want to see the **total number of enslaved people that arrived in the year 1777 vs. all years**: since we already have the voyages that arrived in 1777 selected, right-click on the `Slaves_Arr` (short for Slaves_Arrived) field and click **Statistics**. 
 
-> <img src="./images/image050.png" style="width:7.5in;height:5.48611in" />
+11.  Under the **Statistics** section, the left column has the statistics about the number of enslaved person in the entire dataset (all years) on the left and only the selected voyages on the right. We see that in 1777, there was a total (sum) of 20,797 enslaved person who arrived.
+    
+        <img src="./images/image051.png"/>
 
-**Note, this might take more time bc it’s selecting from over 20,000 points, not 33.**
+        2,881,243 enslaved people arrived in Antigua across all available voyage year records.
 
-1.  You should have 157 voyages selected.
+## Narrative at the intersection qualitative and quantitative
 
-> **Pro Tip: You might not notice many selected rows until you start to scroll through. If you click on the 2<sup>nd</sup> icon in the image above, this is a way to see ONLY THE SELECTED points. This is very helpful when the data set is quite large!**
+We have been looking at numbers – or "abstractions," as McKittrick and Bouie might have us call them – for a while now. Let's take a moment to consider what they are abstracted from.
 
-1.  Now, let’s look at some statistics about the data selected vs the entire dataset. **Perhaps we want to see the total number of enslaved people that arrived in the year 1777 vs all years**. Since we have the voyages that arrived in 1777 selected, **right click on the Slaves\_Arr (short for Slaves\_Arrived) field and click STATISTICS.**
+Here are three other data points or sources that, while harder to format as a spreadsheet or table, provide an important *qualitative* glimpse into the geopolitical context for the abstractions that we've been reading and querying. Click through each of these - you don't need to read them in great detail, but open them and skim a few sentences here and there to get an idea of what they contain:
+* In 1736, enslaved people who had been brought to Antigua [plotted to overthrow the white planters who bought them](https://www.jstor.org/stable/1921837). It's possible that the plot was overblown by white planters, but regardless, 
+* In 1789, [Olaudah Equiano published a narrative about his life](https://books.google.com/books?id=FXVkAAAAMAAJ&pg=PA1&source=kp_read_button&hl=en&newbks=1&newbks_redir=0#v=onepage&q&f=false), beginning with birth in the kingdom of Benin in 1745 and following his journey from enslavement to freedom, which he eventually purchased in 1766.
+* In 1831, [Mary Prince dictated a narrative of her life](https://web.english.upenn.edu/~cavitch/pdf-library/Prince_History.pdf). Not only did this provide a glimpse into the brutality of (her) enslavement at a time 
+* Northeastern University's [Early Caribbean Digital Archive](https://ecda.northeastern.edu/) is an excellent resource for exploring other examples of these kinds of texts. They help illuminate the social and political contexts from which the data we're working with was abstracted. Try searching `antigua` – what comes up?
+* Digital map collections, like those at the [Leventhal Center](https://collections.leventhalmap.org/), are also great resources for qualitative data. The [map of "Antego" or Antigua](https://collections.leventhalmap.org/search/commonwealth:6t053r30b) shown below, created around 1736 by geographer Herman Moll and held in Leventhal Center collections, shows dangerous water features, towns, churches, forts, mills, and important plantations at the time.
 
-    Under the **Statistics** section, the left column has the statistics about the number of enslaved person in the entire dataset (all years) on the left and only the selected voyages on the right. We see that in 1777, there was a SUM of 20,797 enslaved person who arrived vs 2,881,243 in all available voyage year records.
+  | ![moll](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:6t053r31m/full/1200,/0/default.jpg) |
+  | :--------------------------------------------------------------------------------------------------: |
+  | *[The island of Antego](https://collections.leventhalmap.org/search/commonwealth:6t053r30b)* ([1736]), by Herman Moll  |
 
-    <img src="./images/image051.png" style="" alt="A screenshot of a computer Description automatically generated" />
+  We can derive a lot of information from this map to qualitatively contextualize the quantitative data from SlaveVoyages. For instance, zooming into the top of the map, we can see the names of planters who owned sugar or rum plantations. One is "Royal," who had a windmill, as indicated by the single dot by the name:
 
-2.  **Answer the following questions using the Select by Attributes and Statistics.**
+  ![royal](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:6t053r31m/1919,461,2930,1211/1200,/0/default.jpg)
 
-3.  Since our first point dataset of ports is only showing enslaved persons embarked for Antigua between 1676 and 1805, let’s select all the voyages between 1676 and 1805. You should have 19,528 voyages selected. Remember to use “greater than or equal to” not just greater than. Same for less than.
+  This likely refers to a sugar mill once owned by Isaac *Royall*, who immigrated to Boston in 1700 before traveling to Antigua and setting up an extremely profitable slave plantation operation. In fact, the historic [Royall House and Slave Quarters](https://royallhouse.org/) sits just up the road from the Tufts campus, while the location of the sugar mill in Antigua still bears his family name today in the form of "Royal Gardens":
 
-<img src="./images/image052.png" style="" alt="A screenshot of a computer Description automatically generated" />
+  |           ![house](./images/image114.png)![gardens](./images/image115.png)           |
+  | :----------------------------------------------------------------------------------: |
+  | *The Royall House in Medford (top) and the old "Royal" sugar mill in Antigua (bottom)* |
 
-1.  ***Let’s create a new layer of JUST the voyages between 1676 and 1805***. One you have the voyages selected, **right click on Voyage Departure Ports Data Export Features.** This is the “Save As” of data…we are saving the selected points as a new feature class and layer in the map.
+  In 2019, Gaston Browne – the Prime Minister of Antigua and Barbuda – [wrote a letter to Lawrence Bacow](https://www.washingtonpost.com/nation/2019/11/06/harvard-law-school-antigua-barbados-reparations/), then-president of Harvard University, demanding reparations on account of Harvard Law School's 1817 establishment depending on a bequest from Isaac Royall. In Browne's words, "We consider Harvard’s failure to acknowledge its obligations to Antigua and the stain it bears from benefiting from the blood of our people as shocking if not immoral."
+
+  In 2022, Harvard established a [$100 million endowment fund for slavery reparations](https://www.reuters.com/world/us/harvard-sets-up-100-million-endowment-fund-slavery-reparations-2022-04-26/).
+
+    > ![q]
+    >
+    > 6. Look through the quantitative data in the **attribute table** of the `Embarkment Ports` layer, including its fields and data values. In a few sentences (no more than 5), compare and contrast the qualitative data described above to the quantitative data in the `Embarkment Ports` table. How are they similar and different? If you were working on a longer project about these topics, how might you combine the qualitative and quantitative data to tell a cohesive story – in other words, *what's a spatial question you could answer by combining these data, qualitative and quantitative*? Feel free to give a concrete example, if you can think of one.
+
+## Saving selected data as new layers
+
+Bearing in mind these important points about context for the data, let's pivot back into some GIS stuff: selections and queries. 
+
+1. Since our first point dataset of ports is only showing enslaved persons embarked for Antigua between 1676 and 1805, let’s select all the voyages between 1676 and 1805. **You should have 19,528 voyages selected**.
+
+    <img src="./images/image052.png" />
+
+2. Now, let’s create a new layer containing *only the voyages between 1676 and 1805*. One you have the voyages selected, **right-click** on `Voyage Departure Ports` ➡️ "Data" ➡️ "Export Features."
+
+    This is the “Save As” of spatial data: we are saving the selected points as a new feature class and layer in the map.
 
     <img src="./images/image053.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-2.  You want to give the new layer (and resulting feature class) a smart name and make sure it’s saving in the right place! Click in the **output feature class field**. It will expand to show you the full *path* to where it’s saving. It will default into <u>this projects</u> geodatabase (.gdb), which is why it was important to save the project in a smart place when we started. Change the last part of the path to give it a better name, such as **VoyageDeparturePorts\_1676\_1805.** Press OK.
+3. You want to give the new layer (and resulting feature class) a smart name and make sure it’s saving in the right place. Click in the **output feature class field**. It will expand to show you the full *path* to where it’s being saved. It will default into *this project's geodatabase* (`TransAtlanticSlaveTrade.gdb`), which is why it was important to save the project in a smart place when you started. Change the last part of the path to give it a better name, such as `VoyageDeparturePorts_1676_1805`. Press **OK**.
 
-    <img src="./images/image054.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image054.png"/>
 
-> **Pro Tip: NO SPACES, NO DASHES, UNDERSCORES ONLY in the name!!!!! Naming things well is a VERY important part of GIS and data management!**
+    > ![imp] 
+    > 
+    > ***Never* use spaces or dashes in your file names *– always, always underscores*. Naming things well is a very important part of GIS and data management.**
 
-1.  The result will be a new layer that is added to your map at the top of your contents pane with your new name. BUT ALSO most important, the new feature class was saved in your project geodatabase so that you can use it in the future***. This is how we create new datasets as a subset of a larger datasets for projects and is a very common practice in GIS.***
+4.  The result will be a new layer that is added to your map at the top of your contents pane with your new name.
 
-    <img src="./images/image055.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    More importantly, the new feature class was saved in your project geodatabase so that you can use it in the future. **This is how we create new datasets as a subset of a larger datasets for projects, and is a very common workflow in GIS.**
 
-2.  Clear your selection on the **Map** tab, pull down the new layer under your Embarkment Ports layer, and turn off the original Voyage layer. **Rename your new layer to remove any “data speak”, but make sure to keep the dates.**
+    <img src="./images/image055.png" />
 
-    **Pro Tip:** It’s useful to rename layers because what it says in the contents is what it will say in the legend when you make a final map. It’s worth the time!
+5. Clear your selection on the **Map** tab, pull down the new layer under your Embarkment Ports layer, and turn off the original Voyage layer. **Rename your new layer to remove any “data speak”, but make sure to keep the dates.**
 
-3.  Save your project by clicking the **Save** icon at the top.
+    > **Pro Tip:** It’s useful to rename layers because what it says in the contents is what it will say in the legend when you make a final map. It’s worth the time!
+
+6.  Save your project by clicking the **Save** icon at the top.
 
 ## Select by Location
 
@@ -534,11 +598,11 @@ Each port is represented by a row in the table which is connected to a point in 
 
     **For example, these two ports are not selected but as we zoom in, we can see they are in fact NOT inside the regions polygon**. The points ARE located on the streaming basemap data, but the historic regions polygon does not have a very accurate coastline when we are so zoomed in. It’s important to recognize that data is not perfect and made for all scales (aka zoom levels), and we should be examining the accuracy of the data polygons and information included in the attribute table. If we were to do some more complicated tools, this inaccuracy might cause problems down the line.
 
-3.  Let’s try a new selection. Clear your selection up top or in the attribute table. Now let’s select the voyages, specifically from **VoyageDeparturePorts\_1676\_1805**, **that are within 1 international nautical mile** of **all embarkment port**. This will hopefully select all the VOYAGES that departed from these ports (and likely more since we selected everything within 1 nautical mile). **This could be a useful selection bc right now in the ports layer we know <u>how many total embarked slaves for Antigua were sent during this time period in 25 year increments</u>, but we know nothing about the number of individual voyages or details about these voyages.**
+3.  Let’s try a new selection. Clear your selection up top or in the attribute table. Now let’s select the voyages, specifically from **VoyageDeparturePorts_1676_1805**, **that are within 1 international nautical mile** of **all embarkment port**. This will hopefully select all the VOYAGES that departed from these ports (and likely more since we selected everything within 1 nautical mile). **This could be a useful selection bc right now in the ports layer we know <u>how many total embarked slaves for Antigua were sent during this time period in 25 year increments</u>, but we know nothing about the number of individual voyages or details about these voyages.**
 
     <img src="./images/image059.png" style="" alt="A screenshot of a computer screen Description automatically generated" />
 
-4.  This selection might take a while, there are over 20,000 points. If we now open the attribute table for the **VoyageDeparturePorts\_1676\_1805 layer,** we can see that 2797 voyages out of 19,528 total voyages were selected. Move this layer in the contents pane ABOVE the ports layer to better see the selection. Also, in the Attribute Table, click the “show only selected rows” icon pointed to in the screen shot.
+4.  This selection might take a while, there are over 20,000 points. If we now open the attribute table for the **VoyageDeparturePorts_1676_1805 layer,** we can see that 2797 voyages out of 19,528 total voyages were selected. Move this layer in the contents pane ABOVE the ports layer to better see the selection. Also, in the Attribute Table, click the “show only selected rows” icon pointed to in the screen shot.
 
     <img src="./images/image060.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
@@ -550,7 +614,7 @@ Each port is represented by a row in the table which is connected to a point in 
 
 6.  Perhaps we want to expand our selection search radius to get more voyages included. Simply go back to the select by location and let’s set the distance to international 2 nautical miles this time.
 
-7.  Look at only the selected voyages. Let’s build on this selection using a select by attributes to find the voyages where their first destination is Antigua. Click on the **select by attributes icon** in the **VoyageDeparturePorts\_1676\_1805** attribute table. We are now going to change the selection method to **Select subset from the Current Selection** so that are we not creating a totally fresh selection, but we are specifically selecting FROM the voyages within 2 miles of a port.
+7.  Look at only the selected voyages. Let’s build on this selection using a select by attributes to find the voyages where their first destination is Antigua. Click on the **select by attributes icon** in the **VoyageDeparturePorts_1676_1805** attribute table. We are now going to change the selection method to **Select subset from the Current Selection** so that are we not creating a totally fresh selection, but we are specifically selecting FROM the voyages within 2 miles of a port.
 
     <img src="./images/image062.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
@@ -564,15 +628,15 @@ Each port is represented by a row in the table which is connected to a point in 
 
 > <img src="./images/image064.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-1.  Then, once Bight of Benin is selected, open up the select by location tool. We will select the VoyageDeparturePorts\_1676\_1805 that interest Bight of Benin. MAKE SURE to change the selection type from New Selection to **Select subset from the current selection. Note how when we select Africa’s Source Regions as our selecting features, it warns us that there is 1 record to be processed (our selected Bight of Benin).**
+1.  Then, once Bight of Benin is selected, open up the select by location tool. We will select the VoyageDeparturePorts_1676_1805 that interest Bight of Benin. MAKE SURE to change the selection type from New Selection to **Select subset from the current selection. Note how when we select Africa’s Source Regions as our selecting features, it warns us that there is 1 record to be processed (our selected Bight of Benin).**
 
     <img src="./images/image065.png" style="width:3.01887in;height:4.39512in" />
 
-2.  Open up the attribute table for **VoyageDeparturePorts\_1676\_1805.** There are 3069 records selected. **The last part of our selection criteria is to select the voyages specifically in 1704. Click Select by Attributes. If you have an expression still in there from before, you can press the X but make sure to change the selection method to Select subset from the current selection. Set this last expression.**
+2.  Open up the attribute table for **VoyageDeparturePorts_1676_1805.** There are 3069 records selected. **The last part of our selection criteria is to select the voyages specifically in 1704. Click Select by Attributes. If you have an expression still in there from before, you can press the X but make sure to change the selection method to Select subset from the current selection. Set this last expression.**
 
     <img src="./images/image066.png" style="" alt="A screenshot of a computer program Description automatically generated" />
 
-3.  **If you look at the attribute table for the VoyageDeparturePorts\_1676\_1805, there should now be 16 voyages selected. If we look at the map, it only looks like there are 2 points selected –** but we know now that it’s actually many points on top of each other at those departing ports.
+3.  **If you look at the attribute table for the VoyageDeparturePorts_1676_1805, there should now be 16 voyages selected. If we look at the map, it only looks like there are 2 points selected –** but we know now that it’s actually many points on top of each other at those departing ports.
 
     <img src="./images/image067.png" style="" alt="A map of the ocean Description automatically generated" />
 
@@ -672,7 +736,7 @@ Each port is represented by a row in the table which is connected to a point in 
 
 1.  If it’s not on, turn on the layer we EXPORTED using our **select by attributes query,** called “Voyage Departure Ports 1676 – 1805”. Remember, we selected from the original voyages layer JUST the voyages in this time frame since it matches the time frame of our port data.
 
-2.  Open the attribute field for this layer again. There is a lot of useful data including a field on Slaves\_arr, which shows the number of enslaved persons on the voyage. We can visualize the values in this field using symbology. But since graduated symbols would only show us the value of the point on top, it’s not the best option for truly understanding the magnitude of the voyages and number of enslaved person on each voyage.
+2.  Open the attribute field for this layer again. There is a lot of useful data including a field on Slaves_arr, which shows the number of enslaved persons on the voyage. We can visualize the values in this field using symbology. But since graduated symbols would only show us the value of the point on top, it’s not the best option for truly understanding the magnitude of the voyages and number of enslaved person on each voyage.
 
 3.  Select the layer in the contents pane by clicking on it. **Right click Symbology** (this is ANOTHER way to get to symbology. There are many ways to do the same thing in ArcGIS Pro).
 
@@ -726,9 +790,9 @@ If you have not been answering the questions throughout the assignment, go back 
 
 5.  During the years 1776 – 1800, how many ports had embarked persons greater than 200?
 
-6.  How many voyages (points) was “Howell, Henry” the captain? What were the names of the vessels, the year of arrival, the first destination (Voyage\_iti) and the number of enslaved persons arriving in each voyage?
+6.  How many voyages (points) was “Howell, Henry” the captain? What were the names of the vessels, the year of arrival, the first destination (Voyage_iti) and the number of enslaved persons arriving in each voyage?
 
-7.  How many voyages had their final destination (voyage\_i\_2) in Rio de Janeiro? What was the total number of enslaved persons that arrived to Rio de Janeiro? What was the first (minimum) year or arrival and the last (maximum) year of arrival?
+7.  How many voyages had their final destination (voyage_i_2) in Rio de Janeiro? What was the total number of enslaved persons that arrived to Rio de Janeiro? What was the first (minimum) year or arrival and the last (maximum) year of arrival?
 
 8.  How voyages between 1676 and 1805 are within 2 international nautical miles of the Embarkment Ports?
 

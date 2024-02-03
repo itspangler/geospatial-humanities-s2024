@@ -13,7 +13,7 @@
   - [**Download it**](#download-it)
   - [**Check things out in Microsoft Excel**](#check-things-out-in-microsoft-excel)
 - [**Loading XY data to ArcGIS Pro**](#loading-xy-data-to-arcgis-pro)
-  - [**Geodesy in 5 minutes**](#geodesy-in-5-minutes)
+  - [**Geodesy**](#geodesy)
   - [**Coordinates**](#coordinates)
   - [**Coordinate systems**](#coordinate-systems)
     - [**Geographic coordinate systems**](#geographic-coordinate-systems)
@@ -42,7 +42,7 @@ By class time on January 30, you should have submitted a couple of screenshots f
 
 # **Setting up your workspace**
 
-Set up a workspace for this exercise by using Windows File Explorer ![Windows file explorer](images/image002.png) to create a directory structure where you'll keep all your files.
+Set up a workspace for this activity by using Windows File Explorer ![Windows file explorer](images/image002.png) to create a directory structure where you'll keep all your files.
 
 Again, there are three places where you can save your work: your **H: Drive**, your **Box account**, or a **personal thumb drive**.
 
@@ -54,19 +54,19 @@ As discussed in class, we recommend using the **H: Drive**, but of course you ca
         ├─ workspace/
         ├─ submission/
 
-The `data` folder will contain all the data you need to download for this exercise. The `workspace` folder is where you'll store your ArcGIS Pro project file, as well as the [geodatabase](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/what-is-a-geodatabase-.htm) associated with it. Finally, the `map` folder is just for exporting drafts of the final project.
+The `data` folder will contain all the data you need to download for this activity. The `workspace` folder is where you'll store your ArcGIS Pro project file, as well as the [geodatabase](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/what-is-a-geodatabase-.htm) associated with it. Finally, the `map` folder is just for exporting drafts of the final project.
 
 # **The data**
 
 ## **Download it**
 
-Head over to [Pleiades](https://pleiades.stoa.org/) (https://pleiades.stoa.org/) and click the **Downloads** tab in the upper-right hand corner. Click the link under "Pleiades data for GIS (CSV)" and click the link on the next screen at "Download latest dataset."
+Head over to <https://pleiades.stoa.org/> and click the **Downloads** tab in the upper-right hand corner. Click the link under "Pleiades data for GIS (CSV)" and click the link on the next screen at "Download latest dataset."
 
 Like datasets you've seen before, this one hits your `Downloads` folder as a `.zip` file. Go ahead and extract the contents with `Right-click` ➡️ `Extract all` ➡️ `Extract`. Click through the "unzipped" folders until you get to the data itself.
 
 You'll notice that many of our source data files suffixed with `.csv`. That's short for "comma separated values," which means it's a text file containing rows (e.g., observations) and columns (e.g., variables). The rows are separated by [carriage returns](https://en.wikipedia.org/wiki/Carriage_return) and the columns are separated by – you guessed it – commas.
 
-Although there's tons of interesting stuff in this folder, we're only going to be using the `places.csv` file today. Go ahead and move that file into your `data` folder. You can open it in an application like, which can easily parse `csv` files...
+Although there's tons of interesting stuff in this folder, we're only going to be using the `places.csv` file today. Go ahead and move that file into your `data` folder. You can open it in an application like Microsoft Excel, which can easily parse `csv` files...
 
 ![vscode](images/image004.png)
 
@@ -74,7 +74,9 @@ Although there's tons of interesting stuff in this folder, we're only going to b
 
 ![excel](images/image003.png)
 
-Now, open up ArcGIS Pro and create a new project file. **Remember, change the location from the C: drive to your H: drive (or wherever it is you're saving your project).** Save the project inside your `workspace` folder. You can leave "Create a new project folder" unchecked if you want – the ArcGIS Pro project files are the only thing you'll save inside it.
+Still, if you look carefully, you'll note that the 
+
+Now, open up ArcGIS Pro and create a new project file. **Remember, change the location from the C: drive to your H: drive.** Save the project inside your `workspace` folder. You can leave "Create a new project folder" unchecked if you want – the ArcGIS Pro project files are the only thing you'll save inside it.
 
 When you're done, your directory structure should resemble:
 
@@ -107,7 +109,7 @@ Rename each field name so that it contains 10 characters or less. (The destinati
 
 Let's turn that `csv` file – an example of *tabular* data – into real-life, bona fide *spatial* data. When we're done, we'll have a feature class of vector points that displays over 40,000 ancient place names. The best part: it's super easy...
 
-## **Geodesy in 5 minutes**
+## **Geodesy**
 
 ... but first, we should take a moment to wrap our round heads around the round globe.
 
