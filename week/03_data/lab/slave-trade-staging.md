@@ -1,5 +1,5 @@
 # **Lab 02: *SlaveVoyages* data and the Transatlantic Slave Trade** <!-- omit in toc -->
-*Tutorial written by Carolyn Talmadge on January 3, 2024 for ArcGIS Pro 3.1.4. Updated by Ian Spangler on January 28, 2024.*
+*Tutorial written by Carolyn Talmadge on January 3, 2024 for ArcGIS Pro 3.1.4. Updated by Ian Spangler on February 6, 2024.*
 
 
 | ![coast](./images/image000.jpeg) |
@@ -8,28 +8,28 @@
 
 # **Table of contents** <!-- omit in toc -->
 
-- [**Introduction and context**](#introduction-and-context)
+- [Introduction and context](#introduction-and-context)
   - [The Middle Passage](#the-middle-passage)
   - [**Understanding the Slave Voyages Database**](#understanding-the-slave-voyages-database)
-- [Start an ArcGIS Pro Project File \& Folder](#start-an-arcgis-pro-project-file--folder)
+- [Start an ArcGIS Pro Project File and Folder](#start-an-arcgis-pro-project-file-and-folder)
   - [Downloading the data](#downloading-the-data)
 - [Exploring the Map](#exploring-the-map)
 - [Understanding the Data and Attribute Table](#understanding-the-data-and-attribute-table)
 - [Assigning Proper Layer Names](#assigning-proper-layer-names)
 - [Attribute Table Tools](#attribute-table-tools)
-  - [Sorting, Statistics, Add Field, \& Field calculator](#sorting-statistics-add-field--field-calculator)
+  - [Sorting, Statistics, and Fields](#sorting-statistics-and-fields)
 - [Selection Methods](#selection-methods)
   - [Selecting Manually](#selecting-manually)
-  - [**Select by Attributes**](#select-by-attributes)
+  - [Select by Attributes](#select-by-attributes)
   - [Narrative at the intersection qualitative and quantitative](#narrative-at-the-intersection-qualitative-and-quantitative)
   - [Saving selected data as new layers](#saving-selected-data-as-new-layers)
   - [Select by Location](#select-by-location)
-- [Symbology - Symbolizing a Layer Style](#symbology---symbolizing-a-layer-style)
-  - [Assigning Colors with Symbology – Single Symbol (Everything is the same!)](#assigning-colors-with-symbology--single-symbol-everything-is-the-same)
-  - [Symbology - Graduated Symbols](#symbology---graduated-symbols)
-  - [Symbology – Heat Map](#symbology--heat-map)
+- [Symbology](#symbology)
+  - ["Single symbol" symbology](#single-symbol-symbology)
+  - ["Graduated symbol" symbology](#graduated-symbol-symbology)
+  - ["Heat Map" symbology](#heat-map-symbology)
   - [Labeling Countries using the Attribute Table Data](#labeling-countries-using-the-attribute-table-data)
-- [Assignment Deliverables](#assignment-deliverables)
+- [Lab Deliverables](#lab-deliverables)
 - [Example Map](#example-map)
 - [Creating a Final Map Layout for Print or Graphic Export](#creating-a-final-map-layout-for-print-or-graphic-export)
   - [Setting up a Map Layout](#setting-up-a-map-layout)
@@ -41,12 +41,12 @@
   - [Removing the Base Map Citations](#removing-the-base-map-citations)
   - [Exporting your Paper Map](#exporting-your-paper-map)
 
-> ## **What you should submit** <!-- omit in toc -->
-> Before **6:30pm on Tuesday, 2/13**, submit two things:
-> * A document in `pdf` or `docx` format to Canvas, answering all the questions that are tagged with ![q]
-> * A map in `png` format, exported at 300 DPI, following the instructions from the lab
+## What you should submit <!-- omit in toc -->
+Before **6:30pm on Tuesday, 2/13**, submit two things:
+* A document in `pdf` or `docx` format to Canvas, answering all the questions that are tagged with ![q], and which are summarized in the [lab deliverables](#lab-deliverables) section
+* A map in `png` format, exported at 300 DPI, as directed at the end of the lab
 
-# **Introduction and context**
+# Introduction and context
 
 ## The Middle Passage
 
@@ -101,19 +101,19 @@ This activity will specifically focus on data from the Trans-Atlantic Slave Trad
 
 8.  Click through the different results tab to see the data visualized in different ways.
 
-9.  Notice how on any of the results tabs that are tables, you can download the data at the top right of the table. You can also configure the columns and fields. On the data visualization tab, you can download the graphics or raw data.
+9.  Notice how on any of the results tabs that are tables, you can download the data at the top right of the table. You can also configure the columns and fields. On the data visualization tab, you can download the graphics or raw data. In the rest of the tutorial, we will use data that has been previously filtered, configured, and downloaded.
 
     | <img src="./images/image004.png" /> |
     | :---------------------------------: |
     |   *Download graphics or raw data*   |
 
-In the rest of the tutorial, we will use data that has been previously filtered, configured, and downloaded. Now that you've actually examined the data, a moment to reflect on this data using the McKittrick quote from earlier, as well as the [Jamelle Bouie piece you read before class](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html).
+Now that you've actually examined the data, a moment to reflect on this data using the McKittrick quote from earlier, as well as the [Jamelle Bouie piece you read before class](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html).
 
 > [![q]][l]
 >
 > 1. In a few sentences (no more than 5), describe what you think McKittrick is saying in that excerpt you read above. How does her point relate to the argument that Bouie made in his article about the SlaveVoyages database? What impact should their arguments have on the way you approach making a map or doing research with this data?
 
-# Start an ArcGIS Pro Project File & Folder
+# Start an ArcGIS Pro Project File and Folder
 
 As always, when starting a new ArcGIS Project, it is very important to determine <u>where</u> you will be saving all GIS data and project files before you start, since Pro makes you choose a <u>home folder</u> when opening the software.
 
@@ -143,6 +143,7 @@ This tutorial will go through the process of saving and storing data in a GIS fo
 
         | <img src="./images/image005.png" /> |
         | :---------------------------------: |
+        | *Login with Tufts UTLN and password* |
 
 3.  To start a new project, click on **Map,** as shown above.
 4.  A “Create a New Project” box will open with the option to name your project file and choose where to save it. This is important to not rush through. What you name and where you save the project is very important for good data management and organization. It is much harder to change this name/location down the line if you don’t do it properly from the start!
@@ -194,8 +195,9 @@ This tutorial will go through the process of saving and storing data in a GIS fo
     > 
     > Whenever you add new files to a folder whose project is *already open in ArcGIS Pro*, you must **refresh** the folder in order to see what has been added.
 
-7.  Double click on your home **TransAtlanticSlaveTrade** folder and then double click on the **AtlanticSlaveTrade_TutorialData.** You should now see **3 *shapefiles with the extension .shp* that will be used for this activity and one geodatabase *with the extension .gdb (the silver cylinder).***
-    *<img src="./images/image013.png" style="" alt="A screenshot of a computer Description automatically generated" />
+7.  Double click on your home **TransAtlanticSlaveTrade** folder and then double click on the **AtlanticSlaveTrade_TutorialData.** You should now see 3 *shapefiles* with the extension `.shp` that will be used for this activity, and one *geodatabase* *with the extension `.gdb` containing the preprocessed data.
+    
+    <img src="./images/image013.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
 8.  Double-click on the `SlaveVoyagesDatabase.gdb` to expand it and you will see another file called `AfricanPortsAntiguaEmbarkments_1676_1805`. This is a **feature class.** *Feature classes are very similar to shapefiles, but just live within geodatabases and are a newer file type.*
 
@@ -257,7 +259,7 @@ This tutorial will go through the process of saving and storing data in a GIS fo
 
 10. Turn off the Continents layer.
 
-11. One cool thing is ArcGIS Pro makes it really easy to quickly change the streaming basemap. Try out different basemaps to see which you like most. Note some you can turn on and off labels, which is nice! **I am using the Modern Antique Basemap.**
+11. One cool thing is ArcGIS Pro makes it really easy to quickly change the standard basemap. Try out different basemaps to see which you like most. Note some you can turn on and off labels, which is nice! **I am using the Modern Antique Basemap.**
 
     | <img src="./images/image021.png" /> |
     | :---------------------------------: |
@@ -352,7 +354,7 @@ Now that we understand what each of these layers represent, we should give the d
 
 # Attribute Table Tools
 
-## Sorting, Statistics, Add Field, & Field calculator
+## Sorting, Statistics, and Fields
 
 There are a lot of functions within the attribute table, from sorting each field to adding new fields and creating field calculations. This section will give you an overview of using them.
 
@@ -396,7 +398,7 @@ There are a lot of functions within the attribute table, from sorting each field
 
     <img src="./images/image035.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-9.  Either right click on the new column and click **Calculate** **Field, or click on “Calculate” at the top left of the table.** This will open the Field calculator, which allows us to build a formula for this column. We want to calculate the total number of embarked slaves, which means we need to add all 6 time frames together with simple addition.
+9.  Either right click on the new column and click **Calculate** **Field, or click on "Calculate" at the top left of the table.** This will open the Field calculator, which allows us to build a formula for this column. We want to calculate the total number of embarked slaves, which means we need to add all 6 time frames together with simple addition.
 
     > **Pro Tip:** This calculator uses Python 3 to build the formula, so the syntax is very particular. When you're getting started, always use the fields and operators lists to build queries. Double-click on the fields to add them to the calculation, and then click once on the `+` sign to add it to the expression. Do not attempt to type in the expression unless you know Python.
 
@@ -444,7 +446,7 @@ There are a lot of functions within the attribute table, from sorting each field
 
     <img src="./images/image042.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-## **Select by Attributes**
+## Select by Attributes
 
 Another extremely powerful tool in GIS is the ability to select features in the Attribute table by building a selection query. When you select features using information provided in the attribute tables, you write an expression to query and select features that match your selection criteria. This is extremely helpful when there are large numbers of features and you are unable to manually select (or you want to select by multiple criteria).
 
@@ -489,9 +491,7 @@ Another extremely powerful tool in GIS is the ability to select features in the 
 
     > ![q]
     > 
-    > 5. How many ports during the years 1751-1775 had greater than 300 but less than 1,000 embarkments? 
-    >
-    >    You'll have to change your current expression including the field, operator, and value - as well as make use of the "Add Clause" button - in order to answer this.
+    > 5. How many ports during the years 1751-1775 had greater than 300 but less than 1,000 embarkments? You'll have to change your current expression including the field, operator, and value - as well as make use of the "Add Clause" button - in order to answer this.
 
 7.  Now, let’s move on to more complicated data and expressions. Open the Attribute table for `Voyage Departure Ports: 1619 – 1808`. Remember, these points represent the *departure port of every transatlantic slave trade voyage made between 1619 and 1808* – not just locations to Antigua, but *all destinations*.
 
@@ -552,11 +552,7 @@ Bearing in mind these important points about context for the data, let's pivot b
 
     <img src="./images/image052.png" />
 
-2. Now, let’s create a new layer containing *only the voyages between 1676 and 1805*. One you have the voyages selected, **right-click** on `Voyage Departure Ports` ➡️ "Data" ➡️ "Export Features."
-
-    This is the “Save As” of spatial data: we are saving the selected points as a new feature class and layer in the map.
-
-    <img src="./images/image053.png" style="" alt="A screenshot of a computer Description automatically generated" />
+2. Now, let’s create a new layer containing *only the voyages between 1676 and 1805*. One you have the voyages selected, **right-click** on `Voyage Departure Ports` ➡️ "Data" ➡️ "Export Features." This is the “Save As” of spatial data: we are saving the selected points as a new feature class and layer in the map.
 
 3. You want to give the new layer (and resulting feature class) a smart name and make sure it’s saving in the right place. Click in the **output feature class field**. It will expand to show you the full *path* to where it’s being saved. It will default into *this project's geodatabase* (`TransAtlanticSlaveTrade.gdb`), which is why it was important to save the project in a smart place when you started. Change the last part of the path to give it a better name, such as `VoyageDeparturePorts_1676_1805`. Press **OK**.
 
@@ -580,231 +576,308 @@ Bearing in mind these important points about context for the data, let's pivot b
 
 ## Select by Location
 
-**The last Selection method is called Select by Location. Unlike Select by Attributes which only requires one layer for the selection, <u>select by location requires two layers because you are selecting features in one layer based on it’s relationship to another layer.</u>**
+The last selection method we'll discuss here is called **Select by Location**. Unlike **Select by Attributes**, which only requires one layer for the selection, **Select by Location** requires two layers because you are *selecting features in one layer based on it’s relationship to another layer*.
 
-1.  The first select by location we will practice will be selecting all the Embarkment Ports that INTERSECT the Africa Source Regions. Yes, one would think that all the ports would be within the Africa regions, however this is a good way to examine the quality of data and understand how these selections work.
+1. The first select by location we will practice will be selecting all features in the `Embarkment Ports to Antigua` layer that **intersect** features in the `Africa Source Regions` layer. (You might assume that all the ports would intersect the source regions by default, but this is a good way to examine the idiosyncracies of data and understand how these selections work.)
 
-2.  Go up to the **Map** tab and find **Select by Location**. Make sure you have nothing selected first by pressing **Clear**. Remember, if it’s grayed out, nothing is selected in any layer!
+2. Go up to the **Map** tab and find **Select by Location**. Make sure you have nothing selected first by pressing **Clear**. Remember, if it’s grayed out, nothing is selected in any layer.
 
-<img src="./images/image056.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image056.png" />
 
-1.  The Select by Location interface is a bit more complicated because it relies on 2 layers, the **Input Features** (aka the layer that you want to get selected) and the **Selecting Features** (the one the relationship will be based on). **In this case, we want to select all the Embarkment PORTS (our input features) that intersect the Africa Source Regions (our selecting features).** Fill out the tool as such, but also click the **Relationship** **drop** **down** and see all the options for relationships between the 2 layers. Press Apply when you’ve filled out the tool
+3. The **Select by Location** interface is a bit more complicated because it requires two layers:
+   1. **Input Features**, aka the layer that you want to select
+   2. **Selecting Features**, aka the one the relationship will be based on
 
-    **Pro Tip:** You can press Apply, which will do the selection but keep the tool open for quick edits. If you press OK, it will also run the selection but the tool will close. If you plan on tweaking or doing more select by locations, it’s easier to press Apply so you don have to keep reopening the tool.
+    In this case, we want to select **all the Embarkment PORTS (our input features) that intersect the Africa Source Regions (our selecting features).** Fill out the tool as such, but also click the **Relationship drop down** to see all the options for relationships between the two layers. Press **Apply** when you’ve filled out the tool.
 
-    <img src="./images/image057.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    > **Pro Tip:** You can press **Apply**, which will do the selection but keep the tool open for quick edits. If you press **OK**, it will also run the selection but the tool will close. If you plan on tweaking or creating more selections, it’s easier to press **Apply** so you don't have to keep reopening the tool.
 
-2.  If we open up the table once again for the Embarkment Ports, we should see that only 20 of the 33 ports are inside the Historic Regions of Africa – which might seem odd because typically ports are situated on the coast, and many of these seem to be when we are zoomed out. **Howver, zoom into a port that is not selected and investigate WHY it is not selected.**
+    | <img src="./images/image057.png" /> |
+    | :---------------------------------: |
+    | *Switching records in the attribute table* |
 
-    **For example, these two ports are not selected but as we zoom in, we can see they are in fact NOT inside the regions polygon**. The points ARE located on the streaming basemap data, but the historic regions polygon does not have a very accurate coastline when we are so zoomed in. It’s important to recognize that data is not perfect and made for all scales (aka zoom levels), and we should be examining the accuracy of the data polygons and information included in the attribute table. If we were to do some more complicated tools, this inaccuracy might cause problems down the line.
+4. If we open up the **attribute table** once again for the `Embarkment Ports to Antigua` layer, we should see that only 20 of the 33 ports are inside the Historic Regions of Africa.
 
-3.  Let’s try a new selection. Clear your selection up top or in the attribute table. Now let’s select the voyages, specifically from **VoyageDeparturePorts_1676_1805**, **that are within 1 international nautical mile** of **all embarkment port**. This will hopefully select all the VOYAGES that departed from these ports (and likely more since we selected everything within 1 nautical mile). **This could be a useful selection bc right now in the ports layer we know <u>how many total embarked slaves for Antigua were sent during this time period in 25 year increments</u>, but we know nothing about the number of individual voyages or details about these voyages.**
+    Let's use the selection tools to figure out why some ports are not located within the boundaries of these historic regions.
 
-    <img src="./images/image059.png" style="" alt="A screenshot of a computer screen Description automatically generated" />
+5. Open the **attribute table** for the `Embarkment Ports to Antigua` layer and click the **Switch Selected Rows** ![invert](./images/image116.png) button. This will invert your current selection – you should now have 13 of 33 rows selected.
 
-4.  This selection might take a while, there are over 20,000 points. If we now open the attribute table for the **VoyageDeparturePorts_1676_1805 layer,** we can see that 2797 voyages out of 19,528 total voyages were selected. Move this layer in the contents pane ABOVE the ports layer to better see the selection. Also, in the Attribute Table, click the “show only selected rows” icon pointed to in the screen shot.
+    I recommend that you also click the **Show selected rows** button on the bottom left-hand corner of the **attribute table**. This displays only those attributes you've currently selected, and will prevent you from losing that selection (e.g., by accidentally clicking on an individual record).
 
-    <img src="./images/image060.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    | ![onlyselect](./images/image117.png) |
+    | :----------------------------------: |
+    | *Showing only selected records in the attribute table* |
 
-    It doesn’t LOOK in the map like that many voyages were selected and SO many ports have voyages on top of them that don’t look selected. WHY?!! **Well, when we are this zoomed out, it looks like the points are on top of eachother. But if we zoomed in, they would be farther than 1 mile from those ports.**
+    At this point it might also be helpful to **right-click** ➡️ "Zoom to Layer" on your `Embarkment Ports to Antigua` layer, as well as temporarily turn off the full `Embarkment Points` layer, just so you can see this selection more clearly. (You could also zoom to your current selection by clicking **Zoom to selection** ![zoomselect](./images/image118.png) in the **Navigate** tab.)
+    
+6. Zoom into one of the currently selected ports and see if you can figure out why it wasn't included in the original selection query. Just as an example, I'm choosing Cape Coast Castle.
 
-5.  Don’t trust the GIS? See for yourself. On the map tab, click on the Meausure tool and set the distance to miles. Zoom into a point you’re side eyeing. Click once on the port and measure to the closest voyage to see the distance.
+    You can right-click on a record in the attribute table to zoom to it, or hold down the `shift` key while dragging on the map to select a box around your area of interest.
 
-    <img src="./images/image061.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    When I zoom into Cape Coast Castle, here's what I see:
 
-6.  Perhaps we want to expand our selection search radius to get more voyages included. Simply go back to the select by location and let’s set the distance to international 2 nautical miles this time.
+    ![capecastle](./images/image119.png)
 
-7.  Look at only the selected voyages. Let’s build on this selection using a select by attributes to find the voyages where their first destination is Antigua. Click on the **select by attributes icon** in the **VoyageDeparturePorts_1676_1805** attribute table. We are now going to change the selection method to **Select subset from the Current Selection** so that are we not creating a totally fresh selection, but we are specifically selecting FROM the voyages within 2 miles of a port.
+    Ah! Here's what happened... the historic regions polygon is heavily generalized (or simplified), and therefore it doesn't closely match the coastline at this fine-grained a scale.
+    
+    This is a good example of how datasets are produced for use at different scales, and when you try to make them talk to each other across those scales, things can be lost in translation.
 
-    <img src="./images/image062.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    > ![q]
+    > 
+    > 7. Reflecting on the **Select by Location** issue that you just troubleshooted, which data – the `Embarkment Points for Antigua` layer or `Source Regions` layer – is right, and which one is wrong? Why?
+    
+Let’s try a new selection. Clear your selection up top or in the attribute table. Now let’s select the voyages, specifically from `VoyageDeparturePorts_1676_1805`, that are *within 1 international nautical mile of all embarkment ports*.
 
-8.  It turns out 20 of the 19528 voyages in the same time frame that were within 2 international nautical miles of a port had their first stop as Antigua. We could explore the details about each of those individual voyages now. But let’s see in the map where they are coming from? Zoom out and find the selected points. It looks like they are all clustered on the coast of current day Ghana – at least the ones matching our selection criteria.
+This will hopefully select all the voyages that departed from these ports (and likely more, since we selected everything within 1 nautical mile).
 
-    <img src="./images/image063.png" style="width:6.44711in;height:3.75995in" />
+Right now, we know how many total embarked slaves for Antigua were sent during this time period in 25 year increments, but we know nothing about the number of **individual voyages** or **details about these voyages**. This query will help answer that.
 
-9.  Let’s do two more complicated selection combining multiple types of selections. **Our goal is to now select the voyage points that departed from the Bight of Benin in 1704.**
+1. Set up the **Select by Location** query like so:
 
-10. First, clear your selection. Now, we need to figure out the first part of this, which could be finding the Bight of Benin. That sounds like it would be part of our **Africa's Source Regions. Open up the Attribute table for Africa’s Source Regions. Let’s do a Select by Attributes to select Bight of Benin.** (Note, we could also manually select it in the map or attribute table if we know where it is).
+    <img src="./images/image059.png" />
 
-> <img src="./images/image064.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    If we now open the attribute table for the `VoyageDeparturePorts_1676_1805` layer, we can see that 2,797 voyages out of 19,528 total voyages were selected. Move this layer in the contents pane above the ports layer to better see the selection. Also, in the Attribute Table, click the "Show only selected rows."
 
-1.  Then, once Bight of Benin is selected, open up the select by location tool. We will select the VoyageDeparturePorts_1676_1805 that interest Bight of Benin. MAKE SURE to change the selection type from New Selection to **Select subset from the current selection. Note how when we select Africa’s Source Regions as our selecting features, it warns us that there is 1 record to be processed (our selected Bight of Benin).**
+    In the map, it doesn't *look* like that many voyages were selected. Plus, if you pan around, many ports have voyages on top of them that don’t look selected. Why is this?
+    
+    **Zoomed out to the scale of the entire region, it looks like the points are on top of eachother – but, zoomed in, it becomes clear that those points are indeed more than than 1 mile from those ports.**
 
-    <img src="./images/image065.png" style="width:3.01887in;height:4.39512in" />
+2.  Don’t trust the GIS? See for yourself. On the **Map** tab, click on the **Meausure** tool and set the distance to `miles` (or to be more precise, you could set it to `meters`, of which there are 1,852 in 1 nautical mile).
 
-2.  Open up the attribute table for **VoyageDeparturePorts_1676_1805.** There are 3069 records selected. **The last part of our selection criteria is to select the voyages specifically in 1704. Click Select by Attributes. If you have an expression still in there from before, you can press the X but make sure to change the selection method to Select subset from the current selection. Set this last expression.**
+    Zoom into a point you’re side eyeing and click once on the port and measure to the closest voyage to see the distance.
 
-    <img src="./images/image066.png" style="" alt="A screenshot of a computer program Description automatically generated" />
+    <img src="./images/image061.png" />
 
-3.  **If you look at the attribute table for the VoyageDeparturePorts_1676_1805, there should now be 16 voyages selected. If we look at the map, it only looks like there are 2 points selected –** but we know now that it’s actually many points on top of each other at those departing ports.
+3.  Perhaps we want to expand our selection search radius to get more voyages included. Simply go back to the select by location and let’s set the distance to 2 international nautical miles this time.
 
-    <img src="./images/image067.png" style="" alt="A map of the ocean Description automatically generated" />
+4.  Look at only the selected voyages. Let’s combine this selection with an **attribute query** to find *only voyages whose first destination is Antigua*.
 
-4.  Double click on the latitude field to sort that. Notice how 1 point has a latitude starting with 4.4333 and the rest of the points have the exact same lat/long values. If I double click on the row for the first point, it will zoom to it. This is the point on the east (right) and more south port, meaning that the other port on the west (left) had 15 voyages in 1704 leave from that location within Bight of Benin.
+    Click on the **select by attributes** icon in the `VoyageDeparturePorts_1676_1805` attribute table. We are now going to change the selection method to **Select subset from the Current Selection** so that are we not creating a totally fresh selection, but *selecting from within our current selection*.
 
-> <img src="./images/image068.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    | <img src="./images/image062.png" /> |
+    | :---------------------------------: |
+    | *Selecting within your current selection* |
 
-1.  Clear your selection.
+5.  It turns out 20 of the 19,528 voyages in the same time frame that were within 2 international nautical miles of a port had their first stop as Antigua. We could explore the details about each of those individual voyages now, but first, let’s look at the map to see where they are coming from.
 
-# Symbology - Symbolizing a Layer Style
+    Zoom out and find the selected points. It looks like the voyages matching our selection are all clustered on the coast of current day Ghana.
 
-**Setting the symbology of a layer is one of the most basic and important functions of GIS. This is how we set the color, size, and style of each dataset. You will set the symbology for every single dataset you bring into ArcGIS Pro. This is how we bring coherence to the map and make it more intuitive.**
+    <img src="./images/image063.png" />
 
-## Assigning Colors with Symbology – Single Symbol (Everything is the same!)
+Let’s do two more complicated selections that combine multiple types of selections. Our selection will answer the question: how many voyages departed from the Bight of Benin in 1704?
 
-1.  Turn on the **Africa’s Source Regions** layer and click the layer name to select it. Notice when you select the layer, 3 more tabs appear on the top menu panel.
+Clear your current selection and then let's get started.
 
-    Just like other software such as word or powerpoint, ArcGIS pro is contextual. **When you select a layer, more options to <u>work with that layer appear at the top</u> – such as Feature Layer, Labeling, Data.**
+1. First, we need to figure out the first part of this, which could be finding the Bight of Benin. That sounds like it would be part of our `Africa's Source Regions` layer. Open up the Attribute table for `Africa’s Source Regions`. Let’s run a **Select by Attributes** query to select Bight of Benin. (If you already know where it is, feel free to manually select it by clicking its location on the map).
 
-2.  **Click on the Layer Africa’s source Regions and then click on the Feature Layer tab.**
+    <img src="./images/image064.png" />
 
-    <img src="./images/image069.png" style="width:6.0566in;height:3.45899in" />
+2.  Once Bight of Benin is selected, open up the **select by location** tool. We will select the `VoyageDeparturePorts_1676_1805` layer that **intersect** Bight of Benin. Make sure to change the selection type from "New Selection" to "Select subset from the current selection".
 
-3.  When you are in the **Feature** Layer tab, there are lots of options for styling the layer such as transparency, layer blend, and most importantly **SYMBOLOGY**. Click on the down arrow under symbology and choose **Single Symbol.**
+    <img src="./images/image065.png"/>
 
-    <img src="./images/image070.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    Open up the attribute table for `VoyageDeparturePorts_1676_1805` and confirm that there are 3,069 records selected.
 
-    **Single Symbol allows us to set the color for the layer to ONE SINGLE color. All polygons are the same exact color and style.**
+3. The last part of our selection criteria is to select the voyages specifically in 1704. Click **Select by Attributes**. If you have an expression still in there from before, you can press the ![remove](./images/image120.png) button. Set this last expression and be sure to change the **Selection Type** to "Select subset from the current selection":
+
+    <img src="./images/image066.png" />
+
+4. If you look at the attribute table for the `VoyageDeparturePorts_1676_1805`, there should now be 16 voyages selected. If we look at the map, it only looks like there are 2 points selected, but we know now that it’s actually many points on top of each other at those departing ports.
+
+    <img src="./images/image067.png" />
+
+5. Which of these two ports was more active in 1704? There are a few ways to figure that out; one is to use the **attribute table**.
+
+    First, sort the **latitude** field by double-clicking it. Notice how one point has a latitude starting with `4.4333` and the rest of the points have the exact same lat/long values. If I double-click on the row (e.g., where it says `1` on the left-hand side of the attribute table) for the first point, your map will zoom into it. This is the point on the southeasternmost port, meaning that the other port on the west had 15 voyages in 1704 leave from that location within Bight of Benin.
+
+    <img src="./images/image068.png" />
+
+    Before moving to the next section, clear your selection.
+
+# Symbology
+
+The default setting for how our data is displayed in ArcGIS Pro can be deceiving. Because these points are stacked on top of one another, as you've seen, it can be hard to discern patterns (e.g., density) at a glance. In order to meaningfully display this data on a map, we need a new representational technique.
+
+That's where **symbology** comes in.
+
+Setting the symbology of a layer is one of the most basic and important functions of GIS. This is how we set the color, size, and style of each dataset. You will set the symbology for every single dataset you bring into ArcGIS Pro. This is how we bring coherence to the map and make it more intuitive.
+
+## "Single symbol" symbology
+
+1. Turn on the `Africa’s Source Regions` layer and click the layer name to select it. Notice when you select the layer, three more tabs appear on the top menu panel.
+
+   Like all software, ArcGIS Pro is contextual – the interface will dynamically change in repsonse to what you're doing. When you select a layer, more options to **work with that layer appear at the top**: namely, **Feature Layer**, **Labeling**, and **Data**.
+
+2. Click on the Layer `Africa’s Source Regions` and then click on the **Feature Layer** tab.
+
+    <img src="./images/image069.png" />
+
+3. When you are in the **Feature Layer** tab, there are lots of options for styling the layer, including transparency, layer blending, and most importantly *symbology*. Click on the down arrow under symbology and choose **Single Symbol.**
+
+    <img src="./images/image070.png" />
+
+    Single Symbol allows us to set the color for the layer to *one single color*. All polygons will be the same exact color and style.
 
 4.  When you click on Single Symbol, on the right side of your screen, you will see the **Symbology Pane** appear. Click on the square symbol to get to color options.
 
-    <img src="./images/image071.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image071.png"  />
 
 5.  You will now see a selection of pre-made colors for specific layer types. Scroll through to see the color options. Click some to see how it changes the symbology (style) of your layer. Some colors and outline styles are more appropriate than others – and you as the expert need to choose what’s best for your map design.
 
-6.  The colors you pick will depend on things like how well it goes along with a basemap you are using or base layer (like the continents, if you do not wish to use a streaming basemap). In this example, I am using the **Modern Antique basemap so will pick a color that compliments that. Click the option for Building Footprint.**
+6.  The colors you pick will depend on things like how well it goes along with a basemap you are using or base layer (like the continents, if you do not wish to use a standard basemap). In this example, I am using the "Modern Antique" basemap, and I think the "Building Footprint" option complements it well.
 
-    <img src="./images/image072.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image072.png" />
 
-    **While these are not building footprints, it is a good jumping off color that goes well with this Modern Antique basemap. You might choose a different color if you are using a different basemap.**
+7.  To adjust the symbology further, or select our own color, click on **Properties** tab.
 
-7.  To adjust it further or select our own color, click on ***Properties*** tab.
+    <img src="./images/image073.png" />
 
-    <img src="./images/image073.png" style="" alt="A red arrow pointing to a red square Description automatically generated" />
+8.  Once you click on the **Properties** tab, you will see options under *Appearance* that allow you to set the color, outline color and width, and more. You can pick whatever you want, whether preset or custom-designed, but whatever you choose should preserve the lines (e.g., boundaries) between source regions.
 
-8.  Once you click on the *Properties* tab, you will see options under ***Appearance*** that allow you to set the color, outline color and width*,* and more. Feel free to choose a different color and adjust the width color to see how it looks.
+    **In this map, I am going to set the outline width to 1pt but leave the colors the same.** It is a nice touch that the outline is a similar color to the map – black outlines can often feel too strong or forceful. Make sure to click **Apply** at the bottom to update the layer.
 
-    **In this map, I am going to set the outline width to 1pt but leave the colors the same.** It is a nice touch that the outline is a similar color to the map so it’s not too aggressive with black outlines. Make sure to click APPLY at the bottom to update the layer.
+    <img src="./images/image074.png"/>
 
-    <img src="./images/image074.png" style="" alt="A screenshot of a computer Description automatically generated" />
+## "Graduated symbol" symbology
 
-## Symbology - Graduated Symbols
+One of the most powerful aspects of GIS is the ability to symbolize your data (by color or by size) based on the different fields in the attribute table. That's one reason it is so important to open the Attribute Table and understand the data and attribute fields that exist within the layer first, because we will use symbology to map those fields to visualize all that additional information.
 
-**One of the most powerful aspects of GIS is the ability to symbolize your data (by color or by size) based on the different fields in the attribute table.** <u>That is one reason it is so important to open the Attribute Table and understand the data and attribute fields that exist within the layer first,</u> <u>because we will use symbology to map those fields to visualize all that additional information!</u>
+1.  Start by opening the attribute table for the `Embarkment Ports to Antigua: 1676 – 1805` layer once more and refresh yourself on the different fields.
 
-1.  We will start by opening the attribute table for the *Embarkment Ports to Antigua: 1676 – 1805 layer once more to refresh ourselves on the different Attribute Fields.*
+    The goal here is to *show the different ports as different sizes based on the total number of all embarked slaves to Antigua per port*. We can do this by using a symbology style called **graduated symbols**.
 
-    **Our goal is to show the different ports as different sizes based on the TOTAL NUMBER of all embarked slaves to Antigua per port (the new field we calculated!). We can do this by using a symbology style called “graduated symbols”.**
+2.  Make sure that the `Embarkment Ports to Antigua: 1676 – 1805` layer is selected in the contents pane by clicking on it. **You can close all the attribute tables to maximize the map size.** Then, click on the **Feature layer** tab again and select the arrow under **Symbology** ➡️ "Graduated symbols."
 
-<!-- -->
+    Graduated colors is an option only for *quantitative* (e.g., numerical) data, such as the total number of all embarked slaves to Antigua.
 
-1.  Make sure that the **Embarkment Ports to Antigua: 1676 – 1805** layer is selected in the contents pane by clicking on it. **You can close all the attribute tables to maximize the map size.** Then once again click on **the Feature layer tab that appears**. **Under Symbology, click the down arrow to see all the different ways we could symbolize this data.**
+    <img src="./images/image075.png" />
 
-    Notice how it’s grouped into different ways to symbolize, such as symbolize your layer by quantity or category. Graduated colors is an option ONLY FOR numerical (quantitative) data, such as **the TOTAL NUMBER of all embarked slaves to Antigua.**
+    You can also change the symbolization technique in the **symbology** panne itself, in the drop-down bar under "Primary symbology."
 
-    <img src="./images/image075.png" style="" alt="A screenshot of a computer Description automatically generated" />
+3. Since we are working with a point layer, this is the best choice to have points of different sizes. When you click it, the **symbology** pane will appear and automatically select the first numerical field to map, so we need to go through each option and make sure it’s set up correctly.
 
-2.  Click on graduated symbols. Since we are working with a point layer, this is the best choice to have points of different sizes. **Now, the symbology pane will once again appear on the right.** It will automatically select the first numerical field to map, so we need to go through each option and make sure it’s set up correctly.
-
-3.  Under the **Field**, select the new field we created **“Total number of embarked slaves…”.** The map should now be updated to visualize this data with 5 different size points. Notice how the layer contents pane updates too.
+4. Under **Field**, select the new field you created in a [previous step](#sorting-statistics-and-fields) for the total number of embarked slaves between 1676 and 1805. The map should now be updated to visualize this data with 5 different size points. Notice how the layer contents pane updates too.
 
     <img src="./images/image076.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
-4.  The data is grouped into 5 different ranges of values called “classes” observed in this field. **You can adjust the number of classes to have smaller or larger ranges, but ideally you should have between 4-7 classes.** Too few and there isn’t enough detail, too many and it’s hard to distinguish between them.
+5.  The data is grouped into 5 different ranges of values called "classes" observed in this field. You can adjust the number of classes to have smaller or larger ranges, but **ideally you should have between 4-7 classes.** Too few and there isn’t enough detail; too many, and it’s hard to distinguish between them.
 
-    There are many different “methods” for how to calculate the ranges of values. It defaults often to “natural breaks”, which breaks up the data based on natural jumps in the data’s histogram. But there are other methods as well such as quantile and equal interval that you will explore in a later assignment. **For now, leave it on natural breaks.**
 
-5.  Click on the “template” point. This allows us to set the default color and symbol (circle, square, triangle, etc) for the points. Look through the gallery of point styles. **I am going to select diamond 3, but you can select a point you like.**
+    There are many different "methods" for how to calculate the ranges of values. ArcGIS Pro usually defaults to “natural breaks”, which breaks up the data based on natural jumps in the data’s histogram. But there are other methods as well such as quantile and equal interval that you will explore in a later assignment. **For now, leave it on natural breaks.**
 
-6.  Then click **Properties, for more options. I want a different color, so will set it to a purple that looks nice against the muted water and tan colors. I also added a Halo below, which gives it an extra white glow.**
+6.  Click on the "template" point. This allows us to set the default color and symbol (circle, square, triangle, etc.) for the points. Look through the gallery of point styles.
 
-    <img src="./images/image077.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    I selected `diamond 3`, but you can select any point you like.
 
-7.  To get back to the main symbology page, click the back arrow in the circle at the top left of symbology. You can also adjust the **minimum and maximum size of the points now that they are styled.** It’s important to be zoomed into about the “extent” that your map will be so you can accurately see how large or small you want the points. **Since the diamonds are quite small, I set the min to 8 and the max to 25. You want there to be enough variation between the size, but neither end too small or too large.**
+7.  Then click **Properties** for more options. I want a different color, so will set it to a bluish-purple that provides nice contrast to the muted water and tan colors. I also added a "Halo" below, which gives it an extra white glow. Again, feel free to customize all of this to your preference, following your instincts on what looks good.
 
-8.  **Lastly, the most confusing thing about these ranges are the numbers. It is more confusing when the ranges are 319 – 921, instead of something simpler like 300-900.** We will slightly adjust the ranges to end on easier to remember numbers. You can adjust the ranges manually by clicking in the “upper value” number. This adjusts the 2<sup>nd</sup> number in the range, and then the map automatically updates the data. You can also click in the label text to the right, which allows you to set the label how you want. Remove all decimal places and add commas were needed.
+    <img src="./images/image077.png" />
 
-    <img src="./images/image078.png" style="" alt="A screenshot of a computer Description automatically generated" />
+8.  To get back to the main **symbology** page, click the back arrow in the circle at the top left of symbology. Now that the points are styled, you can also adjust their **minimum and maximum size**.
 
-**Now the map and contents pane looks much nicer an cleaner and we can start to understand SO much more about the map and the data in the attribute table.**
+    It’s important to be zoomed into the extent that your map will actually be exported at so you can accurately assess how large or small the points should be. Since the diamonds are quite small, I set the min to 8 and the max to 25. You want **variation between the sizes**, with neither end too small or too large.
 
-<img src="./images/image079.png" style="" alt="A screenshot of a computer Description automatically generated" />
+9.  The most confusing thing about these ranges are the numbers. How are they being calculated? We'll cover that in another week, but for now, let's manually adjust the ranges so that the breaks land on even values.
 
-## Symbology – Heat Map
+    You can adjust the ranges manually by double-clicking into the "upper value" number. This adjusts the second number in the range, and then the map automatically updates the data.
+    
+    You can also click in the "label" text to the right, which allows you to set the label how you want it to appear in your map layout. Remove all decimal places and add commas as appropriate.
 
-**Another style of symbology is called the “heat map”.** This shows the density or magnitude of points (and data in the attribute table) with a graduated color gradient surface rather than changing the size of the points. It’s useful to use heat map symbology when you have many points that are close together/on top of each other and cannot be easily distinguished. As we discussed with the voyage data, there are about 20,000 records – many of which are on top of each other – so we can’t tell by looking at the map if it is 1 voyage or 300 starting at that origin. The Heat Map symbology can help visualize this data by creating a density surface.
+    <img src="./images/image121.png" />
 
-1.  If it’s not on, turn on the layer we EXPORTED using our **select by attributes query,** called “Voyage Departure Ports 1676 – 1805”. Remember, we selected from the original voyages layer JUST the voyages in this time frame since it matches the time frame of our port data.
+## "Heat Map" symbology
 
-2.  Open the attribute field for this layer again. There is a lot of useful data including a field on Slaves_arr, which shows the number of enslaved persons on the voyage. We can visualize the values in this field using symbology. But since graduated symbols would only show us the value of the point on top, it’s not the best option for truly understanding the magnitude of the voyages and number of enslaved person on each voyage.
+Another style of symbology is called the "heat map". This shows the density or magnitude of points (and data in the attribute table) with a graduated color gradient surface rather than changing the size of the points. It’s useful to use heat map symbology when you have many points that are close together/on top of each other and cannot be easily distinguished.
 
-3.  Select the layer in the contents pane by clicking on it. **Right click Symbology** (this is ANOTHER way to get to symbology. There are many ways to do the same thing in ArcGIS Pro).
+Again, since there are about 20,000 records – many of which are on top of each other – we can’t tell by looking at the map if it is 1 voyage or 300 starting at that origin. A heat map would help visualize this data by creating a density surface.
+
+1.  If it’s not already on, turn on the layer you exported during the section on [saving selected data as new layers](#saving-selected-data-as-new-layers) – it should be called something like `Voyage Departure Ports 1676 – 1805`. For now, you can also turn off the `Antigua Embarkments` layer.
+
+    Remember, we selected from the original voyages layer *only the voyages in this time frame*, since it matches the time frame of the port data.
+
+2.  Open the attribute field for this your `Voyage Departure Ports` layer. If you're into keystroke shortcuts, you can do so using `ctrl`+`T`. There is a lot of useful information here including a field on `Slaves_arr`, which shows the number of enslaved persons on the voyage.
+
+3. Try using graduated symbols to visualize this column. Select the layer by clicking on it in the **contents** pane, and then right-click ➡️ **Symbology**. Set the "Field" parameter to `Slaves_arr`, and you should see something like this in your data frame:
+
+    ![arrived](./images/image122.png)
+
+    > ![q]
+    > 
+    > 8. Do you think this is an ideal representational technique for this dataset? Why or why not?
 
 4.  In symbology, change the drop down to **Heat Map.** Notice how immediately the map changes to have a “heat map” surface, instead of seeing individual points. Currently, this map is only showing the density or magnitude of how many voyages originated at various locations.
 
-5.  Change the color ramp to something else that contrasts with the basemap a bit more so the data pops, but still looks good with your graduated points. Then try adjusting the radius and see how that impacts the point heat map. Adjust the other settings as well including the **Method** and the **rendering quality** which impacts resolution. Lastly, **move the arrows** in the color ramp to see how that changes the message.
+6.  Change the color ramp to something else that contrasts with the basemap a bit more so the data pops, but still looks good with your graduated points. Then try adjusting the radius and see how that impacts the point heat map. Adjust the other settings as well including the **Method** and the **rendering quality** which impacts resolution. Lastly, **move the arrows** in the color ramp to see how that changes the message.
 
-    <img src="./images/image080.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    Pick a color scheme that makes sense to you, and **be sure to select a semitransparent color ramp** – otherwise, the coast will be crowded out by "sparse" values. 
+
+    <img src="./images/image080.png" />
 
 ## Labeling Countries using the Attribute Table Data
 
-**Labels are an extremely important part of map creation, especially with historical data and locations people might not know well. They are also very helpful when you discuss your maps so you can identify and point out specific locations to the viewer. Don’t assume people know what things are called or where they are, if you don’t have them labeled in your map!**
+Labels are an extremely important part of map creation, especially with historical data and locations people might not know well. They are also very helpful when you discuss your maps so you can identify and point out specific locations to the viewer.
 
-1.  It’s very easy to label features in your map, if the information exists within the Attribute Table.
+1.  It’s very easy to label features in your map, if the information exists within the **attribute table**.
 
-    In the contents pane, select the **Africa's Source Regions layer.** Just like more options popped up under Feature Layer, notice how there is a new tab for **Labeling**! Click the **labeling** tab. Look at all the different options in this tab.
+    In the contents pane, select the `Africa's Source Regions` layer. Just like more options popped up under **Feature Layer**, notice how there is a new tab for **Labeling**! Click it and examine the different options.
 
-> <img src="./images/image081.png" style="width:7.5in;height:0.87014in" />
+    | <img src="./images/image081.png" /> |
+    | :---------------------------------: |
+    | *The labeling tab* |
 
-1.  All the way to the left, there is a button that says label. Click **Label** to turn on the labels. It labels the map with the data that is in the Name field in the attribute table, since that is what the “Field” drop down is set to. **However, these are contemporary names, NOT the historic region names we know to also exist in the attribute table.**
+2.  All the way to the left, there is a button that says "label". Click **Label** to turn on the labels. It automatically uses the attribute table's `Name` field to populate the "Field" parameter. **However, note that these are contemporary names – NOT the historic region names we know to also exist in the attribute table.**
 
-    <img src="./images/image082.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image082.png" />
 
-2.  We need to remember which field in the attribute table holds the data on this historic region names. Open the attribute table for Africa Source Regions. Which attribute field has that info? Close the attribute table, but remember the field name!
+3.  Using the attribute table, update the "Field" parameter to `Region` so that we are seeing historical region names instead of modern ones.
 
-3.  Go back up to the label tab and change the “**Field**” drop down to **Region**. The map will update to show the historic region names.
+    <img src="./images/image083.png" />
 
-> <img src="./images/image083.png" style="" alt="A screenshot of a computer Description automatically generated" />
+4.  Test out different premade font styles and placement of labels further to the right in the label tab. You can further adjust them with the font, size, color, and emphasis.
 
-1.  Test out different premade font styles and placement of labels further to the right in the label tab. You can further adjust them with the font, size, color, and emphasis.
+    <img src="./images/image084.png" />
 
-    <img src="./images/image084.png" style="" alt="A screenshot of a computer Description automatically generated" />
+5.  Now that we have some labels in the map, take a few minutes to look at the map and understand some key takeaways. Turn on the top layer on and off to see how it compares to the heat map of all voyages. Select the layer for `Embarkment Ports to Antigua: 1676 – 1805` and click on the **Feature Layer** tab. Use the "Swipe" tool to swipe in the map between the two layers for easy comparison. When you are done swiping, go back to the **Map tab** and click the explore button to get off the swipe.
 
-2.  Now that we have some labels in the map, take a few minutes to look at the map and understand some key takeaways. Turn on the top layer on and off to see how it compares to the heat map of all voyages. Select the layer for “Embarkment Ports to Antigua: 1676 – 1805” and click on the **Feature Layer tab**. Use the Swipe tool to swipe in the map between the two layers for easy comparison. When you are done swiping, go back to the **Map tab** and click the explore button to get off the swipe.
+    <img src="./images/image085.png" />
 
-    <img src="./images/image085.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    > ![q]
+    > 
+    > 9. What is the map and data telling us about the number of embarked enslaved persons bound for Antigua at each port vs the number of voyages departing from these locations. What is one insight you can gather from comparing these datasets?
 
-**Congratulations! You have officially learned how to get around the Attribute Table and use various attribute tools such as sorting, statistics, add field, and field calculator! You also learned many selection methods including manually selecting in the attribute table or map, Select by Attributes, and Select by Location. You also learned how to style your data with symbology using single symbol symbology, graduated symbol symbology, and heat map symbology!**
 
-# Assignment Deliverables
+# Lab Deliverables
 
-If you have not been answering the questions throughout the assignment, go back and answer the questions in the blue box on a separate piece of paper that you will submit on Canvas. In addition to typing out your answer, feel free to use screen shots to further show how you came to your final answer.
+Before **6:30pm on Tuesday, 2/13**, submit two things:
+* A document in `pdf` or `docx` format to Canvas, answering all the questions that are tagged with ![q], and which are summarized below
+* A screenshot of your ArcGIS Pro interface showing your datasets. **For 5 points of extra credit**, you can follow the instructions below and submit a proper map layout in `png` format.
 
-1.  How many total voyages are there in Voyage Embankment Ports layer?
+> ![qs]
+>
+> 1. In a few sentences (no more than 5), describe what you think McKittrick is saying in that excerpt you read above. How does her point relate to the argument that Bouie made in his article about the SlaveVoyages database? What impact should their arguments have on the way you approach making a map or doing research with this data?
+> 
+> 2. What are three attributes, along with their values, associated with the feature you clicked?
+> 
+> 3. Which port saw the greatest number of embarkments for Antigua bewteen 1676 and 1825?
+> 
+> 4. Which 25 year period had the *greatest* number of embarkments equal zero (e.g., had the fewest actual embarkments overall) and what was that value? By comparison, which 25 year period had the *lowest* number of embarkments equal zero (e.g., had the highest actual embarkments overall) and what was that value?
+> 
+> 5. How many ports during the years 1751-1775 had greater than 300 but less than 1,000 embarkments? You'll have to change your current expression including the field, operator, and value - as well as make use of the "Add Clause" button - in order to answer this.
+> 
+> 6. Look through the quantitative data in the **attribute table** of the `Embarkment Ports` layer, including its fields and data values. In a few sentences (no more than 5), compare and contrast the qualitative data described above to the quantitative data in the `Embarkment Ports` table. How are they similar and different? If you were working on a longer project about these topics, how might you combine the qualitative and quantitative data to tell a cohesive story – in other words, *what's a spatial question you could answer by combining these data, qualitative and quantitative*? Feel free to give a concrete example, if you can think of one.
+>
+> 7. Reflecting on the **Select by Location** issue that you just troubleshooted, which data – the `Embarkment Points for Antigua` layer or `Source Regions` layer – is right, and which one is wrong? Why?
+>
+> 8. Do you think this is an ideal representational technique for this dataset? Why or why not?
+>
+> 9. What is the map and data telling us about the number of embarked enslaved persons bound for Antigua at each port vs the number of voyages departing from these locations. What is one insight you can gather from comparing these datasets?
 
-2.  Which columns in the Attribute fields are quantitative and which are qualitative?
-
-3.  What is the mean, min, max, and sum value for those embarked for Antigua from 1701 – 1725?
-
-4.  Question: What is the total number (sum) of embarked slaves bound for Antigua from ALL PORTS over the entire time frame of 1676 and 1825?
-
-5.  During the years 1776 – 1800, how many ports had embarked persons greater than 200?
-
-6.  How many voyages (points) was “Howell, Henry” the captain? What were the names of the vessels, the year of arrival, the first destination (Voyage_iti) and the number of enslaved persons arriving in each voyage?
-
-7.  How many voyages had their final destination (voyage_i_2) in Rio de Janeiro? What was the total number of enslaved persons that arrived to Rio de Janeiro? What was the first (minimum) year or arrival and the last (maximum) year of arrival?
-
-8.  How voyages between 1676 and 1805 are within 2 international nautical miles of the Embarkment Ports?
-
-9.  What is the map and data telling us about the number of embarked enslaved persons bound for Antigua at each port vs the number of voyages departing from these locations. What are some insights we can gather?
-
-**You do not need to create a final map layout for this assignmen**t, but if you would like to try – feel free to use the instructions below to create one. You can also see the final map I created as it is helpful to see as many map examples as possible when you’re learning about map design and cartography!
 
 Happy Mapping!
 
 # Example Map
 
-<img src="./images/image086.jpeg" style="" alt="A map of the african continent Description automatically generated" />
+<img src="./images/image086.jpg" />
 
 # Creating a Final Map Layout for Print or Graphic Export 
 
@@ -915,8 +988,6 @@ It is very important to understand the difference between being in a **Layout** 
 1.  Let’s start with the **Title**. In the Graphics and Text box, there are lots of ways to add text. Click the big A to add straight text and click in the map where you want the title to go.  
     <img src="./images/image099.png" style="width:6.04861in;height:1.45833in" />
 
-<!-- -->
-
 1.  Type in a title that is descriptive of what we are mapping. Tip: Sometimes it’s helpful to insert two textboxes. One for the main title and one for a subtitle with locations and date. This introduces **Visual Hierarchy** into our map title – a term you will hear me say all semester!
 
 2.  <img src="./images/image100.png" style="" alt="A screenshot of a computer Description automatically generated" />To adjust the size and alignment, click on the title and a **Text Format** box will appear. You can adjust the font, color and size of the text. If you need to adjust where the text breaks onto the next line, there are further text options on the right side. In this text box, you can adjust the text breaks. You can also click on Text Symbol for more font options.
@@ -996,7 +1067,7 @@ Play around in the other legend options to see what happens. Adjust the placemen
 
 ## Removing the Base Map Citations
 
-If you are using a streaming base map, there is likely an annoying citation in the bottom right corner.
+If you are using a standard base map, there is likely an annoying citation in the bottom right corner.
 
 1.  To remove the citation, go to **Insert** Dynamic Text Service layer credits.
 
@@ -1037,3 +1108,4 @@ You will need to export your map to a digital graphic format like pdf or png, jp
 
 [imp]: https://img.shields.io/badge/IMPORTANT!-red?style=plastic
 [q]: https://img.shields.io/badge/Question-blue?style=plastic
+[qs]: https://img.shields.io/badge/All_Questions-blue?style=plastic
