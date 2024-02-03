@@ -10,11 +10,11 @@
 
 - [Introduction and context](#introduction-and-context)
   - [The Middle Passage](#the-middle-passage)
-  - [**Understanding the Slave Voyages Database**](#understanding-the-slave-voyages-database)
+  - [Understanding the Slave Voyages Database](#understanding-the-slave-voyages-database)
 - [Start an ArcGIS Pro Project File and Folder](#start-an-arcgis-pro-project-file-and-folder)
   - [Downloading the data](#downloading-the-data)
 - [Exploring the Map](#exploring-the-map)
-- [Understanding the Data and Attribute Table](#understanding-the-data-and-attribute-table)
+- [The Attribute Table](#the-attribute-table)
 - [Assigning Proper Layer Names](#assigning-proper-layer-names)
 - [Attribute Table Tools](#attribute-table-tools)
   - [Sorting, Statistics, and Fields](#sorting-statistics-and-fields)
@@ -58,7 +58,7 @@ From a technical perspective, the lab covers adding data to ArcGIS Pro, symboliz
 
 Take a moment to carefully consider what she is saying here before you move on to the next section.
 
-## **Understanding the Slave Voyages Database**
+## Understanding the Slave Voyages Database
 
 Anytime you work with a new dataset, it is important to research the data to have a thorough understanding of what records and attributes are included, the time period the data represents, how the data was created, limitations of the dataset, along with much more.
 
@@ -274,7 +274,7 @@ This tutorial will go through the process of saving and storing data in a GIS fo
     > 
     > **Beware** – since **project files do not actually contain data layers**, and only have **pointers** to where the data is saved, if you copied your `TransAtlanticSlaveTrade` project file and tried to open it on a home computer without also saving the **data**, the ArcGIS Pro session would start and list the data in the table of contents, but nothing would appear because it would not be able to find the where the data is stored. A little red exclamation point would appear in the table of contents, informing you that it has lost the connection to the data.
 
-# Understanding the Data and Attribute Table
+# The Attribute Table
 
 Before we get started, we need to understand what each of these layers represent and look at the data contained in the database (aka attribute table). It is important to examine and understand the data in the **attribute table**, as that is where the bulk of the data is stored.
 
