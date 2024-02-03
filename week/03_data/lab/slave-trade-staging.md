@@ -30,7 +30,6 @@
   - ["Heat Map" symbology](#heat-map-symbology)
   - [Labeling Countries using the Attribute Table Data](#labeling-countries-using-the-attribute-table-data)
 - [Lab Deliverables](#lab-deliverables)
-- [Example Map](#example-map)
 - [Creating a Final Map Layout for Print or Graphic Export](#creating-a-final-map-layout-for-print-or-graphic-export)
   - [Setting up a Map Layout](#setting-up-a-map-layout)
   - [The Layout Toolbar](#the-layout-toolbar)
@@ -38,7 +37,6 @@
   - [Inserting a North Arrow and Scale Bar](#inserting-a-north-arrow-and-scale-bar)
   - [Inserting a Legend](#inserting-a-legend)
   - [Insert Cartographer Information](#insert-cartographer-information)
-  - [Removing the Base Map Citations](#removing-the-base-map-citations)
   - [Exporting your Paper Map](#exporting-your-paper-map)
 
 ## What you should submit <!-- omit in toc -->
@@ -146,7 +144,7 @@ This tutorial will go through the process of saving and storing data in a GIS fo
         | *Login with Tufts UTLN and password* |
 
 3.  To start a new project, click on **Map,** as shown above.
-4.  A “Create a New Project” box will open with the option to name your project file and choose where to save it. This is important to not rush through. What you name and where you save the project is very important for good data management and organization. It is much harder to change this name/location down the line if you don’t do it properly from the start!
+4.  A “Create a New Project" box will open with the option to name your project file and choose where to save it. This is important to not rush through. What you name and where you save the project is very important for good data management and organization. It is much harder to change this name/location down the line if you don’t do it properly from the start!
 
     1. Name your project `TransAtlanticSlaveTrade`.
     2. Under ***Location***, click on the **folder** **icon** <img src="./images/image006.png" /> and navigate to where you want to save your project (this tutorial will use the `H: drive`).
@@ -187,7 +185,7 @@ This tutorial will go through the process of saving and storing data in a GIS fo
 
 5.  Now that you’ve unzipped the data, we can work with it in ArcGIS Pro. You cannot see data inside folders that are zipped up in ArcGIS Pro. You must always unzip it first to be able to work with it.
 
-6.  **Go back to your ArcGIS Pro project** and on the right side in **Catalog**, right click on your home folder “TransAtlanticSlaveTrade” and press **Refresh.** This will allow us to see any new files or folders added to this folder.
+6.  **Go back to your ArcGIS Pro project** and on the right side in **Catalog**, right click on your home folder “TransAtlanticSlaveTrade" and press **Refresh.** This will allow us to see any new files or folders added to this folder.
 
     <img src="./images/image012.png" style="" alt="A screenshot of a computer Description automatically generated" />
 
@@ -207,7 +205,7 @@ This tutorial will go through the process of saving and storing data in a GIS fo
 
     **You should now have 4 layers in the map, plus 2 basemaps.**
 
-11. To the left of the screen in the **Contents** pane, underneath “**Drawing Order”,** order the layers by dragging them into place. You want the largest polygon layer, the **continents** layer, on the bottom and the points on top so we can see them.
+11. To the left of the screen in the **Contents** pane, underneath “**Drawing Order",** order the layers by dragging them into place. You want the largest polygon layer, the **continents** layer, on the bottom and the points on top so we can see them.
 
     They should be in this order as shown below. **Also, notice your colors are probably different than mine. That is because there is no default color when you first bring data in... it’s totally random until you set the colors with symbology.**
 
@@ -552,7 +550,7 @@ Bearing in mind these important points about context for the data, let's pivot b
 
     <img src="./images/image052.png" />
 
-2. Now, let’s create a new layer containing *only the voyages between 1676 and 1805*. One you have the voyages selected, **right-click** on `Voyage Departure Ports` ➡️ "Data" ➡️ "Export Features." This is the “Save As” of spatial data: we are saving the selected points as a new feature class and layer in the map.
+2. Now, let’s create a new layer containing *only the voyages between 1676 and 1805*. One you have the voyages selected, **right-click** on `Voyage Departure Ports` ➡️ "Data" ➡️ "Export Features." This is the “Save As" of spatial data: we are saving the selected points as a new feature class and layer in the map.
 
 3. You want to give the new layer (and resulting feature class) a smart name and make sure it’s saving in the right place. Click in the **output feature class field**. It will expand to show you the full *path* to where it’s being saved. It will default into *this project's geodatabase* (`TransAtlanticSlaveTrade.gdb`), which is why it was important to save the project in a smart place when you started. Change the last part of the path to give it a better name, such as `VoyageDeparturePorts_1676_1805`. Press **OK**.
 
@@ -568,7 +566,7 @@ Bearing in mind these important points about context for the data, let's pivot b
 
     <img src="./images/image055.png" />
 
-5. Clear your selection on the **Map** tab, pull down the new layer under your Embarkment Ports layer, and turn off the original Voyage layer. **Rename your new layer to remove any “data speak”, but make sure to keep the dates.**
+5. Clear your selection on the **Map** tab, pull down the new layer under your Embarkment Ports layer, and turn off the original Voyage layer. **Rename your new layer to remove any “data speak", but make sure to keep the dates.**
 
     > **Pro Tip:** It’s useful to rename layers because what it says in the contents is what it will say in the legend when you make a final map. It’s worth the time!
 
@@ -763,7 +761,7 @@ One of the most powerful aspects of GIS is the ability to symbolize your data (b
 5.  The data is grouped into 5 different ranges of values called "classes" observed in this field. You can adjust the number of classes to have smaller or larger ranges, but **ideally you should have between 4-7 classes.** Too few and there isn’t enough detail; too many, and it’s hard to distinguish between them.
 
 
-    There are many different "methods" for how to calculate the ranges of values. ArcGIS Pro usually defaults to “natural breaks”, which breaks up the data based on natural jumps in the data’s histogram. But there are other methods as well such as quantile and equal interval that you will explore in a later assignment. **For now, leave it on natural breaks.**
+    There are many different "methods" for how to calculate the ranges of values. ArcGIS Pro usually defaults to “natural breaks", which breaks up the data based on natural jumps in the data’s histogram. But there are other methods as well such as quantile and equal interval that you will explore in a later assignment. **For now, leave it on natural breaks.**
 
 6.  Click on the "template" point. This allows us to set the default color and symbol (circle, square, triangle, etc.) for the points. Look through the gallery of point styles.
 
@@ -805,7 +803,7 @@ Again, since there are about 20,000 records – many of which are on top of each
     > 
     > 8. Do you think this is an ideal representational technique for this dataset? Why or why not?
 
-4.  In symbology, change the drop down to **Heat Map.** Notice how immediately the map changes to have a “heat map” surface, instead of seeing individual points. Currently, this map is only showing the density or magnitude of how many voyages originated at various locations.
+4.  In symbology, change the drop down to **Heat Map.** Notice how immediately the map changes to have a “heat map" surface, instead of seeing individual points. Currently, this map is only showing the density or magnitude of how many voyages originated at various locations.
 
 6.  Change the color ramp to something else that contrasts with the basemap a bit more so the data pops, but still looks good with your graduated points. Then try adjusting the radius and see how that impacts the point heat map. Adjust the other settings as well including the **Method** and the **rendering quality** which impacts resolution. Lastly, **move the arrows** in the color ramp to see how that changes the message.
 
@@ -848,64 +846,51 @@ Labels are an extremely important part of map creation, especially with historic
 
 # Lab Deliverables
 
-Before **6:30pm on Tuesday, 2/13**, submit two things:
-* A document in `pdf` or `docx` format to Canvas, answering all the questions that are tagged with ![q], and which are summarized below
-* A screenshot of your ArcGIS Pro interface showing your datasets. **For 5 points of extra credit**, you can follow the instructions below and submit a proper map layout in `png` format.
+Before **6:30pm on Tuesday, 2/13**, submit two things to Canvas:
 
-> ![qs]
->
-> 1. In a few sentences (no more than 5), describe what you think McKittrick is saying in that excerpt you read above. How does her point relate to the argument that Bouie made in his article about the SlaveVoyages database? What impact should their arguments have on the way you approach making a map or doing research with this data?
-> 
-> 2. What are three attributes, along with their values, associated with the feature you clicked?
-> 
-> 3. Which port saw the greatest number of embarkments for Antigua bewteen 1676 and 1825?
-> 
-> 4. Which 25 year period had the *greatest* number of embarkments equal zero (e.g., had the fewest actual embarkments overall) and what was that value? By comparison, which 25 year period had the *lowest* number of embarkments equal zero (e.g., had the highest actual embarkments overall) and what was that value?
-> 
-> 5. How many ports during the years 1751-1775 had greater than 300 but less than 1,000 embarkments? You'll have to change your current expression including the field, operator, and value - as well as make use of the "Add Clause" button - in order to answer this.
-> 
-> 6. Look through the quantitative data in the **attribute table** of the `Embarkment Ports` layer, including its fields and data values. In a few sentences (no more than 5), compare and contrast the qualitative data described above to the quantitative data in the `Embarkment Ports` table. How are they similar and different? If you were working on a longer project about these topics, how might you combine the qualitative and quantitative data to tell a cohesive story – in other words, *what's a spatial question you could answer by combining these data, qualitative and quantitative*? Feel free to give a concrete example, if you can think of one.
->
-> 7. Reflecting on the **Select by Location** issue that you just troubleshooted, which data – the `Embarkment Points for Antigua` layer or `Source Regions` layer – is right, and which one is wrong? Why?
->
-> 8. Do you think this is an ideal representational technique for this dataset? Why or why not?
->
-> 9. What is the map and data telling us about the number of embarked enslaved persons bound for Antigua at each port vs the number of voyages departing from these locations. What is one insight you can gather from comparing these datasets?
+* A document in `pdf` or `docx` format, answering all the questions that are tagged with ![q], and which are summarized below:
+    > ![qs]
+    >
+    > 1. In a few sentences (no more than 5), describe what you think McKittrick is saying in that excerpt you read above. How does her point relate to the argument that Bouie made in his article about the SlaveVoyages database? What impact should their arguments have on the way you approach making a map or doing research with this data?
+    > 
+    > 2. What are three attributes, along with their values, associated with the feature you clicked?
+    > 
+    > 3. Which port saw the greatest number of embarkments for Antigua bewteen 1676 and 1825?
+    > 
+    > 4. Which 25 year period had the *greatest* number of embarkments equal zero (e.g., had the fewest actual embarkments overall) and what was that value? By comparison, which 25 year period had the *lowest* number of embarkments equal zero (e.g., had the highest actual embarkments overall) and what was that value?
+    > 
+    > 5. How many ports during the years 1751-1775 had greater than 300 but less than 1,000 embarkments? You'll have to change your current expression including the field, operator, and value - as well as make use of the "Add Clause" button - in order to answer this.
+    > 
+    > 6. Look through the quantitative data in the **attribute table** of the `Embarkment Ports` layer, including its fields and data values. In a few sentences (no more than 5), compare and contrast the qualitative data described above to the quantitative data in the `Embarkment Ports` table. How are they similar and different? If you were working on a longer project about these topics, how might you combine the qualitative and quantitative data to tell a cohesive story – in other words, *what's a spatial question you could answer by combining these data, qualitative and quantitative*? Feel free to give a concrete example, if you can think of one.
+    >
+    > 7. Reflecting on the **Select by Location** issue that you just troubleshooted, which data – the `Embarkment Points for Antigua` layer or `Source Regions` layer – is right, and which one is wrong? Why?
+    >
+    > 8. Do you think this is an ideal representational technique for this dataset? Why or why not?
+    >
+    > 9. What is the map and data telling us about the number of embarked enslaved persons bound for Antigua at each port vs the number of voyages departing from these locations. What is one insight you can gather from comparing these datasets?
 
+* A screenshot of your ArcGIS Pro interface showing your symbolized data. Optionally, for 5 points of extra credit, you can follow the instructions below and submit a proper, laid-out map, exported in `png` format at 300 DPI, as shown below:
 
-Happy Mapping!
-
-# Example Map
-
-<img src="./images/image086.jpg" />
+    <img src="./images/image086.jpg" />
 
 # Creating a Final Map Layout for Print or Graphic Export 
 
-Now that all our data is mapped and symbolized and looking AWESOME, it’s time to make a map! It is important in a map not to include too much information so that map is not legible.
+Now that all our data is mapped and symbolized, it’s time to make a map.
 
-In order to create a printable map, you will insert a new **layout.** This is a paper view of your data, much like viewing the page layout when you are working in a word processing software. Every time you want to create a new paper map, you will insert a new **Layout**. You can have as many layouts in one project as you like.
+In order to create a printable map, you will insert a new **layout.** This is a "paper" view of your data, much like viewing the page layout when you are working in a word processing software. Every time you want to create a new paper map, you will insert a new **Layout**. You can have as many layouts in one project as you like.
 
-**When you create a map, you should include:**
+Here's a list of things you could include on your map, with things you *must* include **highlighted in bold**:
 
--   The map itself, duh
-
--   A Descriptive Title, including key location and dates
-
--   A legend – NO data speak. All colors and numbers formatted nicely
-
--   A scale bar (with appropriate units and sized well)
-
--   A North Arrow
-
--   Cartographer information (name, date, class)
-
--   Data Sources
-
--   Any annotation you might want to include about the map (optional)
-
--   Labels
-
--   Locator/Inset map
+- **The map itself**
+- **A Descriptive Title**, including key location and dates
+- **A legend** – NO data speak. All colors and numbers formatted nicely
+- **Cartographer information (name, date, class)**
+- **Data Sources**
+- A scale bar (with appropriate units and sized well)
+- A North Arrow
+- Any context or annotation you might want to include about the map
+- Labels
+- Locator/Inset map
 
 ## Setting up a Map Layout
 
@@ -915,113 +900,108 @@ In order to create a printable map, you will insert a new **layout.** This is a 
 
 3.  In the Main Menu Bar, choose **Insert New Layout**.
 
-<!-- -->
+    <img src="./images/image087.png" />
 
-1.  <img src="./images/image087.png" style="width:6.456in;height:0.89846in" />
+4.  In the dropdown menu, select **Letter (8.5"X11")** underneath *ANSI- Portrait*.
 
-<!-- -->
+    <img src="./images/image088.png" />
 
-1.  In the dropdown menu, select **Letter (8.5”X11”)** underneath *ANSI- Portrait*.
+5.  This should open up a new window called “Layout" on a new tab. To get back to your map, you can click the Map tab. But for now, you’ll want to work in this Layout tab. **Notice how the top toolbar now is different and has new options for adding map elements.
 
-    <img src="./images/image088.png" style="width:2.33458in;height:1.63478in" />
+    **Note:** if your layout opens in a split screen view with your map, you can click on the title tab that says "layout" (highlighted in red below) and drag it up to the map tab. When the map tab is highlighted in blue, release and your layout tab will be next to your map tab, as shown below.
+    
+    <img src="./images/image089.png" />
 
-2.  This should open up a new window called “Layout” on a new tab. To get back to your map, you can click the Map tab. But for now, you’ll want to work in this Layout tab. **Notice how the top toolbar now is different and has new options for adding map elements.  
-    **  
-    **Note:** if your layout opens in a split screen view with your map, you can click on the title tab that says layout (highlighted in red below) and drag it up to the map tab. When the map tab is highlighted in blue, release and your layout tab will be next to your map tab, as shown below.<img src="./images/image089.png" style="width:7.0625in;height:0.89916in" />
+    > **Tip:** If you accidentally close either your map or your layout view, you can re-open them via the Catalog pane. They will appear under the ‘Map’ and ‘Layout’ folders. Double-click or right click and choose ‘Open’ to open them.
 
-    **Tip:** If you accidentally close either your map or your layout view, you can re-open them via the Catalog pane. They will appear under the ‘Map’ and ‘Layout’ folders. Double-click or right click and choose ‘Open’ to open them.
+6.  Now, we need to place our **Map** on this piece of paper. To do so, click on the **Insert tab** and then **Map Frame** and **select the image of your map.**
 
-<!-- -->
+    <img src="./images/image090.png" />
 
-1.  Now, we need to place our Map on this piece of paper. To do so, click on the **Insert tab** and then **Map Frame** and **select the image of your map.**
+7.  Now, draw a box where you want the map to be placed on the paper. You can make it the same size as the page or ALMOST as big as the paper, **leaving a little border for printable margins**. You can adjust the size of the Map Frame using the vertices on the corners of the map.
 
-    <img src="./images/image090.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image091.png"/>
 
-2.  Now, draw a box where you want the map to be placed on the paper. You can make it the same size as the page or ALMOST as big as the paper, leaving a little border for “printable margins”. You can adjust the size of the Map Frame using the vertices on the corners of the map.
-
-    <img src="./images/image091.png" style="" alt="A map of africa with different countries/regions Description automatically generated" />
-
-3.  On the left under **Contents**, click the down arrow to expand the Map Frame. Now you can see all the layers in this map and turn them on and off. You can continue to symbolize and style the map when you are in layout view!
+8. On the left under **Contents**, click the down arrow to expand the Map Frame. Now you can see all the layers in this map and turn them on and off. You can continue to symbolize and style the map when you are in layout view.
 
 ## The Layout Toolbar
 
 It is very important to understand the difference between being in a **Layout** vs just a regular **Map**. When you are in a Layout, there are a lot of similar tools in the Layout (zoom in and out, pan) but the **Layout tools** work on the layout as if you **were zooming in and out of the *paper itself***, while the same tools on the **Map** toolbar work on the data inside the data frame (e.g., zoom into Africa).  
 
-1.  Take a minute to look at the **Layout** Tab to see the tools, hovering over tools to see what they do**.**
+1.  Take a minute to look at the **Layout** Tab to see the tools, hovering over tools to see what they do.
 
-<table><tbody><tr class="odd"><td><p>The Map Toolbar</p><p><img src="./images/image092.png" style="width:1.32448in;height:0.744in" /></p></td><td><p>The Layout Toolbar</p><p><img src="./images/image093.png" style="width:5.40278in;height:0.82943in" /></p></td></tr></tbody></table>
+    | ![map](./images/image092.png) | ![layout](./images/image093.png) |
+    | :---------------------------- | -------------------------------- |
+    | The map toolbar               | The layout toolbar               |
 
-1.  The **navigate** icon allows you to move the piece of paper. The **full extent** icon<img src="./images/image094.png" style="width:0.168in;height:0.176in" /> zooms so the whole page is in view. The 1:1 tool <img src="./images/image094.png" style="width:0.24733in;height:0.18372in" /> is particularly useful to see what the map features and text looks like at actual print size (100%).
+2.  The **navigate** icon... 
 
-2.  See what the other tools in the **Layout** tab do as well. Orientation would allow you to change the page orientation quickly and painlessly.
+    <img src="./images/image094.png"/> 
 
-3.  Moving and re-sizing the map or any map element works similarly to most other programs. The key is **selecting** the element first. Once you do that, you can use the vertices to resize anything or move the map element.
+    ... allows you to move the piece of paper. The **full extent** icon zooms so the whole page is in view. The **1:1 tool** is particularly useful to see what the map features and text looks like at actual print size (100%).
 
-4.  Make sure your map is taking up pretty much the whole piece of paper, with very small margins or no margins at all!
+3.  See what the other tools in the **Layout** tab do as well. Orientation would allow you to change the page orientation quickly and painlessly.
+4. Moving and re-sizing the map or any map element works similarly to most other programs. The key is **selecting** the element first. Once you do that, you can use the vertices to resize anything or move the map element.
 
-5.  **Now it’s time to position the actual data within our Map**. At the moment, we are too zoomed out from Africa or its not centered, or perhaps its half on the page. **We want to zoom in as much as possible to our data in Africa so it takes up most of the map frame**. The more we zoom in, the more detail we can see!
+5.  Make sure your map is taking up pretty much the whole piece of paper, with very small margins or no margins at all!
 
-6.  In order to change the position of the data ***within*** the map, we need to **Activate** the data frame. In the **Layout Tab,** click **Activate** to be able to interact with the map again and adjust the zoom and position.
+6.  **Now it’s time to position the actual data within our Map**. At the moment, we are too zoomed out from Africa or its not centered, or perhaps its half on the page. **We want to zoom in as much as possible to our data in Africa so it takes up most of the map frame**. The more we zoom in, the more detail we can see!
 
-<!-- -->
+7.  In order to change the position of the data ***within*** the map, we need to **Activate** the data frame. In the **Layout Tab,** click **Activate** to be able to interact with the map again and adjust the zoom and position.
+    **Note:** You can also right click to **activate** the map.
 
-1.  **Note:** You can also right click to **activate** the map.
+    <img src="./images/image096.png" />
 
-    <img src="./images/image095.png" style="" alt="C:\Users\anguye22\AppData\Local\Temp\SNAGHTML24aab5cd.PNG" />
+8.  Notice how the toolbar switches back to look like the map tabs used for mapping and analysis.
 
-2.  Notice how the toolbar switches back to look like the map tabs used for mapping and analysis.
+9.  Now, you can use the Explore tools to zoom into Africa. **At this point, it’s easiest to hold down `shift` and draw a tight box around Africa to ensure it is as zoomed in as possible without any part of the continent getting cut off.** Once it’s zoomed in, use the pan hand/explore button to readjust the positioning in the map.
 
-3.  Now, you can use the Explore tools to zoom into Africa. **At this point, it’s easiest to hold down shift and draw a tight box around Africa to ensure it is as zoomed in as possible without any part of the continent getting cut off. Once it’s zoomed in, use the pan hand/explore button to readjust the positioning in the map.**
+    <img src="./images/image097.png" />
 
-    <img src="./images/image096.png" style="width:1.4151in;height:0.80388in" />
+10. Once Africa is in position, you can deactivate the map by clicking on the *Layout* tab and then **Close Activation**. This will lock the data in place and bring us back to the layout tools. See examples below for Africa Map.
 
-4.  Once Africa is in position, you can deactivate the map by clicking on the *Layout* tab and then **Close Activation.** This will lock the data in place and bring us back to the layout tools. See examples below for Africa Map.
-
-    <img src="./images/image097.png" style="width:6.192in;height:1.07041in" />
+    <img src="./images/image098.png"  />
 
 ## Inserting a Title
 
 1.  To insert various map elements (like the title, legend, North Arrow, Scale bar, etc), click on the **Insert** Tab. Look over all the icons to see what you can insert here. There are lots of options. Note: if you don’t see this tab, make sure you have closed out of the map activation.
 
-> <img src="./images/image098.png" style="width:7.31944in;height:0.72788in" />
+    <img src="./images/image099.png" />
 
-1.  Let’s start with the **Title**. In the Graphics and Text box, there are lots of ways to add text. Click the big A to add straight text and click in the map where you want the title to go.  
-    <img src="./images/image099.png" style="width:6.04861in;height:1.45833in" />
+2.  Let’s start with the **Title**. In the Graphics and Text box, there are lots of ways to add text. Click the big A to add straight text and click in the map where you want the title to go.  
+    <img src="./images/image100.png" />
 
-1.  Type in a title that is descriptive of what we are mapping. Tip: Sometimes it’s helpful to insert two textboxes. One for the main title and one for a subtitle with locations and date. This introduces **Visual Hierarchy** into our map title – a term you will hear me say all semester!
+3.  Type in a title that is descriptive of what we are mapping. Tip: Sometimes it’s helpful to insert two textboxes. One for the main title and one for a subtitle with locations and date. This introduces **[visual hierarchy](https://www.axismaps.com/guide/visual-hierarchy)** into our map title.
 
-2.  <img src="./images/image100.png" style="" alt="A screenshot of a computer Description automatically generated" />To adjust the size and alignment, click on the title and a **Text Format** box will appear. You can adjust the font, color and size of the text. If you need to adjust where the text breaks onto the next line, there are further text options on the right side. In this text box, you can adjust the text breaks. You can also click on Text Symbol for more font options.
+    <img src="./images/image101.png" />
 
-    <img src="./images/image101.png" style="width:2.22917in;height:2.49216in" />
+4.  To adjust the size and alignment, click on the title and a **Text Format** box will appear. You can adjust the font, color and size of the text. If you need to adjust where the text breaks onto the next line, there are further text options on the right side. In this text box, you can adjust the text breaks. You can also click on Text Symbol for more font options.
 
-<!-- -->
+    <img src="./images/image102.png" />
 
-1.  Make the title pretty large so it catches the readers eye first (visual hierarchy). The title should be the largest text on your paper. Take time picking appropriate fonts and stylizing it nicely. **Don’t just accept defaults, I hate that and will take points off for it later**. Making maps is as much of an art as it is a science!
+5.  Make the title pretty large so it catches the readers eye first (visual hierarchy). The title should be the largest text on your paper. Take time picking appropriate fonts and stylizing it nicely.
 
-2.  You might notice that things are appearing in the contents pane/Drawing OrderJust like with data layers in the map, the map elements are layered in the order they are listed in the **Contents** pane. So if things are covered, re-order them here!  
-    <img src="./images/image102.png" style="width:6.92093in;height:4.39735in" />
+6.  You might notice that things are appearing in the contents pane/Drawing Order. Just like with data layers in the map, the map elements are layered in the order they are listed in the **Contents** pane. So if things are covered, re-order them here!  
+    
+    <img src="./images/image103.png" />
 
-3.  Now, our title is looking good. Notice how I made the location and date a little smaller and not bold underneath. Gives it a little bit more visual hierarchy and acts as a “subtitle”. **It’s the small details like this that really elevate the map design!**
+7.  Now, our title is looking good. Notice how I made the location and date a little smaller and not bold underneath. Gives it a little bit more visual hierarchy and acts as a “subtitle". **It’s the small details like this that really elevate the map design!**
 
 ## Inserting a North Arrow and Scale Bar
 
-These are all required elements on all maps. You access them by going to the **Insert** tab
-
-1.  Click on the ***North Arrow*** dropdown***.*** Select one that you like. Put it in the bottom right corner, out of the way. You can adjust the size, but <u>don’t</u> make it too big. An overly large north arrow is my biggest pet peeve! If you don’t like the style you picked, simply click once on it and press delete. Then reinsert a different one.
+1.  Click on the **North Arrow** dropdown. Select one that you like. Put it in the bottom right corner, out of the way. You can adjust the size, but don’t make it too big. If you don’t like the style you picked, simply click once on it and press delete. Then reinsert a different one.
 
 2.  Click on the dropdown options and pick a **Scale bar** that you like. Put it in the bottom corner next to the north arrow, out of the way. If you don’t like it, simply click once on it and press delete. Then reinsert a different one.
 
-3.  In the upper menu, click on the **Scale Bar Design tab,** change the **Number of divisions to 1 and Number of subdivisions to 2.** This takes away all the junky numbers inside the scale bar and makes it cleaner. Also, since we are working in *Africa*, the units should be in **KM** not **miles**. Change the **Division Units to Kilometers.**
+3.  In the upper menu, click on the **Scale Bar Design tab,** change the **Number of divisions** to `1` and **Number of subdivisions** to `2`.This takes away all the junky numbers inside the scale bar and makes it cleaner. Also, since we are working in *Africa*, the units should be in **KM** not **miles**. Change the **Division Units to Kilometers.**
 
 4.  You can also adjust the **label position**, whether you want Kilometers on the right, below, above, etc. I like it on the bottom to make it even cleaner and easier to align.
 
-5.  Lastly, you can also change the font and size and color of the scale bar on the “scale bar” tab. These small details also help elevate your map and make the design very cohesive. I chose the same font as my title.
+5.  Lastly, you can also change the font and size and color of the scale bar on the “scale bar" tab. These small details also help elevate your map and make the design very cohesive. I chose the same font as my title.
 
-6.  Make sure the scale bar doesn’t cross over onto your data. Use the edge vertices to change the size. Also, make sure it ends on a number that makes sense (aka 1000KM, 500KM…not 1320KM).
+6.  Make sure the scale bar doesn’t cross over onto your data. Use the edge vertices to change the size. Also, make sure it ends on a number that makes sense (e.g., `1000KM`, `500KM`, but not `1320KM`).
 
-7.  Again, notice how in the Contents window, there are now “layers” for Text, North Arrow and Scalebar. You can now turn them on and off, like they are a layer. You can also click on the little lock, to lock the style in place so they can’t accidentally be moved, edited, or deleted.
-
-    <img src="./images/image103.png" style="" alt="A screenshot of a computer Description automatically generated" />
+7. Now you should see "layers" for Text, North Arrow and Scalebar. You can now turn them on and off, like they are a layer. You can also click on the little lock, to lock the style in place so they can’t accidentally be moved, edited, or deleted.
 
 ## Inserting a Legend
 
@@ -1033,21 +1013,23 @@ Now, onto the legend, which is the trickiest and most frustrating part.
 
 3.  Notice how whatever layers are on in your map (even if not visible bc they’re covered by another layer) are in the legend! Turn off layers that are not being mapped right now.Also, make sure there is no data speak and if there is, change in under the Layers!
 
-> <img src="./images/image104.png" style="" alt="A screenshot of a computer Description automatically generated" />
+    <img src="./images/image105.png" />
 
-1.  Now we need to adjust the style of each layer in the legend one by one. In the **Contents** window under the **Legend**, click on **Emarbkment Ports…**. Notice how on the right, the **Element** Item box appears. We are now editing the legend details for the <u>point layer</u> specifically. This on looks ok.
+4.  Now we need to adjust the style of each layer in the legend one by one. In the **Contents** window under the **Legend**, click on **Emarbkment Ports…**. Notice how on the right, the **Element** Item box appears. We are now editing the legend details for the <u>point layer</u> specifically. This on looks ok.
 
-2.  We should also adjust the font sizes for the layer names and labels and the other general legend properties. Click on **Legend** in the Contents. This will edit the properties for all the legend contents.  
-    <img src="./images/image105.png" style="width:2.42361in;height:1.79157in" />
+5. We should also adjust the font sizes for the layer names and labels and the other general legend properties. Click on **Legend** in the Contents. This will edit the properties for all the legend contents.  
 
-3.  On the right, click on the 3<sup>rd</sup> icon “Display”. Here, we can assign a background color and border style to the legend if you would like. I am going to choose a white background, no border, and I’m going to make the X gap and Y gap .1 inches to give it a little extra room around the sides  
-    <img src="./images/image106.png" style="width:1.97917in;height:2.06674in" />
+    <img src="./images/image106.png" />
 
-4.  Next, while Legend is highlighted, click on **Text Symbol** and then change the drop down to **Layer Names.** Expand **Appearance.** Now, we can adjust the size and fonts for the layer names (not the layer labels). I am going to choose the matching font from my title and make them bold and size 14. Click Apply to see changes.
+6.  On the right, click on the 3<sup>rd</sup> icon “Display". Here, we can assign a background color and border style to the legend if you would like. I am going to choose a white background, no border, and I’m going to make the X gap and Y gap .1 inches to give it a little extra room around the sides  
+    
+    <img src="./images/image107.png" />
 
-> <img src="./images/image107.png" style="width:2.47867in;height:2.12778in" />
+7.  Next, while Legend is highlighted, click on **Text Symbol** and then change the drop down to **Layer Names.** Expand **Appearance.** Now, we can adjust the size and fonts for the layer names (not the layer labels). I am going to choose the matching font from my title and make them bold and size 14. Click Apply to see changes.
 
-1.  Now, on the right, change the drop down to just “labels”. This will edit the style of the text next to the symbols. I’m going to make this regular and size 12. That way, the titles are a little bigger and with different emphasis. Visual hierarchy!
+    <img src="./images/image108.png" />
+
+8.  Now, on the right, change the drop down to just “labels". This will edit the style of the text next to the symbols. I’m going to make this regular and size 12. That way, the titles are a little bigger and with different emphasis. Again: [visual hierarchy](https://www.axismaps.com/guide/visual-hierarchy).
 
 Play around in the other legend options to see what happens. Adjust the placement so it doesn’t overlap any of the important data!
 
@@ -1065,39 +1047,25 @@ Play around in the other legend options to see what happens. Adjust the placemen
 
 6.  If you want, put a background behind the text like we did for the title.
 
-## Removing the Base Map Citations
-
-If you are using a standard base map, there is likely an annoying citation in the bottom right corner.
-
-1.  To remove the citation, go to **Insert** Dynamic Text Service layer credits.
-
-2.  Draw a square in the map and the text will move there…
-
-3.  Then just moveeeee it off the piece of paper lol. You can’t delete it, it will just go back to the corner. But if we move it off the piece of paper…voila, no more annoying citation text.
-
 ## Exporting your Paper Map
 
 You will need to export your map to a digital graphic format like pdf or png, jpeg, or gif.
 
 1.  When you have your layout the way you want it, on the top menu, choose **Share** tab **Layout Export.**
 
-<img src="./images/image108.png" style="width:4.35075in;height:1.06223in" />
+    <img src="./images/image109.png" />
 
-1.  In the *Export* dialog box that appears on the right, make sure it is saving it the correct spot. Examine the path and make sure it is saving into the project folder. Also, double check the name of the file and make sure it’s appropriate. Since we bothered to change the name of the layout, it is assuming that layout name – which works well. If you did not give it a good name, set it here! You’ll hate yourself if at the end of the semester, all your maps are called “layout”.
+2.  In the *Export* dialog box that appears on the right, make sure it is saving it the correct spot. Examine the path and make sure it is saving into the project folder. Also, double check the name of the file and make sure it’s appropriate. Since we bothered to change the name of the layout, it is assuming that layout name – which works well. If you did not give it a good name, set it here! You’ll hate yourself if at the end of the semester, all your maps are called “layout".
 
-    <img src="./images/image109.png" style="" alt="A screenshot of a computer Description automatically generated" />
+3.  For *Save as Type*, choose a format. `png`, `jpg`, and `pdf` are all suitable formats. Go ahead and select `png`, and if you're keen to learn the differences between those formats, [Adobe has a handy guide](https://www.adobe.com/creativecloud/file-types/image/comparison/jpeg-vs-png.html).
 
-2.  For *Save as Type*, choose a format - we recommend . **png**, **.gif, .jpeg, or .pdf** because they come out well and are readable across a variety of platforms. I am going to use a .png.
+4.  Before you export, adjust resolution under the **Resolution (DPI)** area. Digital images meant to be seen on a computer screen do not need high resolution. Make sure the resolution is set to `300`. That's the standard resolution for printed materials, and is more than enough for a computer screen.
 
-3.  **Before you export,** adjust resolution under the **Resolution (DPI)** area. Digital images meant to be seen on a computer screen do not need high resolution. Change the resolution to 300 if necessary, which is plenty.
+5.  Press **Export** when you are ready to go. The process will take a minute.
 
-4.  Press **Export** when you are ready to go - the process will take a minute.
+6.  Check your results. You can do so by clicking on the view exported file text under the export completed notification. You can also navigate to the windows file explorer folder outside of ArcGIS and open the graphic - if you’re not pleased, experiment with different resolutions and compare file sizes.
 
-5.  Check your results. You can do so by clicking on the view exported file text under the export completed notification. You can also navigate to the windows file explorer folder outside of ArcGIS and open the graphic - if you’re not pleased, experiment with different resolutions and compare file sizes.
-
-> <img src="./images/image110.png" style="" alt="A red arrow pointing to a file Description automatically generated" />
-
-1.  Once you have created one map in a layout you like, save the project file. That way you can return to it later if you need to change something.
+7.  Once you have created one map in a layout you like, save the project file. That way you can return to it later if you need to change something.
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->
