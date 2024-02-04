@@ -540,7 +540,7 @@ Here are three other data points or sources that, while harder to format as a sp
 
 > ![q]
 >
-> 6. Look through the quantitative data in the **attribute table** of the `Embarkment Ports` layer, including its fields and data values. In a few sentences (no more than 5), compare and contrast the qualitative data described above to the quantitative data in the `Embarkment Ports` table. How are they similar and different? If you were working on a longer project about these topics, how might you combine the qualitative and quantitative data to tell a cohesive story – in other words, *what's a spatial question you could answer by combining these data, qualitative and quantitative*? Feel free to give a concrete example, if you can think of one.
+> 6. Look through the quantitative data in the **attribute table** of the `Embarkment Ports` layer, including its fields and data values. In a few sentences (no more than 5), compare and contrast the qualitative data described above to the quantitative data in the `Embarkment Ports` table. How are they similar and different? How might you take some of that unstructured qualitative data and turn it into structured spatial data? From a narrative perspective, how could you bring together the qualitative and quantitative data to tell a cohesive story – in other words, *what's a spatial question you could answer by combining these datasets*? Feel free to give a concrete example, if you can think of one.
 
 ## Saving selected data as new layers
 
