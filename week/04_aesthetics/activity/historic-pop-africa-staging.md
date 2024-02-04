@@ -12,9 +12,12 @@
 - [Making the data work for you](#making-the-data-work-for-you)
   - [Dissolving by field](#dissolving-by-field)
   - [Deleting spurious geometries with field calculator](#deleting-spurious-geometries-with-field-calculator)
+  - [Merging features](#merging-features)
 - [Joining your data](#joining-your-data)
   - [The table join](#the-table-join)
+  - [Determining a suitable common field](#determining-a-suitable-common-field)
   - [Building a common field](#building-a-common-field)
+  - [Complete the join](#complete-the-join)
 - [Classification](#classification)
 - [Activity deliverables](#activity-deliverables)
 
@@ -222,7 +225,45 @@ Let's try...
 >
 > 2. Scroll through the attribute table and examine the sorted data, double-clicking on record numbers to zoom into different features. Is there a break point after which it seems like you could delete most of the smaller features without erasing any actual countries? Where is that break point, and why did you choose it? Specify it with the record number and FID (e.g., "Record #90, FID `3500`.")
 
-For the purposes of this activity, we'll proceed with the dissolved layer. Go ahead and remove the `African Countries` layer from your project and rename `AfricanCountries_Dissolved` to `African Countries`.
+For the purposes of this activity, we'll proceed with the dissolved layer. Go ahead and remove the `African Countries` layer from your project and rename `AfricanCountries_Dissolved` to `African Countries`...
+
+## Merging features
+
+... but one last thing before you proceed.
+
+While most of the tabular data we'll be working with in this activity maps directly to modern geographical boundaries in Africa, there is one exception: **Sudan and South Sudan**. We'll need to merge these two features together in order to properly join the data later on.
+
+To merge these two features:
+
+1. Select them both from the map (hold down the `shift` key while clicking with the **selection** tool):
+
+    ![select](images/image027.png)
+
+2. Click the **Edit** tab and then click the **Modify** button.
+
+    ![modify](images/image028.png)
+
+3. The **Modify** pane should open up on the right-hand side of your screen. Search for "merge" in the toolbar, and a "Merge" function should pop up in the **Construct** category. Click it.
+
+    ![modify](images/image029.png)
+
+4. **With your two features selected,** set the parameters so that:
+   1. Layer = `African Countries`
+   2. Features to merge = `SOUTH SUDAN` and `SUDAN`
+   3. Under *Features to Merge*, Click on `SUDAN`
+   4. Click **Merge**
+
+      ![merge](images/image030.png)
+
+5. Once you've **merged**, you should see something like this:
+
+    ![merged](images/image031.png)
+
+    Notice how there's still a little section of Central Sudan that has been left separate? Using the skill you just learned, merge that feature into the country boundary for Sudan. 
+    
+    > ![imp]
+    > 
+    > **Be sure to preserve the features for `SUDAN`, *not* `In dispute SOUTH SUDAN/SUDAN`**.
 
 # Joining your data
 
@@ -234,19 +275,21 @@ The table join is a crucial GIS workflow. Esri [describes it as such](https://pr
 > 
 > You can make these associations in several ways, including by joining or relating tables temporarily in your map or by creating relationship classes in your geodatabase that maintain more permanent associations. Joins can also be based on spatial location.
 
-|                                                                                                                                          ![imp]                                                                                                                                           |
-| :- |
-| Joins only work if the common identifier is **exactly the same in both tables**: there can be **absolutely no differences** between the common field in either table, or else the data for that record won't be joined. For example, `Senegal` would not join to `SENEGAL` because the latter is all caps. For this reason, it's typically ideal to use a numerical key rather than a string (e.g., text-based) key.|
-
 | ![joins](images/image016.png) |
 | :---------------------------: |
 | *A drawing showing how attributes (the numbers) and features (the shapes) are joined together. The dotted lines represent the "common field" that links the two data (by [Tess McCann](https://cartinal.leventhalmap.org/guides/making-sense-maps-data/session-2/part-4.html#how-do-features-and-attributes-get-together), 2021)*.|
 
 This is precisely what we want to do with our data: we want to join the "standalone table" of population data to the `African Countries` layer.
 
-So, the major question is, do we have such a common field in our two tables?
+| ![imp] |
+| :- |
+| Joins only work if the common identifier is ***exactly the same in both tables***: there can be ***absolutely no differences*** between the common field's *value* in either table, or else the data for that record won't be joined. For example, `Senegal` would not join to `SENEGAL` because the latter is all caps. For this reason, it's typically ideal to use a numerical key rather than a string (e.g., text-based) key.|
 
-Well, we have information for country name in both tables, but is it actually *joinable* as as common ID?
+Moving forward, the major question is, do we have a common field in our two tables?
+
+## Determining a suitable common field
+
+Because we explored the attribute tables earlier, we know there is information for country name in both tables. Let's find out how suitable those fields would be as a common field.
 
 1. Open both attribute tables, one for the `African Countries` layer and one for your standalone table `africa_pop_est_1850-1950_cleaned`
 2. Click and drag one of those tables into the side-by-side view (an option for "pinning" the table in various locations should open up once you're begun to drag it), as shown in the gif below:
@@ -302,7 +345,44 @@ Let's get started...
 
     ![paste](images/image023.gif)
 
-8. Now that you have all your values capitalized, it's time to paste them where they belong. Copy the new column (cells `Q2:Q50` for me) and then select the pasting destination: the `gisname` field, column `C`, cells `2:50`. Again, the GIF below demonstrates:
+8. Now that you have all your values capitalized, it's time to paste them where they belong. Copy the new column (cells `Q2:Q50` for me) and select the pasting destination: the `gisname` field, column `C`, cells `2:50`.
+
+    **Instead of pasting normally, right-click in the highlighted cells (`C2:C50`) and select "Paste Special" ➡️ "Paste Values"**. If you don't choose this option, the formula – e.g., `=UPPER(B2)` – will be pasted instead of the values.
+
+    Again, the GIF below demonstrates:
+
+    ![pastespecial](images/image024.gif)
+
+9. Okay, now here's the really annoying part: go through every value in the `gisname` column and compare it to its corresponding value in the `NAME` column to ensure that `gisname` is *exactly the same* as `NAME`. If the two values differ, update `gisname` to match the value in `NAME`.
+
+    To make this even a little easier, you could cut the `NAME` column and insert it to the left of the `gisname` column like so:
+
+    ![cut](images/image025.gif)
+
+    You can also delete the islands and disputed territories – not because they aren't important, but because they won't be visible at the scale we're mapping this data:
+
+    ![delete](images/image026.gif)
+
+    Lastly, a couple of important notes on nomenclature for data from the spreadsheet:
+    * "Dahomey" refers to modern-day Benin
+    * "Tanganyika" refers to modern-day Tanzania
+    * "Spanish Sahara" refers to modern-day Western Sahara
+    * "Upper Volta" refers to modern-day Burkina Faso
+    * "Ivory Coast" refers to Cote D'Ivoire
+    * Pay attention to Guinea, Guinea-Bissau, and Equatorial Guinea – three different countries
+    * Bear in mind that some islands that are present in the `African Countries` data (like Cape Verde) aren't present in the `africa_pop_est_1850-1950_cleaned` table
+
+    > ![imp] 
+    > 
+    > **Do not change any of the `NAME` column values – they are simply reference cells for the `African Countries` layer. Only change values in the `gisname` column.**
+
+10. Once you're done, you can delete the `NAME` column from your spreadsheet. The final product should resemble:
+
+    ![final](images/image032.png)
+
+## Complete the join
+
+To complete the join, head back to ArcGIS 
 
 # Classification
 
