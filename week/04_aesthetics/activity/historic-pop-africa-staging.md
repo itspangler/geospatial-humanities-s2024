@@ -1,6 +1,10 @@
 # Activity 02: Historic population in Africa, 1850-1950 <!-- omit in toc -->
 *Understanding quantitative cartography and interpolated sources with historic population data*
 
+| ![africa](https://tile.loc.gov/image-services/iiif/service:gmd:gmd8:g8200:g8200:ct001451/full/1200,/0/default.jpg) |
+| :----------------------------------------------------------------------------------------------------------------: |
+| *Africa ([1600?]), from [Library of Congress Geography and Map Division](https://www.loc.gov/resource/g8200.ct001451/?r=-0.394,-0.031,1.779,0.88,0)* |
+
 # Table of contents <!-- omit in toc -->
 
 - [Introduction and context](#introduction-and-context)
@@ -16,7 +20,7 @@
 - [Joining your data](#joining-your-data)
   - [The table join](#the-table-join)
   - [Determining a suitable common field](#determining-a-suitable-common-field)
-  - [Building a common field](#building-a-common-field)
+  - [Building the common field](#building-the-common-field)
   - [Complete the join](#complete-the-join)
 - [Classification](#classification)
 - [Activity deliverables](#activity-deliverables)
@@ -114,6 +118,7 @@ Then, add the tabular data (spreadsheet) using the same method. Once you're done
 ![standalone](images/image004.png)
 
 Open the `africa_pop_est_1850-1950_cleaned` file by **right-click** ➡️ "Open" (or `ctrl`+`T`). Some general observations:
+* there are 49 records – just a few less than the total number of African countries today (54) – so we can expect the final products to have a few regions of no data
 * for now, `gisname` field is supposed to be empty
 * `ST_region` means "Slave trade region"
 * `pop_` columns show decennial population estimates, and they don't seem to follow changes in historical geographies; rather, they're all mapped to modern territorial boundaries
@@ -303,11 +308,13 @@ Because we explored the attribute tables earlier, we know there is information f
 >
 > 3. Why won't this work as a common field for our table join?
 
-## Building a common field
+## Building the common field
 
-It looks like we're going to have to make a common ID field on our own. Because we're working with historical data, this will require some extra considerations, but our goal is straightforward: We want to populate the `gisname` field in the `africa_pop_est_1850-1950_cleaned` tablae with values that conform exactly to the `NAME` field of the `African Countries` layer. To accomplish this, we will:
+It looks like we're going to have to make a common field on our own. Although working with data across a historical time range does make this a little more complicated than normal our goal remains pretty straightforward: **we want to populate the `gisname` field in the `africa_pop_est_1850-1950_cleaned` tablae with values that conform exactly to the `NAME` field of the `African Countries` layer**. 
+
+To accomplish this, we will:
 1. Use Microsoft Excel to copy values from the `territory` field into the `gisname` field
-2. Read through the new `gisname` values and correct any spelling or nomenclature discrepancies
+2. Read through the new `gisname` values and conform them to the `NAME` field, correct any spelling or nomenclature discrepancies
 
 Let's get started...
 
@@ -320,7 +327,7 @@ Let's get started...
 
     ![excel](images/image019.png)
 
-    What we're going to do now is treat our Excel spreadsheet like a working document. We'll move a bunch of things around, with the goal of making that currently empty `gisname` field conform *exactly* to the `NAME` fields to which we want this data joined. By the time we're done, it will be fully joinable and **GIS friendly**.
+    Temporarily, we're going to start treating our Excel spreadsheet like more of a scratch pad than a data spreadsheet. We'll move a bunch of things around, with the goal of making the currently empty `gisname` field conform *exactly* to the `NAME` field to which we want this data joined. By the time we're done, it will be fully joinable and **GIS friendly**.
 4. Now, right-click on the header above the `NAME` field, and select "Copy". That field was in the `R` column for me, but it might be in a different column for you.
 
     ![copy](images/image020.png)
@@ -370,7 +377,8 @@ Let's get started...
     * "Upper Volta" refers to modern-day Burkina Faso
     * "Ivory Coast" refers to Cote D'Ivoire
     * Pay attention to Guinea, Guinea-Bissau, and Equatorial Guinea – three different countries
-    * Bear in mind that some islands that are present in the `African Countries` data (like Cape Verde) aren't present in the `africa_pop_est_1850-1950_cleaned` table
+    * Pay attention to Gambia, which is named `THE GAMBIA` in the `African Countries` table
+    * Bear in mind that some islands that are present in the `African Countries` data (like Cape Verde) aren't present in the `africa_pop_est_1850-1950_cleaned` table – that's okay
 
     > ![imp] 
     > 
@@ -382,9 +390,34 @@ Let's get started...
 
 ## Complete the join
 
-To complete the join, head back to ArcGIS 
+To complete the join, open ArcGIS Pro and...
+
+1. Remove `africa_pop_est_1850-1950_cleaned` and re-add it from the **catalog**, just to make sure our latest changes are reflected in the file path that ArcGIS Pro is reading
+2. We want to join the standalone table `africa_pop_est_1850-1950_cleaned` to the `African Countries` Right-click on the `African Countries` layer ➡️ "Joins and Relates" ➡️ "Add Join"
+
+    ![join](images/image033.png)
+
+3. When you click "Add Join," a new dialog box will open up. Fill it out like so:
+
+    ![params](images/image034.png)
+
+4. Click **Validate Join**. This prints a dialog that shows how many records will be joined. Towards the bottom of that box, you should be able to find something like this message:
+
+        Checking for join cardinality (1:1 or 1:m joins)...
+        A one - to - one join has matched 49 records.
+        The input table has 68 and the join table has 49 records.
+    
+    Nice – it sounds like all 49 records from the data should join successfully! I'll click **OK** to process the join.
+
+5. If you open the **attribute table** for the `African Countries` layer, you should now see a bunch of new fields from our join table – woohoo and congratulations! **You've just successfully completed a table join, by using a common identifier (country name) to attach tabular attribute data (e.g., decennial population estimates) to spatial feature data (African country boundaries).**
+
+    ![joined](images/image035.png)
+
+    Some of the records have values of `<Null>`, which is okay – it just means there was no joinable data for that record.
 
 # Classification
+
+
 
 # Activity deliverables
 
