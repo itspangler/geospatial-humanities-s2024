@@ -40,8 +40,8 @@
   - [Exporting your Paper Map](#exporting-your-paper-map)
 
 ## What you should submit <!-- omit in toc -->
-Before **6:30pm on Tuesday, 2/13**, submit two things:
-* A document in `pdf` or `docx` format to Canvas, answering all the questions that are tagged with ![q], and which are summarized in the [lab deliverables](#lab-deliverables) section
+Before **6:30pm on Tuesday, 2/13**, submit to Canvas:
+* A document in `pdf` or `docx` format, answering all the questions that are tagged with ![q], and which are summarized in the [lab deliverables](#lab-deliverables) section
 * A map in `png` format, exported at 300 DPI, as directed at the end of the lab
 
 # Introduction and context
@@ -845,6 +845,8 @@ Labels are an extremely important part of map creation, especially with historic
 
 
 # Lab Deliverables
+
+<sub>[⮐ Go back to the beginning](#introduction-and-context)</sup>
 
 Before **6:30pm on Tuesday, 2/13**, submit two things to Canvas:
 
