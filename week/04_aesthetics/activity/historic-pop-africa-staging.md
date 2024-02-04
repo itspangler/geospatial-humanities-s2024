@@ -395,7 +395,7 @@ To complete the join, open ArcGIS Pro and...
 1. Remove `africa_pop_est_1850-1950_cleaned` and re-add it from the **catalog**, just to make sure our latest changes are reflected in the file path that ArcGIS Pro is reading
 2. We want to join the standalone table `africa_pop_est_1850-1950_cleaned` to the `African Countries` Right-click on the `African Countries` layer ➡️ "Joins and Relates" ➡️ "Add Join"
 
-    ![join](images/image033.png)
+    <img src="images/image033.png" width=300>
 
 3. When you click "Add Join," a new dialog box will open up. Fill it out like so:
 
@@ -407,13 +407,21 @@ To complete the join, open ArcGIS Pro and...
         A one - to - one join has matched 49 records.
         The input table has 68 and the join table has 49 records.
     
-    Nice – it sounds like all 49 records from the data should join successfully! I'll click **OK** to process the join.
+    Nice – it sounds like all 49 records from the data should join successfully!
+    
+    That word **cardinality** is describing the nature of the relationship between the input and join tables: is it **one-to-one** (1:1), in which one record in one table is associated with a single record in the other table, or **one-to-many** (1:m), in which one record in one table is associated with multiple records in the other table?
+    
+    You can also have **many-to-many** (m:m) cardinality, which 🥵. We don't need to dive deeply into cardinality today, but it's good to be familiar with the term.
+
+    Anyhoo: let's click **OK** to process the join.
 
 5. If you open the **attribute table** for the `African Countries` layer, you should now see a bunch of new fields from our join table – woohoo and congratulations! **You've just successfully completed a table join, by using a common identifier (country name) to attach tabular attribute data (e.g., decennial population estimates) to spatial feature data (African country boundaries).**
 
     ![joined](images/image035.png)
 
     Some of the records have values of `<Null>`, which is okay – it just means there was no joinable data for that record.
+
+    In the next section, we'll discuss how to classify this data.
 
 # Classification
 
