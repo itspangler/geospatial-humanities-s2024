@@ -395,11 +395,11 @@ To complete the join, open ArcGIS Pro and...
 1. Remove `africa_pop_est_1850-1950_cleaned` and re-add it from the **catalog**, just to make sure our latest changes are reflected in the file path that ArcGIS Pro is reading
 2. We want to join the standalone table `africa_pop_est_1850-1950_cleaned` to the `African Countries` Right-click on the `African Countries` layer ➡️ "Joins and Relates" ➡️ "Add Join"
 
-    <img src="images/image033.png" width=300>
+    <img src="images/image033.png" width=50%>
 
 3. When you click "Add Join," a new dialog box will open up. Fill it out like so:
 
-    ![params](images/image034.png)
+    <img src="images/image034.png" width=50%>
 
 4. Click **Validate Join**. This prints a dialog that shows how many records will be joined. Towards the bottom of that box, you should be able to find something like this message:
 
