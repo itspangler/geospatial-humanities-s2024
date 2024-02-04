@@ -21,7 +21,7 @@
 - [Selection Methods](#selection-methods)
   - [Selecting Manually](#selecting-manually)
   - [Select by Attributes](#select-by-attributes)
-  - [Narrative at the intersection qualitative and quantitative](#narrative-at-the-intersection-qualitative-and-quantitative)
+  - [Narrative at the intersection of qualitative and quantitative data](#narrative-at-the-intersection-of-qualitative-and-quantitative-data)
   - [Saving selected data as new layers](#saving-selected-data-as-new-layers)
   - [Select by Location](#select-by-location)
 - [Symbology](#symbology)
@@ -509,7 +509,7 @@ Another extremely powerful tool in GIS is the ability to select features in the 
 
         2,881,243 enslaved people arrived in Antigua across all available voyage year records.
 
-## Narrative at the intersection qualitative and quantitative
+## Narrative at the intersection of qualitative and quantitative data
 
 We have been looking at numbers – or "abstractions," as McKittrick and Bouie might have us call them – for a while now. Let's take a moment to consider what they are abstracted from.
 
