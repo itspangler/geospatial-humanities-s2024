@@ -330,11 +330,11 @@ Let's get started...
     Temporarily, we're going to start treating our Excel spreadsheet like more of a scratch pad than a data spreadsheet. We'll move a bunch of things around, with the goal of making the currently empty `gisname` field conform *exactly* to the `NAME` field to which we want this data joined. By the time we're done, it will be fully joinable and **GIS friendly**.
 4. Now, right-click on the header above the `NAME` field, and select "Copy". That field was in the `R` column for me, but it might be in a different column for you.
 
-    ![copy](images/image020.png)
+    <img src="images/image020.png" width=300>
 
 5. Once it's copied, right-click on your `territory` field – it should be the `A` column – and click "Insert copied cells." This will paste the copied column *to the left* of the existing data.
 
-    ![pastecopied](images/image021.png)
+    <img src="images/image021.png" width=300>
 
     Now you should have a list of the *destination field* (e.g., the `NAME` field to which we want to join our spreadsheet data) right next to the *input field* (e.g., the `territory` field that we must conform to the `NAME` field before it's actually joinable).
 
@@ -395,11 +395,11 @@ To complete the join, open ArcGIS Pro and...
 1. Remove `africa_pop_est_1850-1950_cleaned` and re-add it from the **catalog**, just to make sure our latest changes are reflected in the file path that ArcGIS Pro is reading
 2. We want to join the standalone table `africa_pop_est_1850-1950_cleaned` to the `African Countries` Right-click on the `African Countries` layer ➡️ "Joins and Relates" ➡️ "Add Join"
 
-    <img src="images/image033.png" width=50%>
+    <img src="images/image033.png" width=400>
 
 3. When you click "Add Join," a new dialog box will open up. Fill it out like so:
 
-    <img src="images/image034.png" width=50%>
+    <img src="images/image034.png" width=400>
 
 4. Click **Validate Join**. This prints a dialog that shows how many records will be joined. Towards the bottom of that box, you should be able to find something like this message:
 
@@ -421,11 +421,11 @@ To complete the join, open ArcGIS Pro and...
 
     Some of the records have values of `<Null>`, which is okay – it just means there was no joinable data for that record.
 
-    In the next section, we'll discuss how to classify this data.
+  In the next section, we'll discuss not just how to classify this data, but how classification operates more generally as a powerful tool for getting your message across.
 
 # Classification
 
-
+In Lab 02, you learned about **[symbology](../../03_data/lab/slave-trade.md#symbology)**: the 
 
 # Activity deliverables
 
