@@ -1,10 +1,6 @@
-<div style="width: auto; margin-left: auto; margin-right: auto">
-
 # Mystery Data
 
 ![Mystery](images/mystery2.png)
-
-</div>
 
 # Premise
 
@@ -20,7 +16,7 @@ Colloquially, this process is known as [data wrangling](https://en.wikipedia.org
 
 When you encounter this kind of data – and it's not a question of *if*, but *when* – what will you do? What strategies will you use to make sense of it, tidy it, and eventually, map it?
 
-# Activity (30 minutes)
+# Activity (15-20 minutes)
 
 Below, you'll find three mystery datasets. They're known only as A, B, and C.
 
@@ -40,7 +36,7 @@ Using the "GIS friendly" principles that we discussed during lecture, , break in
 
 </div>
 
-1. **Open all the files and determine whether they are GIS friendly.** If not, make a list of problems that you notice. Then fix each one.
+1. **Open all the files and determine whether they are "GIS friendly".** If not, make a list of problems that you notice. Then fix each one.
 
    I recommend using Microsoft Excel. I promise that the data can be wrangled using just two functions: `Find and replace` and `Text to columns`. Work together (and with the internet) to figure out how to locate and use these functions in Excel. I will be available to help.
 
@@ -56,9 +52,9 @@ Once you feel you have satisfactory answers to these questions for each dataset 
 <!-------------------------------------[ Links ]
 ---------------------------------------->
 
-[a]: https://github.com/itspangler/geospatial-humanities-s2024/raw/main/week/02_data/in-class/data/a.xls
-[b]: https://github.com/itspangler/geospatial-humanities-s2024/raw/main/week/02_data/in-class/data/b.csv
-[c]: https://github.com/itspangler/geospatial-humanities-s2024/raw/main/week/02_data/in-class/data/d.json.zip
+[a]: https://github.com/itspangler/geospatial-humanities-s2024/raw/main/week/03_data/activity/data/a.xls
+[b]: https://github.com/itspangler/geospatial-humanities-s2024/raw/main/week/03_data/activity/data/b.csv
+[c]: https://github.com/itspangler/geospatial-humanities-s2024/raw/main/week/03_data/activity/data/d.json.zip
 
 <!---------------------------------[ Buttons ]--------------------------------->
 

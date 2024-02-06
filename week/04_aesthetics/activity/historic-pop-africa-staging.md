@@ -425,14 +425,29 @@ To complete the join, open ArcGIS Pro and...
 
 # Classification
 
-In Lab 02, you learned about **[symbology](../../03_data/lab/slave-trade.md#symbology)**: the 
+In Lab 02, you learned about **[symbology](../../03_data/lab/slave-trade.md#symbology)**: the set of ArcGIS Pro tools that let you style your data with different colors, shapes, and sizes.
+
+Take a moment to display population for the year 1850 as **graduated symbols** (refer to the [graduated symbols section of Lab 2](../../03_data/lab/slave-trade.md#graduated-symbol-symbology) or the [ArcGIS Pro documentation](https://pro.arcgis.com/en/pro-app/3.1/help/mapping/layer-properties/graduated-symbols.htm) if you don't remember how).
+
+You should end up with something like this:
+
+![]
+
+Now let's compare this map side-by-side with a different kind of representation: the **choropleth map**.
+
+Even if you don't know what a choropleth map is, you've seen one before. From Greek, "chora" roughly means town and "pleth" roughly means number. That's where the 
+
+> ![q]
+>
+> 4. Which symbology type feels better more intuitive for representing the data? Why or why not?
+
 
 # Activity deliverables
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->
 
-[l]: #
+
 
 <!---------------------------------[ Buttons ]--------------------------------->
 
