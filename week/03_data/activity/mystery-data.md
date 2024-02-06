@@ -22,26 +22,25 @@ Below, you'll find three mystery datasets. They're known only as A, B, and C.
 
 Some of the datasets are clean, but in familiar formats; some are in familiar formats, but have been seriously gunked up. Some of the data might appear in a format you don't recognize at all.
 
-To begin, download each dataset with `Right-click` ➡️ `Save as...`, and open it in the appropriate application. **If you just click the link, the data will not download**.
-
 Using the "GIS friendly" principles that we discussed during lecture, , break into groups of 2-4 and answer each of the following questions. You don't need to submit this, but someone will probably need to write stuff down in a Word or Google Doc.
 
-| **The Data**  |
-| :-----------: |
-| [![dataA]][a] |
-| [![dataB]][b] |
-| [![dataC]][c] |
+1. Download the data:
 
-1. **Open all the files and determine whether they are "GIS friendly"** (here are the data slides, for reference). If not, make a list of problems that you notice. Then fix each one.
+   | :-----------: |
+   | [![dataA]][a] |
+   | [![dataB]][b] |
+   | [![dataC]][c] |
+
+2. **Open all the files and determine whether they are "GIS friendly"** (here are the data slides, for reference). If not, make a list of problems that you notice, then fix each one.
 
    I recommend using Microsoft Excel. I promise that the data can be wrangled using just two functions: `Find and replace` and `Text to columns`. Work together (and with the internet) to figure out how to locate and use these functions in Excel. I will be available to help.
 
    > **HINT:** if you aren't sure how to view one of the files, try opening the file in [Visual Studio Code](https://code.visualstudio.com/). It's a [text editor](https://en.wikipedia.org/wiki/Text_editor) that should be installed on all the Data Lab computers.
 
-2. **What is the data trying to tell you?** Examine the field names and the information they depict. Try to determine what they mean.
-3. **What kinds of fields are common across all the datasets?** Select some examples from each dataset. Why are these fields important? Beare in mind that the "common" fields might not have exactly the same field name in each dataset.
-4. **Does the data contain information about where it came from?** Try to find information about the data's creation: things like author, date, and so on. As discussed in class, this "data about data" is simply called *metadata*. What metadata columns, if any, can you identify?
-5. **Does the data contain geographic information?** If so, where is it, and which fields contain the information? Do you think it can be mapped? Why or why not?
+3. **What is the data trying to tell you?** Examine the field names and the information they depict. Try to determine what they mean.
+4. **What kinds of fields are common across all the datasets?** Select some examples from each dataset. Why are these fields important? Beare in mind that the "common" fields might not have exactly the same field name in each dataset.
+5. **Does the data contain information about where it came from?** Try to find information about the data's creation: things like author, date, and so on. As discussed in class, this "data about data" is simply called *metadata*. What metadata columns, if any, can you identify?
+6. **Does the data contain geographic information?** If so, where is it, and which fields contain the information? Do you think it can be mapped? Why or why not?
 
 Once you feel you have satisfactory answers to these questions for each dataset – or you have at least made an honest attempt at discovering them – try to figure out where each dataset originated. Feel free to try loading the data into ArcGIS Pro!
 
