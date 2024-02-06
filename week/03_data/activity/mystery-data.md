@@ -26,17 +26,13 @@ To begin, download each dataset with `Right-click` ➡️ `Save as...`, and open
 
 Using the "GIS friendly" principles that we discussed during lecture, , break into groups of 2-4 and answer each of the following questions. You don't need to submit this, but someone will probably need to write stuff down in a Word or Google Doc.
 
-<div align=center>
-
 | **The Data**  |
 | :-----------: |
 | [![dataA]][a] |
 | [![dataB]][b] |
 | [![dataC]][c] |
 
-</div>
-
-1. **Open all the files and determine whether they are "GIS friendly".** If not, make a list of problems that you notice. Then fix each one.
+1. **Open all the files and determine whether they are "GIS friendly"** (here are the data slides, for reference). If not, make a list of problems that you notice. Then fix each one.
 
    I recommend using Microsoft Excel. I promise that the data can be wrangled using just two functions: `Find and replace` and `Text to columns`. Work together (and with the internet) to figure out how to locate and use these functions in Excel. I will be available to help.
 
