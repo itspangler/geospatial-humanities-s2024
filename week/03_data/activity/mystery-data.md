@@ -50,7 +50,7 @@ Once you feel you have satisfactory answers to these questions for each dataset 
 
 [a]: https://github.com/itspangler/geospatial-humanities-s2024/raw/main/week/03_data/activity/data/a.xls
 [b]: https://github.com/itspangler/geospatial-humanities-s2024/raw/main/week/03_data/activity/data/b.csv
-[c]: https://github.com/itspangler/geospatial-humanities-s2024/raw/main/week/03_data/activity/data/d.json.zip
+[c]: https://github.com/itspangler/geospatial-humanities-s2024/raw/main/week/03_data/activity/data/c.json.zip
 
 <!---------------------------------[ Buttons ]--------------------------------->
 
