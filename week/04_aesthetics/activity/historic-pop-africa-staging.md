@@ -118,7 +118,7 @@ Then, add the tabular data (spreadsheet) using the same method. Once you're done
 ![standalone](images/image004.png)
 
 Open the `africa_pop_est_1850-1950_cleaned` file by **right-click** ➡️ "Open" (or `ctrl`+`T`). Some general observations:
-* there are 49 records – just a few less than the total number of African countries today (54) – so we can expect the final products to have a few regions of no data
+* there are 49 records – just a few less than the total number of African countries today (54) – so we can expect the final map to have a few regions of no data
 * for now, `gisname` field is supposed to be empty
 * `ST_region` means "Slave trade region"
 * `pop_` columns show decennial population estimates, and they don't seem to follow changes in historical geographies; rather, they're all mapped to modern territorial boundaries
@@ -141,7 +141,7 @@ Hachi machi! Why, pray tell, are there nearly 5,000 records in this shapefile of
 
 Go ahead and zoom into one of those features by **double-clicking** on the table row number on the attribute table's left-hand side...
 
-![zoom](images/image006.png)
+<img src="images/image006.png" width=200>
 
 ... and you'll probably find yourself looking at a tiny polygon off the coast, like this:
 
