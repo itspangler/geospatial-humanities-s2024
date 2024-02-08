@@ -23,6 +23,8 @@
   - [Building the common field](#building-the-common-field)
   - [Complete the join](#complete-the-join)
 - [Classification](#classification)
+  - [Side-by-side comparisons](#side-by-side-comparisons)
+  - [Data standardization](#data-standardization)
 - [Activity deliverables](#activity-deliverables)
 
 # What you should submit <!-- omit in toc -->
@@ -141,13 +143,13 @@ Hachi machi! Why, pray tell, are there nearly 5,000 records in this shapefile of
 
 Go ahead and zoom into one of those features by **double-clicking** on the table row number on the attribute table's left-hand side...
 
-<img src="images/image006.png" width=200>
+<img src="images/image006.png" width=300>
 
 ... and you'll probably find yourself looking at a tiny polygon off the coast, like this:
 
 ![coast](images/image007.png)
 
-In addition to being pretty [heavily generalized](https://www.axismaps.com/guide/scale-and-generalization), as the jagged edges along the coast suggest, this shapefile appears to have encoded *every little island off the coast as a separate record*.
+In addition to being pretty [heavily generalized](https://www.axismaps.com/guide/scale-and-generalization), as the jagged edges along the coast indicate, this shapefile appears to have encoded *every little island off the coast as a separate record*.
 
 There's nothing wrong with that per se, but for our purposes today, that's *way* too detailed: ideally, we just want a shapefile that contains one record for every country in the African continent.
 
@@ -167,11 +169,11 @@ Let's make that abstract example more concrete by applying it to the `African Co
 
 1. Open the **Dissolve** tool by clicking into the **Analysis** pane ➡️ click **Tools**
 
-    ![tools](images/image009.png)
+    <img src="images/image009.png" width=300>
 
 2. Search for the **Dissolve** tool by typing "dissolve" into the search bar of the **geoprocessing pane** that opens. Click **Dissolve**.
 
-    ![dissolve](./images/image010.png)
+    <img src="images/image010.png" width=300>
 
 3. Set the tool's parameters like so...
    
@@ -184,7 +186,7 @@ Let's make that abstract example more concrete by applying it to the `African Co
 
 4. Now you should have a new layer in your **contents** pane for `AfricanCountries_Dissolved`. Open its attribute table – you should now see only 70 records.
 
-    ![seventy](images/image011.png)
+    <img src="images/image011.png" width=300>
 
 5. Select one of the records and zoom into the coast until you find a few islands. Notice how *all* the geometries that shared a value in the `NAME` field have been consolidated even if they're not touching one another. This is called a **multipart feature** – or a single feature that contains noncontiguous elements and is represented in the attribute table as one record – and it's a common result of running the **Dissolve** tool: 
 
@@ -192,15 +194,15 @@ Let's make that abstract example more concrete by applying it to the `African Co
     | :-----------------------------: |
     | *The coast of Algeria as a multipart feature*  |
 
-> ![q]
->
-> 1. There are 54 countries in Africa and our dissolved layer has 70 – still more records than we would expect. Use the attribute table to figure out why that is, and write down an example of a feature that is inflating the feature count. Why does it seem like this feature exists? Do you think you need to keep it for this exercise?
+| ![q] |
+| :--- |
+| 1. There are 54 countries in Africa and our dissolved layer has 70 – still more records than we would expect. Use the attribute table to figure out why that is, and write down an example of a feature that is inflating the feature count. Why does it seem like this feature exists? Do you think you need to keep it for this exercise? |
 
 ## Deleting spurious geometries with field calculator
 
 The **Dissolve** tool is a handy way to automate consolidating features, but sometimes it's important to get a little bit more precise. For example, let's say we didn't want to include all those little islands along the coast *at all* – can we just delete them?
 
-Obviously, you wouldn't want to pan through the map, selecting and deleting all nearly 5,000 extra geometries by hand. To delete these features quickly, you'd want to:
+Obviously, you wouldn't want to pan through the map, selecting and deleting all nearly 5,000 extra geometries by hand. Instead, to delete these features quickly, you'd want to:
 1. compute their area using the **field calculator**
 2. sort the attribute table by that new field
 3. manually remove features you don't want
@@ -226,9 +228,13 @@ Let's try...
    4. Coordinate System = `GCS_WGS_1984` (you can select this by clicking on the graticule ![grat](images/image015.png) icon next to the box)
 5. Click **OK** and you should see the `area` field populate with a bunch of values. **Go ahead and sort those values in descending (highest to lowest) order** with **right-click** ➡️ "Sort Descending".
 
-> ![q]
+| ![q] |
+| :--- |
+| 2. Scroll through the attribute table and examine the sorted data, double-clicking on record numbers to zoom into different features. Is there a break point after which it seems like you could delete most of the smaller features without erasing any actual countries? Where is that break point, and why did you choose it? Specify it with the record number and FID (e.g., "Record #90, FID `3500`.") |
+
+> ![imp]
 >
-> 2. Scroll through the attribute table and examine the sorted data, double-clicking on record numbers to zoom into different features. Is there a break point after which it seems like you could delete most of the smaller features without erasing any actual countries? Where is that break point, and why did you choose it? Specify it with the record number and FID (e.g., "Record #90, FID `3500`.")
+> Any time you are manually deleting data, you run the risk of deleting *the wrong thing*. When you do, there's no going back. For example, you could delete small but very important features accidentally – such as islands in Cabo Verde – if you weren't being careful. **Approach any manual data editing with a healthy dose of caution, and always use the ["Discard" ![discard](https://pro.arcgis.com/en/pro-app/3.1/help/editing/GUID-457DED14-0748-494F-9CA7-8F50175E707C-web.png) button in the *Editing* tab](https://pro.arcgis.com/en/pro-app/3.1/help/editing/save-or-discard-edits.htm) if you need to roll back edits.**
 
 For the purposes of this activity, we'll proceed with the dissolved layer. Go ahead and remove the `African Countries` layer from your project and rename `AfricanCountries_Dissolved` to `African Countries`...
 
@@ -266,9 +272,10 @@ To merge these two features:
 
     Notice how there's still a little section of Central Sudan that has been left separate? Using the skill you just learned, merge that feature into the country boundary for Sudan. 
     
-    > ![imp]
-    > 
-    > **Be sure to preserve the features for `SUDAN`, *not* `In dispute SOUTH SUDAN/SUDAN`**.
+    | ![imp] |
+    | :----- |
+    | **Be sure to preserve the features for `SUDAN`, *not* `In dispute SOUTH SUDAN/SUDAN`**. |
+    
 
 # Joining your data
 
@@ -380,9 +387,9 @@ Let's get started...
     * Pay attention to Gambia, which is named `THE GAMBIA` in the `African Countries` table
     * Bear in mind that some islands that are present in the `African Countries` data (like Cape Verde) aren't present in the `africa_pop_est_1850-1950_cleaned` table – that's okay
 
-    > ![imp] 
-    > 
-    > **Do not change any of the `NAME` column values – they are simply reference cells for the `African Countries` layer. Only change values in the `gisname` column.**
+    | ![imp] |
+    | :----- |
+    | **Do not change any of the `NAME` column values – they are simply reference cells for the `African Countries` layer. Only change values in the `gisname` column.** |
 
 10. Once you're done, you can delete the `NAME` column from your spreadsheet. The final product should resemble:
 
@@ -425,21 +432,64 @@ To complete the join, open ArcGIS Pro and...
 
 # Classification
 
-In Lab 02, you learned about **[symbology](../../03_data/lab/slave-trade.md#symbology)**: the set of ArcGIS Pro tools that let you style your data with different colors, shapes, and sizes.
+In Lab 02, you learned about [symbology](../../03_data/lab/slave-trade.md#symbology): the set of ArcGIS Pro tools that let you style your data with different colors, shapes, and sizes.
 
-Take a moment to display population for the year 1850 as **graduated symbols** (refer to the [graduated symbols section of Lab 2](../../03_data/lab/slave-trade.md#graduated-symbol-symbology) or the [ArcGIS Pro documentation](https://pro.arcgis.com/en/pro-app/3.1/help/mapping/layer-properties/graduated-symbols.htm) if you don't remember how).
+Any time you symbolize data, you are implicitly breaking it up into different representational *classes* (also sometimes called *bins* or *buckets*). The techniques for dividing those classes from one another are called **data classification**.
+
+## Side-by-side comparisons
+
+Start by **displaying population for the year 1850** as **graduated symbols** (refer to the [graduated symbols section of Lab 2](../../03_data/lab/slave-trade.md#graduated-symbol-symbology) or the [ArcGIS Pro documentation](https://pro.arcgis.com/en/pro-app/3.1/help/mapping/layer-properties/graduated-symbols.htm) if you don't remember how).
 
 You should end up with something like this:
 
-![]
+![pop](images/image037.png)
 
-Now let's compare this map side-by-side with a different kind of representation: the **choropleth map**.
+Try toggling the minimum and maximum symbol sizes until it feels right to you.
 
-Even if you don't know what a choropleth map is, you've seen one before. From Greek, "chora" roughly means town and "pleth" roughly means number. That's where the 
+Now let's compare this map side-by-side with a representation of the same data in **choropleth** form.
+
+Even if you don't know/remember what a choropleth map is, you've seen one before. Its name derives from Greek: "bounded space (*χώρη* or *chôra*) over which a mass or throng (*plethos*) is extended" (Crampton 2009:27). Put plainly, "choropleth" means "quantity by area" – and that's exactly what your choropleth map will show.
+
+1. On the ribbon, click the **Insert** tab. In the **Project** group, click the **New Map** drop-down arrow:
+
+   <img src="images/image038.png" width=300>
+
+
+2. This will open another map view – probably named `Map2` – in a new tab.
+3. Click on the `Map2` tab and drag it so that it's set in a side-by-side view, like so:
+   ![side](images/image039.gif)
+4. Drag your `African Countries` data layer from the **contents pane** of `Map` into the **data frame** of `Map2`. This will **copy** the data layer so that it appears in both map views.
+5. Finally, **link** these two views by following the instructions on this page, under ["Steps to link multiple views."](https://pro.arcgis.com/en/pro-app/3.1/help/mapping/navigation/link-multiple-views.htm) Once you're done, you should see both maps, side-by-side and connected:
+  ![side](images/image040.gif)
+6. In the `Map2` pane, update the symbology so that you are using a "Graduated color" style instead of a "Graduated symbols" style. **Make sure that the "Field" parameter is set to `pop_1850`**. Pick an [appropriate color scheme](https://www.axismaps.com/guide/using-colors-on-maps) (e.g., a *sequential* color scheme), and you should see something like this:
+  ![both](images/image041.png)
 
 | ![q] |
 | :-- |
-|4. Which symbology type feels better more intuitive for representing the data? Why or why not?      |
+|4. Take a moment to compare the two representational techniques: graduated symbols vs. graduated colors. Which symbology type feels better more intuitive for representing this data? Why? |
+
+## Data standardization
+
+Right now, we're looking at unstandardized data; that is, data that *hasn't been adjusted to transform raw counts into ratios*. **Standardizing data is a critical part of making any map.** (You'll also hear this called "normalization" – they are used interchangeably.)
+
+Standardization requires a *numerator* (the attribute value for feature X) and a *denominator* (the attribute value by which you want to standardize feature X). The numerator should always be the property you want to display on your map, but there are a few choices when it comes to denominator:
+1. By area
+2. By total
+3. By another attribute
+4. By time
+
+|         Type         | Expression |
+| :------------------: | ---------- |
+|       By area        | $$  $$      |
+|       By total       |            |
+| By another attribute |            |
+|       By time        |            |
+
+It can be easy 
+
+ArcGIS Pro has a handy parameter in the **symbology** pane that allows you to set a value  for normalization:
+
+<img src="images/image042.png" width=350>
 
 
 
