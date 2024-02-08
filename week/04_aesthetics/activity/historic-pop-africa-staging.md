@@ -480,7 +480,7 @@ Standardization requires a *numerator* (the attribute value for feature X) and a
 
 |         Type         | Expression |
 | :------------------: | ---------- |
-|       By area        |   ``         |
+|       By area        |   ${ \text{ Attribute value for feature x} \over  \text{ Sum of attributes in all features} }=\text{\% total in feature x}$         |
 |       By total       |            |
 | By another attribute |            |
 |       By time        |            |
