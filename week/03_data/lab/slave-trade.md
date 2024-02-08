@@ -107,9 +107,9 @@ This activity will specifically focus on data from the Trans-Atlantic Slave Trad
 
 Now that you've actually examined the data, a moment to reflect on this data using the McKittrick quote from earlier, as well as the [Jamelle Bouie piece you read before class](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html).
 
-> ![q]
->
-> 1. In a few sentences (no more than 5), describe what you think McKittrick is saying in that excerpt you read above. How does her point relate to the argument that Bouie made in his article about the SlaveVoyages database? What impact should their arguments have on the way you approach making a map or doing research with this data?
+|![q]
+|:-
+|1. In a few sentences (no more than 5), describe what you think McKittrick is saying in that excerpt you read above. How does her point relate to the argument that Bouie made in his article about the SlaveVoyages database? What impact should their arguments have on the way you approach making a map or doing research with this data?
 
 # Start an ArcGIS Pro Project File and Folder
 
@@ -237,9 +237,9 @@ This tutorial will go through the process of saving and storing data in a GIS fo
 
     In this `AfricanPortsAntiguaEmbarkments_1676_1805` layer, the points (features) represent the location of the **ports that had voyages embark specifically to Antigua during 1676 – 1805**.
 
-> ![q]
-> 
-> \2. What are three attributes, along with their values, associated with the feature you clicked?
+   |![q]
+   |:- 
+   |2. What are three attributes, along with their values, associated with the feature you clicked?
 
 6.  Zoom into a part of Africa using mouse scroll wheel and hovering your cursor over the continent. A helpful trick is to hold down **shift** and with your mouse, draw a box around where you want to zoom in. Then it will zoom to that *extent*.
 
@@ -408,9 +408,9 @@ There are a lot of functions within the attribute table, from sorting each field
 
     <img src="./images/image037.png" />
 
-> ![q]
->
-> \3. Which port saw the greatest number of embarkments for Antigua bewteen 1676 and 1825?
+| ![q] |
+| :- |
+| 3. Which port saw the greatest number of embarkments for Antigua bewteen 1676 and 1825? |
 
 # Selection Methods
 
@@ -481,15 +481,15 @@ Another extremely powerful tool in GIS is the ability to select features in the 
 
 5.  Clear your selection by pressing **Clear** at the top of the attribute table. Now, change the expression and toggle through all of the different 25-year time frames to answer the questions below.
 
-> ![q]
-> 
-> \4. Which 25 year period had the *greatest* number of embarkments equal zero (e.g., had the fewest actual embarkments overall) and what was that value? By comparison, which 25 year period had the *lowest* number of embarkments equal zero (e.g., had the highest actual embarkments overall) and what was that value?
+   |![q]|
+   |:- |
+   |4. Which 25 year period had the *greatest* number of embarkments equal zero (e.g., had the fewest actual embarkments overall) and what was that value? By comparison, which 25 year period had the *lowest* number of embarkments equal zero (e.g., had the highest actual embarkments overall) and what was that value?|
 
 6. We can also make more complicated expressions that include multiple clauses. Perhaps we wanted to see **how many ports during the years 1751 – 1775 had greater than 300 but less than 1,000 embarkments.**
 
-> ![q]
-> 
-> 5. How many ports during the years 1751-1775 had greater than 300 but less than 1,000 embarkments? You'll have to change your current expression including the field, operator, and value - as well as make use of the "Add Clause" button - in order to answer this.
+   |![q]|
+   |:- |
+   |5. How many ports during the years 1751-1775 had greater than 300 but less than 1,000 embarkments? You'll have to change your current expression including the field, operator, and value - as well as make use of the "Add Clause" button - in order to answer this.|
 
 7.  Now, let’s move on to more complicated data and expressions. Open the Attribute table for `Voyage Departure Ports: 1619 – 1808`. Remember, these points represent the *departure port of every transatlantic slave trade voyage made between 1619 and 1808* – not just locations to Antigua, but *all destinations*.
 
@@ -538,9 +538,9 @@ Here are three other data points or sources that, while harder to format as a sp
 
   In 2022, Harvard established a [$100 million endowment fund for slavery reparations](https://www.reuters.com/world/us/harvard-sets-up-100-million-endowment-fund-slavery-reparations-2022-04-26/).
 
-> ![q]
->
-> 6. Look through the quantitative data in the **attribute table** of the `Embarkment Ports` layer, including its fields and data values. In a few sentences (no more than 5), compare and contrast the qualitative data described above to the quantitative data in the `Embarkment Ports` table. How are they similar and different? How might you take some of that unstructured qualitative data and turn it into structured spatial data? From a narrative perspective, how could you bring together the qualitative and quantitative data to tell a cohesive story – in other words, *what's a spatial question you could answer by combining these datasets*? Feel free to give a concrete example, if you can think of one.
+   |![q]|
+   |:-|
+   |6. Look through the quantitative data in the **attribute table** of the `Embarkment Ports` layer, including its fields and data values. In a few sentences (no more than 5), compare and contrast the qualitative data described above to the quantitative data in the `Embarkment Ports` table. How are they similar and different? How might you take some of that unstructured qualitative data and turn it into structured spatial data? From a narrative perspective, how could you bring together the qualitative and quantitative data to tell a cohesive story – in other words, *what's a spatial question you could answer by combining these datasets*? Feel free to give a concrete example, if you can think of one.|
 
 ## Saving selected data as new layers
 
@@ -620,9 +620,9 @@ The last selection method we'll discuss here is called **Select by Location**. U
     
     This is a good example of how datasets are produced for use at different scales, and when you try to make them talk to each other across those scales, things can be lost in translation.
 
-> ![q]
-> 
-> 7. Reflecting on the **Select by Location** issue that you just troubleshooted, which data – the `Embarkment Points for Antigua` layer or `Source Regions` layer – is right, and which one is wrong? Why?
+   |![q]|
+   |:-|
+   |7. Reflecting on the **Select by Location** issue that you just troubleshooted, which data – the `Embarkment Points for Antigua` layer or `Source Regions` layer – is right, and which one is wrong? Why?|
     
 Let’s try a new selection. Clear your selection up top or in the attribute table. Now let’s select the voyages, specifically from `VoyageDeparturePorts_1676_1805`, that are *within 1 international nautical mile of all embarkment ports*.
 
@@ -799,9 +799,9 @@ Again, since there are about 20,000 records – many of which are on top of each
 
     ![arrived](./images/image122.png)
 
-> ![q]
-> 
-> 8. Do you think this is an ideal representational technique for this dataset? Why or why not?
+   |![q]|
+   |:-|
+   |8. Do you think this is an ideal representational technique for this dataset? Why or why not?|
 
 4.  In symbology, change the drop down to **Heat Map.** Notice how immediately the map changes to have a “heat map" surface, instead of seeing individual points. Currently, this map is only showing the density or magnitude of how many voyages originated at various locations.
 
@@ -839,9 +839,9 @@ Labels are an extremely important part of map creation, especially with historic
 
     <img src="./images/image085.png" />
 
-> ![q]
-> 
-> 9. What is the map and data telling us about the number of embarked enslaved persons bound for Antigua at each port vs the number of voyages departing from these locations. What is one insight you can gather from comparing these datasets?
+   |![q]|
+   |:-| 
+   |9. What is the map and data telling us about the number of embarked enslaved persons bound for Antigua at each port vs the number of voyages departing from these locations. What is one insight you can gather from comparing these datasets?|
 
 
 # Lab Deliverables
