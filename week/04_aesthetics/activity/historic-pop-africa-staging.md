@@ -437,9 +437,10 @@ Now let's compare this map side-by-side with a different kind of representation:
 
 Even if you don't know what a choropleth map is, you've seen one before. From Greek, "chora" roughly means town and "pleth" roughly means number. That's where the 
 
-> ![q]
->
-> /4. Which symbology type feels better more intuitive for representing the data? Why or why not?
+| ![q] |
+| :-- |
+|4. Which symbology type feels better more intuitive for representing the data? Why or why not?      |
+
 
 
 # Activity deliverables
