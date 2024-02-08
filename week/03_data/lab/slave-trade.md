@@ -107,7 +107,7 @@ This activity will specifically focus on data from the Trans-Atlantic Slave Trad
 
 Now that you've actually examined the data, a moment to reflect on this data using the McKittrick quote from earlier, as well as the [Jamelle Bouie piece you read before class](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html).
 
-> [![q]][l]
+> ![q]
 >
 > 1. In a few sentences (no more than 5), describe what you think McKittrick is saying in that excerpt you read above. How does her point relate to the argument that Bouie made in his article about the SlaveVoyages database? What impact should their arguments have on the way you approach making a map or doing research with this data?
 
@@ -239,7 +239,7 @@ This tutorial will go through the process of saving and storing data in a GIS fo
 
 > ![q]
 > 
-> 2. What are three attributes, along with their values, associated with the feature you clicked?
+> \2. What are three attributes, along with their values, associated with the feature you clicked?
 
 6.  Zoom into a part of Africa using mouse scroll wheel and hovering your cursor over the continent. A helpful trick is to hold down **shift** and with your mouse, draw a box around where you want to zoom in. Then it will zoom to that *extent*.
 
@@ -410,7 +410,7 @@ There are a lot of functions within the attribute table, from sorting each field
 
 > ![q]
 >
-> 3. Which port saw the greatest number of embarkments for Antigua bewteen 1676 and 1825?
+> \3. Which port saw the greatest number of embarkments for Antigua bewteen 1676 and 1825?
 
 # Selection Methods
 
@@ -483,7 +483,7 @@ Another extremely powerful tool in GIS is the ability to select features in the 
 
 > ![q]
 > 
-> 4. Which 25 year period had the *greatest* number of embarkments equal zero (e.g., had the fewest actual embarkments overall) and what was that value? By comparison, which 25 year period had the *lowest* number of embarkments equal zero (e.g., had the highest actual embarkments overall) and what was that value?
+> \4. Which 25 year period had the *greatest* number of embarkments equal zero (e.g., had the fewest actual embarkments overall) and what was that value? By comparison, which 25 year period had the *lowest* number of embarkments equal zero (e.g., had the highest actual embarkments overall) and what was that value?
 
 6. We can also make more complicated expressions that include multiple clauses. Perhaps we wanted to see **how many ports during the years 1751 – 1775 had greater than 300 but less than 1,000 embarkments.**
 

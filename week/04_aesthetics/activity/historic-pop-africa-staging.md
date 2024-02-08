@@ -439,7 +439,7 @@ Even if you don't know what a choropleth map is, you've seen one before. From Gr
 
 > ![q]
 >
-> 4. Which symbology type feels better more intuitive for representing the data? Why or why not?
+> /4. Which symbology type feels better more intuitive for representing the data? Why or why not?
 
 
 # Activity deliverables
