@@ -24,14 +24,17 @@
   - [Complete the join](#complete-the-join)
 - [Classification](#classification)
   - [Side-by-side comparisons](#side-by-side-comparisons)
-  - [Data standardization](#data-standardization)
+  - [Classification intervals](#classification-intervals)
+  - [Data normalization](#data-normalization)
+  - [Calculate area](#calculate-area)
+  - [Normalize by area, total, and time](#normalize-by-area-total-and-time)
 - [Activity deliverables](#activity-deliverables)
 
 # What you should submit <!-- omit in toc -->
 
 Before **6:30pm on Tuesday, 2/20**, you should submit to Canvas:
 * A document in `pdf` or `docx` format, answering all the questions that are tagged with ![q], and which are summarized in the [activity deliverables](#activity-deliverables) section
-* A map in `png` format, exported at 300 DPI, as directed at the end of the lab
+* A map in `png` format, exported at 300 DPI, as directed at the end of the document
 
 # Introduction and context
 
@@ -52,8 +55,8 @@ At this point, you should be getting pretty good at starting a new project in Ar
 1. First, I recommend creating a directory in your `H: drive` for `week04`, and inside that directory, make two folders for `data` and `workspace`. When I do this, it resembles:
 
         ├─ gisusers$ (H:)/   
-          ├─ week03/   
-            ├─ lab02_slave-trade/
+          ├─ week04/   
+            ├─ activity02_africa-historic-pop/
               ├─ workspace/
               ├─ submission/
 
@@ -311,9 +314,9 @@ Because we explored the attribute tables earlier, we know there is information f
 3. Sort the `NAME` field in the `African Countries` table in alphabetical order, from first to last (you can do this by double-clicking on the field name). Do the same with the `territory` field in the `africa_pop_est_1850-1950_cleaned` table.
 4. Scroll through, comparing the two fields.
 
-> ![q]
->
-> 3. Why won't this work as a common field for our table join?
+| ![q] |
+| :--- |
+| 3. Why won't this work as a common field for our table join? |
 
 ## Building the common field
 
@@ -428,7 +431,19 @@ To complete the join, open ArcGIS Pro and...
 
     Some of the records have values of `<Null>`, which is okay – it just means there was no joinable data for that record.
 
-  In the next section, we'll discuss not just how to classify this data, but how classification operates more generally as a powerful tool for getting your message across.
+> ![imp]
+>
+> Table joins do not *save* tabular data to feature data; rather, the create a *link* between the two files. Try opening the **Fields view** of the attribute table... 
+> ![fields](images/image043.gif)
+> ... and you'll notice that all the fields you just joined are prefixed with `africa_pop_est_1850-1950_cleaned.csv.` – in other words, the name of the `csv` that you joined to the `African Countries` layer.
+>
+> In order to actually save the data, you'll need to export the `African Countries` layer as a new feature layer (like you did with some of the data in Lab 02).
+> 
+> Do so by right-clicking the layer ➡️ "Data" ➡️ "Export Features". Name the output file something like `AfricanCountries_Joined`. And please, don't skip this step. It will make your life harder in about 15 minutes. There are geospatial workflows you can't run on table-joined data layers, such as calculating area, which we're about to do.
+>
+> In the **Export Features** dialog, you'll also want to unfold the **Fields** tab and check the box for "Use Field Alias as Name" – this will ensure your field names do *not* contain the entire `csv` filename as a prefix.
+
+In the next section, we'll discuss not just how to classify this data, but how classification operates more generally as a powerful tool for getting your message across.
 
 # Classification
 
@@ -454,11 +469,10 @@ Even if you don't know/remember what a choropleth map is, you've seen one before
 
    <img src="images/image038.png" width=300>
 
-
 2. This will open another map view – probably named `Map2` – in a new tab.
 3. Click on the `Map2` tab and drag it so that it's set in a side-by-side view, like so:
    ![side](images/image039.gif)
-4. Drag your `African Countries` data layer from the **contents pane** of `Map` into the **data frame** of `Map2`. This will **copy** the data layer so that it appears in both map views.
+4. Drag your `AfricanCountries_Joined` data layer from the **contents pane** of `Map` into the **data frame** of `Map2`. This will **copy** the data layer so that it appears in both map views.
 5. Finally, **link** these two views by following the instructions on this page, under ["Steps to link multiple views."](https://pro.arcgis.com/en/pro-app/3.1/help/mapping/navigation/link-multiple-views.htm) Once you're done, you should see both maps, side-by-side and connected:
   ![side](images/image040.gif)
 6. In the `Map2` pane, update the symbology so that you are using a "Graduated color" style instead of a "Graduated symbols" style. **Make sure that the "Field" parameter is set to `pop_1850`**. Pick an [appropriate color scheme](https://www.axismaps.com/guide/using-colors-on-maps) (e.g., a *sequential* color scheme), and you should see something like this:
@@ -468,36 +482,110 @@ Even if you don't know/remember what a choropleth map is, you've seen one before
 | :-- |
 |4. Take a moment to compare the two representational techniques: graduated symbols vs. graduated colors. Which symbology type feels better more intuitive for representing this data? Why? |
 
-## Data standardization
+Once you've answered this question, you can exit the `Map` tab, **keeping only the choropleth map open**.
 
-Right now, we're looking at unstandardized data; that is, data that *hasn't been adjusted to transform raw counts into ratios*. **Standardizing data is a critical part of making any map.** (You'll also hear this called "normalization" – they are used interchangeably.)
+## Classification intervals
 
-Standardization requires a *numerator* (the attribute value for feature X) and a *denominator* (the attribute value by which you want to standardize feature X). The numerator should always be the property you want to display on your map, but there are a few choices when it comes to denominator:
+In the **symbology** tab of your `AfricanCountries_Joined` layer, click the "Method" drop down and note the different options that you can select for representing your data. You can read about classification schemes in greater detail in this excellent post from [Axis Maps](https://www.axismaps.com/guide/data-classification). The table below breaks down four major schemes that you'll commonly encounter and the contexts in which they should be used:
+
+| Method                   | Description                                                               | Problems                                      | Use case                                                  |
+| :----------------------- | :------------------------------------------------------------------------ | --------------------------------------------- | --------------------------------------------------------- |
+| *Natural Breaks (Jenks)* | Minimize difference within classes and maximize differences between them. | Class ranges are always specific to that data | Unevenly distributed data                                 |
+| *Quantile (or Quintile)* | Places an equal number of observations into each class.                   | Class ranges can have major size variation    | Emphasizing relative positions of data values             |
+| *Equal Interval*         | Divides the data into equal size classes.                                 | Class ranges are static                       | Evenly distributed data & comparisons of data across time |
+| *Standard Deviation*     | Adds and subtracts standard deviation from the mean of the data.          | Only works for normally distributed data      | Data with normal distribution                             |
+
+Now open the histogram for the field `pop_1850` (right-click the field name ➡️ "Statistics"). You should see something like this:
+
+![chart](images/image046.png)
+
+The histogram gives us a glimpse into how the data is distributed. Understanding this empowers us to analyze and represent it. Consider:
+* Is the data normally distributed (e.g., bell curve)? Try checking the "Show Normal distribution" button.
+* Are there obvious break points into which you could separate the data into different "bins?"
+* Are there outliers?
+* Where do the mean and median land? 
+* What happens to the data as you split it into more bins?
+
+| ![q] |
+| :--- |
+| 5. Based on your reading of the data (and in no more than 3 sentences), pick one representational technique that you think fits this dataset best. What are its benefits and drawbacks? |
+
+## Data normalization
+
+No matter what classification scheme you chose, you're looking at data that is *not normalized*; that is, data that *hasn't been adjusted to transform raw counts into ratios*.
+
+**Because raw counts can be really misleading, normalizing data is a critical part of any mapmaking endeavor.** (You might also hear normalization referred to as "standardization" – they can be used interchangeably, but note that [normalization in the *geospatial context* should not be confused with *statistical* normalization](https://www.e-education.psu.edu/geog486/node/608).)
+
+Normalization requires [two inputs](https://www.esri.com/news/arcuser/0206/files/normalize2.pdf): a *numerator* (the attribute value for feature x) and a *denominator* (the value by which you want to standardize feature x).
+
+The numerator should always be the property you want to display on your map, but there are a few choices when it comes to denominator...
 1. By area
 2. By total
 3. By another attribute
 4. By time
 
-|         Type         | Expression |
-| :------------------: | ---------- |
-|       By area        |   ${ \text{ Attribute value for feature x} \over  \text{ Sum of attributes in all features} }=\text{\% total in feature x}$         |
-|       By total       |            |
-| By another attribute |            |
-|       By time        |            |
+... or put another way:
 
-${ \text{ Attribute value for feature x} \over  \text{ Sum of attributes in all features} }=\text{\% total in feature x}$
+|   Denominator type   | Expression                                                                                        |
+| :------------------: | :---- |
+|       *By area*        | (Attribute `a` for feature `x` / Area of attributes in all features) = Density of `a` in `x` |
+|       *By total*       | (Attribute `a` for feature `x` / Total of attributes in all features) = % of total of `a` in `x` |
+| By another attribute | (Attribute `a` for feature `x` / Attribute `b` for feature `x`) = % of `a` by `b` for `x` |
+|       *By time*        | (Attribute `a` at time `ø` for feature `x` / Attribute `a` at time `∆` for feature `x` ) = % change of `a` between `ø` and `∆` in feature `x` |
 
-
-
-It can be easy 
-
-ArcGIS Pro has a handy parameter in the **symbology** pane that allows you to set a value  for normalization:
+ArcGIS Pro has a handy parameter in the **symbology** pane that allows you to set a value for normalization:
 
 <img src="images/image042.png" width=350>
 
+Let's try that out for a few of these: area, total, and time (in this dataset, there's not really another meaningful attribute [e.g., gender] by which to normalize the population data).
 
+## Calculate area
+
+Normalizing by area will allow us to make a map that shows population *density*, e.g., people by square miles, square kilometers, etc.
+
+If you open the attribute table for `AfricanCountries_Joined`, you'll notice that we already have a field for area. However, the values in it don't make a lot of sense (at least to me)...
+
+![area](images/image044.png)
+
+... so let's compute a new one. You've done this before – for this very activity, in fact! – so if an `area` field is not already present in your attribute table, go ahead and [follow the instructions from earlier](#deleting-spurious-geometries-with-field-calculator) to create one.
+
+You should set "property" to `Area (geodesic)` and "Area Unit" to `square kilometers`.
+
+Once you have this new field, you should see values like this:
+
+![area](images/image045.png)
+
+It kind of looks like that `Shape_Area` field is ~1/10,000 of the actual area in square kilometers, doesn't it? Weird. Anyhoo. Here's the easy (and final) part.
+
+## Normalize by area, total, and time
+
+In the **symbology** pane:
+1. Set "Normalization" to `area`
+2. Toggle between a few different fields (e.g., `pop_1860`, `pop_1920`)
+3. Toggle between a few different "Methods" (e.g., `Natural breaks`, `Quantile`, `Equal interval`)
+4. Repeat steps 1-3 to normalize the data by **total** ("Normalization" = `<percentage of total>`) and **time** ("Normalization" = some other population timestamp field)
+
+| ![q] |
+| :--- |
+| 6. In 2-3 sentences, reflect on the differences between the normalization techniques. What does each one highlight and what does each one obscure? |
+
+### 🎉 That's it! 🎉 <!-- omit in toc -->
 
 # Activity deliverables
+
+Before **6:30pm on Tuesday, 2/20**, you should submit to Canvas:
+* A document in `pdf` or `docx` format, answering all the questions that are tagged with ![q], and which are summarized below:
+
+   | ![qs] |
+   | :--- |
+   | 1. There are 54 countries in Africa and our dissolved layer has 70 – still more records than we would expect. Use the attribute table to figure out why that is, and write down an example of a feature that is inflating the feature count. Why does it seem like this feature exists? Do you think you need to keep it for this exercise? |
+   | 2. Scroll through the attribute table and examine the sorted data, double-clicking on record numbers to zoom into different features. Is there a break point after which it seems like you could delete most of the smaller features without erasing any actual countries? Where is that break point, and why did you choose it? Specify it with the record number and FID (e.g., "Record #90, FID `3500`.") |
+   | 3. Why won't this work as a common field for our table join? |
+   | 4. Take a moment to compare the two representational techniques: graduated symbols vs. graduated colors. Which symbology type feels better more intuitive for representing this data? Why? |
+   | 5. Based on your reading of the data (and in no more than 3 sentences), pick one representational technique that you think fits this dataset best. What are its benefits and drawbacks? |
+   | 6. In 2-3 sentences, reflect on the differences between the normalization techniques. What does each one highlight and what does each one obscure? |
+  
+* A map in `png` format, exported at 300 DPI, as directed at the end of the document
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->
