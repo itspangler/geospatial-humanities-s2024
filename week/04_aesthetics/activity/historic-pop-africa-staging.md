@@ -34,7 +34,6 @@
 
 Before **6:30pm on Tuesday, 2/20**, you should submit to Canvas:
 * A document in `pdf` or `docx` format, answering all the questions that are tagged with ![q], and which are summarized in the [activity deliverables](#activity-deliverables) section
-* A map in `png` format, exported at 300 DPI, as directed at the end of the document
 
 # Introduction and context
 
