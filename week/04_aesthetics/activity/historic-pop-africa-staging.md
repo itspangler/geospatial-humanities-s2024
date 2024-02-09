@@ -85,9 +85,13 @@ Feature data refers to data that is encoded in a spatial format. Common spatial 
 
 ## Tabular data
 
-Download the tabular data containing estimated populations in African countries between 1850 and 1950 from Canvas.
+Download the tabular data on population estimates for African countries between 1850 and 1950 [from Canvas](https://canvas.tufts.edu/courses/54475/assignments/399976).
 
-It's a slightly processed version of [this dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl:1902.1/15281&studyListingIndex=3_bbe301ac817a8f240616b94fcc83). The author has written (Manning 2010:246) about why he composed this dataset:
+If you're already logged into Canvas, just click the link below and your download should commence:
+
+[![down]][data]
+
+The tabular data we'll be working with is a slightly processed version of [this dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl:1902.1/15281&studyListingIndex=3_bbe301ac817a8f240616b94fcc83). The author has written (Manning 2010:246) about why he composed this dataset:
 
 > The findings... draw attention to the widespread assumptions of past observers that African populations were relatively small and that they were growing rapidly—in both colonial and precolonial eras. These pervasive assumptions were more than demographic estimates: they emerged out of ideologies that treated African societies as technically backward, politically immature, and socially elemental. Such views of African societies enabled observers to make aggregate generalizations without exploring the details of African social interaction.
 
@@ -573,8 +577,7 @@ In the **symbology** pane:
 
 # Activity deliverables
 
-Before **6:30pm on Tuesday, 2/20**, you should submit to Canvas:
-* A document in `pdf` or `docx` format, answering all the questions that are tagged with ![q], and which are summarized below:
+Before **6:30pm on Tuesday, 2/20**, you should submit to Canvas a document in `pdf` or `docx` format, answering all the questions that are tagged with ![q] and which are summarized below:
 
    | ![qs] |
    | :--- |
@@ -585,15 +588,14 @@ Before **6:30pm on Tuesday, 2/20**, you should submit to Canvas:
    | 5. Based on your reading of the data (and in no more than 3 sentences), pick one representational technique that you think fits this dataset best. What are its benefits and drawbacks? |
    | 6. In 2-3 sentences, reflect on the differences between the normalization techniques. What does each one highlight and what does each one obscure? |
   
-* A map in `png` format, exported at 300 DPI, as directed at the end of the document
-
 <!-------------------------------------[ Links ]
 ---------------------------------------->
 
-
+[data]: https://canvas.tufts.edu/courses/54475/files/7090292/download?download_frd=1
 
 <!---------------------------------[ Buttons ]--------------------------------->
 
 [imp]: https://img.shields.io/badge/IMPORTANT!-red?style=plastic
 [q]: https://img.shields.io/badge/Question-blue?style=plastic
 [qs]: https://img.shields.io/badge/All_Questions-blue?style=plastic
+[down]: https://img.shields.io/badge/Download_the_data-blue?style=for-the-badge
