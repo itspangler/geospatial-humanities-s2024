@@ -1,0 +1,872 @@
+code,name,count
+001,Abbey St Bathans,2
+002,Abdie,5
+003,Abercorn,1
+004,Aberdalgie,3
+005,Aberdeen,77
+006,Aberdour (Fife),13
+007,Aberdour (Aberdeenshire),0
+008,Aberfoyle,0
+009,Aberlady,7
+010,Aberlemno,2
+011,Aberlour,0
+012,Abernethy,4
+013,Abernethy and Kincardine,0
+014,Abernyte,0
+015,Aboyne and Glen Tanar,2
+016,Airlie,0
+017,Airth,2
+018,Alford,1
+019,Alloa,14
+020,Alness,2
+021,Alva,0
+022,Alvah,0
+023,Alves,0
+024,Alvie,0
+025,Alyth,0
+026,Ancrum,1
+027,Annan,0
+028,Anstruther Easter,1
+029,Anstruther Wester,0
+030,Anwoth,0
+031,Applecross,2
+032,Applegarth,0
+033,Arbirlot,2
+034,Arbroath and St Vigeans,17
+035,Arbuthnott,0
+036,Ardchattan and Muckairn,0
+037,Ardclach,0
+038,Ardersier,0
+039,Ardgour,0
+040,Ardnamurchan,0
+041,Ardoch,1
+042,Ardrossan,6
+043,Arisaig and Moidart,2
+044,Arngask,0
+045,Arrochar,0
+046,Ashkirk,0
+047,Assynt,2
+048,Athelstaneford,3
+049,Auchindoir and Kearn,0
+050,Auchinleck,2
+051,Auchterarder,4
+052,Auchterderran,0
+053,Auchtergaven,1
+054,Auchterhouse,0
+055,Auchterless,0
+056,Auchtermuchty,1
+057,Auchtertool,0
+058,Auldearn,49
+059,Avoch,0
+060,Avondale,0
+061,Ayr,38
+062,Ayton,7
+063,Baldernock,0
+064,Balfron,0
+065,Ballantrae,0
+066,Ballingry,0
+067,Balmaclellan,1
+068,Balmaghie,0
+069,Balmerino,2
+070,Balquhidder,0
+071,Banchory-Devenick,1
+072,Banchory-Ternan,2
+073,Banff,3
+074,Barr,0
+075,Barra,0
+076,Barry,0
+077,Barvas,0
+078,Bathgate,5
+079,Beath,0
+080,Bedrule,0
+081,Beith,0
+082,Belhelvie,3
+083,Bellie,0
+084,Bendochy,0
+085,Benholm,0
+086,Bervie,0
+087,Biggar,1
+088,Birnie,0
+089,Birsay and Harray,5
+090,Birse,1
+091,Blackford,0
+092,Blair Atholl,0
+093,Blairgowrie,0
+094,Blantyre,0
+095,Bo'ness and Carriden,48
+096,Boharm,0
+097,Boleskine and Abertarff,0
+098,Bolton,10
+099,Bonhill,3
+100,Borgue,2
+101,Borthwick,18
+102,Bothwell,0
+103,Botriphnie,0
+104,Bourtie,0
+105,Bowden,3
+106,Bower,1
+107,Boyndie,0
+108,Bracadale,0
+109,Brechin,19
+110,Bressay,0
+111,"Broughton, Glenholm and Kilbucho",2
+112,Buchanan,0
+113,Buittle,3
+114,Bunkle and Preston,1
+115,Burntisland,11
+116,Cabrach,0
+117,Cadder,0
+118,Caddonfoot,0
+119,Caerlaverock,2
+120,Cairnie,0
+121,Callander,0
+122,Cambuslang,0
+123,Cambusnethan,1
+124,Cameron,0
+125,Campbeltown,0
+126,Campsie,0
+127,Canisbay,4
+128,Canonbie,1
+129,Caputh,0
+130,Cardross,1
+131,Careston,0
+132,Cargill,0
+133,Carluke,3
+134,Carmichael,0
+135,Carmunnock,0
+136,Carmyllie,0
+137,Carnbee,1
+138,Carnock,0
+139,Carnwath,6
+140,Carrington,4
+141,Carsphairn,0
+142,Carstairs,1
+143,Castleton,0
+144,Cathcart,0
+145,Cavers,0
+146,Cawdor,0
+147,Ceres,0
+148,Channelkirk,0
+149,Chapel of Garioch,0
+150,Chirnside,6
+151,Clackmannan,5
+152,Clatt,0
+153,Cleish,0
+154,Closeburn,1
+155,Clunie,1
+156,Cluny,0
+157,Clyne,5
+158,Cockburnspath,1
+159,Cockpen,1
+160,Coldingham,8
+161,Coldstream,2
+162,Coll,0
+163,Collace,0
+164,Collessie,5
+165,Colmonell,0
+166,Colonsay and Oronsay,0
+167,Colvend and Southwick,0
+168,Comrie,0
+169,Contin,4
+170,Cortachy and Clova,2
+171,Coull,3
+172,Coupar Angus,4
+173,Covington,0
+174,Coylton,0
+175,Craig,0
+176,Craigie,11
+177,Craignish,0
+178,Crail,25
+179,Crailing,7
+180,Cramond,2
+181,Cranshaws,0
+182,Cranston,14
+183,Crathie and Braemar,0
+184,Crawford,12
+185,Crawfordjohn,0
+186,Creich (Fife),1
+187,Creich (Highland),2
+188,Crichton,26
+189,Crieff,3
+190,Crimond,4
+191,Cromarty,3
+192,"Cromdale, Inverallan and Advie",1
+193,Cross and Burness,7
+194,Crossmichael,0
+195,Croy and Dalcross,0
+196,Cruden,3
+197,Cullen,2
+198,Culross,32
+199,Culsalmond,0
+200,Culter,3
+201,Cults,0
+202,Cumbernauld,0
+203,Cumbrae,0
+204,Cummertrees,0
+205,Cupar,3
+206,Currie,0
+207,Dailly,0
+208,Dairsie,0
+209,Dalgety,8
+210,Dalkeith,44
+211,Dallas,0
+212,Dalmellington,1
+213,Dalmeny,28
+214,Dalry (Dumfries & Galloway),1
+215,Dalry (North Ayrshire),7
+216,Dalrymple,0
+217,Dalserf,0
+218,Dalton,0
+219,Dalziel,0
+220,Daviot,0
+221,Daviot and Dunlichity,0
+222,Delting,0
+223,Denny,1
+224,Deskford,1
+225,Dingwall,6
+226,Dirleton,8
+227,Dollar,2
+228,Dolphinton,1
+229,Dores,0
+230,Dornoch,1
+231,Dornock,0
+232,Douglas,2
+233,Drainie,0
+234,Dreghorn,0
+235,Dron,0
+236,Drumblade,0
+237,Drumelzier,6
+238,Drumoak,0
+239,Dryfesdale,0
+240,Drymen,0
+241,Duffus,0
+242,Duirinish,0
+243,Dull,0
+244,Dumbarton,16
+245,Dumfries,51
+246,Dun,1
+247,Dunbar,20
+248,Dunbarney,0
+249,Dunblane and Lecropt,4
+250,Dunbog,1
+251,Dundee,1
+252,Dundee Combination,0
+253,Dundonald,7
+254,Dunfermline,48
+255,Dunino,1
+256,Dunipace,0
+257,Dunkeld and Dowally,2
+258,Dunlop,5
+259,Dunnet,3
+260,Dunnichen,0
+261,Dunning,6
+262,Dunnottar,0
+263,Dunoon and Kilmun,3
+264,Dunrossness,0
+265,Duns,12
+266,Dunscore,0
+267,Dunsyre,0
+268,Durisdeer,0
+269,Durness,0
+270,Durris,0
+271,Duthil and Rothiemurchus,0
+272,Dyce,0
+273,Dyke and Moy,3
+274,Eaglesham,0
+275,Earlston,4
+276,Eassie and Nevay,0
+277,East Kilbride,0
+278,Eastwood,2
+279,Eccles,1
+280,Ecclesmachan,0
+281,Echt,0
+282,Eckford,0
+283,Eday,0
+284,Edderton,3
+285,Eddleston,1
+286,Eddrachillis,0
+287,Edinburgh,109
+288,Edinkillie,0
+289,Ednam,0
+290,Edrom,1
+291,Edzell,0
+292,Elgin,27
+293,Elie,0
+294,Ellon,7
+295,Errol,0
+296,Erskine,11
+297,Eskdalemuir,0
+298,Ettrick,0
+299,Evie and Rendall,4
+300,Ewes,0
+301,Eyemouth,30
+302,Fala and Soutra,6
+303,Falkirk,1
+304,Falkland,5
+305,Farnell,0
+306,Farr,2
+307,Fearn,0
+308,Fenwick,1
+309,Fern,0
+310,Ferry Port on Craig,0
+311,Fetlar,1
+312,Fettercairn,0
+313,Fetteresso,0
+314,Findo Gask,6
+315,Fintray,0
+316,Fintry,0
+317,Firth,0
+318,Flisk,4
+319,Fodderty,0
+320,Fogo,2
+321,Fordoun,1
+322,Fordyce,0
+323,Forfar,20
+324,Forgan,3
+325,Forgandenny,0
+326,Forglen,0
+327,Forgue,0
+328,Forres,0
+329,Forteviot,2
+330,Fortingall,0
+331,Fossoway,29
+332,Foulden,5
+333,Foveran,4
+334,Fowlis Easter,0
+335,Fowlis Wester,0
+336,Fraserburgh,1
+337,Fyvie,3
+338,Gairloch,0
+339,Galashiels,4
+340,Galston,0
+341,Gamrie,0
+342,Gargunnock,1
+343,Gartly,0
+344,Garvald and Bara,0
+345,Garvock,0
+346,Gigha and Cara,0
+347,Girthon,0
+348,Girvan,1
+349,Gladsmuir,13
+350,Glamis,0
+351,Glasgow,12
+352,Glass,1
+353,Glassary,0
+354,Glasserton,0
+355,Glassford,0
+356,Glenbervie,0
+357,Glenbuchat,0
+358,Glencairn,1
+359,Glencorse,0
+360,Glendevon,2
+361,Glenelg,0
+362,Glenisla,0
+363,"Glenmuick, Tullich and Glengairn",1
+364,Glenorchy and Inishail,0
+365,Glenshiel,0
+366,Golspie,3
+367,Gordon,2
+368,Govan,23
+369,Grange,5
+370,Grangemouth,0
+371,Greenlaw,2
+372,Greenock,10
+373,Gretna,0
+374,Guthrie,0
+375,Haddington,149
+376,Half Morton,0
+377,Halkirk,8
+378,Hamilton,2
+379,Harris,0
+380,Hawick,0
+381,Heriot,6
+382,Hobkirk,0
+383,Hoddom,0
+384,Holm,2
+385,Holywood,2
+386,Houston and Killellan,10
+387,Hownam,0
+388,Hoy and Graemsay,2
+389,Humbie,32
+390,Hume,0
+391,Huntly,3
+392,Hutton,0
+393,Hutton and Corrie,0
+394,Inch,0
+395,Inchinnan,7
+396,Inchture,0
+397,Innerleithen,7
+398,Innerwick,6
+399,Insch,1
+400,Inveraray,3
+401,Inverarity,1
+402,Inveravon,0
+403,Inverchaolain,1
+404,Inveresk,23
+405,Inverkeilor,0
+406,Inverkeithing,43
+407,Inverkeithny,4
+408,Inverkip,35
+409,Inverness and Bona,27
+410,Inverurie,0
+411,Irvine,24
+412,Jedburgh,20
+413,Johnstone,0
+414,Jura,0
+415,Keig,0
+416,Keir,1
+417,Keith,4
+418,Keithhall and Kinkell,2
+419,Kells,0
+420,Kelso,13
+421,Kelton,1
+422,Kemback,0
+423,Kemnay,1
+424,Kenmore,0
+425,Kennethmont,0
+426,Kennoway,0
+427,Kettins,0
+428,Kettle,0
+429,Kilbarchan,2
+430,Kilbirnie,2
+431,Kilbrandon and Kilchattan,0
+432,Kilbride,1
+433,Kilcalmonell,0
+434,Kilchoman,0
+435,Kilchrenan and Dalavich,0
+436,Kilconquhar,0
+437,Kildalton,0
+438,Kildonan,0
+439,Kildrummy,0
+440,Kilfinan,0
+441,Kilfinichen and Kilvickeon,0
+442,Killarow and Kilmeny,0
+443,Killean and Kilchenzie,0
+444,Killearn,1
+445,Killearnan,6
+446,Killin,0
+447,Kilmacolm,9
+448,Kilmadock,1
+449,Kilmallie,2
+450,Kilmany,5
+451,Kilmarnock,0
+452,Kilmaronock,0
+453,Kilmartin,0
+454,Kilmaurs,1
+455,Kilmodan,0
+456,Kilmonivaig,0
+457,Kilmorack,0
+458,Kilmore and Kilbride,0
+459,Kilmory,0
+460,Kilmuir,0
+461,Kilmuir Easter,0
+462,Kilninian and Kilmore,0
+463,Kilninver and Kilmelfort,1
+464,Kilrenny,0
+465,Kilspindie,0
+466,Kilsyth,1
+467,Kiltarlity and Convinth,12
+468,Kiltearn,1
+469,Kilwinning,5
+470,Kincardine (Stirling),1
+471,Kincardine (Highland),1
+472,Kincardine O'Neil,6
+473,Kinclaven,0
+474,Kinellar,0
+475,Kinfauns,0
+476,King Edward,0
+477,Kingarth,7
+478,Kinghorn,3
+479,Kinglassie,0
+480,Kingoldrum,0
+481,Kingsbarns,0
+482,Kingussie and Insh,0
+483,Kinloch,1
+484,Kinloss,0
+485,Kinnaird,0
+486,Kinneff and Catterline,1
+487,Kinnell,3
+488,Kinnettles,0
+489,Kinnoull,0
+490,Kinross,4
+491,Kintail,0
+492,Kintore,2
+493,Kippen,3
+494,Kirkbean,0
+495,Kirkcaldy and Dysart,72
+496,Kirkcolm,0
+497,Kirkconnel,0
+498,Kirkcowan,0
+499,Kirkcudbright,15
+500,Kirkden,0
+501,Kirkgunzeon,1
+502,Kirkhill,0
+503,Kirkhope,0
+504,Kirkinner,1
+505,Kirkintilloch,0
+506,Kirkliston,12
+507,Kirkmabreck,0
+508,Kirkmahoe,1
+509,Kirkmaiden,0
+510,Kirkmichael (Dumfries & Galloway),0
+511,Kirkmichael (Moray),0
+512,Kirkmichael (South Ayrshire),0
+513,Kirkmichael (Perth & Kinross),0
+514,Kirknewton,0
+515,Kirkoswald,0
+516,Kirkpatrick Durham,0
+517,Kirkpatrick Irongray,0
+518,Kirkpatrick-Fleming,0
+519,Kirkpatrick-Juxta,0
+520,Kirkurd,7
+521,Kirkwall and St Ola,32
+522,Kirriemuir,3
+523,Knockando,0
+524,Knockbain,0
+525,Lady,0
+526,Ladykirk,0
+527,Laggan,0
+528,Lairg,0
+529,Lamington and Wandel,0
+530,Lanark,14
+531,Langholm,0
+532,Langton,3
+533,Larbert,1
+534,Largo,2
+535,Largs,15
+536,Lasswade,11
+537,Latheron,2
+538,Lauder,21
+539,Laurencekirk,0
+540,Legerwood,3
+541,Leochel-Cushnie,0
+542,Lerwick,12
+543,Leslie (Fife),0
+544,Leslie (Aberdeenshire),0
+545,Lesmahagow,2
+546,Leswalt,0
+547,Lethendy,0
+548,Lethnot and Navar,0
+549,Leuchars,1
+550,Libberton,43
+551,Liff and Benvie,0
+552,Lilliesleaf,2
+553,Linlithgow,12
+554,Linton,7
+555,Lintrathen,0
+556,Lismore and Appin,0
+557,Little Dunkeld,0
+558,Livingston,3
+559,Lochalsh,0
+560,Lochbroom,35
+561,Lochcarron,0
+562,Lochgoilhead and Kilmorich,0
+563,Lochlee,0
+564,Lochmaben,1
+565,Lochrutton,3
+566,Lochs,0
+567,Lochwinnoch,2
+568,Logie (Stirling),2
+569,Logie (Fife),0
+570,Logie Buchan,0
+571,Logie Easter,3
+572,Logie Pert,0
+573,Logie-Coldstone,3
+574,Logiealmond,0
+575,Logierait,0
+576,Longforgan,0
+577,Longformacus,0
+578,Longside,2
+579,Lonmay,0
+580,Loth,0
+581,Loudoun,0
+582,Lumphanan,12
+583,Lunan,0
+584,Lundie,3
+585,Luss,2
+586,Lyne,3
+587,Madderty,0
+588,Mains and Strathmartine,0
+589,Makerstoun,0
+590,Manor,2
+591,Markinch,1
+592,Marnoch,0
+593,Maryculter,0
+594,Marykirk,0
+595,Maryton,0
+596,Mauchline,5
+597,Maxton,2
+598,Maybole,1
+599,Mearns,0
+600,Meigle,0
+601,Meldrum,0
+602,Melrose,5
+603,Menmuir,2
+604,Mertoun,2
+605,Methlick,1
+606,Methven,4
+607,Mid Calder,5
+608,Middlebie,0
+609,Midmar,0
+610,Minnigaff,0
+611,Minto,0
+612,Mochrum,0
+613,Moffat,1
+614,Moneydie,0
+615,Monifieth,2
+616,Monikie,0
+617,Monimail,1
+618,Monkton and Prestwick,0
+619,Monquhitter,0
+620,Montrose,8
+621,Monymusk,0
+622,Monzievaird and Strowan,0
+623,Moonzie,0
+624,Mordington,1
+625,Morebattle,0
+626,Morham,0
+627,Mortlach,0
+628,Morton,0
+629,Morvern,0
+630,Moulin,0
+631,Mouswald,0
+632,Moy and Dalarossie,0
+633,Muckhart,0
+634,Muiravonside,0
+635,Muirkirk,4
+636,Murroes,0
+637,Muthill,0
+638,Nairn,5
+639,Neilston,0
+640,Nenthorn,1
+641,Nesting,0
+642,New Abbey,1
+643,New Cumnock,1
+644,New Deer,1
+645,New Kilpatrick,4
+646,New Luce,2
+647,New Machar,0
+648,New Monkland,0
+649,Newbattle,19
+650,Newburgh,8
+651,Newburn,0
+652,Newhills,0
+653,Newlands,1
+654,Newton,15
+655,Newtyle,0
+656,Nigg (Aberdeen City),0
+657,Nigg (Highland),3
+658,North Berwick,30
+659,North Bute,4
+660,North Knapdale,0
+661,North Uist,0
+662,Northmaven,2
+663,Oathlaw,5
+664,Ochiltree,2
+665,Old Cumnock,1
+666,Old Deer,0
+667,Old Kilpatrick,1
+668,Old Luce,8
+669,Old Machar,3
+670,Old Monkland,2
+671,Oldhamstocks,0
+672,Olrig,0
+673,Ordiquhill,0
+674,Ormiston,18
+675,Orphir,1
+676,Orwell,1
+677,Oxnam,0
+678,Oyne,1
+679,Paisley,14
+680,Panbride,1
+681,Papa Westray,2
+682,Parton,0
+683,Peebles,23
+684,Pencaitland,52
+685,Penicuik,12
+686,Penninghame,6
+687,Penpont,4
+688,Perth,19
+689,Peterculter,0
+690,Peterhead,8
+691,Pettinain,0
+692,Petty,0
+693,Pitsligo,0
+694,Pittenweem,22
+695,Polwarth,0
+696,Port Glasgow,0
+697,Port Of Menteith,2
+698,Portmoak,0
+699,Portpatrick,0
+700,Portree,0
+701,Premnay,0
+702,Prestonkirk,1
+703,Prestonpans,44
+704,Rafford,0
+705,Rathen,1
+706,Ratho,1
+707,Rathven,2
+708,Rattray,0
+709,Rayne,0
+710,Reay,0
+711,Redgorton,0
+712,Renfrew,21
+713,Rerrick,2
+714,Rescobie,0
+715,Resolis,0
+716,Rhu,0
+717,Rhynd,9
+718,Rhynie,0
+719,Riccarton,2
+720,Roberton,0
+721,Rogart,0
+722,Rosemarkie,5
+723,Rosneath,0
+724,Rosskeen,0
+725,Rothes,0
+726,Rothesay,38
+727,Rothiemay,0
+728,Rousay and Egilsay,0
+729,Roxburgh,11
+730,Rutherglen,0
+731,Ruthven,0
+732,Ruthwell,1
+733,Saddell and Skipness,0
+734,Saline,0
+735,Saltoun,15
+736,Sandsting,1
+737,Sandwick,0
+738,Sanquhar,0
+739,Scone,2
+740,Scoonie,0
+741,Selkirk,13
+742,Shapinsay,2
+743,Shotts,0
+744,Skene,0
+745,Skirling,5
+746,Slains,1
+747,Slamannan,0
+748,Sleat,1
+749,Smailholm,0
+750,Small Isles,0
+751,Snizort,0
+752,Sorbie,0
+753,Sorn,1
+754,South Knapdale,0
+755,South Ronaldsay,1
+756,South Uist,0
+757,Southdean,0
+758,Southend,0
+759,Speymouth,0
+760,Spott,9
+761,Sprouston,0
+762,Spynie,1
+763,St Andrews and Deerness,23
+764,St Andrews and St Leonards,0
+765,St Andrews-Lhanbryd,0
+766,St Boswells,1
+767,St Cyrus,1
+768,St Fergus,0
+769,St Madoes,0
+770,St Martins,0
+771,St Monance,0
+772,St Mungo,0
+773,St Ninians,1
+774,Stair,0
+775,Stenness,1
+776,Stenton,7
+777,Stevenston,0
+778,Stewarton,0
+779,Stichill,0
+780,Stirling,31
+781,Stobo,8
+782,Stonehouse,0
+783,Stoneykirk,0
+784,Stornoway,1
+785,Stow,3
+786,Stracathro,0
+787,Strachan,0
+788,Strachur,0
+789,Straiton,0
+790,Stranraer,2
+791,Strath,0
+792,Strathblane,0
+793,Strathdon,1
+794,Strathlachlan,0
+795,Strathmiglo,0
+796,Strichen,0
+797,Stromness,1
+798,Stronsay,2
+799,Swinton,1
+800,Symington (South Ayrshire),1
+801,Symington (South Lanarkshire),0
+802,Tain,13
+803,Tannadice,0
+804,Tarbat,0
+805,Tarbolton,7
+806,Tarland,0
+807,Tarves,0
+808,Tealing,0
+809,Temple,5
+810,Terregles,1
+811,Teviothead,0
+812,Thurso,10
+813,Tibbermore,0
+814,Tillicoultry,0
+815,Tingwall,5
+816,Tinwald,0
+817,Tiree,2
+818,Tongland,2
+819,Tongue,0
+820,Torosay,0
+821,Torphichen,0
+822,Torryburn,19
+823,Torthorwald,1
+824,Tough,0
+825,Towie,0
+826,Tranent,28
+827,Traquair,3
+828,Trinity Gask,0
+829,Troqueer,0
+830,Tulliallan,0
+831,Tullynessle and Forbes,0
+832,Tundergarth,0
+833,Turriff,3
+834,Tweedsmuir,3
+835,Twynholm,1
+836,Tynron,0
+837,Tyrie,0
+838,Udny,0
+839,Uig,0
+840,Unst,0
+841,Uphall,0
+842,Urquhart,0
+843,Urquhart and Glenmoriston,0
+844,Urquhart and Logie Wester,0
+845,Urr,1
+846,Urray,1
+847,Walls and Flotta,1
+848,Walls and Sandness,7
+849,Walston,0
+850,Wamphray,0
+851,Watten,1
+852,Weem,0
+853,Wemyss,10
+854,West Calder,0
+855,West Kilbride,9
+856,West Linton,9
+857,Westerkirk,0
+858,Westray,8
+859,Westruther,0
+860,Whitburn,0
+861,Whitekirk and Tyninghame,2
+862,Whithorn,0
+863,Whitsome,1
+864,Whittingehame,3
+865,Wick,16
+866,Wigtown,0
+867,Wiston and Roberton,0
+868,Yarrow,0
+869,Yell,0
+870,Yester,2
+871,Yetholm,0

@@ -29,6 +29,7 @@
   - [Calculate area](#calculate-area)
   - [Normalize by area, total, and time](#normalize-by-area-total-and-time)
 - [Activity deliverables](#activity-deliverables)
+- [Bibliography](#bibliography)
 
 # What you should submit <!-- omit in toc -->
 
@@ -37,15 +38,14 @@ Before **6:30pm on Tuesday, 2/20**, you should submit to Canvas:
 
 # Introduction and context
 
-This activity will walk you through techniques and best practices associated with representing quantitative and qualitative geographical data using ArcGIS Pro. You'll use a pre-processed dataset that interpolates population data for African countries to visualize population change over the course of a century across the entire African continent.
+This activity will walk you through techniques and best practices associated with representing quantitative geographical data using ArcGIS Pro. You'll use a pre-processed dataset of population estimates for African countries to visualize population change over the course of a century across the entire African continent.
 
 Major learning objectives include:
-* best practices in cartographic representation
-* distinguishing between kinds of maps
-* understanding visual hierarchy
-* assessing map variables
-* basic color theory
-* table joins
+* understanding attribute vs. feature data
+* making data "GIS friendly" with Microsoft Excel
+* spatial processing (dissolving features, merging features, calculating geometry)
+* table joins and common identifiers
+* classification and normalization
 
 # Set up your workspace
 
@@ -84,17 +84,19 @@ Feature data refers to data that is encoded in a spatial format. Common spatial 
 
 ## Tabular data
 
-Download the tabular data on population estimates for African countries between 1850 and 1950 [from Canvas](https://canvas.tufts.edu/courses/54475/assignments/399976).
-
-If you're already logged into Canvas, just click the link below and your download should commence:
+Download the tabular data on population estimates for African countries between 1850 and 1950, either [from the week 4 module in Canvas](https://canvas.tufts.edu/courses/54475/assignments/399976) or by clicking the link below:
 
 [![down]][data]
 
-The tabular data we'll be working with is a slightly processed version of [this dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl:1902.1/15281&studyListingIndex=3_bbe301ac817a8f240616b94fcc83). The author has written (Manning 2010:246) about why he composed this dataset:
+The tabular data we'll be working with is a slightly processed version of [this dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl:1902.1/15281&studyListingIndex=3_bbe301ac817a8f240616b94fcc83). The author has written (Manning 2010:246) that he composed this dataset:
 
 > The findings... draw attention to the widespread assumptions of past observers that African populations were relatively small and that they were growing rapidly—in both colonial and precolonial eras. These pervasive assumptions were more than demographic estimates: they emerged out of ideologies that treated African societies as technically backward, politically immature, and socially elemental. Such views of African societies enabled observers to make aggregate generalizations without exploring the details of African social interaction.
 
-When you encounter a new dataset, your first questions should always be: why does this exist? Where did the data come from? How was it computed? If you want, you can read more about how this dataset was actually created in Appendix A of the original `xls` spreadsheet: <https://doi.org/10.7910/DVN/ZP3PP1>
+As you'll see in greater detail next week, counting people is a political action. In this case, the author is counting people (e.g., making demographic estimates across a historical time period) in order to debunk Eurocentric narratives about growth and chance in pre- and post-colonial African societies.
+
+When you encounter a new dataset, your first questions should always be: why does this exist? Where did the data come from? How was it computed? These are important questions to clarify before making a map.
+
+If you want, you can read more about how this dataset was actually created in Appendix A of the original `xls` spreadsheet: <https://doi.org/10.7910/DVN/ZP3PP1>
 
 Take a moment to open this dataset in Microsoft Excel. You should see something like:
 
@@ -289,9 +291,7 @@ To merge these two features:
 
 The table join is a crucial GIS workflow. Esri [describes it as such](https://pro.arcgis.com/en/pro-app/3.1/help/data/tables/joins-and-relates.htm):
 
-> Through a common field, known as a key, you can associate records in one table with records in another table. For example, you can associate a table of parcel ownership information with the parcels layer, because they share a parcel identification field.
-> 
-> You can make these associations in several ways, including by joining or relating tables temporarily in your map or by creating relationship classes in your geodatabase that maintain more permanent associations. Joins can also be based on spatial location.
+> Through a common field, known as a key, you can associate records in one table with records in another table. For example, you can associate a table of parcel ownership information with the parcels layer, because they share a \[common] parcel identification field.
 
 | ![joins](images/image016.png) |
 | :---------------------------: |
@@ -299,9 +299,9 @@ The table join is a crucial GIS workflow. Esri [describes it as such](https://pr
 
 This is precisely what we want to do with our data: we want to join the "standalone table" of population data to the `African Countries` layer.
 
-| ![imp] |
-| :- |
-| Joins only work if the common identifier is ***exactly the same in both tables***: there can be ***absolutely no differences*** between the common field's *value* in either table, or else the data for that record won't be joined. For example, `Senegal` would not join to `SENEGAL` because the latter is all caps. For this reason, it's typically ideal to use a numerical key rather than a string (e.g., text-based) key.|
+> ![imp]
+> 
+> Joins only work if the common identifier is ***exactly the same in both tables***: there can be ***absolutely no differences*** between the common field's *value* in either table, or else the data for that record won't be joined. For example, `Senegal` would not join to `SENEGAL` because the latter is all caps. For this reason, it's typically ideal to use a numerical key rather than a string (e.g., text-based) key.|
 
 Moving forward, the major question is, do we have a common field in our two tables?
 
@@ -323,11 +323,11 @@ Because we explored the attribute tables earlier, we know there is information f
 
 ## Building the common field
 
-It looks like we're going to have to make a common field on our own. Although working with data across a historical time range does make this a little more complicated than normal our goal remains pretty straightforward: **we want to populate the `gisname` field in the `africa_pop_est_1850-1950_cleaned` tablae with values that conform exactly to the `NAME` field of the `African Countries` layer**. 
+It looks like we're going to have to make a common field on our own. Although working with data across a historical time range does make this a little more complicated than normal our goal remains pretty straightforward: **we want to populate the `gisname` field in the `africa_pop_est_1850-1950_cleaned` tablae with values that conform exactly to the `NAME` field of the `African Countries` layer**.
 
-To accomplish this, we will:
-1. Use Microsoft Excel to copy values from the `territory` field into the `gisname` field
-2. Read through the new `gisname` values and conform them to the `NAME` field, correct any spelling or nomenclature discrepancies
+This is a pretty simple exercise: all you need to do is make the `gisname` field say the same thing as the `name` field of the corresponding country. To accomplish this, I recommend:
+1. Using Microsoft Excel to copy values from the `territory` field into the `gisname` field
+2. Reading through the new `gisname` values and conforming them to the `NAME` field, correcting any spelling or nomenclature discrepancies
 
 Let's get started...
 
@@ -373,15 +373,11 @@ Let's get started...
 
     ![pastespecial](images/image024.gif)
 
-9. Okay, now here's the really annoying part: go through every value in the `gisname` column and compare it to its corresponding value in the `NAME` column to ensure that `gisname` is *exactly the same* as `NAME`. If the two values differ, update `gisname` to match the value in `NAME`.
+9. Now, read through every value in the `gisname` column and compare it to its corresponding value in the `NAME` column to ensure that `gisname` is *exactly the same* as `NAME`. If the two values differ, update `gisname` to match the value in `NAME`.
 
     To make this even a little easier, you could cut the `NAME` column and insert it to the left of the `gisname` column like so:
 
     ![cut](images/image025.gif)
-
-    You can also delete the islands and disputed territories – not because they aren't important, but because they won't be visible at the scale we're mapping this data:
-
-    ![delete](images/image026.gif)
 
     Lastly, a couple of important notes on nomenclature for data from the spreadsheet:
     * "Dahomey" refers to modern-day Benin
@@ -389,13 +385,13 @@ Let's get started...
     * "Spanish Sahara" refers to modern-day Western Sahara
     * "Upper Volta" refers to modern-day Burkina Faso
     * "Ivory Coast" refers to Cote D'Ivoire
-    * Pay attention to Guinea, Guinea-Bissau, and Equatorial Guinea – three different countries
+    * Pay attention to Guinea, Guinea-Bissau, and Equatorial Guinea – three different countries, and Guinea-Bissau has some spelling differences
     * Pay attention to Gambia, which is named `THE GAMBIA` in the `African Countries` table
     * Bear in mind that some islands that are present in the `African Countries` data (like Cape Verde) aren't present in the `africa_pop_est_1850-1950_cleaned` table – that's okay
 
-    | ![imp] |
-    | :----- |
-    | **Do not change any of the `NAME` column values – they are simply reference cells for the `African Countries` layer. Only change values in the `gisname` column.** |
+    > |![imp] |
+    > |:----- |
+    > | **Do not change any of the `NAME` column values – they are simply reference cells for the `African Countries` layer. Only change values in the `gisname` column.** |
 
 10. Once you're done, you can delete the `NAME` column from your spreadsheet. The final product should resemble:
 
@@ -418,13 +414,10 @@ To complete the join, open ArcGIS Pro and...
 
         Checking for join cardinality (1:1 or 1:m joins)...
         A one - to - one join has matched 49 records.
-        The input table has 68 and the join table has 49 records.
     
     Nice – it sounds like all 49 records from the data should join successfully!
     
-    That word **cardinality** is describing the nature of the relationship between the input and join tables: is it **one-to-one** (1:1), in which one record in one table is associated with a single record in the other table, or **one-to-many** (1:m), in which one record in one table is associated with multiple records in the other table?
-    
-    You can also have **many-to-many** (m:m) cardinality, which 🥵. We don't need to dive deeply into cardinality today, but it's good to be familiar with the term.
+    That word **cardinality**, by the way, is describing the *nature of the relationship between the input and join tables*. Cardinality can be **one-to-one** (1:1), in which one record in one table is associated with a single record in the other table, or **one-to-many** (1:m), in which one record in one table is associated with multiple records in the other table. You can also have **many-to-many** (m:m) cardinality, which 🥵. We don't need to dive deeply into cardinality today, but it's good to be familiar with the term. What is the cardinality of this join?
 
     Anyhoo: let's click **OK** to process the join.
 
@@ -434,17 +427,14 @@ To complete the join, open ArcGIS Pro and...
 
     Some of the records have values of `<Null>`, which is okay – it just means there was no joinable data for that record.
 
-> ![imp]
->
-> Table joins do not *save* tabular data to feature data; rather, the create a *link* between the two files. Try opening the **Fields view** of the attribute table... 
-> ![fields](images/image043.gif)
+> | ![imp]
+> |:-
+> | Table joins do not *save* tabular data to feature data; rather, the create a *link* between the two files. Try opening the **Fields view** of the attribute table... 
+> | ![fields](images/image043.gif)
 > ... and you'll notice that all the fields you just joined are prefixed with `africa_pop_est_1850-1950_cleaned.csv.` – in other words, the name of the `csv` that you joined to the `African Countries` layer.
->
-> In order to actually save the data, you'll need to export the `African Countries` layer as a new feature layer (like you did with some of the data in Lab 02).
-> 
-> Do so by right-clicking the layer ➡️ "Data" ➡️ "Export Features". Name the output file something like `AfricanCountries_Joined`. And please, don't skip this step. It will make your life harder in about 15 minutes. There are geospatial workflows you can't run on table-joined data layers, such as calculating area, which we're about to do.
->
-> In the **Export Features** dialog, you'll also want to unfold the **Fields** tab and check the box for "Use Field Alias as Name" – this will ensure your field names do *not* contain the entire `csv` filename as a prefix.
+> | In order to actually save the data, you'll need to export the `African Countries` layer as a new feature layer (like you did with some of the data in Lab 02).
+> | Do so by right-clicking the layer ➡️ "Data" ➡️ "Export Features". Name the output file something like `AfricanCountries_Joined`. And please, don't skip this step. It will make your life harder in about 15 minutes. There are geospatial workflows you can't run on table-joined data layers, such as calculating area, which we're about to do.
+> | In the **Export Features** dialog, you'll also want to unfold the **Fields** tab and check the box for "Use Field Alias as Name" – this will ensure your field names do *not* contain the entire `csv` filename as a prefix.
 
 In the next section, we'll discuss not just how to classify this data, but how classification operates more generally as a powerful tool for getting your message across.
 
@@ -586,6 +576,12 @@ Before **6:30pm on Tuesday, 2/20**, you should submit to Canvas a document in `p
    | 4. Take a moment to compare the two representational techniques: graduated symbols vs. graduated colors. Which symbology type feels better more intuitive for representing this data? Why? |
    | 5. Based on your reading of the data (and in no more than 3 sentences), pick one representational technique that you think fits this dataset best. What are its benefits and drawbacks? |
    | 6. In 2-3 sentences, reflect on the differences between the normalization techniques. What does each one highlight and what does each one obscure? |
+
+# Bibliography
+
+Crampton, Jeremy. 2009. “Rethinking Maps and Identity: Choropleths, Clines, and Biopolitics.” In *Rethinking Maps*, Routledge.
+
+Manning, Patrick. 2010. “African Population: Projections, 1850-1960.” In *The demographics of empire: the colonial order and the creation of knowledge*. Accessed February 4, 2024. https://muse.jhu.edu/chapter/242195.
   
 <!-------------------------------------[ Links ]
 ---------------------------------------->
