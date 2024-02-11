@@ -67,13 +67,13 @@ Optionally, you could include things like:
 
 # Download the data
 
-All of these datasets should be represented in your map:
-* Accused witches in the Scottish witch trials (you should [download it from Canvas](https://witches.is.ed.ac.uk/resources/), but [this is the source](https://witches.is.ed.ac.uk/resources/))
+These two datasets **must** be represented in your map:
+* [Accused witches in the Scottish witch trials](https://canvas.tufts.edu/courses/54475/files/7097163?wrap=1) (the original data is from is from [here](https://witches.is.ed.ac.uk/resources/))
 * [Scotland's civil parishes in 1930](https://www.nrscotland.gov.uk/files/geography/products/CivilParish1930.zip) (from [NRS](https://www.nrscotland.gov.uk/statistics-and-data/geography/our-products/other-national-records-of-scotland-nrs-geographies-datasets/civil-parishes))
-* [Various land and water features from Natural Earth](https://www.naturalearthdata.com/downloads/10m-physical-vectors/) (for basemap purposes - **large dataset!**)
-* [Shaded relief data from Natural Earth](https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-2/) (also for basemap purposes - **large dataset!**)
 
-Note that the land, water, and shaded relief features from Natural Earth are pretty big – probably close to half a gigabyte in total. Be conscious of that when downloading.
+You can also refer to these datasets from Natural Earth, which are useful for composing basemaps:
+* [Various land and water features](https://www.naturalearthdata.com/downloads/10m-physical-vectors/)
+* [Shaded relief data](https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-2/) (**large dataset!** - if you don't want to download this, you could use the standard hillshade in ArcGIS Pro instead)
 
 # **Examples**
 
