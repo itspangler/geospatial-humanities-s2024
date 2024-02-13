@@ -301,7 +301,7 @@ This is precisely what we want to do with our data: we want to join the "standal
 
 > ![imp]
 > 
-> Joins only work if the common identifier is ***exactly the same in both tables***: there can be ***absolutely no differences*** between the common field's *value* in either table, or else the data for that record won't be joined. For example, `Senegal` would not join to `SENEGAL` because the latter is all caps. For this reason, it's typically ideal to use a numerical key rather than a string (e.g., text-based) key.|
+> Joins only work if the common identifier is ***exactly the same in both tables***: there can be ***absolutely no differences*** between the common field's *value* in either table, or else the data for that record won't be joined. For example, `Senegal` would not join to `SENEGAL` because the latter is all caps. For this reason, it's typically ideal to use a numerical key rather than a string (e.g., text-based) key.
 
 Moving forward, the major question is, do we have a common field in our two tables?
 
