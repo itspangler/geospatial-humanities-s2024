@@ -227,7 +227,11 @@ Let's try...
    
    And save it, either with the **Save** button in the **Fields** tab at the top of your screen or by **right-clicking** in row itself and choosing "Save" (as highlighted below).
 
-   ![save](images/image014.png)
+   <img src="images/image014.png" width="350">
+
+   > ![imp]
+   > 
+   > Typically, when you are calculating the geometry of any feature or set of features, you'll want to first ensure it's [projected](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/project.htm) in a [planar coordinate system](https://ltb.itc.utwente.nl/page/498/concept/81590). If you inspect the source information of our `African Countries` layer, you'll note that it is only projected in a geographic coordinate system – *not* a planar (also known as "projected") coordinate system. For the sake of brevity in this activity, I'm skipping that step, but it would cause problems later on if we were to continue this analysis.
 
 4. Back in the attribute table for `African Countries`, **right-click** the `area` ➡️ "Calculate Geometry". This will automatically open the **Calculate Geometry** geoprocessing tool. Set the parameters to:
    1. Input Features = `African Countries`
