@@ -5,7 +5,7 @@
 ## Activities
 
 #### Activity 01: [Mapping ancient places](../week/02_distortion/activity/mapping-ancient-places.md)
-#### Activity 02: [Population change in Africa, 1850-1950](../week/04_aesthetics/in-class/pop-change-africa.md)
+#### Activity 02: [Population change in Africa, 1850-1950](../week/04_aesthetics/activity/historic-pop-africa.md)
 #### Activity 03: [Historical census](../week/05_archives-i/activity/historical-census.md)
 #### Activity 04: [Final project topic proposal](../week/08_analysis-ii/activity/fp-topic-proposal.md)
 #### Activity 05: [Final project environmental scan & wireframe](../week/11_analysis-iii/activity/fp-env-scan.md)
