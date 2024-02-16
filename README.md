@@ -13,7 +13,7 @@ This site is a repository for the spring 2024 term of **Introduction to Geospati
 ### Course pages
 
 * **[Syllabus](/syllabus/README.md)**.
-* **[Schedule at a glance](/syllabus/schedule.md)**.
+* **[Schedule at a glance](/syllabus/README.md)**.
 * **[Coursework directory](/week/README.md)**.
 * **[Canvas](https://canvas.tufts.edu/courses/54475)**.
 * **[Curations](/curations/README.md)**.
