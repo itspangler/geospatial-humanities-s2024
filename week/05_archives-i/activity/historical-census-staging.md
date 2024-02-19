@@ -68,19 +68,19 @@ Here are a few tips for searching these often unruly digital archives.
 
    |                  | Keywords                                                                                  | Subjects                                                                                                                  |
    | ---------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-   | Definition       | natural language words describing your topic - good to start with                         | pre-defined "controlled vocabulary" words used to describe the content of each item (book, journal article) in a database |
-   | Flexibility      | more flexible to search by - can combine together in many ways                            | less flexible to search by - need to know the exact controlled vocabulary term                                            |
-   | Search Scope     | database looks for keywords anywhere in the record - not necessarily connected together   | database looks for subjects only in the subject heading or descriptor field, where the most relevant words appear         |
-   | Result Precision | may yield too many or too few results                                                     | may yield many irrelevant results                                                                                         |
-   | Refinement       | if too many results - also uses subheadings to focus on one aspect of the broader subject | results usually very relevant to the topic                                                                                |
+   | *Definition*       | natural language words describing your topic - good to start with                         | pre-defined "controlled vocabulary" words used to describe the content of each item (book, journal article) in a database |
+   | *Flexibility*      | more flexible to search by - can combine together in many ways                            | less flexible to search by - need to know the exact controlled vocabulary term                                            |
+   | *Search Scope*     | database looks for keywords anywhere in the record - not necessarily connected together   | database looks for subjects only in the subject heading or descriptor field, where the most relevant words appear         |
+   | *Result Precision* | may yield too many or too few results                                                     | may yield many irrelevant results                                                                                         |
+   | *Refinement*       | if too many results - also uses subheadings to focus on one aspect of the broader subject | results usually very relevant to the topic                                                                                |
 
 
    See below for a few example topics, using the [simple template provided by Tufts' Hirsh Library](https://researchguides.library.tufts.edu/ld.php?content_id=9921496). How would you fill in the rows?
 
    |                             | Rise of the Peloponnesian League | Geography of John Smiths | Reconstructing ancient climate data | Gender and the Salem witch trials |
    | --------------------------- | -------------------------------- | ------------------------ | ----------------------------------- | --------------------------------- |
-   | Subjects | ???                              | ???                      | ???                                 | ???                               |
-   | Keywords                    | ???                              | ???                      | ???                                 | ???                               |
+   | *Subjects* | ???                              | ???                      | ???                                 | ???                               |
+   | *Keywords*                    | ???                              | ???                      | ???                                 | ???                               |
 
 2. **Use search operators.** Search operators help constrain and specify your search terms. For example, if you're researching the [Peloponnesian League](https://en.wikipedia.org/wiki/Peloponnesian_League), but not necessarily the Peloponnesian *War*, you could construct a search phrase that excludes results focused on the War itself. In another case, you might be researching a person whose name is [quite common across history](https://en.wikipedia.org/wiki/John_Smith), and need to add qualifying terms to your search; e.g., you don't want to include a ton of hits for [John Smith (explorer)](https://en.wikipedia.org/wiki/John_Smith_(explorer)) during your research into [John Smith (abolitionist)](https://en.wikipedia.org/wiki/John_Smith_(abolitionist)). See the table below – adapted from this guide from [Hirsh Library](https://researchguides.library.tufts.edu/hsl-advanced-searching) – for a description of each kind of search operator.
 
@@ -121,7 +121,7 @@ What is a "geospatial archive?" What are primary and secondary geospatial source
 
 To answer this question, it's useful to go back to one of the earliest sources of geospatial data that remains easily accessible today: William the Conqueror's *[Domesday Book](https://en.wikipedia.org/wiki/Domesday_Book)*, a survey of England and parts of Wales undertaken in C.E. 1086.
 
-After the Norman Conquest of 1066, King William the Conqueror sent his agents "to measure and catalogue the realm he had won" (Rogers 2015:50). [Dallas Rogers](https://rowman.com/ISBN/9781783483334/The-Geopolitics-of-Real-Estate-Reconfiguring-Property-Capital-and-Rights) calls the survey a "mediating technology" that allowed the King to establish and enforce a land taxation system. It's similar 
+After the Norman Conquest of 1066, King William the Conqueror sent his agents "to measure and catalogue the realm he had won" (Rogers 2015:50). [Dallas Rogers](https://rowman.com/ISBN/9781783483334/The-Geopolitics-of-Real-Estate-Reconfiguring-Property-Capital-and-Rights) calls the survey a "mediating technology" that allowed the King to establish and enforce a land taxation system. It's not that different from other tools, like urban tax atlases or modern GIS databases for real estate, which ultimately serve the administrative purpose of collecting tax.
   
 |:-:|
 |![domesday](images/image003.png)|
