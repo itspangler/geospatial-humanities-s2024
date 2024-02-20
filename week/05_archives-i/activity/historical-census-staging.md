@@ -1,4 +1,4 @@
-# Activity 03: Spatial data in "the archive" <!-- omit in toc -->
+# Activity 03: Spatial data in the archive <!-- omit in toc -->
 
 | ![domesday](images/image000.png) |
 | :----------------------------: |
@@ -22,7 +22,7 @@
 
 # What you should submit <!-- omit in toc -->
 
-Before **6:30pm on Tuesday, 2/20**, you should submit to Canvas:
+Before **6:30pm on Tuesday, 2/27**, you should submit to Canvas:
 * A document in `pdf` or `docx` format, answering all the questions that are tagged with ![q], and which are summarized in the [activity deliverables](#activity-deliverables) section
 
 # Introduction and context
@@ -31,7 +31,8 @@ This activity will prompt you to think about how digital archives – the fodde
 
 * Reflect on your own search/query habits and refine them into more intentional techniques
 * Learn common sources for geospatial data related to archives
-* Understand the basic motivations behind counting people (e.g., censuses)
+* Understand some of the basic motivations behind counting people (e.g., censuses)
+* Symbolize population data in ArcGIS Pro and compare change over time
 
 # Archives
 
@@ -237,8 +238,9 @@ Now that your data is organized, symbolize it. You know by now that there are a 
 4. Finally, symbolize the `Counties 1953` layer, following these parameters:
    1. Primary Symbology = "Graduated colors"
    2. Field = `A53002`
-   3. Choose a method that makes sense for this data
-   4. Choose a sensible color ramp for this numerical, quantitative data (e.g., sequential, classed, single-hue)
+   3. Normalization = `<percentage of total>`
+   4. Method = Equal interval
+   5. Choose a sensible color ramp for this numerical, quantitative data (e.g., sequential, classed, single-hue)
 
        > ![imp]|
        > :-|
@@ -264,24 +266,53 @@ Right-click the `Variables_index` file ➡️ "Show in File Explorer." Then, ope
 | 6. What variable do the field names `A53002` and `A64002` describe? |
 | 7. What other variable could you use to compare change between 1953 and 1964? |
 
+Before moving to the next section, turn labels on for both `Province` layers:
+1. Right-click the layer ➡️ "Apply labels"
+2. Then, right-click the layer ➡️ "Labeling properties"
+3. Set the Arcade expression to `$feature.EPROV` (that's "English province name")
+
+The default labels are pretty big, so after configuring the labels, I clicked into the **Symbol** tab of the label properties, unfolded "Appearance," and reduced the font size from `10 pt` to `8 pt`.
+
 ## Observations
 
-Take a moment to observe this data, toggling it on and off. 
-
-We would need to 
-
-South China Sea and disputed paracel island territories get associated with Guangdong in the data.
-
-Quietly, the Natural Earth data makes a geopolitical claim – one that, I'd argue, is even further normalized by the name of the provider, "Natural Earth," which implied a degree of .
+Take some time to observe this data, toggling it off and comparing the layers to one another, before answering the question below.
 
 | ![q]                    |
 | :---------------------- |
-| ?. Take a screenshot of your ArcGIS Pro interface, showing the symbolized layers. |
-| 7.  |
+| 8. In no more than 3 sentences, describe what you can learn from comparing the geographical changes over time as represented in this data; for example, you could describe provincial boundary changes, broader changes in the geopolitical landscape, or regional shifts in population. If you're feeling ambitious, you could even read up on the [Paracel Islands](https://en.wikipedia.org/wiki/Paracel_Islands), [Tibet/Xizang](https://en.wikipedia.org/wiki/Tibet_Autonomous_Region), or the *[hukou](https://en.wikipedia.org/wiki/Hukou)* system – all of which experienced radical changes between the years represented in this data, 1953-1964 – and consider how they are (or are not) represented in this data and its attribute table. But, again: no more than 3 sentences. |
+| 9. Take a screenshot of your ArcGIS Pro interface, showing the symbolized layers. |
 
 # Activity deliverables
 
+[<sub>⏎ back to the beginning</sup>](#activity-deliverables)
+
+Before **6:30pm on Tuesday, 2/27**, you should submit to Canvas:
+* A document in `pdf` or `docx` format, answering all the questions that are tagged with ![q], and which are summarized below:
+
+| ![q]                    |
+| :---------------------- |
+| 1. Pick a humanistic question (e.g., a  topic) that you could answer using geospatial methods, and write it down here. (If you're stumped, think about the exercises we've completed so far. [If you're *totally* stumped, just use one of the example topics listed above.]) |
+| 2. Develop a set of **subjects** and **search terms** that would help you search for this topic. Search, refine, and search again. Write the subjects and search terms here.  |
+| 3. In a few sentences (3 should suffice), summarize what you found about your chosen topic, including where you searched and at least one compelling primary source. |
+| 4. Find a spatial dataset (e.g., a `shp` file, a `csv` file containing geographic information like lat/long/address) that could help answer the research topic you chose in question 1. If you can't find anything, in 1-2 sentences, consider how you would go about composing your own spatial dataset to answer this topic. Where would you start? |
+| 5. What were the reference (e.g., [primary](#digital-archives-and-primarysecondary-sources)) sources for the 1953 and 1964 county- and province-level spatial data boundaries? |
+| 6. What variable do the field names `A53002` and `A64002` describe? |
+| 7. What other variable could you use to compare change between 1953 and 1964? |
+| 8. In no more than 3 sentences, describe what you can learn from comparing the geographical changes over time as represented in this data; for example, you could describe provincial boundary changes, broader changes in the geopolitical landscape, or regional shifts in population. If you're feeling ambitious, you could even read up on the [Paracel Islands](https://en.wikipedia.org/wiki/Paracel_Islands), [Tibet/Xizang](https://en.wikipedia.org/wiki/Tibet_Autonomous_Region), or the *[hukou](https://en.wikipedia.org/wiki/Hukou)* system – all of which experienced radical changes between the years represented in this data, 1953-1964 – and consider how they are (or are not) represented in this data and its attribute table. But, again: no more than 3 sentences. |
+| 9. Take a screenshot of your ArcGIS Pro interface, showing the symbolized layers. |
+
 # Bibliography
+
+Derrida, Jacques. 1996. Archive Fever: A Freudian Impression. Religion and Postmodernism. Chicago: University of Chicago Press.
+
+Hodder, Jake, and David Beckingham. 2022. “Digital Archives and Recombinant Historical Geographies.” Progress in Human Geography 46 (6): 1298–1310.
+
+Manalansan, Martin F. 2014. “The ‘Stuff’ of Archives.” Radical History Review 2014 (120): 94–107.
+
+Rogers, Dallas. 2017. The Geopolitics of Real Estate: Reconfiguring Property, Capital and Rights. London ; New York: Rowman & Littlefield Publishers.
+
+Stoler, Ann Laura. 2002. “Colonial Archives and the Arts of Governance.” Archival Science 2 (1): 87–109.
+
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->
