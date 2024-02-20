@@ -8,14 +8,15 @@
 
 - [Introduction and context](#introduction-and-context)
 - [Archives](#archives)
-  - [Digital archives](#digital-archives)
+  - [Digital archives and primary/secondary sources](#digital-archives-and-primarysecondary-sources)
   - [Parsing the unruly](#parsing-the-unruly)
 - [Geospatial archives](#geospatial-archives)
   - [The Domesday Book](#the-domesday-book)
   - [Modern geospatial archives](#modern-geospatial-archives)
-- [Mapping two censuses](#mapping-two-censuses)
-  - [China Historical GIS](#china-historical-gis)
-  - [National Historic GIS (U.S.)](#national-historic-gis-us)
+- [China Historical GIS](#china-historical-gis)
+  - [Comparing the 1953 and 1964 censuses](#comparing-the-1953-and-1964-censuses)
+  - [Metadata](#metadata)
+  - [Observations](#observations)
 - [Activity deliverables](#activity-deliverables)
 - [Bibliography](#bibliography)
 
@@ -41,7 +42,7 @@ In his essay on [the "stuff" of archives](https://read.dukeupress.edu/radical-hi
 
 In what ways do these functions of archives – which overlap with one another - translate in digital terms?
 
-## Digital archives
+## Digital archives and primary/secondary sources
 
 In an essay reflecting on digital archives, Jake Hodder and David Beckingham (2022:1300-1301) argue that the search tools we use today are not simply venues for looking at digital (and digitized) materials, but that they structure how you *search* and even inform how you *think*.
 
@@ -124,9 +125,9 @@ To answer this question, it's useful to go back to one of the earliest sources o
 After the Norman Conquest of 1066, King William the Conqueror sent his agents "to measure and catalogue the realm he had won" (Rogers 2015:50). [Dallas Rogers](https://rowman.com/ISBN/9781783483334/The-Geopolitics-of-Real-Estate-Reconfiguring-Property-Capital-and-Rights) calls the survey a "mediating technology" that allowed the King to establish and enforce a land taxation system. It's not that different from other tools, like urban tax atlases or modern GIS databases for real estate, which ultimately serve the administrative purpose of collecting tax.
   
 |:-:|
-|![domesday](images/image003.png)|
-|![atlas](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:9g54z617k/4966,2005,2704,768/1200,/0/default.jpg)|
-|![viewer](images/image005.png)|
+|<img src="images/image003.png" width=300>|
+|<img src="https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:9g54z617k/4966,2005,2704,768/1200,/0/default.jpg" width=300>|
+|<img src="images/image005.png" width=300>|
 |*The Domesday Book from 1086 (top); an urban atlas from 1898 (middle); and the City of Boston's modern tax parcel viewer in ArcGIS Online (bottom).*|
 
 The Domesday Book is an example of an extremely well-preserved census, or an official count of population. In the U.S., we use censuses to tabulate demographic data as well as determine political representation in the House of Representatives.
@@ -142,35 +143,55 @@ Take, for example, this spatial data of [Boston's historic shoreline](https://da
 While there is no overarching, canonical system for geospatial data archiving, there are all sorts of spatial data libraries that you can use to search and retrieve geospatial data. We typically call these **data portals** or **data clearinghouses**.
 
 Here are a few general-purpose portals:
-1. Tufts GeoData Portal: https://geodata.tufts.edu/
-2. BTAA GeoPortal: https://geo.btaa.org/
-3. Harvard Geospatial Library: https://library.harvard.edu/services-tools/harvard-geospatial-library
-4. MassGIS: https://www.mass.gov/info-details/massgis-data-layers
+1. Tufts GeoData Portal: <https://geodata.tufts.edu/>
+2. BTAA GeoPortal: <https://geo.btaa.org/>
+3. Harvard Geospatial Library: <https://library.harvard.edu/services-tools/harvard-geospatial-library>
+4. MassGIS: <https://www.mass.gov/info-details/massgis-data-layers>
 
 And here are more that focus specifically on censuses:
-1. The Great Britain Historical GIS: http://www.gbhgis.org
-2. The China Historical GIS: http://www.fas.harvard.edu/~chgis
-3. Chinese Civilization in Time and Space: http://ccts.ascc.net
-4. Taiwan History and Culture in Time and Space: http://thcts.ascc.net
-5.  The Belgian Historical GIS: http://www.hisgis.be
-6.  The Historical GIS for the Netherlands: http://nlgis.dans.knaw.nl
-7.  Historical GIS Germany: http://www.hgis-germany.de
-8.  Russian Historical GIS: http://www.ihst.ru/personal/imerz/bound/bounds.htm
-9.  National Historic GIS: https://www.nhgis.org/
-10. International Censuses with some normalized over time  https://terra.ipums.org/home
-11. Great Britain Historical GIS: https://borders.ukdataservice.ac.uk//licences.html
+1. The Great Britain Historical GIS: <http://www.gbhgis.org>
+2. The China Historical GIS: <http://www.fas.harvard.edu/~chgis>
+3. Chinese Civilization in Time and Space: <http://ccts.ascc.net>
+4. Taiwan History and Culture in Time and Space: <http://thcts.ascc.net>
+5.  The Belgian Historical GIS: <http://www.hisgis.be>
+6.  The Historical GIS for the Netherlands: <http://nlgis.dans.knaw.nl>
+7.  Historical GIS Germany: <http://www.hgis-germany.de>
+8.  Russian Historical GIS: <http://www.ihst.ru/personal/imerz/bound/bounds.htm>
+9.  National Historic GIS: <https://www.nhgis.org/>
+10. International Censuses: <https://terra.ipums.org/home>
+11. Great Britain Historical GIS: <https://borders.ukdataservice.ac.uk//licences.html>
 
 | ![q] |
 | :--- |
-| 4. Find a spatial dataset (e.g., a `shp` file, a `csv` file containing geographic information like lat/long/address) that could help answer the question you posed in question 1. If you can't find anything, in 1-2 sentences, consider how you would go about composing your own spatial dataset to answer this topic. Where would you start? |
+| 4. Find a spatial dataset (e.g., a `shp` file, a `csv` file containing geographic information like lat/long/address) that could help answer the research topic you chose in question 1. If you can't find anything, in 1-2 sentences, consider how you would go about composing your own spatial dataset to answer this topic. Where would you start? |
 
-# Mapping two censuses
+# China Historical GIS
 
-Now, let's crack open ArcGIS and dive into two examples of mapping censuses. One is focused on China and the other on the U.S. 
+Let's dive into some historical population data in ArcGIS Pro. Tufts GIS has collected lots of useful spatial datasets collected on the `M: Drive`. One of them contains historic population data for China, going back to 1953.
 
-## China Historical GIS
+Last week, in [Activity 02](../../04_aesthetics/activity/historic-pop-africa.md), we worked with historic population data for the entire continent of Africa. However, **that data was not produced by a census** – it was a set of *estimated values* that a researcher created with a set of mathematical models.
 
-Tufts GIS has collected lots of useful spatial datasets collected on the `M: Drive`. One of them contains historic population data for China, going back to 1953. Follow these steps to get the necessary data into your project.
+In this activity, we're actually using data that came from a Census. Of course, as discussed above, 
+
+In your File Explorer, navigate to...
+
+    M:\Country\China\ChinaDataCenter\ChinaHistoricalCountyCensus
+
+... and open the document titled `README`. If you double-click it, it will probably open, by default, in Microsoft Edge (🤢). You can right-click ➡️ "Open with" to open it in your web browser of choice (and if Microsoft Edge *is* your web browser of choice, you don't need to tell me, that's between you and god).
+
+<img src="images/image008.png" width=300>
+
+[README files](https://en.wikipedia.org/wiki/README) are a convention of metadata files. Aptly named, they typically include information that explains what's in a given directory.
+
+Open this README file and answer the question below.
+
+| ![q] |
+| :--- |
+| 5. What were the reference (e.g., [primary](#digital-archives-and-primarysecondary-sources)) sources for the 1953 and 1964 county- and province-level spatial data boundaries? |
+
+## Comparing the 1953 and 1964 censuses
+
+Let's compare these two censuses. Follow these steps to get the necessary data into your project.
 
 1. Either in your Box account or your `H: drive`, make a workspace for this week's activity.
 2. In that workspace, create a new ArcGIS Pro project.
@@ -198,25 +219,65 @@ Once you have the data in your project, organize it:
    5. `Countries`
 5. **Group** your 1953 provinces and counties together by selecting both of the 1953 layers ➡️ Right-click ➡️ "Group"
 
-    ![group](images/image004.png)
-6. Finally, symbolize the `Countries` layer to be unintrusive, so that it clearly scans as a background (remember figure-ground?). I recommend gray or tan, with boundaries of `0.5` width in the same color as the fill, but darker.
+    <img src="images/image004.png" width=300>
 
-Now symbolize the `Counties 1953` layer by its symbology, following these parameters:
-1. Graduated colors
-2. Field = `A53002`
-3. Sensible color ramp
-4. 
+    This will allow you to toggle these layers on and off in groups. 
+    
+6. Group the 1964 layers as well.
+7. Rename the groups `1953` and `1964`
+
+Now that your data is organized, symbolize it. You know by now that there are a few ways to access the **Symbology** pane, including 1) right-clicking a layer ➡️ "Symbology," and 2) clicking on the "Feature Layer" tab in the ribbon at the top of ArcGIS Pro while the layer you want to symbolize is selected.
+1. First, symbolize the `Countries` layer to be unintrusive, so that it clearly scans as a background (remember figure-ground?). I'd recommend a gray or tan, with boundaries of `0.5` width in the same color as the fill, but darker.
+
+    To get that "just right" color, you'll probably have to click into the "Color Properties" tab of the "Color" dropdown.
+
+    <img src="images/image007.png" width=250>
+2. Second, set the background of the map to a light, pastel blue. To do this from your **Contents** pane, right-click "Map" ➡️ "Properties" ➡️ "General" ➡️ "Background color". This will simulate water and eliminate the need to include an extra data layer. Nice!
+3. Third, symbolize both of the `Province` layers so that the color is transparent (e.g., "No color") and the outline is a dark gray with an width of `0.5`.
+4. Finally, symbolize the `Counties 1953` layer, following these parameters:
+   1. Primary Symbology = "Graduated colors"
+   2. Field = `A53002`
+   3. Choose a method that makes sense for this data
+   4. Choose a sensible color ramp for this numerical, quantitative data (e.g., sequential, classed, single-hue)
+
+       > ![imp]|
+       > :-|
+       > Click the gear next to "Color scheme" and select "Apply to fill and outline." This will automatically apply the fill color for each feature in your data to the outline as well, de-emphasizing the internal county boundaries and giving the data a smoother appearance. This also allows us to cartographically distinguish the provinces from the counties.
+5. Symbolize the 1964 data in the same fashion as the 1953 data, using the field `A64002`.
+
+If you've grouped layers and symbolized everything properly, you should see something like this when you toggle the `1953` layer on and off:
+
+![switch](images/image006.gif)
+
+We've got our data displayed nicely – you could even make a new "Map" tab, [like we did in Activity 02](../../04_aesthetics/activity/historic-pop-africa.md#side-by-side-comparisons), to make a side-by-side comparison of the two years – but what do the fields we're mapping, `A53002` and `A64002`, actually mean? And what else is in the attribute tables of these two datasets?
+
+## Metadata
+
+In the **Catalog** pane of ArcGIS Pro, navigate back to `M:` ➡️ `Country` ➡️ `China` ➡️ `ChinaDataCenter` ➡️ `ChinaHistoricalCountyCensus`.
+
+You should see an Excel file (`.xls`) titled `Variables_index`. This file contains **metadata** for this historic demographic data.
+
+Right-click the `Variables_index` file ➡️ "Show in File Explorer." Then, open the file in Microsoft Excel and answer the questions below using the metadata.
+
+| ![q]                                                                |
+| :------------------------------------------------------------------ |
+| 6. What variable do the field names `A53002` and `A64002` describe? |
+| 7. What other variable could you use to compare change between 1953 and 1964? |
+
+## Observations
+
+Take a moment to observe this data, toggling it on and off. 
+
+We would need to 
 
 South China Sea and disputed paracel island territories get associated with Guangdong in the data.
 
-Silently, the data makes a geopolitical claim – one that Vietnam would not, I imagine, be happy to see.
+Quietly, the Natural Earth data makes a geopolitical claim – one that, I'd argue, is even further normalized by the name of the provider, "Natural Earth," which implied a degree of .
 
 | ![q]                    |
 | :---------------------- |
-| 6. Take a screenshot of your ArcGIS Pro interface, showing the 1953 |
+| ?. Take a screenshot of your ArcGIS Pro interface, showing the symbolized layers. |
 | 7.  |
-
-## National Historic GIS (U.S.)
 
 # Activity deliverables
 
