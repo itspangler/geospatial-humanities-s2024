@@ -31,3 +31,7 @@ The curatorial introduction should be about 12 minutes in length, and at 15 min
 4. What **areas of growth** can you find in this project, process, or product? More specifically, what kinds of spatial datasets would you add and what kinds of different design choices would you make if you were the lead developer/curator?
 
 Curatorial groups have total autonomy over the format of the curation. Whether the presentation includes a slide deck, a live demo, a hands-on interaction, or something else entirely is completely okay with me, as long as it stays within the 15-minute mark.
+
+# Examples
+
+Check out [this list of suitable topics for a curation](./examples.md).
