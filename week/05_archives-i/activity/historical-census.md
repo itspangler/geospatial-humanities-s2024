@@ -239,15 +239,15 @@ Now that your data is organized, symbolize it. You know by now that there are a 
    1. Primary Symbology = "Graduated colors"
    2. Field = `A53002`
    3. Normalization = `<percentage of total>`
-   4. Method = Equal interval
+   4. Method = Natural Breaks
    5. Choose a sensible color ramp for this numerical, quantitative data (e.g., sequential, classed, single-hue)
 
        > ![imp]|
        > :-|
        > Click the gear next to "Color scheme" and select "Apply to fill and outline." This will automatically apply the fill color for each feature in your data to the outline as well, de-emphasizing the internal county boundaries and giving the data a smoother appearance. This also allows us to cartographically distinguish the provinces from the counties.
-5. Symbolize the 1964 data in the same fashion as the 1953 data, using the field `A64002`.
+5. Symbolize the 1964 data in the same fashion as the 1953 data, using the field `A64002`. **However, instead of choosing the Natural Breaks method, choose Manual Interval and set the class breaks to the exact same breaks as your 1953 layer.** Your maps need to share class breaks in order to be comparable across time, and this is one fairly straightforward way to generate them.
 
-If you've grouped layers and symbolized everything properly, you should see something like this when you toggle the `1953` layer on and off:
+If you've grouped layers and symbolized everything properly, you should see something like this when you toggle the `1953` layer on and off (**this gif is just displayed in natural breaks - yours will probably look different**):
 
 ![switch](images/image006.gif)
 
@@ -284,7 +284,7 @@ Take some time to observe this data, toggling it off and comparing the layers to
 
 # Activity deliverables
 
-[<sub>⏎ back to the beginning</sup>](#activity-deliverables)
+[⏎ back to the beginning](#activity-deliverables)
 
 Before **6:30pm on Tuesday, 2/27**, you should submit to Canvas:
 * A document in `pdf` or `docx` format, answering all the questions that are tagged with ![q], and which are summarized below:
