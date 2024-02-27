@@ -44,9 +44,9 @@ Note that for this assignment, you may use one of the preset "streaming" base ma
 # Suggested workflow
 
 Here is the workflow you should follow. Except for places where specific instructions are necessary, the workflow is only sketched out in broad brushstrokes. You will need to determine how to execute each step, using both the links provided, your existing knowledge, and your best judgment. 
-1. [Georeference](https://pro.arcgis.com/en/pro-app/3.1/help/data/imagery/georeferencing-tools.htm) at least 5 Sanborn maps from an atlas of your choosing
+1. [Georeference](https://pro.arcgis.com/en/pro-app/3.1/help/data/imagery/georeferencing-tools.htm) at least 4 Sanborn maps from an atlas of your choosing
    1. Download the maps as `TIFF` files from the Library of Congress
-   2. The maps (or "plates" in the parlance of urban atlases) that you choose should adjoin one another – e.g., you shouldn't pick 5 disconnected plates from across the whole city
+   2. The maps (or "plates" in the parlance of urban atlases) that you choose should adjoin one another – e.g., you shouldn't pick 4 disconnected plates from across the whole city
    3. The plates should cover a reasonably big geographic area
 2. Using your 5 georeferenced maps as the inputs, [mosaic](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/mosaic.htm) the plates into a single layer
 3. Generate a footprint of the mosaicked raster layer – lots of ways to do this. Pick one. This layer will be your "Area of interest"
