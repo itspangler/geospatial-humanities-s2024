@@ -506,7 +506,7 @@ When it's finished running, remove `shipwrecks` from your **Contents** pane. The
 | *What a difference a clip makes* |
 |                                  |
 
-Open up the `shipwrecks_clipped` attribute table. There's a *ton* of data in here that you could do interesting stuff with, but we're only concerned with one field: `date_sunk`. (Just as a point of order, this data [doesn't have any real meaningful field-by-field metadata associated with it](https://datahub.admiralty.co.uk/portal/home/item.html?id=3a234f90e54349f1b77c4b3e303f8dd4), which kind of sucks, so we're stepping into a realm of greater uncertainty.)
+Open up the `shipwrecks_clipped` attribute table. There's a *ton* of data in here that you could do interesting stuff with, but we're only concerned with one field: `date_sunk`. (Just as a point of order, this data doesn't have any real meaningful field-by-field metadata associated with it, which kind of sucks, so we're stepping into a realm of greater uncertainty.)
 
 Since our main light density surface layers are associated with specific years, we want to be able to select and filter these points based on year as well. Two things are stopping us:
 
