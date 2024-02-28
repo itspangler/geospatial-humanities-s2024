@@ -465,9 +465,9 @@ In general, this is a super common GIS workflow. In our case, we're answering th
 
 ## **Download the data**
 
-[Download the data](https://datahub.admiralty.co.uk/portal/apps/sites/#/marine-data-portal/items/3a234f90e54349f1b77c4b3e303f8dd4) from the UK Hydropgraphic Office and save it to your `data` folder. After unzipping it, delete the now-unnecessary `.zip` file. (As usual, I recommend cleaning up your workspace as you go.)
+[Download the data](https://canvas.tufts.edu/courses/54475/files/7178472?wrap=1) from ~~the UK Hydropgraphic Office~~ Canvas and extract its contents to your `data` folder.
 
-Load the `Points.shp` file that is buried within the `Wrecks_and_Obstructions_Shapefile` folder into ArcGIS Pro.
+Then, load the `Points.shp` file that is buried within the `Wrecks_and_Obstructions_Shapefile` folder into ArcGIS Pro.
 
 Jump scare! Points everywhere!
 
