@@ -236,7 +236,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * What analytical opportunities does representing spatial information as raster data instead of vector data create? What are the basic mathematical and statistical foundations of raster analysis? What are its structures, functions, and limits?
 * Due before class:
   * Curation Group 3
-  * Assignment 02: [Old maps, new stories](../week/07_archives-ii/assignments/old-maps-new-stories.md)
+  * Assignment 02: [Parking lot cemeteries](../week/07_archives-ii/assignments/parking-lot-cemeteries.md)
 
 **March 19 • Mandatory relaxation • Spring break**
 
