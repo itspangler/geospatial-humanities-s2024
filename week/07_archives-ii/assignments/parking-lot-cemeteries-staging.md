@@ -46,10 +46,12 @@ Note that for this assignment, you may use one of the preset "streaming" base ma
 Here is the workflow you should follow. Except for places where specific instructions are necessary, the workflow is only sketched out in broad brushstrokes. You will need to determine how to execute each step, using both the links provided, your existing knowledge, and your best judgment. 
 1. From the Library of Congress, download at least 4 Sanborn maps from an atlas of your choosing
    1. Don't just pick an arbitrary area – you should choose 4 maps that cover an area where modern parking lots exist. To get you started, you could compare the index plate of your chosen atlas with this map from [Parking Lot Reform](https://parkingreform.org/resources/parking-lot-map/). In the example below, I compared the two maps for Richmond, Virginia, and determined that plates 8, 9, 49, and 50, would be suitable to download:
+
    |:-:|
    |![index](./images/image006.png)|
    |![lots](./images/image007.png)|
    |*Index plate from Sanborn atlas (top) and Parking Lot Reform map (bottom)*|
+   
    3. Moreover, the maps (or "plates" in the parlance of urban atlases) that you choose should adjoin one another – e.g., you shouldn't pick 4 disconnected plates from across the whole city
    4. When you're ready, download the maps as `TIFF` files from the [Library of Congress](https://loc.gov):
    
