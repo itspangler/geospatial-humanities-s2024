@@ -66,8 +66,10 @@ Here is the workflow you should follow. Except for places where specific instruc
    | *Downloading an atlas plate* |
 2. [Georeference](https://pro.arcgis.com/en/pro-app/3.1/help/data/imagery/georeferencing-tools.htm) the 4 maps. **Street corners will be your most reliable control points!**
 3. Using your 4 georeferenced maps as the inputs, [mosaic](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/mosaic.htm) the plates into a single layer
-4. Generate a footprint of the mosaicked raster layer – lots of ways to do this. Pick one. This layer will be your "Area of interest"
-5. Using [overpass turbo](https://overpass-turbo.eu/), download a `geojson` file of parking lots in your area of interest from OpenStreetMap
+
+    Be sure to **generate a footprint** of the mosaicked raster when you run the tool! You'll use this later.
+    
+4. Using [overpass turbo](https://overpass-turbo.eu/), download a `geojson` file of parking lots in your area of interest from OpenStreetMap
    1. Copy and paste this query into the overpass turbo query builder:
 
             way
@@ -78,11 +80,11 @@ Here is the workflow you should follow. Except for places where specific instruc
     2. Navigate to your area of interest. Make sure that the screen is zoomed in to such an extent that your entire area of interest is visible, but not so zoomed out that you end up retrieving a ton of extra data
     3. Click **Run**
     4. Click **Export** ➡️ download the GeoJSON
-6. [Convert the GeoJSON to a feature class](https://pro.arcgis.com/en/pro-app/latest/tool-reference/conversion/json-to-features.htm) and load it into your map
+5. [Convert the GeoJSON to a feature class](https://pro.arcgis.com/en/pro-app/latest/tool-reference/conversion/json-to-features.htm) and load it into your map
 
     While you're doing this, you might opt to remove all the fields that come down from overpass turbo. You won't need them
-7. [Raster clip](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/clip.htm) mosaicked maps by parking lots
-8. If not already present, [calculate geometry](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/calculate-geometry-attributes.htm) for both your parking lot and footprint layers. Then, compute how much of the area of interest is occupied by parking lots today, and include that value somewhere in your map
+6. [Raster clip](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/clip.htm) mosaicked maps by parking lots
+7. If not already present, [calculate geometry](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/calculate-geometry-attributes.htm) for both your parking lot and footprint layers. Then, compute how much of the area of interest is occupied by parking lots today, and include that value somewhere in your map
 
 Once you're done with the above steps, spend some time examining the parking lot cemeteries. Are there any patterns that you notice between what used to exist? What did the land underneath parking lots used to contain?
 
