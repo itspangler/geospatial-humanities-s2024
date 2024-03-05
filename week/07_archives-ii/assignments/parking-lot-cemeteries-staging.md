@@ -6,6 +6,8 @@
 
 # **Introduction and context**
 
+In most places, parking lots are everywhere.
+
 Although parking lots only take up about 0.27% of total land area in the commonwealth of Massachusetts, that number starts to grow as you zoom into cities and towns. A back-of-the-napkin estimate using data from [OpenStreetMap](https://www.openstreetmap.org/) suggests that number goes up by a factor of ten in Boston (2.7%) – and it's much lower in Boston than most cities in the U.S.
 
 All things considered, parking lots are a relatively new invention. The turn towards car-dependent urban planning in the twentieth century United States – galvanized by the passage of the 1956 Interstate Highway Act, which provided 90% in federal matching funds for highway construction – radically transformed how people got around. In fact, I think we can draw a direct line from the federal funding of highways seventy years ago to the red line catching on fire today. But I digress.
@@ -48,10 +50,10 @@ Here is the workflow you should follow. Except for places where specific instruc
    1. Don't just pick an arbitrary area – you should choose 4 maps that cover an area where modern parking lots exist. To get you started, you could compare the index plate of your chosen atlas with this map from [Parking Lot Reform](https://parkingreform.org/resources/parking-lot-map/). In the example below, I compared the two maps for Richmond, Virginia, and determined that plates 8, 9, 49, and 50, would be suitable to download:
 
    |:-:|
-   |![index](./images/image006.png)|
-   |![lots](./images/image007.png)|
+   |<img src="./images/image006.png" width="350px">|
+   |<img src="./images/image007.png" width="350px">|
    |*Index plate from Sanborn atlas (top) and Parking Lot Reform map (bottom)*|
-   
+
    3. Moreover, the maps (or "plates" in the parlance of urban atlases) that you choose should adjoin one another – e.g., you shouldn't pick 4 disconnected plates from across the whole city
    4. When you're ready, download the maps as `TIFF` files from the [Library of Congress](https://loc.gov):
    
@@ -62,8 +64,7 @@ Here is the workflow you should follow. Except for places where specific instruc
    | ![download](./images/image005.gif) |
    | :--------------------------------- |
    | *Downloading an atlas plate* |
-2. [Georeference](https://pro.arcgis.com/en/pro-app/3.1/help/data/imagery/georeferencing-tools.htm) the 4 maps
-   1. Street corners will be your most reliable control points
+2. [Georeference](https://pro.arcgis.com/en/pro-app/3.1/help/data/imagery/georeferencing-tools.htm) the 4 maps. **Street corners will be your most reliable control points!**
 3. Using your 4 georeferenced maps as the inputs, [mosaic](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/mosaic.htm) the plates into a single layer
 4. Generate a footprint of the mosaicked raster layer – lots of ways to do this. Pick one. This layer will be your "Area of interest"
 5. Using [overpass turbo](https://overpass-turbo.eu/), download a `geojson` file of parking lots in your area of interest from OpenStreetMap
