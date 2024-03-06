@@ -80,7 +80,6 @@ Here is the workflow you should follow. Except for places where specific instruc
     
 2. Using [overpass turbo](https://overpass-turbo.eu/), download a `geojson` file of parking lots in your area of interest from OpenStreetMap
    1. Copy and paste this query into the overpass turbo query builder:
-
             way
                 [amenity=parking]
                 ({{bbox}});
