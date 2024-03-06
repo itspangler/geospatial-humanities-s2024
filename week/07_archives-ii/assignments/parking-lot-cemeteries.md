@@ -83,10 +83,10 @@ Here is the workflow you should follow. Except for places where specific instruc
 
             way
                 [amenity=parking]
-                ({{bbox}});
+                (\{\{bbox\}\});
             (._;>;);
             out;
-            
+
     2. Navigate to your area of interest. Make sure that the screen is zoomed in to such an extent that your entire area of interest is visible, but not so zoomed out that you end up retrieving a ton of extra data
     3. Click **Run**
     4. Click **Export** ➡️ download the GeoJSON
