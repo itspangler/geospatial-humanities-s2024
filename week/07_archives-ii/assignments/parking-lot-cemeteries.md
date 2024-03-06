@@ -83,7 +83,7 @@ Here is the workflow you should follow. Except for places where specific instruc
 
             way
                 [amenity=parking]
-                (\{\{bbox\}\});
+                ({{bbox}});
             (._;>;);
             out;
 
