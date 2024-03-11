@@ -38,8 +38,8 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * What are the best practices for representing spatial data and making maps? To what extent are those practices contingent on flexible cultural and social norms? When should you bend or break these rules in order to make a more effective argument? Is cartography an "art," a "science," something in between, or neither? Is cartography anything at all?
 * Due before class:
-  * Curation Group 1
-  * Lab 02: [The Transatlantic Slave Trade Database](../week/03_data/labs/...)
+  * ~~Curation Group 1~~
+  * Lab 02: [The Transatlantic Slave Trade Database](../week/03_data/lab/slave-trade.md)
   * Listen to Bose, Tulika. 2023. “[The Surprising Backstory behind Witch Hunts and Reproductive Labor](https://www.scientificamerican.com/podcast/episode/the-surprising-backstory-behind-witch-hunts-and-reproductive-labor/).” *Scientific American*.
 
 
@@ -51,6 +51,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * Why do we count people? Where does the device of a "census" come from? Who gets counted and who doesn't? How can we map those presences and absences?
 * Due before class:
+  * Curation group 1
   * Assignment 01: [WITCHCRAFT!](../week/04_aesthetics/assignment/witchcraft.md)
   * Activity 02: [Population Change in Africa, 1850-1950](../week/04_aesthetics/in-class/pop-change-africa.md)
   * Jacobs, Alexandra. 2022. "[Counting the Population Has Always Been Political](https://www.nytimes.com/2022/08/28/books/democracys-data-dan-bouk.html)," *The New York Times*, 2022.
@@ -71,7 +72,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * How do you turn scanned maps into spatial data? Once you have, what should you *do* with that spatial data?
 * Due before class:
-  * Lab 03: [Lighthouses, shipwrecks, and the architecture of maritime empire](../week/06_analysis-i/lab/exercise03_lighthouses.md)
+  * Lab 03: [Lighthouses, shipwrecks, and the architecture of maritime empire](../week/06_analysis-i/lab/lighthouses.md)
     * OPTIONAL PAIRING: Watch [*The Lighthouse* (2019)](https://en.wikipedia.org/wiki/The_Lighthouse_(2019_film))
   * Lumiere Brothers, dir. 1895. (MediaFilmProfessor, 2011.) [1895, Lumiere, Workers Leaving the Lumiere Factory](https://www.youtube.com/watch?v=DEQeIRLxaM4).
   * Wilson, Andrew Norman, dir. 2011. [Workers Leaving the Googleplex](http://www.andrewnormanwilson.com/WorkersGoogleplex.html.).
@@ -85,7 +86,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * What analytical opportunities does representing spatial information as raster data instead of vector data create? What are the basic mathematical and statistical foundations of raster analysis? What are its structures, functions, and limits?
 * Due before class:
   * Curation Group 3
-  * Assignment 02: [Parking lot cemeteries](../week/07_archives-ii/assignment/...)
+  * Assignment 02: [Parking lot cemeteries](../week/07_archives-ii/assignments/parking-lot-cemeteries.md)
 
 **March 19 • Mandatory relaxation • Spring break**
 
@@ -100,8 +101,8 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * What are best practices for applying geospatial methods to texts?
 * Due before class:
   * Curation Group 4
-  * Lab 04: [Pixelated places](../week/08_analysis-ii/lab/...)
-  * Activity 04: [Final project topic proposal](../week/08_analysis-ii/activity/...)
+  * Lab 04: [Pixelated places](../week/08_analysis-ii/lab/indoeuro.md)
+  * Activity 04: [Final project topic proposal](../week/08_analysis-ii/activity/fp-topic-proposal.md)
 
 **April 2 • Analysis III • Archaeology**
 
