@@ -88,10 +88,6 @@ Maybe this one's obvious, but the *graphical register* refers to how you choose 
    2. Must address all four registers with care and intention
    3. More on this soon!
 
-| Deliverable                  | Due date | Description |
-| :--------------------------- | :------- | :---------- |
-| Final project topic proposal | 3/26     |             |
-
 <!-------------------------------------[ Links ]
 ---------------------------------------->
 
