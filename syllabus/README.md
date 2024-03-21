@@ -250,8 +250,8 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * What are best practices for applying geospatial methods to texts?
 * Due before class:
   * Curation Group 4
-  * Lab 04: [Pixelated places](../week/08_analysis-ii/lab/...)
-  * Activity 04: [Final project topic proposal](../week/08_analysis-ii/activity/...)
+  * Lab 04: [Indo-european geographies](../week/08_analysis-ii/lab/indoeuro.md)
+  * Activity 04: [Final project topic proposal](../final-projects/README.md)
 
 **April 2 • Analysis III • Archaeology**
 

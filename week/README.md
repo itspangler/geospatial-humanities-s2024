@@ -17,7 +17,7 @@
 #### Lab 01: [Basics](../week/01_intro/lab/basics-india.md)
 #### Lab 02: [The Transatlantic Slave Trade](../week/03_data/lab/slave-trade.md)
 #### Lab 03: [Lighthouses](../week/06_analysis-i/lab/lighthouses.md)
-#### Lab 04: [Pixelated places](../week/08_analysis-ii/lab/indoeuro.md)
+#### Lab 04: [Indo-European Geographies](../week/08_analysis-ii/lab/indoeuro.md)
 #### Lab 05: [Archaeology](../week/11_analysis-iii/lab/archaeology.md)
 
 ## Assignments
