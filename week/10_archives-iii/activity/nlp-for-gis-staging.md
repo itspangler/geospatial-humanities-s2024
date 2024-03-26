@@ -1,4 +1,4 @@
-# Activity 04: NLP for GIS <!-- omit in toc -->
+# Activity 05: NLP for GIS <!-- omit in toc -->
 
 | ![engrossed](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:02872091q/full/1200,/0/default.jpg) |
 | :------------------------------------------------------------------------------------------------------------: |

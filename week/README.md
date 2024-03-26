@@ -8,8 +8,8 @@
 #### Activity 02: [Population change in Africa, 1850-1950](../week/04_aesthetics/activity/historic-pop-africa.md)
 #### Activity 03: [Historical census](../week/05_archives-i/activity/historical-census.md)
 #### Activity 04: [Final project topic proposal](../week/08_analysis-ii/activity/../final-projects/README.md)
-#### Activity 05: [Final project environmental scan & wireframe](../week/11_analysis-iii/activity/fp-env-scan.md)
-#### Activity 06: [Flowing letters](../week/12_design-ii/activity/flowing-letters.md)
+#### Activity 05: [NLP for GIS](../week/10_archives-iii/activity/nlp-for-gis.md)
+#### Activity 06: [Final project environmental scan & wireframe](../week/11_analysis-iii/activity/fp-env-scan.md)
 #### Activity 07: [Reflection](../week/14_beyond/activity/reflection.md)
 
 ## Labs
@@ -24,7 +24,7 @@
 
 #### Assignment 01: [WITCHCRAFT!](../week/04_aesthetics/assignment/witchcraft.md)
 #### Assignment 02: [Parking lot cemeteries](../week/07_archives-ii/assignments/parking-lot-cemeteries.md)
-#### Assignment 03: [NLP for GIS](../week/10_archives-iii/activity/nlp-for-gis.md)
+#### Assignment 03: [Flowing letters](../week/12_design-ii/assignment/flowing-letters.md)
 #### Assignment 04: [Final project draft map](../week/13_flex/assignments/fp-draft.md)
 
 ## Curation

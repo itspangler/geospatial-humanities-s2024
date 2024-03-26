@@ -111,7 +111,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * How can geospatial methods be applied to archaeological inquiry? 
 * Due before class:
   * Curation Group 5
-  * Assignment 03: [NLP for GIS](../week/10_archives-iii/activity/nlp-for-gis.md)
+  * Activity 05: [NLP for GIS](../week/10_archives-iii/activity/nlp-for-gis.md)
 
 **April 9 • Design II • Libraries & letters**
 
@@ -129,7 +129,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * We'll leave some flex space in the syllabus for exploring topics of particular interest to students in the course. This could include further exploration of a particular methods or technical workflow, deeper dives into geospatial theory or geohumanities concepts, wrangling specific datasets... or simply extra office hours for your final projects. We'll fill this flex day in before spring break.
 * Due before class:
-  * Activity 06: [Flowing letters](../week/12_aesthetics-ii/in-class/...)
+  * Assignment 03: [Flowing letters](../week/12_design-ii/assignment/flowing-letters.md)
 
 **April 23 • Beyond • Whither "GIS?"**
 

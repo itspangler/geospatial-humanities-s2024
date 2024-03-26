@@ -261,7 +261,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * How can geospatial methods be applied to archaeological inquiry? 
 * Due before class:
   * Curation Group 5
-  * Assignment 03: [NLP for GIS](../week/10_archives-iii/activity/nlp-for-gis.md)
+  * Activity 05: [NLP for GIS](../week/10_archives-iii/activity/nlp-for-gis.md)
 
 **April 9 • Design II • Libraries & letters**
 
@@ -270,7 +270,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * How can we apply methods of geospatial inquiry to large corpuses of text, such as letters?
 * Due before class:
   * Lab 05: [Archaeology](../week/11_analysis-iii/lab/archaeology.md)
-  * Activity 05: [Final project environmental scan & wireframe](../week/11_analysis-iii/in-class/fp-env-scan.md)
+  * Activity 06: [Final project environmental scan & wireframe](../week/11_analysis-iii/in-class/fp-env-scan.md)
   * Edelstein, Dan et al. 2017. “[Historical Research in a Digital Age: Reflections from the Mapping the Republic of Letters Project](https://doi.org/10.1093/ahr/122.2.400).” The American Historical Review 122 (2): 400–424.
 
 **April 16 • Flex day • TBD**
@@ -280,7 +280,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * We'll leave some flex space in the syllabus for exploring topics of particular interest to students in the course. This could include further exploration of a particular methods or technical workflow, deeper dives into geospatial theory or geohumanities concepts, wrangling specific datasets... or simply extra office hours for your final projects. We'll fill this flex day in before spring break.
 * Due before class:
   * Curation Groups 6 & 7
-  * Activity 06: [Flowing letters](../week/12_aesthetics-ii/in-class/...)
+  * Assignment 03: [Flowing letters](../week/12_design-ii/assignment/flowing-letters.md)
 
 **April 23 • Beyond • Whither "GIS?"**
 
