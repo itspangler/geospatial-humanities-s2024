@@ -261,7 +261,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * How can geospatial methods be applied to archaeological inquiry? 
 * Due before class:
   * Curation Group 5
-  * Assignment 03: [NLP for GIS](../week/10_archives-iii/assignments/nlp-for-gis.md)
+  * Assignment 03: [NLP for GIS](../week/10_archives-iii/activity/nlp-for-gis.md)
 
 **April 9 • Design II • Libraries & letters**
 

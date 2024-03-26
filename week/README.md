@@ -24,7 +24,7 @@
 
 #### Assignment 01: [WITCHCRAFT!](../week/04_aesthetics/assignment/witchcraft.md)
 #### Assignment 02: [Parking lot cemeteries](../week/07_archives-ii/assignments/parking-lot-cemeteries.md)
-#### Assignment 03: [NLP for GIS](../week/10_archives-iii/assignments/nlp-for-gis.md)
+#### Assignment 03: [NLP for GIS](../week/10_archives-iii/activity/nlp-for-gis.md)
 #### Assignment 04: [Final project draft map](../week/13_flex/assignments/fp-draft.md)
 
 ## Curation
