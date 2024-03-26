@@ -60,7 +60,7 @@ Maybe this one's obvious, but the *graphical register* refers to how you choose 
       1. 250 words on topical register
       2.  250 words on conceptual register
       3.  250 words on technical register
-      4.  A [wireframe mockup](https://en.wikipedia.org/wiki/Website_wireframe) of how your final will look. This term is typically used to describe websites or interactive maps, but it applies perfectly well to infographics or StoryMaps. You could sketch this by hand, lay out in PowerPoint/Illustrator/etc. — whatever you want.
+      4.  A [wireframe mockup](https://en.wikipedia.org/wiki/Website_wireframe) of how your final will look. This term is typically used to describe websites or interactive maps, but it applies perfectly well to infographics or StoryMaps. You could sketch this by hand, lay out in PowerPoint/Publisher/Illustrator. — whatever you want, **but I recommend Publisher**.
    3.  Should include **at least**...
       1.  1 possible primary source resource (e.g., historical map, dataset, text) for your topical register
       2.  1 possible secondary source resource (e.g., scholarly essay, article, book) for your conceptual register
