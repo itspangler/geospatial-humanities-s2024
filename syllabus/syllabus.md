@@ -270,7 +270,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * How can we apply methods of geospatial inquiry to large corpuses of text, such as letters?
 * Due before class:
   * Lab 05: [Archaeology](../week/11_analysis-iii/lab/archaeology.md)
-  * Activity 05: [Final project environmental scan & wireframe](../week/11_analysis-iii/in-class/fp-env-scan.md)
+  * Activity 05: [Final project environmental scan & wireframe](../final-projects/README.md)
   * Edelstein, Dan et al. 2017. “[Historical Research in a Digital Age: Reflections from the Mapping the Republic of Letters Project](https://doi.org/10.1093/ahr/122.2.400).” The American Historical Review 122 (2): 400–424.
 
 **April 16 • Flex day • TBD**
@@ -288,7 +288,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * What techniques exist for humanistic engagement with geospatial data outside the boundary of "GIS"?
 * Due before class:
   * Curation group 8
-  * Assignment 04: [Final project draft map](../week/13_storytelling/assignments/fp-draft.md)
+  * Assignment 04: [Final project draft map](../final-projects/README.md)
   * Crampton, Jeremy. 2015. “[Zombie GIS](https://opengeography.wordpress.com/2015/01/26/zombie-gis/).” *Open Geography* (blog).
   * Knowles, Anne Kelly, Levi Westerveld, and Laura Strom. 2015. “[Inductive Visualization: A Humanistic Alternative to GIS.](https://doi.org/10.1080/2373566X.2015.1108831)” *GeoHumanities* 1 (2): 233–65.
 
