@@ -212,7 +212,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * How do we proceed from representation to analysis? What kinds of spatial research questions can we ask and answer using GIS? How do different spatial data structurs permit and constrain different forms of spatial analysis?
 * Due before class:
-  * Curation Group 2
+  * ~~Curation Group 2~~
   * Activity 03: [Historical census](../week/05_archives-i/activity/historical-census.md)
 
 **March 5 • Archives II • Breathing new life into old maps**
@@ -221,6 +221,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * How do you turn scanned maps into spatial data? Once you have, what should you *do* with that spatial data?
 * Due before class:
+  * <span style="color:red;">Curation Group 2</span>
   * Lab 03: [Lighthouses, shipwrecks, and the architecture of maritime empire](../week/06_analysis-i/lab/lighthouses.md)
     * OPTIONAL PAIRING: Watch [*The Lighthouse* (2019)](https://en.wikipedia.org/wiki/The_Lighthouse_(2019_film))
   * Lumiere Brothers, dir. 1895. (MediaFilmProfessor, 2011.) [1895, Lumiere, Workers Leaving the Lumiere Factory](https://www.youtube.com/watch?v=DEQeIRLxaM4).
@@ -234,7 +235,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * What analytical opportunities does representing spatial information as raster data instead of vector data create? What are the basic mathematical and statistical foundations of raster analysis? What are its structures, functions, and limits?
 * Due before class:
-  * Curation Group 3
+  * ~~Curation Group 3~~ <span style="color:red;">Curation Group 2</span>
   * Assignment 02: [Parking lot cemeteries](../week/07_archives-ii/assignments/parking-lot-cemeteries.md)
 
 **March 19 • Mandatory relaxation • Spring break**
@@ -278,6 +279,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * We'll leave some flex space in the syllabus for exploring topics of particular interest to students in the course. This could include further exploration of a particular methods or technical workflow, deeper dives into geospatial theory or geohumanities concepts, wrangling specific datasets... or simply extra office hours for your final projects. We'll fill this flex day in before spring break.
 * Due before class:
+  * Curation Groups 6 & 7
   * Activity 06: [Flowing letters](../week/12_aesthetics-ii/in-class/...)
 
 **April 23 • Beyond • Whither "GIS?"**
@@ -286,16 +288,13 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * What techniques exist for humanistic engagement with geospatial data outside the boundary of "GIS"?
 * Due before class:
-  * Curation group 8
   * Assignment 04: [Final project draft map](../week/13_flex/assignments/fp-draft.md)
   * Crampton, Jeremy. 2015. “[Zombie GIS](https://opengeography.wordpress.com/2015/01/26/zombie-gis/).” *Open Geography* (blog).
   * Knowles, Anne Kelly, Levi Westerveld, and Laura Strom. 2015. “[Inductive Visualization: A Humanistic Alternative to GIS.](https://doi.org/10.1080/2373566X.2015.1108831)” *GeoHumanities* 1 (2): 233–65.
 
-**April 30 • Presentations • Final projects**
+**April 30 • Reading period**
 
-> *Week 15: Last in-person meeting; final project lightning talks; reflection.*
-
-* Presentations on final project topics in 5 minutes or less. Share works in progress, provisional maps, harebrained ideas. Slide deck optional.
+> *Week 15: No class.*
 
 **May 7 • Final project due**
 

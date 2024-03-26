@@ -1,0 +1,395 @@
+AOSNUMBER,City,County,State
+AOS003109,Cayuga Nation,Ontario County,NY
+AOS003600,Mountain Brook,Jefferson County,AL
+AOS009268,Geneva,Ontario County,NV
+AOS006906,Bella Villa,St. Louis County,MO
+AOS006910,Bonanza,Sebastian County,AR
+AOS006911,Brantley,Crenshaw County,AL
+AOS006919,Daleville,Delaware County,IN
+AOS006920,Cross Roads,Denton County,TX
+AOS006921,Dickson,Dickinson County,TN
+AOS006925,Fort Recovery,Mercer County,OH
+AOS006935,Los Lunas,Valencia County,TN
+AOS006958,South Euclid,Cuyahoga County,OH
+AOS006959,Temple,"Haralson County, Carroll County",GA
+AOS006966,Warrior,"Blount County, Jefferson County",AL
+AOS007242,Austin,"Williamson County, Travis County, Hays County",TX
+AOS011727,Mescalero,Otero County,NM
+AOS001236,Palos Verde Estates,Los Angeles County,CA
+AOS002008,Wickliffe,Lake County,OH
+AOS002672,Royalton,Morrison County,MN
+AOS002694,"Excelsior, Greenwood, Shorewood, Tonka Bay",Hennepin County,MN
+AOS002707,Atwater,Kandiyohi County,MN
+AOS002887,Tooele City,Tooele County,UT
+AOS004390,Peoria Heights,"Woodford County, Tazewell County, Peoria County",IL
+AOS007746,New Britain,Hartford County,CT
+AOS008728,Woodhaven,Wayne County,MI
+AOS008744,River Rouge,Wayne County,MI
+AOS009150,Old Orchard Beach,Cumberland County,ME
+AOS009267,Shenandoah,Montgomery County,TX
+AOS009678,Selma,"Comal County, Bexar County, Guadalupe County",TX
+AOS009679,Schertz,"Comal County, Bexar County, Guadalupe County",TX
+AOS010011,Converse,Bexar County,TX
+AOS011079,Bartonville,Denton County,TX
+AOS011317,Spring House,Montgomery County,PA
+AOS011416,Landenberg,Chester County,PA
+AOS011431,Lafayette Hill,Montgomery County,PA
+AOS011665,La Push,Clallam County,WA
+AOS011667,Fort Hall,Bingham County,ID
+AOS011688,Oakville,Grays Harbor County,WA
+AOS011689,Mayetta,Jackson County,KS
+AOS011720,Box Elder,Hill County,MT
+AOS011733,Darrington,Skagit County,WA
+AOS011738,Agency Village,Roberts County,SD
+AOS011745,Tulalip,Snohomish County,WA
+AOS006823,Walker,Cass County,MI
+AOS011028,Lincoln,Lancaster County,NB
+AOS000919,San Ramon,Contra Costa County,CA
+AOS000082,Grand Prairie,"Ellis County, Tarrant County, Dallas County",TX
+AOS000130,Longmont,"Weld County, Boulder County",CO
+AOS000135,Thornton,"Weld County, Adams County",CO
+AOS000822,Emeryville,Alameda County,CA
+AOS004132,Ludowici,Long County,GA
+AOS004136,New Lenox,Will County,IL
+AOS004152,New York City,"Richmond County, Queens County, Bronx County, Kings County, New York County",NY
+AOS004179,Griffith,Lake County,IN
+AOS004191,Monroe,Fairfield County,CT
+AOS004209,Kansas City,"Cass County, Platte County, Clay County, Jackson County",MO
+AOS004211,Loves Park,Boone County,IL
+AOS004216,Alamo Heights,Bexar County,TX
+AOS004228,Dillard,Rabun County,GA
+AOS004235,Kings Point,Nassau County,NY
+AOS006863,Wylie,"Rockwall County, Dallas County, Collin County",TX
+AOS007541,Hoover,"Shelby County, Jefferson County",AL
+AOS007642,Hammond,Lake County,IN
+AOS007643,Munster,Lake County,IN
+AOS007817,Indian Creek Village,Miami-Dade County,FL
+AOS007819,Hogansville,Troup County,GA
+AOS012005,Flemington Borough,Hunterdon County,NJ
+AOS000413,Aurora,"Douglas County, Arapahoe County, Adams County",CO
+AOS004813,Spencer,Okalhoma County,OK
+AOS007875,Mansfield,Tolland County,CT
+AOS009028,Clinton,Hinds County,MS
+AOS011262,Edinburgh,Johnson County,IN
+AOS013256,Falls Church,Falls Church (city) County,VA
+AOS013260,Crown Point,Lake County,IN
+AOS013269,Shaker Heights,Cuyahoga County,OH
+AOS003851,Tokeland,Pacific County,WA
+AOS012389,Selmer,Mc Nairy County,TN
+AOS012417,Smithville,De Kalb County,TN
+AOS012423,Athens,Mc Minn County,TN
+AOS012433,Etowah,Mc Minn County,TN
+AOS012440,South Fulton,Obion County,TN
+AOS012463,Pigeon Forge,Seker County,TN
+AOS012477,Brownsville,Benton County,TN
+AOS012482,Athens,Mc Minn County,TN
+AOS012487,Humboldt,"Madison County, Gibson County",TN
+AOS012496,White House,Sumner County,TN
+AOS012507,Mc Kenzie,Carroll County,TN
+AOS012512,Lookout Mountain,Hamilton County,TN
+AOS012515,Greenbrier,Robertson County,TN
+AOS012519,Signal Mountain,Hamilton County,TN
+AOS012525,Smithville,De Kalb County,TN
+AOS012527,Goodlettsville,"Sumner County, Davidson County",TN
+AOS012537,Decherd,Franklin County,TN
+AOS012539,Nolensville,Williamson County,TN
+AOS012543,Spring City,Ray County,TN
+AOS012544,Vonore,Monroe County,TN
+AOS012560,Monteagle,Grundy County,TN
+AOS012564,Ridgetop,Robertson County,TN
+AOS012565,Rocky Top,Anderson County,TN
+AOS012569,Adamsville,Mc Nairy County,TN
+AOS012571,Chapel Hill,Marshall County,TN
+AOS012577,Jellico,Campbell County,TN
+AOS012580,Englewood,Mc Minn County,TN
+AOS012584,Mc Ewen,Humphreys County,TN
+AOS012585,New Johnsonville,Humphreys County,TN
+AOS012588,Tellico Plains,Monroe County,TN
+AOS012592,White Bluff,Dickson County,TN
+AOS012595,Townsend,Blount County,TN
+AOS012602,Graysville,Rhea County,TN
+AOS012606,Charleston,Bradley County,TN
+AOS012608,Eagleville,Rutherford County,TN
+AOS012610,Kenton,Obion County,TN
+AOS012614,Pittman Center,Sevier County,TN
+AOS012617,Trezevant,Carroll County,TN
+AOS012618,Alexandria,De Kalb County,TN
+AOS012622,Cornersville,Marshall County,TN
+AOS012623,Elkton,Giles County,TN
+AOS012624,Huntland,Franklin County,TN
+AOS012625,Minor Hill,Jiles County,TN
+AOS012627,Powells Crossroads,Marion County,TN
+AOS012628,Sharon,Weakley County,TN
+AOS012631,Ethridge,Lawrence County,TN
+AOS012634,Big Sandy,Benton County,TN
+AOS012638,Puryear,Henry County,TN
+AOS012641,Hollow Rock,Carroll County,TN
+AOS012653,Lakewood,Davidson County,TN
+AOS012656,Copperhill,Polk County,TN
+AOS012657,Cumberland City,Stewart County,TN
+AOS012658,Hornsby,Hardeman County,TN
+AOS012659,New Hope,Maryn County,TN
+AOS012664,Kingston Springs,Cheatham County,TN
+AOS012675,Jonesborough,"Washington County, Unicoi County, Johnson County, Carter County",TN
+AOS012677,Greeneville,"Hawkins County, Hancock County, Hamblen County, Greene County",TN
+AOS012678,Newport,"Sevier County, Jefferson County, Grainger County, Cocke County",TN
+AOS012682,Jacksboro,"Union County, Scott County, Fentress County, Claiborne County, Campbell County",TN
+AOS012683,Kingston,"Roane County, Morgan County, Meigs County, Loudon County",TN
+AOS012684,Cleveland,"Polk County, Monroe County, McMinn County, Bradley County",TN
+AOS012686,Dayton,"Sequatchie countries, Rhea County, Marion County, Grundy County, Franklin County, Bledsoe County",TN
+AOS012687,Cookeville,"White County, Putnam County, Pickett County, Overton County, Dekalb County, Cumberland County, Clay County",TN
+AOS012689,Hartsville,"Wilson County, Trousdale County, Smith County, Macon County, Jackson County",TN
+AOS012691,Fayetteville,"Moore County, Marshall County, Lincoln County, Bedford County",TN
+AOS012696,Columbia,"Wayne County, Maury County, Lawrence County, Giles County",TN
+AOS012697,Charlotte,"Stewart County, Humphreys County, Houston County, Dickson County, Cheatham County",TN
+AOS012698,Huntingdon,"Henry County, Hardin County, Decatur County, Carroll County, Benton County",TN
+AOS012699,Ripley,"Tipton County, McNairy County, Lauderdale County, Hardeman County, Fayette County",TN
+AOS012700,Jackson,"Madison County, Henderson County, Chester County",TN
+AOS012701,Dresden,"Weakley County, Obion County",TN
+AOS012702,Trenton,"Haywood County, Gibson County, Crockett County",TN
+AOS012703,Dyersburg,"Lake County, Dyer County",TN
+AOS012705,McMinnville,"Warren County, Van Buren County",TN
+AOS012706,Centerville,"Perry County, Lewis County, Hickman County",TN
+AOS012799,North Dartmouth,North Dartmouth County,MA
+AOS013199,El Jason,San Diego County,CA
+AOS013240,Eugene,Lane County,WA
+AOS001912,Cape Girardeau.,Cape Girardeau and Scott County,MO
+AOS006768,Everett,Middlesex County,MA
+AOS006771,Kansas City,"Cass County, Platte County, Clay County, Jackson County",MO
+AOS006782,New York City,"Richmond County, Queens County, Bronx County, Kings County, New York County",NY
+AOS006783,Syracuse,Onandaga County,NY
+AOS007508,San Juan,San Juan Municipality,PR
+AOS007509,Trujillo Alto,Trujillo Alto Municipality,PR
+AOS008049,Monroe,Ouachita Parish County,LA
+AOS000171,Fairview Park,Cuyahoga County,OH
+AOS000175,Lyndhurst,Cuyahoga County,OH
+AOS000178,North Olmsted,Cuyahoga County,OH
+AOS000180,Orange Village,Cuyahoga County,OH
+AOS000182,Shaker Heights,Cuyahoga County,OH
+AOS000184,South Euclid,Cuyahoga County,OH
+AOS000187,Woodmere,Cuyahoga County,OH
+AOS011389,Tuxedo Park,Orange County,NY
+AOS002329,Harrison Township,Montgomery County,OH
+AOS000312,San Ramon,Contra Costa County,CA
+AOS008767,Guymon,"Texas County, Harper County, Cimmaron County, Beaver County",OK
+AOS008768,Arapaho,"Washita County, Roger Mills County, Ellis County, Custer County, Beckham County",OK
+AOS008769,Altus,"Tillman County, Kiowa County, Jackson County, Harmon County, Greer County",OK
+AOS008770,Enid,"Kingfisher County, Grant County, Garfield County, Canadian County, Blaine County",OK
+AOS008771,Lawton,"Cotton County, Comanche County",OK
+AOS008772,Duncan,"Stephens County, Jefferson County, Grady County, Caddo County",OK
+AOS008774,Newkirk,"Noble County, Kay County",OK
+AOS008775,Stillwater,"Payne County, Logan County",OK
+AOS008776,Pawhuska,"Pawnee County, Osage County",OK
+AOS008778,Claremore,"Rogers County, Mayes County, Craig County",OK
+AOS008779,Miami,"Ottawa County, Delaware County",OK
+AOS008782,Poteau,"LeFlore County, Latimer County",OK
+AOS008783,Idabel,"Pushmataha County, McCurtain County, Choctaw County",OK
+AOS008784,McAlester,"Pittsburg County, Haskell County",OK
+AOS008785,Durant,"Coal County, Bryan County, Atoka County",OK
+AOS008786,Ardmore,"Murray County, Marshall County, Love County, Johnston County, Carter County",OK
+AOS008787,Pauls Valley,"McClain County, Garvin County, Cleveland County",OK
+AOS008788,Ada,"Seminole County, Pontotoc County, Hughes County",OK
+AOS008789,Chandler,"Pottawatomie County, Lincoln County",OK
+AOS008790,Sapulpa,"Okfuskee County, Creek County",OK
+AOS008792,Woodward,"Woodward County, Woods County, Major County, Dewey County, Alfalfa County",OK
+AOS008793,Wagoner,"Wagoner County, Sequoyah County, Cherokee County, Adair County",OK
+AOS001226,Lakeport,Lake County,CA
+AOS005287,New Castle,Lawerence County,PA
+AOS005288,Westwego,Jefferson Parish,LA
+AOS011696,Parker,Lapaz County,AZ
+AOS011702,Rosebud,Todd County,SD
+AOS002702,City of Brooklyn Center,Hennepin County,MN
+AOS012007,Valdez,Valdez-Cordova Borough,AK
+AOS000801,Clearlake,Lake County,CA
+AOS007855,Storrs,Tolland County,CT
+AOS000866,Monrovia,Los Angeles County,CA
+AOS000886,Piedmont,Alameda County,CA
+AOS004255,Grand Prairie,"Ellis County, Tarrant County, Dallas County",TX
+AOS000614,Bethlehem,"Northhampton County, Lehigh County",PA
+AOS001910,Boardman Township,Mahoning County,OH
+AOS002194,Cicero,Hamilton County,IN
+AOS002449,Emumclaw,King County,WA
+AOS002512,Hammond,Lake County,IN
+AOS002599,Zillah,Yakima County,WA
+AOS002781,Oveido,Seminole County,FL
+AOS002954,Dothan,"Houston County, Henry County, Dale County",AL
+AOS012019,Anchorage,Anchorage Municipality County,AK
+AOS013179,Jacksonvilel,Duval County ,FL
+AOS011925,Mead,Weld County,CO
+AOS012709,Brighton,"Broomfield County, Adams County",CO
+AOS012710,Centennial,"Lincoln County, Elbert County, Douglas County, Arapahoe County",CO
+AOS012714,Arvada,"Adams County, Jefferson County",CO
+AOS012716,Aurora,"Adams County, Douglas County, Arapahoe County",CO
+AOS012718,Basalt,Eagle County,CO
+AOS012722,Brighton,"Weld County, Adams County",CO
+AOS012734,Dacono,Weld County,CO
+AOS012742,Englewood,Araphoe County,CO
+AOS012744,Estes Park,Larimer County,CO
+AOS012745,Federal Heights,Adams County,CO
+AOS012749,Garden City,Weld County,CO
+AOS012751,Glendale,Arapahoe County,CO
+AOS012757,Johnstown,"Larimer County, Weld County",CO
+AOS012761,Golden,Lake County,CO
+AOS012766,Littleton,"Jefferson County, Douglas County, Arapahoe County",CO
+AOS012767,Lochbuie,"Adams County, Weld County",CO
+AOS012769,Longmont,"Weld County, Boulder County",CO
+AOS012772,Mead,Weld County,CO
+AOS012775,Northglenn,"Weld County, Adams County",CO
+AOS012781,Thornton,"Weld County, Adams County",CO
+AOS012786,Greenly,Weld County,CO
+AOS012787,Westminster,"Jefferson County, Adams County",CO
+AOS012789,Windsor,"Weld County, Larimer County",CO
+AOS001898,Sierra Madre,Los Angeles County,CA
+AOS011096,Gibraltar,Wayne County,MI
+AOS001203,Monrovia,Los Angeles County,CA
+AOS009262,City of University Park,Dallas County,TN
+AOS004788,New York City,"Richmond County, Queens County, Bronx County, Kings County, New York County",NY
+AOS004241,Līhu‘e,Kauai County,HI
+AOS005086,Fellsmere,Indian River County,FL
+AOS005102,Fruitland Park,Lake County,FL
+AOS005126,Vera Beach,Indian River County,FL
+AOS005169,Miami-Dade Schools,Miami-Dade County,FL
+AOS005211,Parker,Bay County,FL
+AOS005228,Sanford Airport,Seminole County,FL
+AOS005237,Hollywood,Pinellas County,FL
+AOS005280,Winter Gardens,Orange County,FL
+AOS006883,Dimondale,Eaton County,MI
+AOS007021,New York City,"Richmond County, Queens County, Bronx County, Kings County, New York County",NY
+AOS004074,Dimondale,Eaton County,MI
+AOS007149,Oxford,"Talladega County, Calhoun County",AL
+AOS007994,Richmond,"Chesterfield County, Henrico County",VA
+AOS002236,Gary,Lake County,IN
+AOS002237,Gary,Lake County,IN
+AOS002239,Gary,Lake County,IN
+AOS007447,Oxford,"Talladega County, Calhoun County",AL
+AOS011283,Cumming,Forsyth County,NC
+AOS011284,Cumming,Forsyth County,NC
+AOS011289,Hammond,Lake County,IN
+AOS011295,Taveres,Lake County,FL
+AOS011997,Trotwood,Montgomery County,OH
+AOS012236,North Charleston,"Dorchester County, Charleston County, Berkeley County",SC
+AOS012246,Parker,Bay County,FL
+AOS012253,Topeka,Shawnee County,OK
+AOS012262,Whitehall,Franklin County,OH
+AOS001175,Tulsa,"Wagoner County, Tulsa County, Rogers County, Osage County",OK
+AOS002265,Miamisburg,Clermont County,OH
+AOS002266,Midletown,"Warren County, Butler County",OH
+AOS002315,Litchfield Park,Maricopa County,AZ
+AOS002857,Centerville,Montgomery County,OH
+AOS002881,Springboro,Warren County,OH
+AOS002890,Springboro,Warren County,OH
+AOS004497,Jersey Village,‎Harris County‎,TX
+AOS007894,Fairburn,Fulton County,GA
+AOS008004,Pinson,Jefferson,AL
+AOS008014,Bow Mar,"Jefferson County, Arapahoe County",CO
+AOS008035,Horn Lake,Shelby County,TN
+AOS008037,Katy,"‎Waller County, ‎Fort Bend County‎, ‎Harris County‎",TX
+AOS008039,Bartonville,Denton County,TX
+AOS008708,Painesville,Lake County,OH
+AOS008712,Hunting Valley,"Geauga County, Cuyahoga County",OH
+AOS008945,Knightsdale,Wake County,NC
+AOS010022,Willoughby Hills,Lake County,OH
+AOS011014,Avon Lake,Lorain County,OH
+AOS011018,Beach Grove,Marion County,IN
+AOS011021,Painesville,Lake County,OH
+AOS011043,Cheshire,New Haven County,CT
+AOS011092,Granby,Grand County,CO
+AOS011095,Kremmling,Grand County,CO
+AOS011121,Norridge Police Department,Peoria County,IL
+AOS011185,Glocester,Providence County,RI
+AOS011197,Willowick,Lake County,OH
+AOS011204,Zionville,DeKalb County,IN
+AOS011348,Sydney,Shelby County,OH
+AOS011354,Mentor,Lake County,OH
+AOS011520,New Canaan,Fairfield County,CT
+AOS011524,Northfield Village,Summit County,OH
+AOS011761,Hazelton,Shiawassee County,PA
+AOS011767,Whitehall,Franklin County,OH
+AOS011794,Whitefish Bay,Door County,WI
+AOS011797,Dearborn Heights,Wayne County,MI
+AOS011803,Dimondale,Eaton County,MI
+AOS011808,Shellby Township,Oakland County,MI
+AOS011816,Wolverine,Cheboygan County,MI
+AOS011887,Crawfordsville,Mongomery County,IN
+AOS011889,Eashhampton,Hampshire County,MA
+AOS011892,Crawfordsville,Mongomery County,IN
+AOS011906,Seven Hills,Cuyahoga County,OH
+AOS011911,Frasier,Macomb County,MI
+AOS011913,Hazelton,Shiawassee County,PA
+AOS011920,Southington,Hartford County,CT
+AOS011922,Jackson Hole,Teton County,WY
+AOS011929,Nags Head,Dare Conuty,NC
+AOS011932,Reynoldsburg,"Licking County, Fairfield County, Franklin County",OH
+AOS008943,Somerton,Yuma County,AZ
+AOS008947,Durham,"Wake County, Orange County, Durham County",NC
+AOS008950,La Crescenta-Montrose,Los Angeles County,CA
+AOS002166,Waterton,Codington County,SD
+AOS009042,New Canaan,Fairfield County,CT
+AOS000074,Westminster,"Jefferson County, Adams County",CO
+AOS008920,Darien,Fairfield County,CT
+AOS008929,New Britain,Hartford County,CT
+AOS011751,Mayetta,Jackson County,KS
+AOS003809,Salt River,Maricopa County,AZ
+AOS001651,New York,"New York County, Kings County, Bronx County, Queens County, Richmond County",NY
+AOS001650,New York,"New York County, Kings County, Bronx County, Queens County, Richmond County",NY
+AOS001668,Yonkers,Wester,NY
+AOS002982,Almont,Lapeer County,MI
+AOS003002,Pierre Part,Assumption Parish,LA
+AOS003025,Bartlett,"Kane County, DuPage County, Cook County",IL
+AOS003047,Bethlehem,"Northhampton County, Lehigh County",PA
+AOS003097,Canal Fulton,Stark County,OH
+AOS003149,New Brockton,Coffee County,AL
+AOS003176,Crown Point,Lake County,IN
+AOS003258,Everman,Tarrant County,TX
+AOS003317,Sacaton,Pinal County,AZ
+AOS003408,Lewis,Cass County,IA
+AOS003441,Kansas City,"Cass County, Platte County, Clay County, Jackson County",MO
+AOS003465,Tavares,Lake County,OH
+AOS003476,Estes Park,Larimer County,CO
+AOS003487,Bethlehem,Northhampton County,PA
+AOS003545,Memorial Villages,‎Harris County‎,TX
+AOS003552,Meriden,New Haven County,CT
+AOS003568,Milford,New Haven County,CT
+AOS003622,New York City,"Richmond County, Queens County, Bronx County, Kings County, New York County",NY
+AOS003627,Newtown,Fairfield County,CT
+AOS003667,Orange,New Haven County,CT
+AOS003669,Oregon,Lucas County,OH
+AOS003716,Plainfield,Windham County,CT
+AOS003722,Eagle Lake,Polk County,FL
+AOS003820,San Ramon,Contra Costa County,CA
+AOS003861,Blythewood,"Richland County, Fairfield County",SC
+AOS003866,Landenberg,Chester County,PA
+AOS003867,Southside,Etowah County,AL
+AOS003869,Splendora,Montgomery County,TX
+AOS003918,Tewksbury,Middlesex County,MA
+AOS003945,Accord,Ulster County,NY
+AOS003965,Vernon,Tolland County,CT
+AOS003987,Waterbury,New Haven County,CT
+AOS004004,Westboro,Worcester County,MA
+AOS011937,Oylmpia,Thurston County,WA
+AOS004102,Durham,"Wake County, Orange County, Durham County",NC
+AOS009683,Shavano Park,Bexar County,TX
+AOS000027,Oregon,Lucas County,OH
+AOS012161,Lakeport,Lake County,CA
+AOS008056,Enfield,Hartford County,CT
+AOS008960,Greely,Weld County,CO
+AOS008981,Sneedville,Hancock County,MS
+AOS011656,Girald,Trumbull County,OH
+AOS000106,Blaine,"Ramsey County, Anoka County",MN
+AOS000289,Emeryville,Alameda County,CA
+AOS000295,Piedmont,Alameda County,CA
+AOS000302,Castro Valley,Contra Costa County,CA
+AOS000305,Kensington,Contra Costa County,CA
+AOS000502,Bonner Springs,"Johnson County, Leavenworth County, Wyandotte County",KS
+AOS001938,Long View,Catawba County,NC
+AOS002173,Bel Air,Hartford County,MD
+AOS002174,Ellicot City,Howard County,MD
+AOS002180,Hot Springs,Oblala Lakota County,SD
+AOS002200,Lighthouse Point Police Department,Broward County,FL
+AOS002326,Elizabethtown,Hardin Couny,KY
+AOS002867,Draper City,"Utah County, Salt Lake County",UT
+AOS002886,Hurricane City,Washington County,UT
+AOS004441,Kodiak,Kodiak Island County,AK
+AOS004445,Porterville,Tulare County,CA
+AOS004448,Carrollton,"Collin County, Dallas County, Denton County",TX
+AOS004470,Westerville,"Franklin County, Delware County",OH
