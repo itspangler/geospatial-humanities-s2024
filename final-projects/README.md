@@ -61,19 +61,19 @@ Maybe this one's obvious, but the *graphical register* refers to how you choose 
       2.  250 words on conceptual register
       3.  250 words on technical register
       4.  A [wireframe mockup](https://en.wikipedia.org/wiki/Website_wireframe) of how your final will look. This term is typically used to describe websites or interactive maps, but it applies perfectly well to infographics or StoryMaps. You could sketch this by hand, lay out in PowerPoint/Illustrator/etc. — whatever you want.
-  1.  Should include **at least**...
+   3.  Should include **at least**...
       1.  1 possible primary source resource (e.g., historical map, dataset, text) for your topical register
       2.  1 possible secondary source resource (e.g., scholarly essay, article, book) for your conceptual register
       3.  1 possible methodology resource (e.g., an existing geospatial analysis) for your technical register
-2.  **Environmental scan**
-    1.  Activity due 4/9
-    2.  ~750 words (no less than 500, no more than 1,000)
-    3.  Describe key takeaways from **at least** 6-10 resources and how they relate to your chosen topic and project, including:
-        1.  At least 2 source datasets you plan to use in your analysis (e.g., census data, historical maps)
-        2.  At least 1 dataset you plan to create during the workflow (e.g., a derivative kernel density raster, a spatially joined vector file, data digitized from historical maps)
-        3.  At least 1 primary source resource (other than the datasets listed above)
-        4.  At least 1 secondary source resource
-        5.  At least 1 methodological resource
+2. **Environmental scan**
+   1.  Activity due 4/9
+   2.  ~750 words (no less than 500, no more than 1,000)
+   3.  Describe key takeaways from **at least** 6-10 resources and how they relate to your chosen topic and project, including:
+      1.  At least 2 source datasets you plan to use in your analysis (e.g., census data, historical maps)
+      2.  At least 1 dataset you plan to create during the workflow (e.g., a derivative kernel density raster, a spatially joined vector file, data digitized from historical maps)
+      3.  At least 1 primary source resource (other than the datasets listed above)
+      4.  At least 1 secondary source resource
+      5.  At least 1 methodological resource
 3. **Draft map**
    1. Assignment due 4/23
    2. Reiterating, this is an **assignment**
