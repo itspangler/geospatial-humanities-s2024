@@ -167,9 +167,9 @@ To accomplish this, you'll need to use the **selection** tool and the **attribut
 
 | ![q] |
 | :--- |
-| Pick five addresses from your geocoded layer and try to figure out why OSM couldn't match them to their expected geography in Massachusetts. Consider: does the historical address, as it's listed in the source spreadsheet, still exist? Has the address possibly changed? To figure this out, I recommend searching for the addresses as they appear in the attribute table in Google Maps. You can also try going to OSM and navigating to where you would expect that address to appear. See if you can determine why it didn't join, and for each record, write a sentence explaining your logic. |
+| Pick five addresses from your geocoded layer and try to figure out why OSM couldn't match them to their expected geography in Massachusetts. Consider: does the historical address, as it's listed in the source spreadsheet, still exist? Has the address possibly changed? To figure this out, I recommend searching for the addresses as they appear in the attribute table in Google Maps. You can also try going to OSM and navigating to where you would expect that address to appear. See if you can determine why it didn't join, and for each record, explain why you think it didn't match, and how you think you might fix it. (These answers might be similar for multiple addresses.) |
 
-## Join the `1-heading.xlsx` table
+## Join the `1-heading.xlsx` table to your geocoded layer
 
 In your workspace, you should have a secondary table that you could join to the geocoded layer based on a common field.
 
@@ -189,9 +189,14 @@ To wrap up, try symbolizing your data. It's pretty similar in QGIS to how you'd 
 
 1. Right-click on the geocoded layer in your layers list
 2. Click on the "Symbology" tab on the left-hand side
-3. Symbolize away!
+3. Pick "Categorical"
+4. Set the value to `heading_name`
+5. Click the symbol and make it bigger—maybe `4.0` in size
+6. Use a "Random color" ramp
+7. Click "Classify" just below the ramp
+8. When you're done, click "OK" in the bottom right-hand corner of the Symbology dialog
 
-Pick a meaningful category to symbolize the data
+![symb](./images/image13.png)
 
 # Activity deliverables
 
