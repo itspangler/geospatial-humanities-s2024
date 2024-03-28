@@ -235,7 +235,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * What analytical opportunities does representing spatial information as raster data instead of vector data create? What are the basic mathematical and statistical foundations of raster analysis? What are its structures, functions, and limits?
 * Due before class:
-  * ~~Curation Group 3~~ <span style="color:red;">Curation Group 2</span>
+  * ~~Curation Group 3~~ <span style="color:red;">Curation Group 3</span>
   * Assignment 02: [Parking lot cemeteries](../week/07_archives-ii/assignments/parking-lot-cemeteries.md)
 
 **March 19 • Mandatory relaxation • Spring break**
@@ -250,7 +250,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * What are best practices for applying geospatial methods to texts?
 * Due before class:
-  * Curation Group 4
+  * ~~Curation Group 4~~ <span style="color:red">Curation Group 5</span>
   * Lab 04: [Indo-european geographies](../week/08_analysis-ii/lab/indoeuro.md)
   * Activity 04: [Final project topic proposal](../final-projects/README.md)
 
@@ -260,7 +260,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * How can geospatial methods be applied to archaeological inquiry? 
 * Due before class:
-  * Curation Group 5
+  * ~~Curation Group 5~~
   * Activity 05: [NLP for GIS](../week/10_archives-iii/activity/nlp-for-gis.md)
 
 **April 9 • Design II • Libraries & letters**
@@ -269,28 +269,30 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * How can we apply methods of geospatial inquiry to large corpuses of text, such as letters?
 * Due before class:
+  * <span style="color:red">Curation Group 4</span>
   * Lab 05: [Archaeology](../week/11_analysis-iii/lab/archaeology.md)
   * Activity 06: [Final project environmental scan & wireframe](../week/11_analysis-iii/in-class/fp-env-scan.md)
   * Edelstein, Dan et al. 2017. “[Historical Research in a Digital Age: Reflections from the Mapping the Republic of Letters Project](https://doi.org/10.1093/ahr/122.2.400).” The American Historical Review 122 (2): 400–424.
 
-**April 16 • Flex day • TBD**
+**April 16 • Beyond • Whither "GIS?"**
 
-> *Week 13: 💪💪💪*
-
-* We'll leave some flex space in the syllabus for exploring topics of particular interest to students in the course. This could include further exploration of a particular methods or technical workflow, deeper dives into geospatial theory or geohumanities concepts, wrangling specific datasets... or simply extra office hours for your final projects. We'll fill this flex day in before spring break.
-* Due before class:
-  * Curation Groups 6 & 7
-  * Assignment 03: [Flowing letters](../week/12_design-ii/assignment/flowing-letters.md)
-
-**April 23 • Beyond • Whither "GIS?"**
-
-> *Week 14: Maps and mapping "beyond" GIS; inductive visualization.*
+> *Week 13: Maps and mapping "beyond" GIS; inductive visualization.*
 
 * What techniques exist for humanistic engagement with geospatial data outside the boundary of "GIS"?
 * Due before class:
-  * Assignment 04: [Final project draft map](../week/13_flex/assignments/fp-draft.md)
+  * Curation Groups 6 & 7
+  * Assignment 03: [Flowing letters](../week/12_design-ii/assignment/flowing-letters.md)
   * Crampton, Jeremy. 2015. “[Zombie GIS](https://opengeography.wordpress.com/2015/01/26/zombie-gis/).” *Open Geography* (blog).
-  * Knowles, Anne Kelly, Levi Westerveld, and Laura Strom. 2015. “[Inductive Visualization: A Humanistic Alternative to GIS.](https://doi.org/10.1080/2373566X.2015.1108831)” *GeoHumanities* 1 (2): 233–65.
+  * OPTIONAL: Knowles, Anne Kelly, Levi Westerveld, and Laura Strom. 2015. “[Inductive Visualization: A Humanistic Alternative to GIS.](https://doi.org/10.1080/2373566X.2015.1108831)” *GeoHumanities* 1 (2): 233–65.
+
+**April 23 • Presentations • Whither "GIS?"**
+
+> *Week 14: Final project exhibition of maps-in-progress.*
+
+* First 10 minutes of class is a guest presentation from Carolyn Talmadge. 50 minutes of class will be spent sharing maps-in-progress. Second 90 minutes of class is open lab.
+* Due before class:
+  * Assignment 04: [Final project draft map](../week/13_flex/assignments/fp-draft.md)
+  * Print your draft map and bring it to class for a mini-exhibition. The map doesn't need to be perfect or done, but you should be able to describe the topic, concepts, methods, and graphical dimensions with clarity to your classmates.
 
 **April 30 • Reading period**
 
