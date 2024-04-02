@@ -241,7 +241,7 @@ Now try setting the aggregation type to "Binning."
 
 | ![q] |
 | :--- |
-| 5. Compare the three methods of clustering you've  |
+| 5. Compare the three methods of clustering you've tested so far: kernel density, clustering aggregation, and binning aggregation. What patterns does each method reveal and what patterns does each method obscure/fail to highlight? |
 
 Once you've finished comparing the different clustering techniques, turn "Aggregation" off by setting the aggregation type to "None."
 
