@@ -11,10 +11,12 @@
 During this lab, you'll test a variety of **spatial statistical tools** including:
 
 * Spatial hypotheses
-* Nearest neighbor analysis
+* Nearest neighbor index
 * Clustering
 * p- and z-values
-* Spatial interpolation
+* Kernel density
+* Raster to polygon conversion
+* Hot spot analysis
 * Spatial autocorrelation
 
 These tools help you move from basic "where" questions to analytical "why" questions.
@@ -38,6 +40,7 @@ Before **11:59pm on Tuesday, April 9**, submit to Canvas:
   - [Creating a field for elevation in your `sites` layer](#creating-a-field-for-elevation-in-your-sites-layer)
   - [Test a hot spot analysis on `sites_elevation`](#test-a-hot-spot-analysis-on-sites_elevation)
   - [Adding population into the mix](#adding-population-into-the-mix)
+- [Reflection](#reflection)
 - [Submit](#submit)
 
 ## Introduction and context
@@ -91,7 +94,9 @@ Now that we have our data plotted on the map, we can start to dig into analyzing
 
 It's always wise to begin from a hypothesis. In our case, the **null hypothesis**—or the assumed hypothesis that we'll try to disprove—is always going to be that the spatial data in question is dispersed randomly.
 
-In our specific case, the null hypothesis could be stated that "Archaeological sites in the study area display random distribution." Just eyeballing the sites, it seems likely that this is wrong, but how can we analytically confirm this observation?
+In our specific case, the null hypothesis could be stated that "Archaeological sites in the study area display random distribution." Just eyeballing the sites—and based on what we know about how humans settle—it seems likely that the null hypothesis is wrong.
+
+But how can we *analytically confirm* this observation?
 
 ## Nearest neighbor index
 
@@ -127,6 +132,10 @@ Based on the report we got from the NNI, it seems mathematically unlikely that t
 | ![q] |
 | :--- |
 | 2. Paste the values for the average nearest neighbor summary. |
+
+> ![imp]
+>
+> NNI measures relationships exclusively based on distance. A slightly more detailed way to determine clustering would be to test for spatial autocorrelation, or the degree to which a feature is correlated with itself based on certain attributes. Following Waldo Tobler's first law of geography, the [spatial autocorrelation](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-spatial-autocorrelation-moran-s-i-spatial-st.htm) tool—also known as Global Moran's I—measures spatial autocorrelation based simultaneously on location and feature values.
 
 ## Looking at subareas
 
@@ -354,6 +363,16 @@ To conclude this lab, take a moment to compare and contrast a few different
 | 13. Now compare one 90% confidence "hot" cluster against one 90% "cold" cluster. Again in 2-3 sentences, make the same comparisons, identifying what kinds of natural/human features as well as your guess as to why they were clustered in this fashion. |
 
 **Before you submit your assignment, take a screenshot of the ArcGIS Pro interface showing your final hot spot analysis that combines archaeological sites and modern population data.**
+
+## Reflection
+
+In this lab you have touched a lot of different tools, just to get a sense of how they work and the basic ideas behind how they function. However, to perform a rigorous analysis—one that would pass muster in scientific peer review, for example—you'd want to do some extra due diligence. You might consider:
+
+* Re-running the hot spot analysis a few times with different parameters, e.g., testing different kinds of spatial relationships
+* Using tools like [Global Moran's I](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/spatial-autocorrelation.htm) to determine a distance threshold for your hot spot analysis
+* Incorporating other environmental features that would affect clustering, like slope and water bodies, into your analysis
+
+Those are just three of many additional directions such a project could take.
 
 ## Submit
 
