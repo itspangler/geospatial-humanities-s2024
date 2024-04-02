@@ -50,43 +50,48 @@ Put another way, the technical register is your **methodology**, and it should b
 
 ## Graphical register
 
-Maybe this one's obvious, but the *graphical register* refers to how you choose to display your final product. Your project should follow best practices of cartographic design, whether carefully followed or artfully broken. Design should *always* be in service of your overall argument – keep this in mind each step of the way as you lay out your final map. 
+Maybe this one's obvious, but the *graphical register* refers to how you choose to display your final product. Your project should follow best practices of cartographic design, whether carefully followed or artfully broken. Design should *always* be in service of your overall argument – keep this in mind each step of the way as you lay out your final map.
+
+To lay out your map, use 
 
 # Key dates and deliverables
 
-1. **Topic proposal**
-   1. Activity due 3/26
-   2. ~750 words (no less than 500, no more than 1,000) + a wireframe
-      1. 250 words on topical register
-      2.  250 words on conceptual register
-      3.  250 words on technical register
-      4.  A [wireframe mockup](https://en.wikipedia.org/wiki/Website_wireframe) of how your final will look. This term is typically used to describe websites or interactive maps, but it applies perfectly well to infographics or StoryMaps. You could sketch this by hand, lay out in PowerPoint/Publisher/Illustrator. — whatever you want, **but I recommend Publisher**.
-   3.  Should include **at least**...
-      1.  1 possible primary source resource (e.g., historical map, dataset, text) for your topical register
-      2.  1 possible secondary source resource (e.g., scholarly essay, article, book) for your conceptual register
-      3.  1 possible methodology resource (e.g., an existing geospatial analysis) for your technical register
-2. **Environmental scan**
-   1.  Activity due 4/9
-   2.  ~750 words (no less than 500, no more than 1,000)
-   3.  Describe key takeaways from **at least** 6-10 resources and how they relate to your chosen topic and project, including:
-      1.  At least 2 source datasets you plan to use in your analysis (e.g., census data, historical maps)
-      2.  At least 1 dataset you plan to create during the workflow (e.g., a derivative kernel density raster, a spatially joined vector file, data digitized from historical maps)
-      3.  At least 1 primary source resource (other than the datasets listed above)
-      4.  At least 1 secondary source resource
-      5.  At least 1 methodological resource
-3. **Draft map**
-   1. Assignment due 4/23
-   2. Reiterating, this is an **assignment**
-   3. Like all assignments, it's worth 75 points and should be a nicely-designed, final-ish map
-   4. It need not be your **entire poster**, which will probably contain multiple inset maps, [small multiples](https://en.wikipedia.org/wiki/Small_multiple), etc.
-   5. Your draft map should clearly demonstrate your progress towards the analysis
-   6. You should submit:
-      1. A draft map in `PNG` format at `300 DPI`
-      2. A *short* description – no more than 200 words – of where your analysis stands, what's left to do, etc.
-4. **Final project**
-   1. Due 5/7
-   2. Must address all four registers with care and intention
-   3. More on this soon!
+## **Topic proposal**
+1. Activity due 3/26
+2. ~750 words (no less than 500, no more than 1,000) + a wireframe
+   1. 250 words on topical register
+   2. 250 words on conceptual register
+   3. 250 words on technical register
+3. A [wireframe mockup](https://en.wikipedia.org/wiki/Website_wireframe) of how your final will look. This term is typically used to describe websites or interactive maps, but it applies perfectly well to infographics or StoryMaps. You could sketch this by hand, lay out in PowerPoint/Publisher/Illustrator — whatever you want, **but I recommend Publisher**.
+4. Should include **at least**...
+   1.  1 possible primary source resource (e.g., historical map, dataset, text) for your topical register
+   2.  1 possible secondary source resource (e.g., scholarly essay, article, book) for your conceptual register
+   3.  1 possible methodology resource (e.g., an existing geospatial analysis) for your technical register
+
+## **Environmental scan**
+1.  Activity due 4/9
+2.  ~750 words (no less than 500, no more than 1,000)
+3.  Describe key takeaways from **at least** 6 resources and how they relate to your chosen topic and project, including:
+  1.  At least 2 spatial datasets (**must be GIS-friendly; e.g., `csv`, `shp`**) you plan to use in your analysis (e.g., census data, historical maps)
+  2.  At least 1 dataset you plan to create during the workflow (e.g., a derivative kernel density raster, a spatially joined vector file, data digitized from historical maps)
+  3.  At least 1 primary source resource (other than the datasets listed above – e.g., a )
+  4.  At least 1 secondary source resource
+  5.  At least 1 methodological resource—this one is really important! It could be an academic article, a post on StackExchange, or an ArcGIS Pro tutorial. Whatever it is, it should inform your analysis.
+
+## **Draft map**
+1. Assignment due 4/23
+2. Reiterating, this is an **assignment**
+3. Like all assignments, it's worth 75 points and should be a nicely-designed, final-ish map
+4. It need not be your **entire poster**, which will probably contain multiple inset maps, [small multiples](https://en.wikipedia.org/wiki/Small_multiple), etc.
+5. Your draft map should clearly demonstrate your progress towards the analysis
+6. You should submit:
+  1. A draft map in `PNG` format at `300 DPI`
+  2. A *short* description – no more than 200 words – of where your analysis stands, what's left to do, etc.
+
+## **Final project**
+1. Due 5/7
+2. Must address all four registers with care and intention
+3. More on this soon!
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->

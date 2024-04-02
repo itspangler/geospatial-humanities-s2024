@@ -285,7 +285,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
   * Crampton, Jeremy. 2015. “[Zombie GIS](https://opengeography.wordpress.com/2015/01/26/zombie-gis/).” *Open Geography* (blog).
   * OPTIONAL: Knowles, Anne Kelly, Levi Westerveld, and Laura Strom. 2015. “[Inductive Visualization: A Humanistic Alternative to GIS.](https://doi.org/10.1080/2373566X.2015.1108831)” *GeoHumanities* 1 (2): 233–65.
 
-**April 23 • Presentations • Whither "GIS?"**
+**April 23 • Presentations**
 
 > *Week 14: Final project exhibition of maps-in-progress.*
 
