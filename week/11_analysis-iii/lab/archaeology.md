@@ -1,4 +1,4 @@
-# Lab 05: Mesoamerican archaeology  <!-- omit in toc -->
+# Lab 05: Mesoamerican archaeology and spatial analysis  <!-- omit in toc -->
 
 > *The tutorial was written by Ian Spangler on April 1, 2024 for ArcGIS Pro 3.1.4., adapted from this tutorial on [spatial analysis in archaeology](https://www.geos.ed.ac.uk/~gisteac/pgis_arch/prwxacticals/pgis_arch_prac3.pdf).*
 
