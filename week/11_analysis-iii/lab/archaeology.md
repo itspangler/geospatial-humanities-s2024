@@ -319,7 +319,7 @@ Click "Run" and examine the output. You should see something like this:
 
 The results of the hot spot analysis for elevation should not be surprising at all. Low elevation values (e.g., "cold" spots) appear clustered with a high degree of confidence, while high elevation values (e.g., "hot" spots) appear clustered with a high degree of confidence. What we're seeing is basically a confirmation that the tools works as expected.
 
-Here's a potential question: throughout our Central American study area, how do archaeological sites cluster relative to modern human settlement? e.g., will we find that areas inhabited thousands of years ago tend to continue being inhabited today, or vice versa, or some mix of in-between?
+Here's a potentially more interesting question: throughout our Central American study area, how do archaeological sites cluster relative to *modern human settlement*? e.g., will we find that areas inhabited thousands of years ago tend to continue being inhabited today, or vice versa, or some mix of in-between?
 
 From the `S: Drive`, copy the zipped data `gpw-v4-population-density-rev11_2020_2pt5_min_tif` to your workspace. Unzip it and add the TIF to your map. You should see the following:
 
@@ -339,9 +339,9 @@ Leave both boxes unchecked and run the tool. Once it's run, open the attribute t
 
 | ![q]                                                     |
 | :------------------------------------------------------- |
-| 9. What does the `RASTERVALU` field refer to?            |
-| 10. What is the highest value in the `RASTERVALU` field? |
-| 11. Why did some values get computed as `<NULL>`? (You might need to check one of your base maps to determine this.)        |
+| 10. What does the `RASTERVALU` field refer to?            |
+| 11. What is the highest value in the `RASTERVALU` field? |
+| 12. Why did some values get computed as `<NULL>`? (You might need to check one of your base maps to determine this.)        |
 
 Now let's run the **Hot Spot Analysis (Getis-Ord Gi*)** once again, but this time for the `sites_population` layer:
 
@@ -359,10 +359,9 @@ To conclude this lab, take a moment to compare and contrast a few different hot 
 
 | ![q] |
 | :--- |
-| 12. Compare one 99% confidence "hot" cluster against one 99% confidence "cold" cluster. In 2-3 sentences, describe the two areas: what sorts of natural and human featutres are in the "hot" cluster versus the "cold" cluster? Why were they assigned the values that they got? |
-| 13. Now compare one 90% confidence "hot" cluster against one 90% "cold" cluster. Again in 2-3 sentences, make the same comparisons, identifying what kinds of natural/human features as well as your guess as to why they were clustered in this fashion. |
-
-**Before you submit your assignment, take a screenshot of the ArcGIS Pro interface showing your final hot spot analysis that combines archaeological sites and modern population data.**
+| 13. Compare one 99% confidence "hot" cluster against one 99% confidence "cold" cluster. In 2-3 sentences, describe the two areas: what sorts of natural and human featutres are in the "hot" cluster versus the "cold" cluster? Why were they assigned the values that they got? |
+| 14. Now compare one 90% confidence "hot" cluster against one 90% "cold" cluster. Again in 2-3 sentences, make the same comparisons, identifying what kinds of natural/human features as well as your guess as to why they were clustered in this fashion. |
+| 15. Before you submit your assignment, take a screenshot of the ArcGIS Pro interface showing your final hot spot analysis that combines archaeological sites and modern population data. |
 
 ## Reflection
 
