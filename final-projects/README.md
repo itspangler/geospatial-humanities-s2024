@@ -74,9 +74,9 @@ To lay out your map, use
 3.  Describe key takeaways from **at least** 6 resources and how they relate to your chosen topic and project, including:
     1.  At least 2 spatial datasets (**must be GIS-friendly; e.g., `csv`, `shp`**) you plan to use in your analysis (e.g., census data, historical maps)
     1. At least 1 dataset you plan to create during the workflow (e.g., a derivative kernel density raster, a spatially joined vector file, data digitized from historical maps)
-    2. At least 1 primary source resource (other than the datasets listed above – e.g., a )
+    2. At least 1 primary source resource (other than the datasets listed above – e.g., a photo/drawing/letter that helps enrich the story you're trying to tell)
     3. At least 1 secondary source resource
-    4. At least 1 methodological resource—this one is really important! It could be an academic article, a post on StackExchange, or an ArcGIS Pro tutorial. Whatever it is, it should inform your analysis.
+    4. At least 1 methodological resource—**this one is really important! It could be an academic article, a post on StackExchange, or an ArcGIS Pro tutorial. Whatever it is, it should inform your analysis.**
 
 ## **Draft map**
 1. Assignment due 4/23
