@@ -19,10 +19,9 @@ During this lab, you'll test a variety of **spatial statistical tools** includin
 
 These tools help you move from basic "where" questions to analytical "why" questions.
 
-Before **11:59pm on Tuesday, April 2**, submit to Canvas:
+Before **11:59pm on Tuesday, April 9**, submit to Canvas:
 
-* In a `doc` or `pdf`, answers to the questions labeled with ![q] and summarized at the end of this lab
-* A simple map layout exported as a `png`, according to the instructions at the end of the document
+* Answers to the questions labeled with ![q] and summarized at the end of this lab, in a `doc` or `pdf` format 
 
 ## Table of contents <!-- omit in toc -->
 
@@ -38,7 +37,8 @@ Before **11:59pm on Tuesday, April 2**, submit to Canvas:
   - [Adding elevation to the mix](#adding-elevation-to-the-mix)
   - [Creating a field for elevation in your `sites` layer](#creating-a-field-for-elevation-in-your-sites-layer)
   - [Test a hot spot analysis on `sites_elevation`](#test-a-hot-spot-analysis-on-sites_elevation)
-  - [Calculating slope](#calculating-slope)
+  - [Adding population into the mix](#adding-population-into-the-mix)
+- [Submit](#submit)
 
 ## Introduction and context
 
@@ -294,7 +294,7 @@ Now that we have a `sites` layer with elevation values in the attribute table, w
 
 1. Input feature class = `sites_elevation`—**Make sure your selection is cleared, the input should not have a selection**
 2. Input field = `RASTERVALU`
-3. Output feature class = `sites_hotspot`
+3. Output feature class = `elevation_hotspots`
 4. Conceptualization of spatial relationships = Leave it as `Fixed distance band` for now
 5. Distance method = `Euclidean`
 
@@ -306,15 +306,60 @@ Click "Run" and examine the output. You should see something like this:
 | :---------------------------------------------------------------- |
 | 9. What is the `Gi_Bin Fixed` value of the points categorized as "Not Significant?" How is that value being computed and why is it not considered statistically significant? You can reference ArcGIS Pro's description of [hot spot analysis](https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/hot-spot-analysis.htm) to answer this. |
 
-### Calculating slope
+### Adding population into the mix
 
-Let's try to look at this data in a slightly different way: by considering its slope instead of its elevation.
+The results of the hot spot analysis for elevation should not be surprising at all. Low elevation values (e.g., "cold" spots) appear clustered with a high degree of confidence, while high elevation values (e.g., "hot" spots) appear clustered with a high degree of confidence. What we're seeing is basically a confirmation that the tools works as expected.
 
-In the **Geoprocessing** pane, search for "slope" and click on the "spatial analyst" tool:
+Here's a potential question: throughout our Central American study area, how do archaeological sites cluster relative to modern human settlement? e.g., will we find that areas inhabited thousands of years ago tend to continue being inhabited today, or vice versa, or some mix of in-between?
 
-<img src="./images/image011.png" width="500px">
+From the `S: Drive`, copy the zipped data `gpw-v4-population-density-rev11_2020_2pt5_min_tif` to your workspace. Unzip it and add the TIF to your map. You should see the following:
 
+<img src="./images/image022.png" width="500px">
 
+This data is from NASA's [SEDAC](https://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-density-rev11) (Socioeconomic Data and Applications Center). It's a global estimate of population density at a **2.5 arc-minute resolution**. One degree on the globe is composed of 60 arc-minutes. For comparison, our DEM data was downloaded at 1 arc-minute (about `30` meter) resolution. You can download SEDAC population estimates at various scales and temporalities; this one is 2.5 arc-minutes for the year 2020.
+
+Rename the SEDAC data to `population` before proceeding.
+
+Let's run that **Extract Points by Value** tool again to attach population value to our points. Your parameters should be set as:
+
+1. Input point features = `sites_projected`
+2. Input raster = `population`
+3. Output point features = `sites_population`
+
+Leave both boxes unchecked and run the tool. Once it's run, open the attribute table and look around.
+
+| ![q]                                                     |
+| :------------------------------------------------------- |
+| 9. What does the `RASTERVALU` field refer to?            |
+| 10. What is the highest value in the `RASTERVALU` field? |
+| 11. Why did some values get computed as `<NULL>`? (You might need to check one of your base maps to determine this.)        |
+
+Now let's run the **Hot Spot Analysis (Getis-Ord Gi*)** once again, but this time for the `sites_population` layer:
+
+1. Input feature class = `sites_population`—**make sure no records are selected**
+2. Input field = `RASTERVALU`
+3. Output feature class = `population_hotspots`
+
+Leave the rest of the fields as they are and click "Run." I flicked my `World Topographic Map` and `Hillshade` base layers back on and the result looks like this:
+
+<img src="./images/image023.png" width="500px">
+
+Wow: a very different landscape of statistical significance this time. Since we weren't just correlating elevation values—which we'd expect to cluster along areas of statistical significance—the `population_hotspots` actually reveal some interesting patterns.
+
+To conclude this lab, take a moment to compare and contrast a few different 
+
+| ![q]                                                                                                                                                                                                                            |
+| :--- |
+| 12. Compare one 99% confidence "hot" cluster against one 99% confidence "cold" cluster. In 2-3 sentences, describe the two areas: what sorts of natural and human featutres are in the "hot" cluster versus the "cold" cluster? Why were they assigned the values that they got? |
+| 13. Now compare one 90% confidence "hot" cluster against one 90% "cold" cluster. Again in 2-3 sentences, make the same comparisons, identifying what kinds of natural/human features as well as your guess as to why they were clustered in this fashion. |
+
+**Before you submit your assignment, take a screenshot of the ArcGIS Pro interface showing your final hot spot analysis that combines archaeological sites and modern population data.**
+
+## Submit
+
+Before **11:59pm on Tuesday, April 9**, submit to Canvas:
+
+* Answers to the questions labeled with ![q] and summarized below, in a `doc` or `pdf` format
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->
