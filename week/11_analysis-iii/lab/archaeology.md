@@ -240,7 +240,7 @@ Zoom in and zoom out. What do you notice about how the clusters change?
 Now try setting the aggregation type to "Binning." 
 
 | ![q] |
-| :--: |
+| :--- |
 | 5. Compare the three methods of clustering you've  |
 
 Once you've finished comparing the different clustering techniques, turn "Aggregation" off by setting the aggregation type to "None."
@@ -355,9 +355,9 @@ Leave the rest of the fields as they are and click "Run." I flicked my `World To
 
 Wow: a very different landscape of statistical significance this time. Since we weren't just correlating elevation values—which we'd expect to cluster along areas of statistical significance—the `population_hotspots` actually reveal some interesting patterns.
 
-To conclude this lab, take a moment to compare and contrast a few different 
+To conclude this lab, take a moment to compare and contrast a few different hot and cold clusters.
 
-| ![q]                                                                                                                                                                                                                            |
+| ![q] |
 | :--- |
 | 12. Compare one 99% confidence "hot" cluster against one 99% confidence "cold" cluster. In 2-3 sentences, describe the two areas: what sorts of natural and human featutres are in the "hot" cluster versus the "cold" cluster? Why were they assigned the values that they got? |
 | 13. Now compare one 90% confidence "hot" cluster against one 90% "cold" cluster. Again in 2-3 sentences, make the same comparisons, identifying what kinds of natural/human features as well as your guess as to why they were clustered in this fashion. |
