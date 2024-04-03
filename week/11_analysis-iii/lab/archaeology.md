@@ -2,9 +2,9 @@
 
 > *The tutorial was written by Ian Spangler on April 1, 2024 for ArcGIS Pro 3.1.4. Some parts were adapted from this tutorial on [spatial analysis in archaeology](https://www.geos.ed.ac.uk/~gisteac/pgis_arch/prwxacticals/pgis_arch_prac3.pdf).*
 
-| ![macchu](https://bpldcassets.blob.core.windows.net/derivatives/images/commonwealth:zk520729b/image_access_800.jpg) |
+| ![belize](https://quod.lib.umich.edu/cgi/i/image/api/image/wcl1ic:8683:WCL008754/full/1200,/0/default.jpg) |
 | :----------------------------: |
-| *[Macchu Picchu](https://www.digitalcommonwealth.org/search/commonwealth:s4657c014), photographed by Ellen F. O'Connor in 1929.* |
+| *Plan of Belize from the [Clements Library](https://www.argomaps.org/maps/commonwealth-oai:f4756d361/), 1783.* |
 
 ## What you should submit <!-- omit in toc -->
 
