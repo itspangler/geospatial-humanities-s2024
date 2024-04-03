@@ -45,9 +45,7 @@ Before **11:59pm on Tuesday, April 9**, submit to Canvas:
 
 ## Introduction and context
 
-In 1983, under the supervision of archaeologist [Anabel Ford](https://en.wikipedia.org/wiki/Anabel_Ford), the ancient Mayan city of El Pilar was discovered on the border of Belize and Guatemala. Eventually, the El Pilar Project led to an extensive survey of archaeological sites across Mexico, Guatemala, Belize, Honduras, and El Salvador.
-
-Using tools from the ArcGIS Pro Spatial Analyst toolbox, you'll assess
+In 1983, under the supervision of archaeologist [Anabel Ford](https://en.wikipedia.org/wiki/Anabel_Ford), the ancient Mayan city of El Pilar was discovered on the border of Belize and Guatemala. Eventually, the El Pilar Project led to an extensive survey of archaeological sites across Mexico, Guatemala, Belize, Honduras, and El Salvador. Using tools from the ArcGIS Pro Spatial Analyst toolbox, you'll run a series of spatial statistical tools and ultimately use them to identify clusters of "hot" and "cold" spots in the archaeological sites data, based on attributes like elevation and population. 
 
 ## Set up your workspace
 
@@ -309,7 +307,7 @@ Now that we have a `sites` layer with elevation values in the attribute table, w
 
 Click "Run" and examine the output. You should see something like this: 
 
-<img src="./images/image013.png" width="400px">
+<img src="./images/image020.png" width="400px">
 
 | ![q]                                                              |
 | :---------------------------------------------------------------- |
