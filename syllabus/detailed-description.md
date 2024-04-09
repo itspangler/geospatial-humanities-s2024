@@ -129,7 +129,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 * We'll leave some flex space in the syllabus for exploring topics of particular interest to students in the course. This could include further exploration of a particular methods or technical workflow, deeper dives into geospatial theory or geohumanities concepts, wrangling specific datasets... or simply extra office hours for your final projects. We'll fill this flex day in before spring break.
 * Due before class:
-  * Assignment 03: [Flowing letters](../week/12_design-ii/assignment/flowing-letters.md)
+  * Assignment 03: [Flowing letters](../week/12_design-ii/assignment/libraries.md)
 
 **April 23 • Beyond • Whither "GIS?"**
 
