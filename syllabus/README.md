@@ -287,12 +287,12 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 **April 23 • Open Lab**
 
-> *Week 14: Final project exhibition of maps-in-progress.*
+> *Week 14: That's it! Open lab.*
 
 * First 10 minutes of class is a guest presentation from Carolyn Talmadge; remainder of class is open lab.
 * Due before class:
   * Assignment 04: [Final project draft map](../final-projects/README.md#draft-map)
-  * Activity 07: Reflection
+  * Activity 07: [Reflection](../week/14_beyond/activity/reflection.md)
 
 **April 30 • Reading period**
 
@@ -303,6 +303,8 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 > *Finals week: Submit final project on Canvas by 11:59pm on Tuesday, May 7.*
 
 * Final project presentations tentatively held 6:30-8:30pm on Tuesday 5/7. Print poster beforehand; data lab assistants can help.
+  * Submit final project poster by end of day
+  * Submit [Activity 07](../week/14_beyond/activity/reflection.md) by end of day
 
 **May 8 • GIS Expo**
 

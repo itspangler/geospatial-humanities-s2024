@@ -6,7 +6,7 @@
 
 ## What you should submit <!-- omit in toc -->
 
-By Tuesday, 4/16 at 11:59pm, you should submit a **15"x20" poster** in `jpeg` format created using Microsoft Publisher. The poster should include the following:
+By Tuesday, 4/16 at 11:59pm, you should submit a **15"x20" poster** (or 20"x15") in `jpeg` format created using Microsoft Publisher. The poster should include the following:
 
 - 1 heat map showing 2019 public libraries in the U.S.
 - 3 "small multiple" choropleth maps, each including a title and legend:
@@ -143,8 +143,6 @@ The first bivariate map you should make is one that shows libraries on one axis 
 When you're done, go back to your map layout, add a legend, and export. Save it as a `jpeg` or `png` and name it `map2_libTotPop`. Your map should resemble:
 
 ![totpop](./images/image005.png)
-
-> ![imp]
 
 ### Join SVI data
 
