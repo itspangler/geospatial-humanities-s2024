@@ -267,7 +267,7 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 
 > *Week 12: Bivariate maps; small multiples; change detection; spatial autocorrelation; icons and iconography.*
 
-* How can we apply methods of geospatial inquiry to large corpuses of text, such as letters?
+* What are good practices for communicating lots of information in a single medium?
 * Due before class:
   * <span style="color:red">Curation Group 4</span>
   * Lab 05: [Archaeology](../week/11_analysis-iii/lab/archaeology.md)
