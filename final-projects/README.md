@@ -81,17 +81,35 @@ To lay out your map, use
 ## **Draft map**
 1. Assignment due 4/23
 2. Reiterating, this is an **assignment**
-3. Like all assignments, it's worth 75 points and should be a nicely-designed, final-ish map
-4. It need not be your **entire poster**, which will probably contain multiple inset maps, [small multiples](https://en.wikipedia.org/wiki/Small_multiple), etc.
+3. Like all assignments, it's worth 75 points and should be a nicely-designed map that conveys some part of your analysis and the data you've created/worked with so far
+4. **It need not be your entire poster**, which will probably contain multiple inset maps, [small multiples](https://en.wikipedia.org/wiki/Small_multiple), etc.
 5. Your draft map should clearly demonstrate your progress towards the analysis
 6. You should submit:
     1. A draft map in `PNG` format at `300 DPI`
     2. A *short* description – no more than 200 words – of where your analysis stands, what's left to do, etc.
 
 ## **Final project**
-1. Due 5/7
-2. Must address all four registers with care and intention
-3. More on this soon!
+1. Due 5/7 at 11:59pm
+2. You must submit either a 30"x40" poster, laid out following [the instructions on Canvas](https://canvas.tufts.edu/courses/54475/pages/using-microsoft-publisher?module_item_id=1342389), or an ArcGIS StoryMap
+3. Both of these submission types must contain three main components: *text*, *maps*, and *graphics*
+4. Text must include:
+   1. Discussion of your main spatial research question/s & themes
+   2. Discussion of methodology/ies & workflow
+   3. Discussion of findings/observations
+   4. Discussion of limitations
+   5. Discussion of data sources
+5. Maps must include:
+   1. A primary map that shows key parts of your analysis. As part of creating this map, you should have created
+   2. Though it's not required, I imagine you'll need more than one map
+   3. Refer to past posters in the [Expo Explorer](https://expoexplorer.it.tufts.edu/expoexplorer/#/dashboard), as well as our list of "[class favorites](https://docs.google.com/spreadsheets/d/1PWV6CExZTFQGmnfFTFJ3UpMWy2K68JrovWyEPqFDAGM/edit#gid=0)," for inspiration
+6. Graphics must include:
+   1. 1-2 non-cartographic summaries of the data you used
+   2. Doesn't need to be super fancy—you could make this using Microsoft Excel/Google Sheets
+   3. Bar chart, scatter plot, even as simple as a summary table
+
+## **GIS expo**
+1. If you plan to participate, poster must be printed—with help from data lab assistants—by **5/8**
+2. 
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->

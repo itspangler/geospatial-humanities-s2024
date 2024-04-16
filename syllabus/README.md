@@ -292,7 +292,6 @@ Our semester breaks down into three "Parts." During **[Part I](#part-i-fundament
 * First 10 minutes of class is a guest presentation from Carolyn Talmadge; remainder of class is open lab.
 * Due before class:
   * Assignment 04: [Final project draft map](../final-projects/README.md#draft-map)
-  * Activity 07: [Reflection](../week/14_beyond/activity/reflection.md)
 
 **April 30 • Reading period**
 
