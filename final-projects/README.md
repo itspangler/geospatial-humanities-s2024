@@ -108,8 +108,8 @@ To lay out your map, use
    3. Bar chart, scatter plot, even as simple as a summary table
 
 ## **GIS expo**
-1. If you plan to participate, poster must be printed—with help from data lab assistants—by **5/8**
-2. 
+
+If you plan to participate in the Expo, your poster must be printed—with help from data lab assistants—by **5/8**.
 
 <!-------------------------------------[ Links ]
 ---------------------------------------->
