@@ -1,3 +1,3 @@
 # Reflection
 
-This activity will be published by Tuesday, April 23.
+Hand-waiving this activity. Everyone gets 20 points!
